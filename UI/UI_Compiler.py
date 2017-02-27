@@ -1,7 +1,11 @@
 import os, glob, sys
 
 def PySide_Generator(ui_folder, py_folder,ui_files=[]):
-	from QT.UI.Py_Side import pysideuic
+	try:
+		from QT.UI.Py_Side import pysideuic
+	except ImportError:
+		import pyside2uic
+		pysideuic = pyside2uic
 	if len(ui_files):
 		ui_file_names = ui_files
 	else:

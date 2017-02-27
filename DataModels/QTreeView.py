@@ -10,7 +10,7 @@ AbstractItemView  = Qt_Roles_And_Enums.AbstractItemView
 Constants         = Qt_Roles_And_Enums.Constants
 
 
-class QTreeView(QtGui.QTreeView):
+class QTreeView(QT.QTreeView):
 	''''''
 	#----------------------------------------------------------------------
 	def __init__(self,*args,**kwargs):
@@ -69,7 +69,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the header for the tree view.
 		"""
 		res = super(QTreeView,self).header()
-		isinstance(res,QtGui.QHeaderView)
+		isinstance(res,QT.QHeaderView)
 		return res
 	#----------------------------------------------------------------------
 	def indentation(self):
@@ -155,7 +155,7 @@ class QTreeView(QtGui.QTreeView):
 		If this property is true then the item text is wrapped where necessary at word-breaks; otherwise it is not wrapped at all
 		This property is false by default.
 		Note that even if wrapping is enabled, the cell will not be expanded to fit all text
-		Ellipsis will be inserted according to the current PySide.QtGui.QAbstractItemView.textElideMode() .
+		Ellipsis will be inserted according to the current PySide.QT.stractItemView.textElideMode() .
 		"""
 		res = super(QTreeView,self).wordWrap()
 
@@ -197,7 +197,7 @@ class QTreeView(QtGui.QTreeView):
 	def drawBranches(self,painter,rect,index):
 		"""
 		drawBranches(painter,rect,index)
-			painter=QtGui.QPainter
+			painter=QT.QPainter
 			rect=QtCore.QRect
 			index=QtCore.QModelIndex
 
@@ -210,8 +210,8 @@ class QTreeView(QtGui.QTreeView):
 	def drawRow(self,painter,options,index):
 		"""
 		drawRow(painter,options,index)
-			painter=QtGui.QPainter
-			options=QtGui.QStyleOptionViewItem
+			painter=QT.QPainter
+			options=QT.QStyleOptionViewItem
 			index=QtCore.QModelIndex
 
 		Draws the row in the tree view that contains the model item index , using the painter given
@@ -223,8 +223,8 @@ class QTreeView(QtGui.QTreeView):
 	def drawTree(self,painter,region):
 		"""
 		drawTree(painter,region)
-			painter=QtGui.QPainter
-			region=QtGui.QRegion
+			painter=QT.QPainter
+			region=QT.QRegion
 
 		Draws the part of the tree intersecting the given region using the specified painter .
 		"""
@@ -419,7 +419,7 @@ class QTreeView(QtGui.QTreeView):
 	def setHeader(self,header):
 		"""
 		setHeader(header)
-			header=QtGui.QHeaderView
+			header=QT.QHeaderView
 
 		Sets the header for the tree view, to the given header .
 		The view takes ownership over the given header and deletes it when a new header is set.
@@ -526,7 +526,7 @@ class QTreeView(QtGui.QTreeView):
 		If this property is true then the item text is wrapped where necessary at word-breaks; otherwise it is not wrapped at all
 		This property is false by default.
 		Note that even if wrapping is enabled, the cell will not be expanded to fit all text
-		Ellipsis will be inserted according to the current PySide.QtGui.QAbstractItemView.textElideMode() .
+		Ellipsis will be inserted according to the current PySide.QT.QAbstractItemView.textElideMode() .
 		"""
 		res = super(QTreeView,self).setWordWrap(on)
 		return res
@@ -597,7 +597,7 @@ class QTreeView(QtGui.QTreeView):
 	def dirtyRegionOffset(self):
 		"""
 		Returns the offset of the dirty regions in the view.
-		If you use PySide.QtGui.QAbstractItemView.scrollDirtyRegion() and implement a PySide.QtGui.QAbstractScrollArea.paintEvent() in a subclass of PySide.QtGui.QAbstractItemView , you should translate the area given by the paint event with the offset returned from this function.
+		If you use PySide.QT.QAbstractItemView.scrollDirtyRegion() and implement a PySide.QT.QAbstractScrollArea.paintEvent() in a subclass of PySide.QT.QAbstractItemView , you should translate the area given by the paint event with the offset returned from this function.
 		"""
 		res = super(QTreeView,self).dirtyRegionOffset()
 		isinstance(res,QtCore.QPoint)
@@ -613,7 +613,7 @@ class QTreeView(QtGui.QTreeView):
 	def doItemsLayout(self):
 		"""
 		This function is intended to lay out the items in the view
-		The default implementation just calls PySide.QtGui.QAbstractItemView.updateGeometries() and updates the viewport.
+		The default implementation just calls PySide.QT.QAbstractItemView.updateGeometries() and updates the viewport.
 		"""
 		res = super(QTreeView,self).doItemsLayout()
 		return res
@@ -623,7 +623,7 @@ class QTreeView(QtGui.QTreeView):
 		This property holds the drag and drop event the view will act upon.
 		"""
 		res = super(QTreeView,self).dragDropMode()
-		isinstance(res,QtGui.QAbstractItemView.DragDropMode)
+		isinstance(res,QT.QAbstractItemView.DragDropMode)
 		return res
 	#----------------------------------------------------------------------
 	def dragDropOverwriteMode(self):
@@ -632,8 +632,8 @@ class QTreeView(QtGui.QTreeView):
 		If its value is true , the selected data will overwrite the existing item data when dropped, while moving the data will clear the item
 		If its value is false , the selected data will be inserted as a new item when the data is dropped
 		When the data is moved, the item is removed as well.
-		The default value is false , as in the PySide.QtGui.QListView and PySide.QtGui.QTreeView subclasses
-		In the PySide.QtGui.QTableView subclass, on the other hand, the property has been set to true .
+		The default value is false , as in the PySide.QT.QListView and PySide.QT.QTreeView subclasses
+		In the PySide.QT.QTableView subclass, on the other hand, the property has been set to true .
 		Note: This is not intended to prevent overwriting of items
 		The models implementation of flags() should do that by not returning Qt.ItemIsDropEnabled .
 		"""
@@ -654,7 +654,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the position of the drop indicator in relation to the closest item.
 		"""
 		res = super(QTreeView,self).dropIndicatorPosition()
-		isinstance(res,QtGui.QAbstractItemView.DropIndicatorPosition)
+		isinstance(res,QT.QAbstractItemView.DropIndicatorPosition)
 		return res
 	#----------------------------------------------------------------------
 	def editTriggers(self):
@@ -664,7 +664,7 @@ class QTreeView(QtGui.QTreeView):
 		The view will only initiate the editing of an item if the action performed is set in this property.
 		"""
 		res = super(QTreeView,self).editTriggers()
-		isinstance(res,QtGui.QAbstractItemView.EditTriggers)
+		isinstance(res,QT.QAbstractItemView.EditTriggers)
 		return res
 	#----------------------------------------------------------------------
 	def executeDelayedItemsLayout(self):
@@ -677,7 +677,7 @@ class QTreeView(QtGui.QTreeView):
 	def hasAutoScroll(self):
 		"""
 		This property holds whether autoscrolling in drag move events is enabled.
-		If this property is set to true (the default), the PySide.QtGui.QAbstractItemView automatically scrolls the contents of the view if the user drags within 16 pixels of the viewport edge
+		If this property is set to true (the default), the PySide.QT.QAbstractItemView automatically scrolls the contents of the view if the user drags within 16 pixels of the viewport edge
 		If the current item changes, then the view will scroll automatically to ensure that the current item is fully visible.
 		This property only works if the viewport accepts drops
 		Autoscroll is switched off by setting this property to false.
@@ -702,7 +702,7 @@ class QTreeView(QtGui.QTreeView):
 		Scrolling can be done either per pixel or per item.
 		"""
 		res = super(QTreeView,self).horizontalScrollMode()
-		isinstance(res,QtGui.QAbstractItemView.ScrollMode)
+		isinstance(res,QT.QAbstractItemView.ScrollMode)
 		return res
 	#----------------------------------------------------------------------
 	def iconSize(self):
@@ -717,10 +717,10 @@ class QTreeView(QtGui.QTreeView):
 	def itemDelegate(self):
 		"""
 		Returns the item delegate used by this view and model
-		This is either one set with PySide.QtGui.QAbstractItemView.setItemDelegate() , or the default one.
+		This is either one set with PySide.QT.QAbstractItemView.setItemDelegate() , or the default one.
 		"""
 		res = super(QTreeView,self).itemDelegate()
-		isinstance(res,QtGui.QAbstractItemDelegate)
+		isinstance(res,QT.QAbstractItemDelegate)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -751,7 +751,7 @@ class QTreeView(QtGui.QTreeView):
 	def scheduleDelayedItemsLayout(self):
 		"""
 		Schedules a layout of the items in the view to be executed when the event processing starts.
-		Even if PySide.QtGui.QAbstractItemView.scheduleDelayedItemsLayout() is called multiple times before events are processed, the view will only do the layout once.
+		Even if PySide.QT.QAbstractItemView.scheduleDelayedItemsLayout() is called multiple times before events are processed, the view will only do the layout once.
 		"""
 		res = super(QTreeView,self).scheduleDelayedItemsLayout()
 		return res
@@ -778,7 +778,7 @@ class QTreeView(QtGui.QTreeView):
 		This property holds whether selections are done in terms of single items, rows or columns.
 		"""
 		res = super(QTreeView,self).selectionBehavior()
-		isinstance(res,QtGui.QAbstractItemView.SelectionBehavior)
+		isinstance(res,QT.QAbstractItemView.SelectionBehavior)
 		return res
 	#----------------------------------------------------------------------
 	def selectionMode(self):
@@ -787,7 +787,7 @@ class QTreeView(QtGui.QTreeView):
 		This property controls whether the user can select one or many items and, in many-item selections, whether the selection must be a continuous range of items.
 		"""
 		res = super(QTreeView,self).selectionMode()
-		isinstance(res,QtGui.QAbstractItemView.SelectionMode)
+		isinstance(res,QT.QAbstractItemView.SelectionMode)
 		return res
 	#----------------------------------------------------------------------
 	def selectionModel(self):
@@ -795,7 +795,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the current selection model.
 		"""
 		res = super(QTreeView,self).selectionModel()
-		isinstance(res,QtGui.QItemSelectionModel)
+		isinstance(res,QT.QItemSelectionModel)
 		return res
 	#----------------------------------------------------------------------
 	def showDropIndicator(self):
@@ -818,7 +818,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the item views state.
 		"""
 		res = super(QTreeView,self).state()
-		isinstance(res,QtGui.QAbstractItemView.State)
+		isinstance(res,QT.QAbstractItemView.State)
 		return res
 	#----------------------------------------------------------------------
 	def stopAutoScroll(self):
@@ -883,15 +883,15 @@ class QTreeView(QtGui.QTreeView):
 		Scrolling can be done either per pixel or per item.
 		"""
 		res = super(QTreeView,self).verticalScrollMode()
-		isinstance(res,QtGui.QAbstractItemView.ScrollMode)
+		isinstance(res,QT.QAbstractItemView.ScrollMode)
 		return res
 	#----------------------------------------------------------------------
 	def viewOptions(self):
 		"""
-		Returns a PySide.QtGui.QStyleOptionViewItem structure populated with the views palette, font, state, alignments etc.
+		Returns a PySide.QT.QStyleOptionViewItem structure populated with the views palette, font, state, alignments etc.
 		"""
 		res = super(QTreeView,self).viewOptions()
-		isinstance(res,QtGui.QStyleOptionViewItem)
+		isinstance(res,QT.QStyleOptionViewItem)
 		return res
 	#----------------------------------------------------------------------
 	def viewportEntered(self):
@@ -904,8 +904,8 @@ class QTreeView(QtGui.QTreeView):
 	def closeEditor(self,editor,hint):
 		"""
 		closeEditor(editor,hint)
-			editor=QtGui.QWidget
-			hint=QtGui.QAbstractItemDelegate.EndEditHint
+			editor=QT.QWidget
+			hint=QT.QAbstractItemDelegate.EndEditHint
 
 
 		"""
@@ -925,7 +925,7 @@ class QTreeView(QtGui.QTreeView):
 	def commitData(self,editor):
 		"""
 		commitData(editor)
-			editor=QtGui.QWidget
+			editor=QT.QWidget
 
 		Commit the data in the editor to the model.
 		"""
@@ -940,7 +940,7 @@ class QTreeView(QtGui.QTreeView):
 
 		This slot is called when a new item becomes the current item
 		The previous current item is specified by the previous index, and the new item by the current index.
-		If you want to know about changes to items see the PySide.QtGui.QAbstractItemView.dataChanged() signal.
+		If you want to know about changes to items see the PySide.QT.QAbstractItemView.dataChanged() signal.
 		"""
 		res = super(QTreeView,self).currentChanged(current,previous)
 		return res
@@ -962,7 +962,7 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		edit(index,trigger,event)
 			index=QtCore.QModelIndex
-			trigger=QtGui.QAbstractItemView.EditTrigger
+			trigger=QT.QAbstractItemView.EditTrigger
 			event=QtCore.QEvent
 
 		edit(index)
@@ -1026,7 +1026,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the widget for the item at the given index .
 		"""
 		res = super(QTreeView,self).indexWidget(index)
-		isinstance(res,QtGui.QWidget)
+		isinstance(res,QT.QWidget)
 		return res
 	#----------------------------------------------------------------------
 	def isIndexHidden(self,index):
@@ -1051,7 +1051,7 @@ class QTreeView(QtGui.QTreeView):
 		Returns the item delegate used by this view and model for the given index .
 		"""
 		res = super(QTreeView,self).itemDelegate(index)
-		isinstance(res,QtGui.QAbstractItemDelegate)
+		isinstance(res,QT.QAbstractItemDelegate)
 		return res
 	#----------------------------------------------------------------------
 	def itemDelegateForColumn(self,column):
@@ -1060,10 +1060,10 @@ class QTreeView(QtGui.QTreeView):
 			column=QtCore.int
 
 		Returns the item delegate used by this view and model for the given column
-		You can call PySide.QtGui.QAbstractItemView.itemDelegate() to get a pointer to the current delegate for a given index.
+		You can call PySide.QT.QAbstractItemView.itemDelegate() to get a pointer to the current delegate for a given index.
 		"""
 		res = super(QTreeView,self).itemDelegateForColumn(column)
-		isinstance(res,QtGui.QAbstractItemDelegate)
+		isinstance(res,QT.QAbstractItemDelegate)
 		return res
 	#----------------------------------------------------------------------
 	def itemDelegateForRow(self,row):
@@ -1072,10 +1072,10 @@ class QTreeView(QtGui.QTreeView):
 			row=QtCore.int
 
 		Returns the item delegate used by this view and model for the given row , or 0 if no delegate has been assigned
-		You can call PySide.QtGui.QAbstractItemView.itemDelegate() to get a pointer to the current delegate for a given index.
+		You can call PySide.QT.QAbstractItemView.itemDelegate() to get a pointer to the current delegate for a given index.
 		"""
 		res = super(QTreeView,self).itemDelegateForRow(row)
-		isinstance(res,QtGui.QAbstractItemDelegate)
+		isinstance(res,QT.QAbstractItemDelegate)
 		return res
 	#----------------------------------------------------------------------
 	def keyboardSearch(self,search):
@@ -1093,7 +1093,7 @@ class QTreeView(QtGui.QTreeView):
 	def moveCursor(self,cursorAction,modifiers):
 		"""
 		moveCursor(cursorAction,modifiers)
-			cursorAction=QtGui.QAbstractItemView.CursorAction
+			cursorAction=QT.QAbstractItemView.CursorAction
 			modifiers=QtCore.Qt.KeyboardModifiers
 
 
@@ -1148,8 +1148,8 @@ class QTreeView(QtGui.QTreeView):
 
 		Prepares the view for scrolling by (dx ,``dy`` ) pixels by moving the dirty regions in the opposite direction
 		You only need to call this function if you are implementing a scrolling viewport in your view subclass.
-		If you implement PySide.QtGui.QAbstractScrollArea.scrollContentsBy() in a subclass of PySide.QtGui.QAbstractItemView , call this function before you call QWidget.scroll() on the viewport
-		Alternatively, just call PySide.QtGui.QAbstractItemView.update() .
+		If you implement PySide.QT.QAbstractScrollArea.scrollContentsBy() in a subclass of PySide.QT.QAbstractItemView , call this function before you call QWidget.scroll() on the viewport
+		Alternatively, just call PySide.QT.QAbstractItemView.update() .
 		"""
 		res = super(QTreeView,self).scrollDirtyRegion(dx,dy)
 		return res
@@ -1158,7 +1158,7 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		scrollTo(index,hint=None)
 			index=QtCore.QModelIndex
-			hint=QtGui.QAbstractItemView.ScrollHint
+			hint=QT.QAbstractItemView.ScrollHint
 
 		Scrolls the view if necessary to ensure that the item at index is visible
 		The view will try to position the item according to the given hint .
@@ -1170,8 +1170,8 @@ class QTreeView(QtGui.QTreeView):
 	def selectionChanged(self,selected,deselected):
 		"""
 		selectionChanged(selected,deselected)
-			selected=QtGui.QItemSelection
-			deselected=QtGui.QItemSelection
+			selected=QT.QItemSelection
+			deselected=QT.QItemSelection
 
 		This slot is called when the selection is changed
 		The previous selection (which may be empty), is specified by deselected , and the new selection by selected .
@@ -1190,7 +1190,7 @@ class QTreeView(QtGui.QTreeView):
 		Reimplement this function to define your own selection behavior.
 		"""
 		res = super(QTreeView,self).selectionCommand(index,event)
-		isinstance(res,QtGui.QItemSelectionModel.SelectionFlags)
+		isinstance(res,QT.QItemSelectionModel.SelectionFlags)
 		return res
 	#----------------------------------------------------------------------
 	def setAlternatingRowColors(self,enable):
@@ -1211,7 +1211,7 @@ class QTreeView(QtGui.QTreeView):
 			enable=QtCore.bool
 
 		This property holds whether autoscrolling in drag move events is enabled.
-		If this property is set to true (the default), the PySide.QtGui.QAbstractItemView automatically scrolls the contents of the view if the user drags within 16 pixels of the viewport edge
+		If this property is set to true (the default), the PySide.QT.QAbstractItemView automatically scrolls the contents of the view if the user drags within 16 pixels of the viewport edge
 		If the current item changes, then the view will scroll automatically to ensure that the current item is fully visible.
 		This property only works if the viewport accepts drops
 		Autoscroll is switched off by setting this property to false.
@@ -1245,7 +1245,7 @@ class QTreeView(QtGui.QTreeView):
 	def setDirtyRegion(self,region):
 		"""
 		setDirtyRegion(region)
-			region=QtGui.QRegion
+			region=QT.QRegion
 
 		Marks the given region as dirty and schedules it to be updated
 		You only need to call this function if you are implementing your own view subclass.
@@ -1256,7 +1256,7 @@ class QTreeView(QtGui.QTreeView):
 	def setDragDropMode(self,behavior):
 		"""
 		setDragDropMode(behavior)
-			behavior=QtGui.QAbstractItemView.DragDropMode
+			behavior=QT.QAbstractItemView.DragDropMode
 
 		This property holds the drag and drop event the view will act upon.
 		"""
@@ -1272,8 +1272,8 @@ class QTreeView(QtGui.QTreeView):
 		If its value is true , the selected data will overwrite the existing item data when dropped, while moving the data will clear the item
 		If its value is false , the selected data will be inserted as a new item when the data is dropped
 		When the data is moved, the item is removed as well.
-		The default value is false , as in the PySide.QtGui.QListView and PySide.QtGui.QTreeView subclasses
-		In the PySide.QtGui.QTableView subclass, on the other hand, the property has been set to true .
+		The default value is false , as in the PySide.QT.QListView and PySide.QT.QTreeView subclasses
+		In the PySide.QT.QTableView subclass, on the other hand, the property has been set to true .
 		Note: This is not intended to prevent overwriting of items
 		The models implementation of flags() should do that by not returning Qt.ItemIsDropEnabled .
 		"""
@@ -1303,7 +1303,7 @@ class QTreeView(QtGui.QTreeView):
 	def setEditTriggers(self,triggers):
 		"""
 		setEditTriggers(triggers)
-			triggers=QtGui.QAbstractItemView.EditTriggers
+			triggers=QT.QAbstractItemView.EditTriggers
 
 		This property holds which actions will initiate item editing.
 		This property is a selection of flags defined by QAbstractItemView.EditTrigger , combined using the OR operator
@@ -1315,7 +1315,7 @@ class QTreeView(QtGui.QTreeView):
 	def setHorizontalScrollMode(self,mode):
 		"""
 		setHorizontalScrollMode(mode)
-			mode=QtGui.QAbstractItemView.ScrollMode
+			mode=QT.QAbstractItemView.ScrollMode
 
 		This property holds how the view scrolls its contents in the horizontal direction.
 		This property controls how the view scroll its contents horizontally
@@ -1339,15 +1339,15 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		setIndexWidget(index,widget)
 			index=QtCore.QModelIndex
-			widget=QtGui.QWidget
+			widget=QT.QWidget
 
 		Sets the given widget on the item at the given index , passing the ownership of the widget to the viewport.
 		If index is invalid (e.g., if you pass the root index), this function will do nothing.
 		The given widget s autoFillBackground property must be set to true, otherwise the widgets background will be transparent, showing both the model data and the item at the given index .
 		If index widget A is replaced with index widget B, index widget A will be deleted
-		For example, in the code snippet below, the PySide.QtGui.QLineEdit object will be deleted.
+		For example, in the code snippet below, the PySide.QT.QLineEdit object will be deleted.
 		This function should only be used to display static content within the visible area corresponding to an item of data
-		If you want to display custom dynamic content or implement a custom editor widget, subclass PySide.QtGui.QItemDelegate instead.
+		If you want to display custom dynamic content or implement a custom editor widget, subclass PySide.QT.QItemDelegate instead.
 		"""
 		res = super(QTreeView,self).setIndexWidget(index,widget)
 		return res
@@ -1355,12 +1355,12 @@ class QTreeView(QtGui.QTreeView):
 	def setItemDelegate(self,delegate):
 		"""
 		setItemDelegate(delegate)
-			delegate=QtGui.QAbstractItemDelegate
+			delegate=QT.QAbstractItemDelegate
 
 		Sets the item delegate for this view and its model to delegate
 		This is useful if you want complete control over the editing and display of items.
 		Any existing delegate will be removed, but not deleted
-		PySide.QtGui.QAbstractItemView does not take ownership of delegate .
+		PySide.QT.QAbstractItemView does not take ownership of delegate .
 		"""
 		res = super(QTreeView,self).setItemDelegate(delegate)
 		return res
@@ -1369,12 +1369,12 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		setItemDelegateForColumn(column,delegate)
 			column=QtCore.int
-			delegate=QtGui.QAbstractItemDelegate
+			delegate=QT.QAbstractItemDelegate
 
 		Sets the given item delegate used by this view and model for the given column
-		All items on column will be drawn and managed by delegate instead of using the default delegate (i.e., PySide.QtGui.QAbstractItemView.itemDelegate() ).
+		All items on column will be drawn and managed by delegate instead of using the default delegate (i.e., PySide.QT.QAbstractItemView.itemDelegate() ).
 		Any existing column delegate for column will be removed, but not deleted
-		PySide.QtGui.QAbstractItemView does not take ownership of delegate .
+		PySide.QT.QAbstractItemView does not take ownership of delegate .
 		"""
 		res = super(QTreeView,self).setItemDelegateForColumn(column,delegate)
 		return res
@@ -1383,12 +1383,12 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		setItemDelegateForRow(row,delegate)
 			row=QtCore.int
-			delegate=QtGui.QAbstractItemDelegate
+			delegate=QT.QAbstractItemDelegate
 
 		Sets the given item delegate used by this view and model for the given row
-		All items on row will be drawn and managed by delegate instead of using the default delegate (i.e., PySide.QtGui.QAbstractItemView.itemDelegate() ).
+		All items on row will be drawn and managed by delegate instead of using the default delegate (i.e., PySide.QT.QAbstractItemView.itemDelegate() ).
 		Any existing row delegate for row will be removed, but not deleted
-		PySide.QtGui.QAbstractItemView does not take ownership of delegate .
+		PySide.QT.QAbstractItemView does not take ownership of delegate .
 		"""
 		res = super(QTreeView,self).setItemDelegateForRow(row,delegate)
 		return res
@@ -1399,7 +1399,7 @@ class QTreeView(QtGui.QTreeView):
 			model=QtCore.QAbstractItemModel
 
 		Sets the model for the view to present.
-		This function will create and set a new selection model, replacing any model that was previously set with PySide.QtGui.QAbstractItemView.setSelectionModel()
+		This function will create and set a new selection model, replacing any model that was previously set with PySide.QT.QAbstractItemView.setSelectionModel()
 		However, the old selection model will not be deleted as it may be shared between several views
 		We recommend that you delete the old selection model if it is no longer required
 		This is done with the following code:
@@ -1423,7 +1423,7 @@ class QTreeView(QtGui.QTreeView):
 		"""
 		setSelection(rect,command)
 			rect=QtCore.QRect
-			command=QtGui.QItemSelectionModel.SelectionFlags
+			command=QT.QItemSelectionModel.SelectionFlags
 
 
 		"""
@@ -1433,7 +1433,7 @@ class QTreeView(QtGui.QTreeView):
 	def setSelectionBehavior(self,behavior):
 		"""
 		setSelectionBehavior(behavior)
-			behavior=QtGui.QAbstractItemView.SelectionBehavior
+			behavior=QT.QAbstractItemView.SelectionBehavior
 
 		This property holds which selection behavior the view uses.
 		This property holds whether selections are done in terms of single items, rows or columns.
@@ -1444,7 +1444,7 @@ class QTreeView(QtGui.QTreeView):
 	def setSelectionMode(self,mode):
 		"""
 		setSelectionMode(mode)
-			mode=QtGui.QAbstractItemView.SelectionMode
+			mode=QT.QAbstractItemView.SelectionMode
 
 		This property holds which selection mode the view operates in.
 		This property controls whether the user can select one or many items and, in many-item selections, whether the selection must be a continuous range of items.
@@ -1455,10 +1455,10 @@ class QTreeView(QtGui.QTreeView):
 	def setSelectionModel(self,selectionModel):
 		"""
 		setSelectionModel(selectionModel)
-			selectionModel=QtGui.QItemSelectionModel
+			selectionModel=QT.QItemSelectionModel
 
 		Sets the current selection model to the given selectionModel .
-		Note that, if you call PySide.QtGui.QAbstractItemView.setModel() after this function, the given selectionModel will be replaced by one created by the view.
+		Note that, if you call PySide.QT.QAbstractItemView.setModel() after this function, the given selectionModel will be replaced by one created by the view.
 		"""
 		res = super(QTreeView,self).setSelectionModel(selectionModel)
 		return res
@@ -1466,7 +1466,7 @@ class QTreeView(QtGui.QTreeView):
 	def setState(self,state):
 		"""
 		setState(state)
-			state=QtGui.QAbstractItemView.State
+			state=QT.QAbstractItemView.State
 
 		Sets the item views state to the given state .
 		"""
@@ -1498,7 +1498,7 @@ class QTreeView(QtGui.QTreeView):
 	def setVerticalScrollMode(self,mode):
 		"""
 		setVerticalScrollMode(mode)
-			mode=QtGui.QAbstractItemView.ScrollMode
+			mode=QT.QAbstractItemView.ScrollMode
 
 		This property holds how the view scrolls its contents in the vertical direction.
 		This property controls how the view scroll its contents vertically
@@ -1606,13 +1606,13 @@ class QTreeView(QtGui.QTreeView):
 	def visualRegionForSelection(self,selection):
 		"""
 		visualRegionForSelection(selection)
-			selection=QtGui.QItemSelection
+			selection=QT.QItemSelection
 
 		Returns the region from the viewport of the items in the given selection .
 		In the base class this is a pure virtual function.
 		"""
 		res = super(QTreeView,self).visualRegionForSelection(selection)
-		isinstance(res,QtGui.QRegion)
+		isinstance(res,QT.QRegion)
 		return res
 
 

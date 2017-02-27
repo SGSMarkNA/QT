@@ -1,6 +1,6 @@
 from QT import QtGui, QtCore
-
-class QComboBox(QtGui.QComboBox):
+import QT
+class QComboBox(QT.QComboBox):
 	''''''
 	def __init__(self,*args,**kwargs):
 		''''''
@@ -11,7 +11,7 @@ class QComboBox(QtGui.QComboBox):
 		Returns the completer that is used to auto complete text input for the combobox.
 		"""
 		res = super(QComboBox,self).completer()
-		isinstance(res,QtGui.QCompleter)
+		isinstance(res,QT.QCompleter)
 		return res
 	#----------------------------------------------------------------------
 	def count(self):
@@ -62,7 +62,7 @@ class QComboBox(QtGui.QComboBox):
 	#----------------------------------------------------------------------
 	def hidePopup(self):
 		"""
-		Hides the list of items in the combobox if it is currently visible and resets the internal state, so that if the custom pop-up was shown inside the reimplemented PySide.QtGui.QComboBox.showPopup() , then you also need to reimplement the PySide.QtGui.QComboBox.hidePopup() function to hide your custom pop-up and call the base class implementation to reset the internal state whenever your custom pop-up widget is hidden.
+		Hides the list of items in the combobox if it is currently visible and resets the internal state, so that if the custom pop-up was shown inside the reimplemented PySide.QT.QComboBox.showPopup() , then you also need to reimplement the PySide.QT.QComboBox.hidePopup() function to hide your custom pop-up and call the base class implementation to reset the internal state whenever your custom pop-up widget is hidden.
 		"""
 		res = super(QComboBox,self).hidePopup()
 		return res
@@ -83,7 +83,7 @@ class QComboBox(QtGui.QComboBox):
 		The default value is AtBottom , indicating that new items will appear at the bottom of the list of items.
 		"""
 		res = super(QComboBox,self).insertPolicy()
-		isinstance(res,QtGui.QComboBox.InsertPolicy)
+		isinstance(res,QT.QComboBox.InsertPolicy)
 		return res
 	#----------------------------------------------------------------------
 	def isEditable(self):
@@ -100,7 +100,7 @@ class QComboBox(QtGui.QComboBox):
 		Returns the item delegate used by the popup list view.
 		"""
 		res = super(QComboBox,self).itemDelegate()
-		isinstance(res,QtGui.QAbstractItemDelegate)
+		isinstance(res,QT.QAbstractItemDelegate)
 		return res
 	#----------------------------------------------------------------------
 	def lineEdit(self):
@@ -109,7 +109,7 @@ class QComboBox(QtGui.QComboBox):
 		Only editable combo boxes have a line edit.
 		"""
 		res = super(QComboBox,self).lineEdit()
-		isinstance(res,QtGui.QLineEdit)
+		isinstance(res,QT.QLineEdit)
 		return res
 	#----------------------------------------------------------------------
 	def maxCount(self):
@@ -134,7 +134,7 @@ class QComboBox(QtGui.QComboBox):
 		"""
 		This property holds the minimum number of characters that should fit into the combobox..
 		The default value is 0.
-		If this property is set to a positive value, the PySide.QtGui.QComboBox.minimumSizeHint() and PySide.QtGui.QComboBox.sizeHint() take it into account.
+		If this property is set to a positive value, the PySide.QT.QComboBox.minimumSizeHint() and PySide.QT.QComboBox.sizeHint() take it into account.
 		"""
 		res = super(QComboBox,self).minimumContentsLength()
 
@@ -170,7 +170,7 @@ class QComboBox(QtGui.QComboBox):
 		"""
 		Displays the list of items in the combobox
 		If the list is empty then the no items will be shown.
-		If you reimplement this function to show a custom pop-up, make sure you call PySide.QtGui.QComboBox.hidePopup() to reset the internal state.
+		If you reimplement this function to show a custom pop-up, make sure you call PySide.QT.QComboBox.hidePopup() to reset the internal state.
 		"""
 		res = super(QComboBox,self).showPopup()
 		return res
@@ -181,7 +181,7 @@ class QComboBox(QtGui.QComboBox):
 		The default value is AdjustToContentsOnFirstShow .
 		"""
 		res = super(QComboBox,self).sizeAdjustPolicy()
-		isinstance(res,QtGui.QComboBox.SizeAdjustPolicy)
+		isinstance(res,QT.QComboBox.SizeAdjustPolicy)
 		return res
 	#----------------------------------------------------------------------
 	def validator(self):
@@ -189,7 +189,7 @@ class QComboBox(QtGui.QComboBox):
 		Returns the validator that is used to constrain text input for the combobox.
 		"""
 		res = super(QComboBox,self).validator()
-		isinstance(res,QtGui.QValidator)
+		isinstance(res,QT.QValidator)
 		return res
 	#----------------------------------------------------------------------
 	def view(self):
@@ -197,13 +197,13 @@ class QComboBox(QtGui.QComboBox):
 		Returns the list view used for the combobox popup.
 		"""
 		res = super(QComboBox,self).view()
-		isinstance(res,QtGui.QAbstractItemView)
+		isinstance(res,QT.QAbstractItemView)
 		return res
 	#----------------------------------------------------------------------
 	def addItem(self,*args,**kwargs):
 		"""
 		addItem(icon,text,userData=None)
-			icon=QtGui.QIcon
+			icon=QT.QIcon
 			text=unicode
 			userData=object
 
@@ -256,10 +256,10 @@ class QComboBox(QtGui.QComboBox):
 	def initStyleOption(self,option):
 		"""
 		initStyleOption(option)
-			option=QtGui.QStyleOptionComboBox
+			option=QT.QStyleOptionComboBox
 
-		Initialize option with the values from this PySide.QtGui.QComboBox
-		This method is useful for subclasses when they need a PySide.QtGui.QStyleOptionComboBox , but dont want to fill in all the information themselves.
+		Initialize option with the values from this PySide.QT.QComboBox
+		This method is useful for subclasses when they need a PySide.QT.QStyleOptionComboBox , but dont want to fill in all the information themselves.
 		"""
 		res = super(QComboBox,self).initStyleOption(option)
 		return res
@@ -273,7 +273,7 @@ class QComboBox(QtGui.QComboBox):
 
 		insertItem(index,icon,text,userData=None)
 			index=QtCore.int
-			icon=QtGui.QIcon
+			icon=QT.QIcon
 			text=unicode
 			userData=object
 
@@ -328,7 +328,7 @@ class QComboBox(QtGui.QComboBox):
 		Returns the icon for the given index in the combobox.
 		"""
 		res = super(QComboBox,self).itemIcon(index)
-		isinstance(res,QtGui.QIcon)
+		isinstance(res,QT.QIcon)
 		return res
 	#----------------------------------------------------------------------
 	def itemText(self,index):
@@ -356,11 +356,11 @@ class QComboBox(QtGui.QComboBox):
 	def setCompleter(self,c):
 		"""
 		setCompleter(c)
-			c=QtGui.QCompleter
+			c=QT.QCompleter
 
 		Sets the completer to use instead of the current completer
 		If completer is 0, auto completion is disabled.
-		By default, for an editable combo box, a PySide.QtGui.QCompleter that performs case insensitive inline completion is automatically created.
+		By default, for an editable combo box, a PySide.QT.QCompleter that performs case insensitive inline completion is automatically created.
 		"""
 		res = super(QComboBox,self).setCompleter(c)
 		return res
@@ -414,7 +414,7 @@ class QComboBox(QtGui.QComboBox):
 	def setInsertPolicy(self,policy):
 		"""
 		setInsertPolicy(policy)
-			policy=QtGui.QComboBox.InsertPolicy
+			policy=QT.QComboBox.InsertPolicy
 
 		This property holds the policy used to determine where user-inserted items should appear in the combobox.
 		The default value is AtBottom , indicating that new items will appear at the bottom of the list of items.
@@ -437,7 +437,7 @@ class QComboBox(QtGui.QComboBox):
 	def setItemDelegate(self,delegate):
 		"""
 		setItemDelegate(delegate)
-			delegate=QtGui.QAbstractItemDelegate
+			delegate=QT.QAbstractItemDelegate
 
 		Sets the item delegate for the popup list view
 		The combobox takes ownership of the delegate.
@@ -449,7 +449,7 @@ class QComboBox(QtGui.QComboBox):
 		"""
 		setItemIcon(index,icon)
 			index=QtCore.int
-			icon=QtGui.QIcon
+			icon=QT.QIcon
 
 		Sets the icon for the item on the given index in the combobox.
 		"""
@@ -470,7 +470,7 @@ class QComboBox(QtGui.QComboBox):
 	def setLineEdit(self,edit):
 		"""
 		setLineEdit(edit)
-			edit=QtGui.QLineEdit
+			edit=QT.QLineEdit
 
 		Sets the line edit to use instead of the current line edit widget.
 		The combo box takes ownership of the line edit.
@@ -507,7 +507,7 @@ class QComboBox(QtGui.QComboBox):
 
 		This property holds the minimum number of characters that should fit into the combobox..
 		The default value is 0.
-		If this property is set to a positive value, the PySide.QtGui.QComboBox.minimumSizeHint() and PySide.QtGui.QComboBox.sizeHint() take it into account.
+		If this property is set to a positive value, the PySide.QT.QComboBox.minimumSizeHint() and PySide.QT.QComboBox.sizeHint() take it into account.
 		"""
 		res = super(QComboBox,self).setMinimumContentsLength(characters)
 		return res
@@ -519,7 +519,7 @@ class QComboBox(QtGui.QComboBox):
 
 		Sets the model to be model
 		model must not be 0
-		If you want to clear the contents of a model, call PySide.QtGui.QComboBox.clear() .
+		If you want to clear the contents of a model, call PySide.QT.QComboBox.clear() .
 		"""
 		res = super(QComboBox,self).setModel(model)
 		return res
@@ -549,7 +549,7 @@ class QComboBox(QtGui.QComboBox):
 	def setSizeAdjustPolicy(self,policy):
 		"""
 		setSizeAdjustPolicy(policy)
-			policy=QtGui.QComboBox.SizeAdjustPolicy
+			policy=QT.QComboBox.SizeAdjustPolicy
 
 		This property holds the policy describing how the size of the combobox changes when the content changes.
 		The default value is AdjustToContentsOnFirstShow .
@@ -560,7 +560,7 @@ class QComboBox(QtGui.QComboBox):
 	def setValidator(self,v):
 		"""
 		setValidator(v)
-			v=QtGui.QValidator
+			v=QT.QValidator
 
 		Sets the validator to use instead of the current validator.
 		"""
@@ -570,11 +570,11 @@ class QComboBox(QtGui.QComboBox):
 	def setView(self,itemView):
 		"""
 		setView(itemView)
-			itemView=QtGui.QAbstractItemView
+			itemView=QT.QAbstractItemView
 
 		Sets the view to be used in the combobox popup to the given itemView
 		The combobox takes ownership of the view.
-		Note: If you want to use the convenience views (like PySide.QtGui.QListWidget , PySide.QtGui.QTableWidget or PySide.QtGui.QTreeWidget ), make sure to call PySide.QtGui.QComboBox.setModel() on the combobox with the convenience widgets model before calling this function.
+		Note: If you want to use the convenience views (like PySide.QT.QListWidget , PySide.QT.QTableWidget or PySide.QT.QTreeWidget ), make sure to call PySide.QT.QComboBox.setModel() on the combobox with the convenience widgets model before calling this function.
 		"""
 		res = super(QComboBox,self).setView(itemView)
 		return res

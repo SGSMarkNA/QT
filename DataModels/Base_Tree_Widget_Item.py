@@ -5,7 +5,7 @@ QtGui             = QT.QtGui
 Qt                = QT.Qt
 Item_Data_Roles   = Qt_Roles_And_Enums.Standered_Item_Data_Roles
 
-class Tree_Widget_Item(QtGui.QTreeWidgetItem):
+class Tree_Widget_Item(QT.QTreeWidgetItem):
 	''''''
 	Data_Roles = Item_Data_Roles
 	USER_TYPE  = QT.user_type_counter()

@@ -5,90 +5,90 @@ QtGui = QT.QtGui
 class AbstractItemView:
 	########################################################################
 	class Drag_Drop_Mode:
-		DragDrop     = QtGui.QAbstractItemView.DragDrop
-		DragOnly     = QtGui.QAbstractItemView.DragOnly
-		DropOnly     = QtGui.QAbstractItemView.DropOnly
-		InternalMove = QtGui.QAbstractItemView.InternalMove
-		NoDragDrop   = QtGui.QAbstractItemView.NoDragDrop
+		DragDrop     = QT.QAbstractItemView.DragDrop
+		DragOnly     = QT.QAbstractItemView.DragOnly
+		DropOnly     = QT.QAbstractItemView.DropOnly
+		InternalMove = QT.QAbstractItemView.InternalMove
+		NoDragDrop   = QT.QAbstractItemView.NoDragDrop
 	########################################################################
 	class CursorAction:
-		Down     = QtGui.QAbstractItemView.MoveDown
-		Up       = QtGui.QAbstractItemView.MoveUp
-		Left     = QtGui.QAbstractItemView.MoveLeft
-		Right    = QtGui.QAbstractItemView.MoveRight
-		Home     = QtGui.QAbstractItemView.MoveHome
-		End      = QtGui.QAbstractItemView.MoveEnd
-		Next     = QtGui.QAbstractItemView.MoveNext
-		Previous = QtGui.QAbstractItemView.MovePrevious
-		PageUp   = QtGui.QAbstractItemView.MovePageUp
-		PageDown = QtGui.QAbstractItemView.MovePageDown
+		Down     = QT.QAbstractItemView.MoveDown
+		Up       = QT.QAbstractItemView.MoveUp
+		Left     = QT.QAbstractItemView.MoveLeft
+		Right    = QT.QAbstractItemView.MoveRight
+		Home     = QT.QAbstractItemView.MoveHome
+		End      = QT.QAbstractItemView.MoveEnd
+		Next     = QT.QAbstractItemView.MoveNext
+		Previous = QT.QAbstractItemView.MovePrevious
+		PageUp   = QT.QAbstractItemView.MovePageUp
+		PageDown = QT.QAbstractItemView.MovePageDown
 	########################################################################
 	class DropIndicatorPosition:
-		AboveItem  = QtGui.QAbstractItemView.AboveItem
-		BelowItem  = QtGui.QAbstractItemView.BelowItem
-		OnItem     = QtGui.QAbstractItemView.OnItem
-		OnViewport = QtGui.QAbstractItemView.OnViewport
+		AboveItem  = QT.QAbstractItemView.AboveItem
+		BelowItem  = QT.QAbstractItemView.BelowItem
+		OnItem     = QT.QAbstractItemView.OnItem
+		OnViewport = QT.QAbstractItemView.OnViewport
 	########################################################################
 	class EditTrigger:
-		AllEditTriggers = QtGui.QAbstractItemView.AllEditTriggers
-		AnyKeyPressed   = QtGui.QAbstractItemView.AnyKeyPressed
-		CurrentChanged  = QtGui.QAbstractItemView.CurrentChanged
-		DoubleClicked   = QtGui.QAbstractItemView.DoubleClicked
-		EditKeyPressed  = QtGui.QAbstractItemView.EditKeyPressed
-		NoEditTriggers  = QtGui.QAbstractItemView.NoEditTriggers
-		SelectedClicked = QtGui.QAbstractItemView.SelectedClicked
+		AllEditTriggers = QT.QAbstractItemView.AllEditTriggers
+		AnyKeyPressed   = QT.QAbstractItemView.AnyKeyPressed
+		CurrentChanged  = QT.QAbstractItemView.CurrentChanged
+		DoubleClicked   = QT.QAbstractItemView.DoubleClicked
+		EditKeyPressed  = QT.QAbstractItemView.EditKeyPressed
+		NoEditTriggers  = QT.QAbstractItemView.NoEditTriggers
+		SelectedClicked = QT.QAbstractItemView.SelectedClicked
 	########################################################################
 	class ScrollHint:
-		EnsureVisible    = QtGui.QAbstractItemView.EnsureVisible
-		PositionAtBottom = QtGui.QAbstractItemView.PositionAtBottom
-		PositionAtCenter = QtGui.QAbstractItemView.PositionAtCenter
-		PositionAtTop    = QtGui.QAbstractItemView.PositionAtTop
+		EnsureVisible    = QT.QAbstractItemView.EnsureVisible
+		PositionAtBottom = QT.QAbstractItemView.PositionAtBottom
+		PositionAtCenter = QT.QAbstractItemView.PositionAtCenter
+		PositionAtTop    = QT.QAbstractItemView.PositionAtTop
 	########################################################################
 	class ScrollMode:
-		PerItem  = QtGui.QAbstractItemView.ScrollPerItem
-		PerPixel = QtGui.QAbstractItemView.ScrollPerPixel
+		PerItem  = QT.QAbstractItemView.ScrollPerItem
+		PerPixel = QT.QAbstractItemView.ScrollPerPixel
 	########################################################################
 	class SelectionBehavior:
-		Columns = QtGui.QAbstractItemView.SelectColumns
-		Items   = QtGui.QAbstractItemView.SelectItems
-		Rows    = QtGui.QAbstractItemView.SelectRows
+		Columns = QT.QAbstractItemView.SelectColumns
+		Items   = QT.QAbstractItemView.SelectItems
+		Rows    = QT.QAbstractItemView.SelectRows
 	########################################################################
 	class SelectionMode:
-		Contiguous = QtGui.QAbstractItemView.ContiguousSelection
-		Extended   = QtGui.QAbstractItemView.ExtendedSelection
-		Multi      = QtGui.QAbstractItemView.MultiSelection
-		No         = QtGui.QAbstractItemView.NoSelection
-		Single     = QtGui.QAbstractItemView.SingleSelection
+		Contiguous = QT.QAbstractItemView.ContiguousSelection
+		Extended   = QT.QAbstractItemView.ExtendedSelection
+		Multi      = QT.QAbstractItemView.MultiSelection
+		No         = QT.QAbstractItemView.NoSelection
+		Single     = QT.QAbstractItemView.SingleSelection
 	########################################################################
 	class Shadow:
-		Plain  = QtGui.QAbstractItemView.Plain
-		Raised = QtGui.QAbstractItemView.Raised
-		Sunken = QtGui.QAbstractItemView.Sunken
+		Plain  = QT.QAbstractItemView.Plain
+		Raised = QT.QAbstractItemView.Raised
+		Sunken = QT.QAbstractItemView.Sunken
 	########################################################################	
 	class Shape:
-		Box         = QtGui.QAbstractItemView.Box
-		HLine       = QtGui.QAbstractItemView.HLine
-		NoFrame     = QtGui.QAbstractItemView.NoFrame
-		Panel       = QtGui.QAbstractItemView.Panel
-		StyledPanel = QtGui.QAbstractItemView.StyledPanel
-		VLine       = QtGui.QAbstractItemView.VLine
-		WinPanel    = QtGui.QAbstractItemView.WinPanel
+		Box         = QT.QAbstractItemView.Box
+		HLine       = QT.QAbstractItemView.HLine
+		NoFrame     = QT.QAbstractItemView.NoFrame
+		Panel       = QT.QAbstractItemView.Panel
+		StyledPanel = QT.QAbstractItemView.StyledPanel
+		VLine       = QT.QAbstractItemView.VLine
+		WinPanel    = QT.QAbstractItemView.WinPanel
 	########################################################################
 	class State:
-		Animating     = QtGui.QAbstractItemView.AnimatingState
-		Collapsing    = QtGui.QAbstractItemView.CollapsingState
-		DragSelecting = QtGui.QAbstractItemView.DragSelectingState
-		Dragging      = QtGui.QAbstractItemView.DraggingState
-		Editing       = QtGui.QAbstractItemView.EditingState
-		Expanding     = QtGui.QAbstractItemView.ExpandingState
-		No            = QtGui.QAbstractItemView.NoState
+		Animating     = QT.QAbstractItemView.AnimatingState
+		Collapsing    = QT.QAbstractItemView.CollapsingState
+		DragSelecting = QT.QAbstractItemView.DragSelectingState
+		Dragging      = QT.QAbstractItemView.DraggingState
+		Editing       = QT.QAbstractItemView.EditingState
+		Expanding     = QT.QAbstractItemView.ExpandingState
+		No            = QT.QAbstractItemView.NoState
 		
 ########################################################################
 class Constants:
-	########################################################################
-	class AnchorAttribute:
-		AnchorName = Qt.AnchorName
-		AnchorHref = Qt.AnchorHref
+	# ########################################################################
+	# class AnchorAttribute:
+		# AnchorName = Qt.AnchorName
+		# AnchorHref = Qt.AnchorHref
 	########################################################################
 	class AnchorPoint:
 		AnchorBottom           = Qt.AnchorBottom
@@ -104,7 +104,7 @@ class Constants:
 		AA_NativeWindows                    = Qt.AA_NativeWindows
 		AA_ImmediateWidgetCreation          = Qt.AA_ImmediateWidgetCreation
 		AA_MSWindowsUseDirect3DByDefault    = Qt.AA_MSWindowsUseDirect3DByDefault
-		AA_S60DontConstructApplicationPanes = Qt.AA_S60DontConstructApplicationPanes
+		# AA_S60DontConstructApplicationPanes = Qt.AA_DontConstructApplicationPanes
 		AA_DontCreateNativeWidgetSiblings   = Qt.AA_DontCreateNativeWidgetSiblings
 		AA_MacDontSwapCtrlAndMeta           = Qt.AA_MacDontSwapCtrlAndMeta
 		AA_MacPluginApplication             = Qt.AA_MacPluginApplication
@@ -135,7 +135,7 @@ class Constants:
 		CaseInsensitive = Qt.CaseInsensitive
 	########################################################################
 	class ClipOperation:
-		UniteClip     = Qt.UniteClip
+		# UniteClip     = Qt.UniteClip
 		ReplaceClip   = Qt.ReplaceClip
 		IntersectClip = Qt.IntersectClip
 		NoClip        = Qt.NoClip
@@ -145,7 +145,7 @@ class Constants:
 		AutoConnection           = Qt.AutoConnection
 		BlockingQueuedConnection = Qt.BlockingQueuedConnection
 		QueuedConnection         = Qt.QueuedConnection
-		AutoCompatConnection     = Qt.AutoCompatConnection
+		# AutoCompatConnection     = Qt.AutoCompatConnection
 		DirectConnection         = Qt.DirectConnection
 	########################################################################
 	class ContextMenuPolicy:
@@ -812,7 +812,7 @@ class Constants:
 	class TextFormat:
 		PlainText = Qt.PlainText
 		AutoText  = Qt.AutoText
-		LogText   = Qt.LogText
+		# LogText   = Qt.LogText
 		RichText  = Qt.RichText
 	########################################################################		
 	class TextInteractionFlag:
@@ -921,7 +921,7 @@ class Constants:
 		WState_ExplicitShowHide         = Qt.WA_WState_ExplicitShowHide
 		OutsideWSRange                  = Qt.WA_OutsideWSRange
 		SetCursor                       = Qt.WA_SetCursor
-		MergeSoftkeys                   = Qt.WA_MergeSoftkeys
+		# MergeSoftkeys                   = Qt.WA_MergeSoftkeys
 		SetWindowIcon                   = Qt.WA_SetWindowIcon
 		X11DoNotAcceptFocus             = Qt.WA_X11DoNotAcceptFocus
 		StyledBackground                = Qt.WA_StyledBackground
@@ -951,7 +951,7 @@ class Constants:
 		PendingResizeEvent              = Qt.WA_PendingResizeEvent
 		MacAlwaysShowToolWindow         = Qt.WA_MacAlwaysShowToolWindow
 		ShowWithoutActivating           = Qt.WA_ShowWithoutActivating
-		MergeSoftkeysRecursively        = Qt.WA_MergeSoftkeysRecursively
+		# MergeSoftkeysRecursively        = Qt.WA_MergeSoftkeysRecursively
 		WState_CompressKeys             = Qt.WA_WState_CompressKeys
 		UnderMouse                      = Qt.WA_UnderMouse
 		WState_Visible                  = Qt.WA_WState_Visible
@@ -961,7 +961,7 @@ class Constants:
 		DeleteOnClose                   = Qt.WA_DeleteOnClose
 		WindowPropagation               = Qt.WA_WindowPropagation
 		Moved                           = Qt.WA_Moved
-		PaintOutsidePaintEvent          = Qt.WA_PaintOutsidePaintEvent
+		# PaintOutsidePaintEvent          = Qt.WA_PaintOutsidePaintEvent
 		DontCreateNativeAncestors       = Qt.WA_DontCreateNativeAncestors
 		Resized                         = Qt.WA_Resized
 		PendingMoveEvent                = Qt.WA_PendingMoveEvent
@@ -1000,7 +1000,7 @@ class Constants:
 		WindowShadeButtonHint        = Qt.WindowShadeButtonHint
 		Window                       = Qt.Window
 		WindowMinimizeButtonHint     = Qt.WindowMinimizeButtonHint
-		WindowSoftkeysVisibleHint    = Qt.WindowSoftkeysVisibleHint
+		# WindowSoftkeysVisibleHint    = Qt.WindowSoftkeysVisibleHint
 		CustomizeWindowHint          = Qt.CustomizeWindowHint
 		WindowCancelButtonHint       = Qt.WindowCancelButtonHint
 		WindowMaximizeButtonHint     = Qt.WindowMaximizeButtonHint
@@ -1019,7 +1019,7 @@ class Constants:
 		MSWindowsOwnDC               = Qt.MSWindowsOwnDC
 		WindowCloseButtonHint        = Qt.WindowCloseButtonHint
 		Dialog                       = Qt.Dialog
-		WindowSoftkeysRespondHint    = Qt.WindowSoftkeysRespondHint
+		# WindowSoftkeysRespondHint    = Qt.WindowSoftkeysRespondHint
 		WindowSystemMenuHint         = Qt.WindowSystemMenuHint
 		ToolTip                      = Qt.ToolTip
 		WindowContextHelpButtonHint  = Qt.WindowContextHelpButtonHint
@@ -1031,7 +1031,7 @@ class Standered_Item_Data_Roles(object):
 	""""""
 	## The general purpose roles (and the associated types):
 	DISPLAY        = Qt.DisplayRole       ## The key data to be rendered in the form of text.                                                :: QtCore.QString
-	DECORATION     = Qt.DecorationRole    ## The data to be rendered as a decoration in the form of an icon.                                 :: QtGui.QColor | QtGui.QIcon | QtGui.QPixmap
+	DECORATION     = Qt.DecorationRole    ## The data to be rendered as a decoration in the form of an icon.                                 :: QT.QColor | QT.QIcon | QtGui.QPixmap
 	EDIT           = Qt.EditRole          ## The data in a form suitable for editing in an editor.                                           :: QString
 	TOOLTIP        = Qt.ToolTipRole       ## The data displayed in the item's tooltip.                                                       :: QtCore.QString
 	STATUSTIP      = Qt.StatusTipRole     ## The data displayed in the status bar.                                                           :: QtCore.QString
@@ -1197,10 +1197,10 @@ class TextFlag:
 	TextWordWrap              = Qt.TextWordWrap
 
 class File_Dialog_Options:
-	ShowDirsOnly          = QtGui.QFileDialog.ShowDirsOnly          # Only show directories in the file dialog. By default both files and directories are shown. (Valid only in the Directory file mode.)
-	DontResolveSymlinks   = QtGui.QFileDialog.DontResolveSymlinks   # Don't resolve symlinks in the file dialog. By default symlinks are resolved.
-	DontConfirmOverwrite  = QtGui.QFileDialog.DontConfirmOverwrite  # Don't ask for confirmation if an existing file is selected. By default confirmation is requested.
-	DontUseNativeDialog   = QtGui.QFileDialog.DontUseNativeDialog   # Don't use the native file dialog. By default, the native file dialog is used unless you use a subclass of PySide.QtGui.QFileDialog that contains the Q_OBJECT() macro.
-	ReadOnly              = QtGui.QFileDialog.ReadOnly              # Indicates that the model is readonly.
-	HideNameFilterDetails = QtGui.QFileDialog.HideNameFilterDetails # Indicates if the file name filter details are hidden or not.
-	DontUseSheet          = QtGui.QFileDialog.DontUseSheet          # In previous versions of Qt, the static functions would create a sheet by default if the static function was given a parent. This is no longer supported and does nothing in Qt 4.5, The static functions will always be an application modal dialog. If you want to use sheets, use QFileDialog.open() instead.
+	ShowDirsOnly          = QT.QFileDialog.ShowDirsOnly          # Only show directories in the file dialog. By default both files and directories are shown. (Valid only in the Directory file mode.)
+	DontResolveSymlinks   = QT.QFileDialog.DontResolveSymlinks   # Don't resolve symlinks in the file dialog. By default symlinks are resolved.
+	DontConfirmOverwrite  = QT.QFileDialog.DontConfirmOverwrite  # Don't ask for confirmation if an existing file is selected. By default confirmation is requested.
+	DontUseNativeDialog   = QT.QFileDialog.DontUseNativeDialog   # Don't use the native file dialog. By default, the native file dialog is used unless you use a subclass of PySide.QT.QFileDialog that contains the Q_OBJECT() macro.
+	ReadOnly              = QT.QFileDialog.ReadOnly              # Indicates that the model is readonly.
+	HideNameFilterDetails = QT.QFileDialog.HideNameFilterDetails # Indicates if the file name filter details are hidden or not.
+	DontUseSheet          = QT.QFileDialog.DontUseSheet          # In previous versions of Qt, the static functions would create a sheet by default if the static function was given a parent. This is no longer supported and does nothing in Qt 4.5, The static functions will always be an application modal dialog. If you want to use sheets, use QFileDialog.open() instead.

@@ -8,7 +8,7 @@ Item_Data_Roles   = Qt_Roles_And_Enums.Standered_Item_Data_Roles
 AbstractItemView  = Qt_Roles_And_Enums.AbstractItemView
 Constants         = Qt_Roles_And_Enums.Constants
 
-class QListWidget(QtGui.QListWidget):
+class QListWidget(QT.QListWidget):
 	''''''
 	Data_Roles = Item_Data_Roles
 	Item_View_Constants = AbstractItemView

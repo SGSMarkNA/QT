@@ -1,13 +1,37 @@
 import os
+import xml.etree.ElementTree as xml
 
-if os.environ["QT_PACKAGE"] == "PySide":
-	from PySide import QtCore,QtGui
+QT_PACKAGE = os.environ.get("QT_PACKAGE")
+try:
+        import maya.cmds as cmds
+	MAYA_VERSION    = int(cmds.about(version=True))
+except:
+	MAYA_VERSION = 2015
+
+if QT_PACKAGE is None:
+	if MAYA_VERSION >= 2017:
+		QT_PACKAGE =  "PySide2"
+		os.environ["QT_PACKAGE"] = "PySide2"
+	elif MAYA_VERSION >= 2013:
+		QT_PACKAGE =  "PySide"
+		os.environ["QT_PACKAGE"] = "PySide"
+
+if os.environ["QT_PACKAGE"] == "PySide2":
+	from PySide2.QtCore import *
+	from PySide2.QtGui import *
+	from PySide2.QtWidgets import *
+	import pyside2uic as pysideuic
+	from cStringIO import StringIO
+
+elif os.environ["QT_PACKAGE"] == "PySide":
+	from PySide.QtCore import *
+	from PySide.QtGui import *
 	from Py_Side import pysideuic
 	from cStringIO import StringIO
-	import xml.etree.ElementTree as xml
 
 elif os.environ["QT_PACKAGE"] == "PyQt4":
-	from PyQt4 import QtCore,QtGui
+	from PyQt4.QtCore import *
+	from PyQt4.QtGui import *
 	from PY_QT4 import uic
 	
 else:
@@ -32,7 +56,7 @@ def PySide_Reader(uiFile):
 
 		#Fetch the base_class and form class based on their type in the xml from designer
 		form_class = frame['Ui_%s'%form_class]
-		base_class = eval('QtGui.%s'%widget_class)
+		base_class = eval('%s'%widget_class)
 	return form_class, base_class
 
 def loadUiType(uiFile):
@@ -44,7 +68,7 @@ def loadUiType(uiFile):
 			uiFile.replace(".uic", ".ui")
 		form_class, base_class  = PyQt4_Reader(uiFile)
 
-	elif os.environ["QT_PACKAGE"] == "PySide":
+	elif os.environ["QT_PACKAGE"] == "PySide" or os.environ["QT_PACKAGE"] == "PySide2":
 		form_class, base_class = PySide_Reader(uiFile)
 
 	return form_class, base_class

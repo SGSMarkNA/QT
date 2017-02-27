@@ -8,7 +8,7 @@ Item_Data_Roles   = Qt_Roles_And_Enums.Standered_Item_Data_Roles
 AbstractItemView  = Qt_Roles_And_Enums.AbstractItemView
 Constants         = Qt_Roles_And_Enums.Constants
 
-class Tree_Widget(QtGui.QTreeWidget):
+class Tree_Widget(QT.QTreeWidget):
 	''''''
 	Data_Roles = Item_Data_Roles
 	Item_View_Constants = AbstractItemView
@@ -38,7 +38,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the current item in the tree widget.
 		"""
 		res = super(Tree_Widget,self).currentItem()
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def headerItem(self):
@@ -46,16 +46,16 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the item used for the tree widgets header.
 		"""
 		res = super(Tree_Widget,self).headerItem()
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def invisibleRootItem(self):
 		"""
 		Returns the tree widgets invisible root item.
-		The invisible root item provides access to the tree widgets top-level items through the PySide.QtGui.QTreeWidgetItem API, making it possible to write functions that can treat top-level items and their children in a uniform way; for example, recursive functions.
+		The invisible root item provides access to the tree widgets top-level items through the PySide.QT.QTreeWidgetItem API, making it possible to write functions that can treat top-level items and their children in a uniform way; for example, recursive functions.
 		"""
 		res = super(Tree_Widget,self).invisibleRootItem()
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def mimeTypes(self):
@@ -100,7 +100,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 	def addTopLevelItem(self,item):
 		"""
 		addTopLevelItem(item)
-			item=QtGui.QTreeWidgetItem
+			item=QT.QTreeWidgetItem
 
 		Appends the item as a top-level item in the widget.
 		"""
@@ -120,7 +120,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 	def closePersistentEditor(self,item,column=None):
 		"""
 		closePersistentEditor(item,column=None)
-			item=QtGui.QTreeWidgetItem
+			item=QT.QTreeWidgetItem
 			column=QtCore.int
 
 		Closes the persistent editor for the item in the given column .
@@ -132,7 +132,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 	#def dropMimeData(self,parent,index,data,action):
 		#"""
 		#dropMimeData(parent,index,data,action)
-			#parent=QtGui.QTreeWidgetItem
+			#parent=QT.QTreeWidgetItem
 			#index=QtCore.int
 			#data=QtCore.QMimeData
 			#action=QtCore.Qt.DropAction
@@ -270,7 +270,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the item above the given item .
 		"""
 		res = super(Tree_Widget,self).itemAbove(item)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemAt(self,*args,**kwargs):
@@ -286,7 +286,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns a pointer to the item at the coordinates (x , y ).
 		"""
 		res = super(Tree_Widget,self).itemAt(*args,**kwargs)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemBelow(self,item):
@@ -297,7 +297,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the item visually below the given item .
 		"""
 		res = super(Tree_Widget,self).itemBelow(item)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemFromIndex(self,index):
@@ -308,7 +308,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns a pointer to the PySide.QtGui.QTreeWidgetItem assocated with the given index .
 		"""
 		res = super(Tree_Widget,self).itemFromIndex(index)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemWidget(self,item,column):
@@ -320,7 +320,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the widget displayed in the cell specified by item and the given column .
 		"""
 		res = super(Tree_Widget,self).itemWidget(item,column)
-		isinstance(res,QtGui.QWidget)
+		isinstance(res,QT.QWidget)
 		return res
 	##----------------------------------------------------------------------
 	#def mimeData(self,items):
@@ -504,7 +504,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Removes the top-level item at the given index in the tree and returns it, otherwise returns 0;
 		"""
 		res = super(Tree_Widget,self).takeTopLevelItem(index)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def topLevelItem(self,index):
@@ -515,7 +515,7 @@ class Tree_Widget(QtGui.QTreeWidget):
 		Returns the top level item at the given index , or 0 if the item does not exist.
 		"""
 		res = super(Tree_Widget,self).topLevelItem(index)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def visualItemRect(self,item):
@@ -536,26 +536,26 @@ class Tree_Widget(QtGui.QTreeWidget):
 	#----------------------------------------------------------------------
 	def add_Item(self, item, parent=None):
 		"""Add a TreeWidgetItem if Parent is a QTreeWidgetItem The Item is add as a child to that parent else it is added as a top level item"""
-		if not isinstance(item, QtGui.QTreeWidgetItem):
+		if not isinstance(item, QT.QTreeWidgetItem):
 			raise ValueError(item)
 		
-		if isinstance(parent, QtGui.QTreeWidgetItem):
+		if isinstance(parent, QT.QTreeWidgetItem):
 			parent.addChild(item)
 		else:
 			self.addTopLevelItem(item)
 	#----------------------------------------------------------------------
 	def remove_Item(self, item):
 		"""Removes and returns the item for the tree if the item is not a top level item it removes it for its part"""
-		if not isinstance(item, QtGui.QTreeWidgetItem):
+		if not isinstance(item, QT.QTreeWidgetItem):
 			raise ValueError(item)
 		parent = item.parent()
-		if isinstance(parent, QtGui.QTreeWidgetItem):
+		if isinstance(parent, QT.QTreeWidgetItem):
 			index = parent.indexOfChild(item)
 			res   = parent.takeChild(index)
 		else:
 			index = self.indexOfTopLevelItem(item)
 			res   = self.takeTopLevelItem(index)
-		isinstance(res, QtGui.QTreeWidgetItem)
+		isinstance(res, QT.QTreeWidgetItem)
 		return res
 	
 	ColumnCount   = property(columnCount,setColumnCount)

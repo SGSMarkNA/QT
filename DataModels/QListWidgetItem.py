@@ -8,7 +8,7 @@ Item_Data_Roles   = Qt_Roles_And_Enums.Standered_Item_Data_Roles
 AbstractItemView  = Qt_Roles_And_Enums.AbstractItemView
 Constants         = Qt_Roles_And_Enums.Constants
 
-class QListWidgetItem(QtGui.QListWidgetItem):
+class QListWidgetItem(QT.QListWidgetItem):
 	''''''
 	def __init__(self,*args,**kwargs):
 		''''''
@@ -19,7 +19,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the brush used to display the list items background.
 		"""
 		res = super(QListWidgetItem,self).background()
-		isinstance(res,QtGui.QBrush)
+		isinstance(res,QT.QBrush)
 		return res
 	#----------------------------------------------------------------------
 	def checkState(self):
@@ -35,7 +35,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Creates an exact copy of the item.
 		"""
 		res = super(QListWidgetItem,self).clone()
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def flags(self):
@@ -51,7 +51,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the font used to display this list items text.
 		"""
 		res = super(QListWidgetItem,self).font()
-		isinstance(res,QtGui.QFont)
+		isinstance(res,QT.QFont)
 		return res
 	#----------------------------------------------------------------------
 	def foreground(self):
@@ -60,7 +60,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		text).
 		"""
 		res = super(QListWidgetItem,self).foreground()
-		isinstance(res,QtGui.QBrush)
+		isinstance(res,QT.QBrush)
 		return res
 	#----------------------------------------------------------------------
 	def icon(self):
@@ -68,7 +68,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the list items icon.
 		"""
 		res = super(QListWidgetItem,self).icon()
-		isinstance(res,QtGui.QIcon)
+		isinstance(res,QT.QIcon)
 		return res
 	#----------------------------------------------------------------------
 	def isHidden(self):
@@ -92,7 +92,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the list widget containing the item.
 		"""
 		res = super(QListWidgetItem,self).listWidget()
-		isinstance(res,QtGui.QListWidget)
+		isinstance(res,QT.QListWidget)
 		return res
 	#----------------------------------------------------------------------
 	def sizeHint(self):

@@ -1,4 +1,21 @@
 import loader
+import os
+
+QT_PACKAGE = os.environ.get("QT_PACKAGE")
+
+if QT_PACKAGE == "PySide2":
+	import PySide2.QtGui
+	import PySide2.QtCore
+	import PySide2.QtWidgets
+	from PySide2.QtGui import *
+	from PySide2.QtCore import *
+	from PySide2.QtWidgets import *
+else:
+	import PySide.QtGui
+	import PySide.QtCore
+	from PySide.QtGui import *
+	from PySide.QtCore import *	
+	
 userRole_counter  = loader._userRole_counter
 user_type_counter = loader._user_type_counter
 QtCore            = loader.QtCore

@@ -1,5 +1,14 @@
-from PySide.QtUiTools import QUiLoader
-from PySide import QtCore
+import os
+if os.environ["QT_PACKAGE"] == "PySide2":
+	from PySide2.QtUiTools import QUiLoader
+	from PySide2.QtCore import *
+	from PySide2.QtGui import *
+	from PySide2.QtWidgets import *
+
+if os.environ["QT_PACKAGE"] == "PySide":
+	from PySide.QtUiTools import QUiLoader
+	from PySide.QtCore import *
+
 ############################################################################
 class UI_Loader(object):
 	#----------------------------------------------------------------------
@@ -20,8 +29,8 @@ class UI_Loader(object):
 	#----------------------------------------------------------------------
 	def load(self, file_path, parent_widget=None):
 		""""""
-		Qfile = QtCore.QFile(file_path)
-		Qfile.open(QtCore.QFile.ReadOnly)
+		Qfile = QFile(file_path)
+		Qfile.open(QFile.ReadOnly)
 		ui_wig = self.loader.load(Qfile,parent_widget)
 		Qfile.close()
 		return ui_wig

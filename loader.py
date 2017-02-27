@@ -1,7 +1,22 @@
-import os, inspect
-from itertools import count
-QT_PACKAGE = os.environ.get("QT_PACKAGE")
 
+import inspect
+from itertools import count
+import os	
+QT_PACKAGE = os.environ.get("QT_PACKAGE")
+try:
+        import maya.cmds as cmds
+	MAYA_VERSION    = int(cmds.about(version=True))
+except:
+	MAYA_VERSION = 2015
+
+if QT_PACKAGE is None:
+	if MAYA_VERSION >= 2017:
+		QT_PACKAGE =  "PySide2"
+		os.environ["QT_PACKAGE"] = "PySide2"
+	elif MAYA_VERSION >= 2013:
+		QT_PACKAGE =  "PySide"
+		os.environ["QT_PACKAGE"] = "PySide"
+	
 ########################################################################
 class Counter(object):
 	#----------------------------------------------------------------------
@@ -27,19 +42,37 @@ def set_PyQt4_API():
 	return sip
 	
 
-if QT_PACKAGE == "PySide":
-	#from PySide import QtCore, QtGui, QtUiTools, QtWebKit
-	import PySide.QtCore
-	import PySide.QtGui
-	import PySide.QtUiTools
-	import PySide.QtWebKit
-	import UI.UI_Reader
-	import UI.UI_Loader
-	import UI.UI_Compiler
-	QtCore    = PySide.QtCore
-	QtGui     = PySide.QtGui
-	QtUiTools = PySide.QtUiTools
-	QtWebKit  = PySide.QtWebKit
+if QT_PACKAGE == "PySide2":
+	from PySide2 import QtCore, QtGui, QtUiTools, QtWebKit, QtWidgets
+	from PySide2.QtCore import *
+	from PySide2.QtGui import *
+	from PySide2.QtUiTools import *
+	from PySide2.QtWebKit import *
+	from PySide2.QtWidgets import *
+	# import UI.UI_Reader
+	# import UI.UI_Loader
+	# import UI.UI_Compiler
+	# QtCore    = PySide.QtCore
+	# QtGui     = PySide.QtGui
+	# QtUiTools = PySide.QtUiTools
+	# QtWebKit  = PySide.QtWebKit
+	import shiboken2 as sip
+	wraperfn       = sip.wrapInstance
+	Qt             = QtCore.Qt
+	QtSlot         = QtCore.Slot
+	QtSignal       = QtCore.Signal
+	QtProperty     = QtCore.Property
+
+elif QT_PACKAGE == "PySide":
+	from PySide import QtCore, QtGui, QtUiTools, QtWebKit
+	from PySide.QtCore import *
+	from PySide.QtGui import *
+	from PySide.QtUiTools import *
+	from PySide.QtWebKit import *
+	# QtCore    = PySide.QtCore
+	# QtGui     = PySide.QtGui
+	# QtUiTools = PySide.QtUiTools
+	# QtWebKit  = PySide.QtWebKit
 	try:
 		import PySide.shiboken as shiboken
 	except:
@@ -50,63 +83,17 @@ if QT_PACKAGE == "PySide":
 	if shiboken is not None:
 		sip        = shiboken
 		wraperfn   = shiboken.wrapInstance
-	uic            = UI.UI_Reader
-	ui_Loader      = UI.UI_Loader.UI_Loader()
-	build_ui_files = UI.UI_Compiler.build_ui_files
 	Qt             = QtCore.Qt
 	QtSlot         = QtCore.Slot
 	QtSignal       = QtCore.Signal
 	QtProperty     = QtCore.Property
 
-elif QT_PACKAGE == "PyQt4":
-	sip = set_PyQt4_API()
-	from PyQt4 import  QtCore, QtGui
-	import UI.UI_Reader
-	wraperfn   = sip.wrapinstance
-	Qt         = QtCore.Qt
-	uic        = UI.UI_Reader
-	QtSlot     = QtCore.pyqtSlot
-	QtSignal   = QtCore.pyqtSignal
-	QtProperty = QtCore.pyqtProperty
-
-else:
-	#----------------------------------------------------------------------
-	try:
-		QT_PACKAGE = "PySide"
-		from PySide import QtCore, QtGui, QtUiTools, QtWebKit
-		try:
-			import PySide.shiboken as shiboken
-		except:
-			import shiboken
-		os.environ["QT_PACKAGE"] = QT_PACKAGE
-		
-		import UI.UI_Reader
-		import UI.UI_Loader
-		ui_Loader  = UI.UI_Loader.UI_Loader()
-		sip        = shiboken
-		wraperfn   = shiboken.wrapInstance
-		Qt         = QtCore.Qt
-		uic        = UI.UI_Reader
-		QtSlot     = QtCore.Slot
-		QtSignal   = QtCore.Signal
-		QtProperty = QtCore.Property
-		
-	#----------------------------------------------------------------------
-	except ImportError:
-		#----------------------------------------------------------------------
-		QT_PACKAGE               = "PyQt4"
-		sip = set_PyQt4_API()
-		from PyQt4 import  QtCore, QtGui
-		os.environ["QT_PACKAGE"] = "PyQt4"
-		
-		import UI.UI_Reader
-		wraperfn   = sip.wrapinstance
-		Qt         = QtCore.Qt
-		uic        = UI.UI_Reader
-		QtSlot     = QtCore.pyqtSlot
-		QtSignal   = QtCore.pyqtSignal
-		QtProperty = QtCore.pyqtProperty
-
+import UI.UI_Reader
+import UI.UI_Loader
+import UI.UI_Compiler
+uic            = UI.UI_Reader
+ui_Loader      = UI.UI_Loader.UI_Loader()
+build_ui_files = UI.UI_Compiler.build_ui_files
 
 
 if not hasattr(Qt, 'MiddleButton'):

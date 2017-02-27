@@ -1,6 +1,7 @@
 from QT import QtGui, QtCore
+import QT
 import QStandardItemModel
-class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
+class QSortFilterProxyModel(QT.QSortFilterProxyModel):
 	''''''
 	def __init__(self,*args,**kwargs):
 		''''''
@@ -20,7 +21,7 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 		"""
 		Invalidates the current filtering.
 		This function should be called if you are implementing custom filtering (e.g
-		PySide.QtGui.QSortFilterProxyModel.filterAcceptsRow() ), and your filter parameters have changed.
+		PySide.QT.QSortFilterProxyModel.filterAcceptsRow() ), and your filter parameters have changed.
 		"""
 		res = super(QSortFilterProxyModel,self).invalidateFilter()
 		return res
@@ -78,9 +79,9 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 		Returns true if the value of the item referred to by the given index left is less than the value of the item referred to by the given index right , otherwise returns false.
 		This function is used as the < operator when sorting, and handles the following PySide.QtCore.QVariant types:
 		Any other type will be converted to a PySide.QtCore.QString using QVariant.toString() .
-		Comparison of PySide.QtCore.QString s is case sensitive by default; this can be changed using the PySide.QtGui.QSortFilterProxyModel.sortCaseSensitivity() property.
+		Comparison of PySide.QtCore.QString s is case sensitive by default; this can be changed using the PySide.QT.QSortFilterProxyModel.sortCaseSensitivity() property.
 		By default, the Qt.DisplayRole associated with the PySide.QtCore.QModelIndex es is used for comparisons
-		This can be changed by setting the PySide.QtGui.QSortFilterProxyModel.sortRole() property.
+		This can be changed by setting the PySide.QT.QSortFilterProxyModel.sortRole() property.
 		"""
 		res = super(QSortFilterProxyModel,self).lessThan(left,right)
 		
@@ -131,7 +132,7 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 	def filterRegExp(self):
 		"""
 		This property holds the PySide.QtCore.QRegExp used to filter the contents of the source model.
-		Setting this property overwrites the current PySide.QtGui.QSortFilterProxyModel.filterCaseSensitivity()
+		Setting this property overwrites the current PySide.QT.QSortFilterProxyModel.filterCaseSensitivity()
 		By default, the PySide.QtCore.QRegExp is an empty string matching all contents.
 		If no PySide.QtCore.QRegExp or an empty string is set, everything in the source model will be accepted.
 		"""
@@ -148,7 +149,7 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 			pattern=unicode
 
 		This property holds the PySide.QtCore.QRegExp used to filter the contents of the source model.
-		Setting this property overwrites the current PySide.QtGui.QSortFilterProxyModel.filterCaseSensitivity()
+		Setting this property overwrites the current PySide.QT.QSortFilterProxyModel.filterCaseSensitivity()
 		By default, the PySide.QtCore.QRegExp is an empty string matching all contents.
 		If no PySide.QtCore.QRegExp or an empty string is set, everything in the source model will be accepted.
 		"""
@@ -238,9 +239,9 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 	def dynamicSortFilter(self):
 		"""
 		This property holds whether the proxy model is dynamically sorted and filtered whenever the contents of the source model change.
-		Note that you should not update the source model through the proxy model when PySide.QtGui.QSortFilterProxyModel.dynamicSortFilter() is true
-		For instance, if you set the proxy model on a PySide.QtGui.QComboBox , then using functions that update the model, e.g., PySide.QtGui.QComboBox.addItem() , will not work as expected
-		An alternative is to set PySide.QtGui.QSortFilterProxyModel.dynamicSortFilter() to false and call PySide.QtGui.QSortFilterProxyModel.sort() after adding items to the PySide.QtGui.QComboBox .
+		Note that you should not update the source model through the proxy model when PySide.QT.QSortFilterProxyModel.dynamicSortFilter() is true
+		For instance, if you set the proxy model on a PySide.QT.QComboBox , then using functions that update the model, e.g., PySide.QT.QComboBox.addItem() , will not work as expected
+		An alternative is to set PySide.QT.QSortFilterProxyModel.dynamicSortFilter() to false and call PySide.QT.QSortFilterProxyModel.sort() after adding items to the PySide.QT.QComboBox .
 		The default value is false.
 		"""
 		res = super(QSortFilterProxyModel,self).dynamicSortFilter()
@@ -253,9 +254,9 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 			enable=QtCore.bool
 
 		This property holds whether the proxy model is dynamically sorted and filtered whenever the contents of the source model change.
-		Note that you should not update the source model through the proxy model when PySide.QtGui.QSortFilterProxyModel.dynamicSortFilter() is true
-		For instance, if you set the proxy model on a PySide.QtGui.QComboBox , then using functions that update the model, e.g., PySide.QtGui.QComboBox.addItem() , will not work as expected
-		An alternative is to set PySide.QtGui.QSortFilterProxyModel.dynamicSortFilter() to false and call PySide.QtGui.QSortFilterProxyModel.sort() after adding items to the PySide.QtGui.QComboBox .
+		Note that you should not update the source model through the proxy model when PySide.QT.QSortFilterProxyModel.dynamicSortFilter() is true
+		For instance, if you set the proxy model on a PySide.QT.QComboBox , then using functions that update the model, e.g., PySide.QT.QComboBox.addItem() , will not work as expected
+		An alternative is to set PySide.QT.QSortFilterProxyModel.dynamicSortFilter() to false and call PySide.QT.QSortFilterProxyModel.sort() after adding items to the PySide.QT.QComboBox .
 		The default value is false.
 		"""
 		res = super(QSortFilterProxyModel,self).setDynamicSortFilter(enable)
@@ -288,25 +289,25 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 	def mapSelectionFromSource(self,selection):
 		"""
 		mapSelectionFromSource(selection)
-			selection=QtGui.QItemSelection
+			selection=QT.QItemSelection
 
 		Returns a proxy selection mapped from the specified sourceSelection .
 		Reimplement this method to map source selections to proxy selections.
 		"""
 		res = super(QSortFilterProxyModel,self).mapSelectionFromSource(selection)
-		isinstance(res,QtGui.QItemSelection)
+		isinstance(res,QT.QItemSelection)
 		return res
 	#----------------------------------------------------------------------
 	def mapSelectionToSource(self,selection):
 		"""
 		mapSelectionToSource(selection)
-			selection=QtGui.QItemSelection
+			selection=QT.QItemSelection
 
 		Returns a source selection mapped from the specified proxySelection .
 		Reimplement this method to map proxy selections to source selections.
 		"""
 		res = super(QSortFilterProxyModel,self).mapSelectionToSource(selection)
-		isinstance(res,QtGui.QItemSelection)
+		isinstance(res,QT.QItemSelection)
 		return res
 	#----------------------------------------------------------------------
 	def mapToSource(self,proxyIndex):
@@ -633,7 +634,7 @@ class QSortFilterProxyModel(QtGui.QSortFilterProxyModel):
 
 		Returns true if there is more data available for parent ; otherwise returns false.
 		The default implementation always returns false.
-		If PySide.QtCore.QAbstractItemModel.canFetchMore() returns true, PySide.QtGui.QAbstractItemView will call PySide.QtCore.QAbstractItemModel.fetchMore()
+		If PySide.QtCore.QAbstractItemModel.canFetchMore() returns true, PySide.QT.QAbstractItemView will call PySide.QtCore.QAbstractItemModel.fetchMore()
 		However, the PySide.QtCore.QAbstractItemModel.fetchMore() function is only called when the model is being populated incrementally.
 		"""
 		res = super(QSortFilterProxyModel,self).canFetchMore(parent)
