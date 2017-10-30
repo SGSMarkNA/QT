@@ -26,7 +26,10 @@ if os.environ["QT_PACKAGE"] == "PySide2":
 elif os.environ["QT_PACKAGE"] == "PySide":
 	from PySide.QtCore import *
 	from PySide.QtGui import *
-	from Py_Side import pysideuic
+	try:
+		from Py_Side import pysideuic
+	except Exception:
+		pass
 	from cStringIO import StringIO
 
 elif os.environ["QT_PACKAGE"] == "PyQt4":

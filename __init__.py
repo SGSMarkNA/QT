@@ -7,9 +7,11 @@ if QT_PACKAGE == "PySide2":
 	import PySide2.QtGui
 	import PySide2.QtCore
 	import PySide2.QtWidgets
+	import PySide2.QtNetwork
 	from PySide2.QtGui import *
 	from PySide2.QtCore import *
 	from PySide2.QtWidgets import *
+	from PySide2.QtNetwork import *
 else:
 	import PySide.QtGui
 	import PySide.QtCore
