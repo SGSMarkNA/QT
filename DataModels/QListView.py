@@ -20,7 +20,7 @@ class QListView(QT.QListView):
 		md =  event.mimeData()
 		if isinstance(md, MimeData.Drag_And_Drop_MimeData):
 			md.drop_destination  =  self
-		md.setData("AW/INFO/DragDrop-Destination", self.objectName())
+		md.setData("AW/INFO/DragDrop-Destination", str(self.objectName()))
 		return super(QListView,self).dropEvent(event)
 		
 	#def dragMoveEvent(self, event):
@@ -35,7 +35,7 @@ class QListView(QT.QListView):
 		md =  event.mimeData()
 		if isinstance(md, MimeData.Drag_And_Drop_MimeData):
 			md.drag_source = event.source()
-		md.setData("AW/INFO/DragDrop-Source", self.objectName())
+		md.setData("AW/INFO/DragDrop-Source", str(self.objectName()))
 		return super(QListView,self).dragEnterEvent(event)
 	#----------------------------------------------------------------------
 	def batchSize(self):
