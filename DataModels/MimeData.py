@@ -171,20 +171,20 @@ class QMimeData(QtCore.QMimeData):
 		"""
 		res = super(QMimeData,self).setColorData(color)
 		return res
-	#----------------------------------------------------------------------
-	def setData(self,mimetype,data):
-		"""
-		setData(mimetype,data)
-			mimetype=unicode
-			data=QtCore.QByteArray
+	##----------------------------------------------------------------------
+	#def setData(self,mimetype,data):
+		#"""
+		#setData(mimetype,data)
+			#mimetype=unicode
+			#data=QtCore.QByteArray
 
-		Sets the data associated with the MIME type given by mimeType to the specified data .
-		For the most common types of data, you can call the higher-level functions PySide.QtCore.QMimeData.setText() , PySide.QtCore.QMimeData.setHtml() , PySide.QtCore.QMimeData.setUrls() , PySide.QtCore.QMimeData.setImageData() , and PySide.QtCore.QMimeData.setColorData() instead.
-		Note that if you want to use a custom data type in an item view drag and drop operation, you must register it as a Qt meta type , using the Q_DECLARE_METATYPE() macro, and implement stream operators for it
-		The stream operators must then be registered with the qRegisterMetaTypeStreamOperators() function.
-		"""
-		res = super(QMimeData,self).setData(mimetype,data)
-		return res
+		#Sets the data associated with the MIME type given by mimeType to the specified data .
+		#For the most common types of data, you can call the higher-level functions PySide.QtCore.QMimeData.setText() , PySide.QtCore.QMimeData.setHtml() , PySide.QtCore.QMimeData.setUrls() , PySide.QtCore.QMimeData.setImageData() , and PySide.QtCore.QMimeData.setColorData() instead.
+		#Note that if you want to use a custom data type in an item view drag and drop operation, you must register it as a Qt meta type , using the Q_DECLARE_METATYPE() macro, and implement stream operators for it
+		#The stream operators must then be registered with the qRegisterMetaTypeStreamOperators() function.
+		#"""
+		#res = super(QMimeData,self).setData(mimetype,data)
+		#return res
 	#----------------------------------------------------------------------
 	def setHtml(self,html):
 		"""

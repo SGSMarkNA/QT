@@ -1002,7 +1002,7 @@ class Constants:
 		WindowMinimizeButtonHint     = Qt.WindowMinimizeButtonHint
 		# WindowSoftkeysVisibleHint    = Qt.WindowSoftkeysVisibleHint
 		CustomizeWindowHint          = Qt.CustomizeWindowHint
-		WindowCancelButtonHint       = Qt.WindowCancelButtonHint
+		#WindowCancelButtonHint       = Qt.WindowCancelButtonHint Does not work in maya 2020
 		WindowMaximizeButtonHint     = Qt.WindowMaximizeButtonHint
 		Widget                       = Qt.Widget
 		Popup                        = Qt.Popup
@@ -1015,7 +1015,7 @@ class Constants:
 		WindowMinMaxButtonsHint      = Qt.WindowMinMaxButtonsHint
 		MacWindowToolBarButtonHint   = Qt.MacWindowToolBarButtonHint
 		FramelessWindowHint          = Qt.FramelessWindowHint
-		WindowOkButtonHint           = Qt.WindowOkButtonHint
+		#WindowOkButtonHint           = Qt.WindowOkButtonHint does not work in maya 2020
 		MSWindowsOwnDC               = Qt.MSWindowsOwnDC
 		WindowCloseButtonHint        = Qt.WindowCloseButtonHint
 		Dialog                       = Qt.Dialog
@@ -1051,16 +1051,16 @@ class Item_Data_Roles(Standered_Item_Data_Roles):
 	""""""
 	USER           = QT.userRole_counter()
 	ITEM           = QT.userRole_counter()
-	ITEM_DATA      = QT.userRole_counter()
-	TABLE          = QT.userRole_counter()
-	REFS           = QT.userRole_counter()
-	ELEM           = QT.userRole_counter()
-	ELEM_DATA      = QT.userRole_counter()
-	ELEM_TEXT      = QT.userRole_counter()
-	ELEM_ATTR      = QT.userRole_counter()
-	ELEM_ATTR_VALUE= QT.userRole_counter()
-	ELEM_ATTR_TYPE = QT.userRole_counter()
-	EDIT_UNDO      = QT.userRole_counter()
+	#ITEM_DATA      = QT.userRole_counter()
+	#TABLE          = QT.userRole_counter()
+	#REFS           = QT.userRole_counter()
+	#ELEM           = QT.userRole_counter()
+	#ELEM_DATA      = QT.userRole_counter()
+	#ELEM_TEXT      = QT.userRole_counter()
+	#ELEM_ATTR      = QT.userRole_counter()
+	#ELEM_ATTR_VALUE= QT.userRole_counter()
+	#ELEM_ATTR_TYPE = QT.userRole_counter()
+	#EDIT_UNDO      = QT.userRole_counter()
 ########################################################################
 class PenStyles:
 	NoPen          = Qt.NoPen          # no line at all. For example, QPainter.drawRect() fills but does not draw any boundary line.

@@ -43,11 +43,10 @@ def set_PyQt4_API():
 	
 
 if QT_PACKAGE == "PySide2":
-	from PySide2 import QtCore, QtGui, QtUiTools, QtWebKit, QtWidgets
+	from PySide2 import QtCore, QtGui, QtUiTools, QtWidgets
 	from PySide2.QtCore import *
 	from PySide2.QtGui import *
 	from PySide2.QtUiTools import *
-	from PySide2.QtWebKit import *
 	from PySide2.QtWidgets import *
 	# import UI.UI_Reader
 	# import UI.UI_Loader
