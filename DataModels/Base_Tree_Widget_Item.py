@@ -34,7 +34,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		This policy decides when the tree branch expand/collapse indicator is shown.
 		"""
 		res = super(Tree_Widget_Item,self).childIndicatorPolicy()
-		isinstance(res,QtGui.QTreeWidgetItem.ChildIndicatorPolicy)
+		isinstance(res,QT.QTreeWidgetItem.ChildIndicatorPolicy)
 		return res
 	#----------------------------------------------------------------------
 	def columnCount(self):
@@ -48,7 +48,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 	def emitDataChanged(self):
 		"""
 		Causes the model associated with this item to emit a PySide.QtCore.QAbstractItemModel.dataChanged() () signal for this item.
-		You normally only need to call this function if you have subclassed PySide.QtGui.QTreeWidgetItem and reimplemented PySide.QtGui.QTreeWidgetItem.data() and/or PySide.QtGui.QTreeWidgetItem.setData() .
+		You normally only need to call this function if you have subclassed PySide.QT.QTreeWidgetItem and reimplemented PySide.QT.QTreeWidgetItem.data() and/or PySide.QT.QTreeWidgetItem.setData() .
 		"""
 		res = super(Tree_Widget_Item,self).emitDataChanged()
 		return res
@@ -116,7 +116,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the items parent.
 		"""
 		res = super(Tree_Widget_Item,self).parent()
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def takeChildren(self):
@@ -131,19 +131,19 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the tree widget that contains the item.
 		"""
 		res = super(Tree_Widget_Item,self).treeWidget()
-		isinstance(res,QtGui.QTreeWidget)
+		isinstance(res,QT.QTreeWidget)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):
 		"""
-		Returns the type passed to the PySide.QtGui.QTreeWidgetItem constructor.
+		Returns the type passed to the PySide.QT.QTreeWidgetItem constructor.
 		"""
 		return self.USER_TYPE
 	#----------------------------------------------------------------------
 	def addChild(self,child):
 		"""
 		addChild(child)
-			child=QtGui.QTreeWidgetItem
+			child=QT.QTreeWidgetItem
 
 		Appends the child item to the list of children.
 		"""
@@ -168,7 +168,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the brush used to render the background of the specified column .
 		"""
 		res = super(Tree_Widget_Item,self).background(column)
-		isinstance(res,QtGui.QBrush)
+		isinstance(res,QT.QBrush)
 		return res
 	#----------------------------------------------------------------------
 	def checkState(self,column=0):
@@ -190,7 +190,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the item at the given index in the list of the items children.
 		"""
 		res = super(Tree_Widget_Item,self).child(index)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def children(self):
@@ -228,7 +228,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the font used to render the text in the specified column .
 		"""
 		res = super(Tree_Widget_Item,self).font(column)
-		isinstance(res,QtGui.QFont)
+		isinstance(res,QT.QFont)
 		return res
 	#----------------------------------------------------------------------
 	def foreground(self,column=0):
@@ -240,7 +240,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		text) of the specified column .
 		"""
 		res = super(Tree_Widget_Item,self).foreground(column)
-		isinstance(res,QtGui.QBrush)
+		isinstance(res,QT.QBrush)
 		return res
 	#----------------------------------------------------------------------
 	def icon(self,column=0):
@@ -251,13 +251,13 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Returns the icon that is displayed in the specified column .
 		"""
 		res = super(Tree_Widget_Item,self).icon(column)
-		isinstance(res,QtGui.QIcon)
+		isinstance(res,QT.QIcon)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfChild(self,child):
 		"""
 		indexOfChild(child)
-			child=QtGui.QTreeWidgetItem
+			child=QT.QTreeWidgetItem
 
 		Returns the index of the given child in the items list of children.
 		"""
@@ -278,7 +278,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		"""
 		insertChild(index,child)
 			index=QtCore.int
-			child=QtGui.QTreeWidgetItem
+			child=QT.QTreeWidgetItem
 
 		Inserts the child item at index in the list of children.
 		If the child has already been inserted somewhere else it wont be inserted again.
@@ -311,7 +311,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 	def removeChild(self,child):
 		"""
 		removeChild(child)
-			child=QtGui.QTreeWidgetItem
+			child=QT.QTreeWidgetItem
 
 		Removes the given item indicated by child
 		The removed item will not be deleted.
@@ -332,7 +332,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		"""
 		setBackground(column,brush)
 			column=QtCore.int
-			brush=QtGui.QBrush
+			brush=QT.QBrush
 
 		Sets the background brush of the label in the given column to the specified brush .
 		"""
@@ -353,7 +353,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 	def setChildIndicatorPolicy(self,policy):
 		"""
 		setChildIndicatorPolicy(policy)
-			policy=QtGui.QTreeWidgetItem.ChildIndicatorPolicy
+			policy=QT.QTreeWidgetItem.ChildIndicatorPolicy
 
 
 		"""
@@ -417,7 +417,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		"""
 		setFont(column,font)
 			column=QtCore.int
-			font=QtGui.QFont
+			font=QT.QFont
 
 		Sets the font used to display the text in the given column to the given font .
 		"""
@@ -428,7 +428,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		"""
 		setForeground(column,brush)
 			column=QtCore.int
-			brush=QtGui.QBrush
+			brush=QT.QBrush
 
 		Sets the foreground brush of the label in the given column to the specified brush .
 		"""
@@ -449,7 +449,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		"""
 		setIcon(column,icon)
 			column=QtCore.int
-			icon=QtGui.QIcon
+			icon=QT.QIcon
 
 		Sets the icon to be displayed in the given column to icon .
 		"""
@@ -485,7 +485,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 			statusTip=unicode
 
 		Sets the status tip for the given column to the given statusTip
-		PySide.QtGui.QTreeWidget mouse tracking needs to be enabled for this feature to work.
+		PySide.QT.QTreeWidget mouse tracking needs to be enabled for this feature to work.
 		"""
 		res = super(Tree_Widget_Item,self).setStatusTip(column,statusTip)
 		return res
@@ -579,7 +579,7 @@ class Tree_Widget_Item(QT.QTreeWidgetItem):
 		Removes the item at index and returns it, otherwise return 0.
 		"""
 		res = super(Tree_Widget_Item,self).takeChild(index)
-		isinstance(res,QtGui.QTreeWidgetItem)
+		isinstance(res,QT.QTreeWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def text(self,column=0):
