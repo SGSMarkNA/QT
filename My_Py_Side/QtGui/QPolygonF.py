@@ -11,7 +11,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).alignOfTypedData()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boundingRect(self):
@@ -27,7 +27,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).capacity()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -50,7 +50,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def data(self):
@@ -73,7 +73,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).empty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def first(self):
@@ -98,7 +98,7 @@ class QPolygonF(QtGui.QPolygonF):
 		A polygon is said to be closed if its start point and end point are equal.
 		"""
 		res = super(QPolygonF,self).isClosed()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -106,7 +106,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def last(self):
@@ -144,7 +144,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sizeOfTypedData(self):
@@ -152,7 +152,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).sizeOfTypedData()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def squeeze(self):
@@ -206,7 +206,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).contains(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def containsPoint(self,pt,fillRule):
@@ -218,7 +218,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).containsPoint(pt,fillRule)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self,t):
@@ -229,7 +229,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).count(t)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def endsWith(self,t):
@@ -240,7 +240,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).endsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def erase(self,abegin,aend):
@@ -275,7 +275,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).indexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,*args,**kwargs):
@@ -320,7 +320,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).isSharedWith(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastIndexOf(self,t,from=None):
@@ -332,7 +332,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).lastIndexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def mid(self,pos,length=None):
@@ -354,7 +354,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).__ne__(v)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -405,7 +405,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).__eq__(v)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepend(self,t):
@@ -512,7 +512,7 @@ class QPolygonF(QtGui.QPolygonF):
 
 		"""
 		res = super(QPolygonF,self).startsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def subtracted(self,r):

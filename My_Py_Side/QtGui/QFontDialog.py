@@ -88,5 +88,5 @@ class QFontDialog(QtGui.QFontDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QFontDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

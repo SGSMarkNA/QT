@@ -25,7 +25,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns the number of available redo steps.
 		"""
 		res = super(QTextDocument,self).availableRedoSteps()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def availableUndoSteps(self):
@@ -33,7 +33,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns the number of available undo steps.
 		"""
 		res = super(QTextDocument,self).availableUndoSteps()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def begin(self):
@@ -51,7 +51,7 @@ class QTextDocument(QtGui.QTextDocument):
 		By default, if defined, this property contains a value of 1.
 		"""
 		res = super(QTextDocument,self).blockCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def characterCount(self):
@@ -59,7 +59,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns the number of characters of this document.
 		"""
 		res = super(QTextDocument,self).characterCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -169,7 +169,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns true if the document is empty; otherwise returns false.
 		"""
 		res = super(QTextDocument,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isModified(self):
@@ -178,7 +178,7 @@ class QTextDocument(QtGui.QTextDocument):
 		By default, this property is false.
 		"""
 		res = super(QTextDocument,self).isModified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRedoAvailable(self):
@@ -186,7 +186,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns true if redo is available; otherwise returns false.
 		"""
 		res = super(QTextDocument,self).isRedoAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndoAvailable(self):
@@ -194,7 +194,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Returns true if undo is available; otherwise returns false.
 		"""
 		res = super(QTextDocument,self).isUndoAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndoRedoEnabled(self):
@@ -204,7 +204,7 @@ class QTextDocument(QtGui.QTextDocument):
 		If disabled, the undo stack is cleared and no items will be added to it.
 		"""
 		res = super(QTextDocument,self).isUndoRedoEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastBlock(self):
@@ -221,7 +221,7 @@ class QTextDocument(QtGui.QTextDocument):
 		Otherwise, this is identical to the number of blocks.
 		"""
 		res = super(QTextDocument,self).lineCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maximumBlockCount(self):
@@ -236,7 +236,7 @@ class QTextDocument(QtGui.QTextDocument):
 		This property is undefined in documents with tables or frames.
 		"""
 		res = super(QTextDocument,self).maximumBlockCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pageCount(self):
@@ -244,7 +244,7 @@ class QTextDocument(QtGui.QTextDocument):
 		returns the number of pages in this document.
 		"""
 		res = super(QTextDocument,self).pageCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pageSize(self):
@@ -262,7 +262,7 @@ class QTextDocument(QtGui.QTextDocument):
 		The revision is guaranteed to increase when a document that is not modified is edited.
 		"""
 		res = super(QTextDocument,self).revision()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rootFrame(self):
@@ -325,7 +325,7 @@ class QTextDocument(QtGui.QTextDocument):
 		By default, this property is false.
 		"""
 		res = super(QTextDocument,self).useDesignMetrics()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addResource(self,type,name,resource):

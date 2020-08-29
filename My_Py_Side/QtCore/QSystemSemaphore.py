@@ -14,7 +14,7 @@ class QSystemSemaphore(QtCore.QSystemSemaphore):
 		Call PySide.QtCore.QSystemSemaphore.error() to get a value of QSystemSemaphore.SystemSemaphoreError that indicates which error occurred.
 		"""
 		res = super(QSystemSemaphore,self).acquire()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def error(self):
@@ -55,7 +55,7 @@ class QSystemSemaphore(QtCore.QSystemSemaphore):
 		You would not normally use this function to create more resources.
 		"""
 		res = super(QSystemSemaphore,self).release(n)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setKey(self,key,initialValue=None,mode=None):

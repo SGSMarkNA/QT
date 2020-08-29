@@ -35,7 +35,7 @@ class QDirIterator(QtCore.QDirIterator):
 		Returns true if there is at least one more entry in the directory; otherwise, false is returned.
 		"""
 		res = super(QDirIterator,self).hasNext()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def next(self):

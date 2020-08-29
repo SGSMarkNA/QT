@@ -19,7 +19,7 @@ class QTextBoundaryFinder(QtCore.QTextBoundaryFinder):
 		Returns true if the objects PySide.QtCore.QTextBoundaryFinder.position() is currently at a valid text boundary.
 		"""
 		res = super(QTextBoundaryFinder,self).isAtBoundary()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -28,7 +28,7 @@ class QTextBoundaryFinder(QtCore.QTextBoundaryFinder):
 		A default PySide.QtCore.QTextBoundaryFinder is invalid.
 		"""
 		res = super(QTextBoundaryFinder,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def position(self):
@@ -37,7 +37,7 @@ class QTextBoundaryFinder(QtCore.QTextBoundaryFinder):
 		The range is from 0 (the beginning of the string) to the length of the string inclusive.
 		"""
 		res = super(QTextBoundaryFinder,self).position()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def string(self):
@@ -62,7 +62,7 @@ class QTextBoundaryFinder(QtCore.QTextBoundaryFinder):
 		Returns -1 if there is no next boundary.
 		"""
 		res = super(QTextBoundaryFinder,self).toNextBoundary()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toPreviousBoundary(self):
@@ -71,7 +71,7 @@ class QTextBoundaryFinder(QtCore.QTextBoundaryFinder):
 		Returns -1 if there is no previous boundary.
 		"""
 		res = super(QTextBoundaryFinder,self).toPreviousBoundary()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toStart(self):

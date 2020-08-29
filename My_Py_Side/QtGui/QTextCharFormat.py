@@ -49,7 +49,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text formats font is fixed pitch; otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).fontFixedPitch()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontItalic(self):
@@ -57,7 +57,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text formats font is italic; otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).fontItalic()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontKerning(self):
@@ -65,7 +65,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the font kerning is enabled.
 		"""
 		res = super(QTextCharFormat,self).fontKerning()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontLetterSpacing(self):
@@ -81,7 +81,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text formats font is overlined; otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).fontOverline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontPointSize(self):
@@ -97,7 +97,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text formats font is struck out (has a horizontal line drawn through it); otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).fontStrikeOut()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontStyleHint(self):
@@ -121,7 +121,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text formats font is underlined; otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).fontUnderline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontWeight(self):
@@ -129,7 +129,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns the text formats font weight.
 		"""
 		res = super(QTextCharFormat,self).fontWeight()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def fontWordSpacing(self):
@@ -145,7 +145,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		Returns true if the text is formatted as an anchor; otherwise returns false.
 		"""
 		res = super(QTextCharFormat,self).isAnchor()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tableCellColumnSpan(self):
@@ -153,7 +153,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		If this character format is applied to characters in a table cell, this function returns the number of columns spanned by the text (this may be 1); otherwise it returns 1.
 		"""
 		res = super(QTextCharFormat,self).tableCellColumnSpan()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def tableCellRowSpan(self):
@@ -161,7 +161,7 @@ class QTextCharFormat(QtGui.QTextCharFormat):
 		If this character format is applied to characters in a table cell, this function returns the number of rows spanned by the text (this may be 1); otherwise it returns 1.
 		"""
 		res = super(QTextCharFormat,self).tableCellRowSpan()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def textOutline(self):

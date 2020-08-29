@@ -41,7 +41,7 @@ class QProcess(QtCore.QProcess):
 		Returns the exit code of the last process that finished.
 		"""
 		res = super(QProcess,self).exitCode()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def exitStatus(self):
@@ -309,7 +309,7 @@ class QProcess(QtCore.QProcess):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QProcess,self).waitForFinished(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def waitForStarted(self,msecs=None):
@@ -324,5 +324,5 @@ class QProcess(QtCore.QProcess):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QProcess,self).waitForStarted(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

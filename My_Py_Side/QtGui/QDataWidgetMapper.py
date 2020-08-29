@@ -19,7 +19,7 @@ class QDataWidgetMapper(QtGui.QDataWidgetMapper):
 		The widgets are populated with with data from the row at index if the orientation is horizontal (the default), otherwise with data from the column at index .
 		"""
 		res = super(QDataWidgetMapper,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def itemDelegate(self):
@@ -110,7 +110,7 @@ class QDataWidgetMapper(QtGui.QDataWidgetMapper):
 		Returns the section the widget is mapped to or -1 if the widget is not mapped.
 		"""
 		res = super(QDataWidgetMapper,self).mappedSection(widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def mappedWidgetAt(self,section):

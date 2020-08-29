@@ -12,7 +12,7 @@ class QTranslator(QtCore.QTranslator):
 		This function works with stripped and unstripped translation files.
 		"""
 		res = super(QTranslator,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def load(self,*args,**kwargs):
@@ -32,7 +32,7 @@ class QTranslator(QtCore.QTranslator):
 		The caller must be able to guarantee that data will not be deleted or modified.
 		"""
 		res = super(QTranslator,self).load(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def translate(self,*args,**kwargs):

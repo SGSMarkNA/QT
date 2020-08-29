@@ -50,7 +50,7 @@ class QNetworkInterface(QtNetwork.QNetworkInterface):
 		If the index isnt known, this function returns 0.
 		"""
 		res = super(QNetworkInterface,self).index()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -58,7 +58,7 @@ class QNetworkInterface(QtNetwork.QNetworkInterface):
 		Returns true if this PySide.QtNetwork.QNetworkInterface object contains valid information about a network interface.
 		"""
 		res = super(QNetworkInterface,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):

@@ -12,7 +12,7 @@ class QSplitterHandle(QtGui.QSplitterHandle):
 		This value is controlled by the PySide.QtGui.QSplitter .
 		"""
 		res = super(QSplitterHandle,self).opaqueResize()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -41,7 +41,7 @@ class QSplitterHandle(QtGui.QSplitterHandle):
 		The positions are measured from the left or top edge of the splitter, even for right-to-left languages.
 		"""
 		res = super(QSplitterHandle,self).closestLegalPosition(p)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def moveSplitter(self,p):

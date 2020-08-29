@@ -11,7 +11,7 @@ class QDataStream(QtCore.QDataStream):
 		Returns true if the I/O device has reached the end position (end of the stream or file) or if there is no I/O device set; otherwise returns false.
 		"""
 		res = super(QDataStream,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def byteOrder(self):
@@ -43,7 +43,7 @@ class QDataStream(QtCore.QDataStream):
 
 		"""
 		res = super(QDataStream,self).readBool()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def readDouble(self):
@@ -190,7 +190,7 @@ class QDataStream(QtCore.QDataStream):
 		Returns the version number of the data serialization format.
 		"""
 		res = super(QDataStream,self).version()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __lshift__(self,*args,**kwargs):
@@ -526,7 +526,7 @@ class QDataStream(QtCore.QDataStream):
 		The data is not encoded.
 		"""
 		res = super(QDataStream,self).readRawData(len)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setByteOrder(self,arg__1):
@@ -602,7 +602,7 @@ class QDataStream(QtCore.QDataStream):
 		This is equivalent to calling PySide.QtCore.QDataStream.readRawData() on a buffer of length len and ignoring the buffer.
 		"""
 		res = super(QDataStream,self).skipRawData(len)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def writeBool(self,arg__1):
@@ -725,7 +725,7 @@ class QDataStream(QtCore.QDataStream):
 		The data is not encoded.
 		"""
 		res = super(QDataStream,self).writeRawData(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def writeString(self,arg__1):

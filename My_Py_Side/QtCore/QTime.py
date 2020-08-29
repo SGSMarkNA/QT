@@ -27,7 +27,7 @@ class QTime(QtCore.QTime):
 
 		"""
 		res = super(QTime,self).ds()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def elapsed(self):
@@ -37,7 +37,7 @@ class QTime(QtCore.QTime):
 		Note that the accuracy depends on the accuracy of the underlying operating system; not all systems provide 1-millisecond accuracy.
 		"""
 		res = super(QTime,self).elapsed()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hour(self):
@@ -45,7 +45,7 @@ class QTime(QtCore.QTime):
 		Returns the hour part (0 to 23) of the time.
 		"""
 		res = super(QTime,self).hour()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -54,7 +54,7 @@ class QTime(QtCore.QTime):
 		A null time is also an invalid time.
 		"""
 		res = super(QTime,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -63,7 +63,7 @@ class QTime(QtCore.QTime):
 		For example, the time 23:30:55.746 is valid, but 24:12:30 is invalid.
 		"""
 		res = super(QTime,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def minute(self):
@@ -71,7 +71,7 @@ class QTime(QtCore.QTime):
 		Returns the minute part (0 to 59) of the time.
 		"""
 		res = super(QTime,self).minute()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def msec(self):
@@ -79,7 +79,7 @@ class QTime(QtCore.QTime):
 		Returns the millisecond part (0 to 999) of the time.
 		"""
 		res = super(QTime,self).msec()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def restart(self):
@@ -90,7 +90,7 @@ class QTime(QtCore.QTime):
 		Note that the counter wraps to zero 24 hours after the last call to PySide.QtCore.QTime.start() or PySide.QtCore.QTime.restart() .
 		"""
 		res = super(QTime,self).restart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def second(self):
@@ -98,7 +98,7 @@ class QTime(QtCore.QTime):
 		Returns the second part (0 to 59) of the time.
 		"""
 		res = super(QTime,self).second()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def start(self):
@@ -153,7 +153,7 @@ class QTime(QtCore.QTime):
 		Because PySide.QtCore.QTime measures time within a day and there are 86400 seconds in a day, the result is always between -86400000 and 86400000 ms.
 		"""
 		res = super(QTime,self).msecsTo(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -164,7 +164,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is different from t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -175,7 +175,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is earlier than t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,other):
@@ -186,7 +186,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is earlier than or equal to t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__le__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -197,7 +197,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is equal to t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,other):
@@ -208,7 +208,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is later than t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__gt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,other):
@@ -219,7 +219,7 @@ class QTime(QtCore.QTime):
 		Returns true if this time is later than or equal to t ; otherwise returns false.
 		"""
 		res = super(QTime,self).__ge__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def secsTo(self,arg__1):
@@ -233,7 +233,7 @@ class QTime(QtCore.QTime):
 		PySide.QtCore.QTime.secsTo() does not take into account any milliseconds.
 		"""
 		res = super(QTime,self).secsTo(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setHMS(self,h,m,s,ms=None):
@@ -249,7 +249,7 @@ class QTime(QtCore.QTime):
 		Returns true if the set time is valid; otherwise returns false.
 		"""
 		res = super(QTime,self).setHMS(h,m,s,ms)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self,*args,**kwargs):

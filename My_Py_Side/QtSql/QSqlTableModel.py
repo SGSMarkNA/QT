@@ -49,7 +49,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Populates the model with data from the table that was set via PySide.QtSql.QSqlTableModel.setTable() , using the specified filter and sort condition, and returns true if successful; otherwise returns false.
 		"""
 		res = super(QSqlTableModel,self).select()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectStatement(self):
@@ -79,7 +79,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Returns true if the row was deleted; otherwise returns false.
 		"""
 		res = super(QSqlTableModel,self).deleteRowFromTable(row)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fieldIndex(self,fieldName):
@@ -90,7 +90,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Returns the index of the field fieldName .
 		"""
 		res = super(QSqlTableModel,self).fieldIndex(fieldName)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertRecord(self,row,record):
@@ -105,7 +105,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Returns true if the row could be inserted, otherwise false.
 		"""
 		res = super(QSqlTableModel,self).insertRecord(row,record)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insertRowIntoTable(self,values):
@@ -121,7 +121,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Error information can be retrieved with PySide.QtSql.QSqlQueryModel.lastError() .
 		"""
 		res = super(QSqlTableModel,self).insertRowIntoTable(values)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDirty(self,index):
@@ -134,7 +134,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		If index is invalid or points to a non-existing row, false is returned.
 		"""
 		res = super(QSqlTableModel,self).isDirty(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def revertRow(self,row):
@@ -192,7 +192,7 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		Returns true if all the values could be set; otherwise returns false.
 		"""
 		res = super(QSqlTableModel,self).setRecord(row,record)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setSort(self,column,order):
@@ -234,5 +234,5 @@ class QSqlTableModel(QtSql.QSqlTableModel):
 		The generated-flag can be set with QSqlRecord.setGenerated() and tested with QSqlRecord.isGenerated() .
 		"""
 		res = super(QSqlTableModel,self).updateRowInTable(row,values)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

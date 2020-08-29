@@ -13,7 +13,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If the position is invalid, the function returns QSql.BeforeFirstRow or QSql.AfterLastRow , which are special negative values.
 		"""
 		res = super(QSqlQuery,self).at()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boundValues(self):
@@ -49,7 +49,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Note that the last error for this query is reset when exec() is called.
 		"""
 		res = super(QSqlQuery,self).exec_()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def executedQuery(self):
@@ -82,7 +82,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If unsuccessful the query position is set to an invalid position and false is returned.
 		"""
 		res = super(QSqlQuery,self).first()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -92,7 +92,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		When you are finished with an active query, you can make make the query inactive by calling PySide.QtSql.QSqlQuery.finish() or PySide.QtSql.QSqlQuery.clear() , or you can delete the PySide.QtSql.QSqlQuery instance.
 		"""
 		res = super(QSqlQuery,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isForwardOnly(self):
@@ -100,7 +100,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Returns true if you can only scroll forward through a result set; otherwise returns false.
 		"""
 		res = super(QSqlQuery,self).isForwardOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSelect(self):
@@ -108,7 +108,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Returns true if the current query is a SELECT statement; otherwise returns false.
 		"""
 		res = super(QSqlQuery,self).isSelect()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -116,7 +116,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Returns true if the query is currently positioned on a valid record; otherwise returns false.
 		"""
 		res = super(QSqlQuery,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def last(self):
@@ -127,7 +127,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If unsuccessful the query position is set to an invalid position and false is returned.
 		"""
 		res = super(QSqlQuery,self).last()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastError(self):
@@ -164,7 +164,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If the record is successfully retrieved, true is returned.
 		"""
 		res = super(QSqlQuery,self).next()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nextResult(self):
@@ -182,7 +182,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Some databases may execute all statements at once while others may delay the execution until the result set is actually accessed, and some databases may have restrictions on which statements are allowed to be used in a SQL batch.
 		"""
 		res = super(QSqlQuery,self).nextResult()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numRowsAffected(self):
@@ -192,7 +192,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If the query is not active , -1 is returned.
 		"""
 		res = super(QSqlQuery,self).numRowsAffected()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def numericalPrecisionPolicy(self):
@@ -212,7 +212,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If the record is successfully retrieved, true is returned.
 		"""
 		res = super(QSqlQuery,self).previous()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def record(self):
@@ -244,7 +244,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		To determine the number of rows affected by a non-SELECT statement, use PySide.QtSql.QSqlQuery.numRowsAffected() .
 		"""
 		res = super(QSqlQuery,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addBindValue(self,val,type=None):
@@ -307,7 +307,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Note that this will only work if the IN or OUT value is a table-type consisting of only one column of a basic type, for example TYPE myType IS TABLE OF VARCHAR(64) INDEX BY BINARY_INTEGER;
 		"""
 		res = super(QSqlQuery,self).execBatch(mode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def exec_(self,query):
@@ -323,7 +323,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Example:
 		"""
 		res = super(QSqlQuery,self).exec_(query)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self,field):
@@ -335,7 +335,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Note that for some drivers, PySide.QtSql.QSqlQuery.isNull() will not return accurate information until after an attempt is made to retrieve data.
 		"""
 		res = super(QSqlQuery,self).isNull(field)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepare(self,query):
@@ -353,7 +353,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		Example:
 		"""
 		res = super(QSqlQuery,self).prepare(query)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def seek(self,i,relative=None):
@@ -369,7 +369,7 @@ class QSqlQuery(QtSql.QSqlQuery):
 		If relative is true, the following rules apply:
 		"""
 		res = super(QSqlQuery,self).seek(i,relative)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setForwardOnly(self,forward):

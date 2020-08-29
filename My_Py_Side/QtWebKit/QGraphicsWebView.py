@@ -38,7 +38,7 @@ class QGraphicsWebView(QtWebKit.QGraphicsWebView):
 		By default, this property is false.
 		"""
 		res = super(QGraphicsWebView,self).isModified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTiledBackingStoreFrozen(self):
@@ -51,7 +51,7 @@ class QGraphicsWebView(QtWebKit.QGraphicsWebView):
 		If the tiled backing store is not enabled, this property does nothing.
 		"""
 		res = super(QGraphicsWebView,self).isTiledBackingStoreFrozen()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loadStarted(self):
@@ -79,7 +79,7 @@ class QGraphicsWebView(QtWebKit.QGraphicsWebView):
 		If not explicitly set, the preferredContentsSize is automatically set to a reasonable value.
 		"""
 		res = super(QGraphicsWebView,self).resizesToContents()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def settings(self):
@@ -126,7 +126,7 @@ class QGraphicsWebView(QtWebKit.QGraphicsWebView):
 
 		"""
 		res = super(QGraphicsWebView,self).findText(subString,options)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def load(self,*args,**kwargs):

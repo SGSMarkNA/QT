@@ -29,7 +29,7 @@ class QDirModel(QtGui.QDirModel):
 		This property is true by default
 		"""
 		res = super(QDirModel,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lazyChildCount(self):
@@ -40,7 +40,7 @@ class QDirModel(QtGui.QDirModel):
 		This property is false by default
 		"""
 		res = super(QDirModel,self).lazyChildCount()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nameFilters(self):
@@ -56,7 +56,7 @@ class QDirModel(QtGui.QDirModel):
 		This is only relevant on operating systems that support symbolic links.
 		"""
 		res = super(QDirModel,self).resolveSymlinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sorting(self):
@@ -130,7 +130,7 @@ class QDirModel(QtGui.QDirModel):
 		Returns true if the model item index represents a directory; otherwise returns false.
 		"""
 		res = super(QDirModel,self).isDir(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mkdir(self,parent,name):
@@ -154,7 +154,7 @@ class QDirModel(QtGui.QDirModel):
 		If the item cannot be removed, false is returned.
 		"""
 		res = super(QDirModel,self).remove(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rmdir(self,index):
@@ -166,7 +166,7 @@ class QDirModel(QtGui.QDirModel):
 		If the directory cannot be removed, false is returned.
 		"""
 		res = super(QDirModel,self).rmdir(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFilter(self,filters):

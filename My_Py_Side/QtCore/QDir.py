@@ -42,7 +42,7 @@ class QDir(QtCore.QDir):
 		Note that the logical PySide.QtCore.QDir.cdUp() operation is not performed if the new directory does not exist.
 		"""
 		res = super(QDir,self).cdUp()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self):
@@ -74,7 +74,7 @@ class QDir(QtCore.QDir):
 		The overload of this function that accepts an argument is used to test for the presence of files and directories within a directory.
 		"""
 		res = super(QDir,self).exists()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def filter(self):
@@ -91,7 +91,7 @@ class QDir(QtCore.QDir):
 		See PySide.QtCore.QDir.isAbsolutePath() .
 		"""
 		res = super(QDir,self).isAbsolute()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadable(self):
@@ -99,7 +99,7 @@ class QDir(QtCore.QDir):
 		Returns true if the directory is readable and we can open files by name; otherwise returns false.
 		"""
 		res = super(QDir,self).isReadable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRelative(self):
@@ -108,7 +108,7 @@ class QDir(QtCore.QDir):
 		(Under Unix a path is relative if it does not start with a /).
 		"""
 		res = super(QDir,self).isRelative()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRoot(self):
@@ -118,7 +118,7 @@ class QDir(QtCore.QDir):
 		If you want to test for this use PySide.QtCore.QDir.canonicalPath() , e.g.
 		"""
 		res = super(QDir,self).isRoot()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def makeAbsolute(self):
@@ -128,7 +128,7 @@ class QDir(QtCore.QDir):
 		Returns true if the conversion succeeded; otherwise returns false.
 		"""
 		res = super(QDir,self).makeAbsolute()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nameFilters(self):
@@ -197,7 +197,7 @@ class QDir(QtCore.QDir):
 		Calling cd(..) is equivalent to calling PySide.QtCore.QDir.cdUp() .
 		"""
 		res = super(QDir,self).cd(dirName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def entryInfoList(self,*args,**kwargs):
@@ -241,7 +241,7 @@ class QDir(QtCore.QDir):
 		Unless name contains an absolute file path, the file name is assumed to be relative to the directory itself, so this function is typically used to check for the presence of files within a directory.
 		"""
 		res = super(QDir,self).exists(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def filePath(self,fileName):
@@ -268,7 +268,7 @@ class QDir(QtCore.QDir):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QDir,self).mkdir(dirName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mkpath(self,dirPath):
@@ -281,7 +281,7 @@ class QDir(QtCore.QDir):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QDir,self).mkpath(dirPath)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,dir):
@@ -293,7 +293,7 @@ class QDir(QtCore.QDir):
 		Example:
 		"""
 		res = super(QDir,self).__ne__(dir)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,dir):
@@ -305,7 +305,7 @@ class QDir(QtCore.QDir):
 		Example:
 		"""
 		res = super(QDir,self).__eq__(dir)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def relativeFilePath(self,fileName):
@@ -327,7 +327,7 @@ class QDir(QtCore.QDir):
 		Returns true if the file is removed successfully; otherwise returns false.
 		"""
 		res = super(QDir,self).remove(fileName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rename(self,oldName,newName):
@@ -342,7 +342,7 @@ class QDir(QtCore.QDir):
 		For example, on at least one file system PySide.QtCore.QDir.rename() fails if newName points to an open file.
 		"""
 		res = super(QDir,self).rename(oldName,newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rmdir(self,dirName):
@@ -355,7 +355,7 @@ class QDir(QtCore.QDir):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QDir,self).rmdir(dirName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rmpath(self,dirPath):
@@ -369,7 +369,7 @@ class QDir(QtCore.QDir):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QDir,self).rmpath(dirPath)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFilter(self,filter):

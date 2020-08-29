@@ -22,7 +22,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Call PySide.QtSql.QSqlDatabase.lastError() to get information about errors.
 		"""
 		res = super(QSqlDatabase,self).commit()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def connectOptions(self):
@@ -76,7 +76,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Returns true if the database connection is currently open; otherwise returns false.
 		"""
 		res = super(QSqlDatabase,self).isOpen()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isOpenError(self):
@@ -85,7 +85,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Error information can be retrieved using the PySide.QtSql.QSqlDatabase.lastError() function.
 		"""
 		res = super(QSqlDatabase,self).isOpenError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -94,7 +94,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Example:
 		"""
 		res = super(QSqlDatabase,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastError(self):
@@ -121,7 +121,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Error information can be retrieved using PySide.QtSql.QSqlDatabase.lastError() .
 		"""
 		res = super(QSqlDatabase,self).open()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def password(self):
@@ -138,7 +138,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		The value is undefined if the port number has not been set.
 		"""
 		res = super(QSqlDatabase,self).port()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rollback(self):
@@ -149,7 +149,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Call PySide.QtSql.QSqlDatabase.lastError() to get information about errors.
 		"""
 		res = super(QSqlDatabase,self).rollback()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def transaction(self):
@@ -159,7 +159,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Otherwise it returns false .
 		"""
 		res = super(QSqlDatabase,self).transaction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def userName(self):
@@ -196,7 +196,7 @@ class QSqlDatabase(QtSql.QSqlDatabase):
 		Instead, the password is passed directly to the driver for opening the connection and it is then discarded.
 		"""
 		res = super(QSqlDatabase,self).open(user,password)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def primaryIndex(self,tablename):

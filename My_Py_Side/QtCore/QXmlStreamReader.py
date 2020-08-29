@@ -15,7 +15,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Either way, PySide.QtCore.QXmlStreamReader.atEnd() will return false once more data is available.
 		"""
 		res = super(QXmlStreamReader,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def attributes(self):
@@ -139,7 +139,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if an error has occurred, otherwise false .
 		"""
 		res = super(QXmlStreamReader,self).hasError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCDATA(self):
@@ -147,7 +147,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if the reader reports characters that stem from a CDATA section; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isCDATA()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCharacters(self):
@@ -155,7 +155,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals Characters ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isCharacters()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isComment(self):
@@ -163,7 +163,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals Comment ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isComment()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDTD(self):
@@ -171,7 +171,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals DTD ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isDTD()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEndDocument(self):
@@ -179,7 +179,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals EndDocument ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isEndDocument()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEndElement(self):
@@ -187,7 +187,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals EndElement ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isEndElement()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEntityReference(self):
@@ -195,7 +195,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals EntityReference ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isEntityReference()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isProcessingInstruction(self):
@@ -203,7 +203,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals ProcessingInstruction ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isProcessingInstruction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isStandaloneDocument(self):
@@ -212,7 +212,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		If no XML declaration has been parsed, this function returns false.
 		"""
 		res = super(QXmlStreamReader,self).isStandaloneDocument()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isStartDocument(self):
@@ -220,7 +220,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals StartDocument ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isStartDocument()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isStartElement(self):
@@ -228,7 +228,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if PySide.QtCore.QXmlStreamReader.tokenType() equals StartElement ; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isStartElement()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWhitespace(self):
@@ -236,7 +236,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		Returns true if the reader reports characters that only consist of white-space; otherwise returns false.
 		"""
 		res = super(QXmlStreamReader,self).isWhitespace()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineNumber(self):
@@ -269,7 +269,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 
 		"""
 		res = super(QXmlStreamReader,self).namespaceProcessing()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def namespaceUri(self):
@@ -356,7 +356,7 @@ class QXmlStreamReader(QtCore.QXmlStreamReader):
 		The QXmlStream Bookmarks Example makes extensive use of this function.
 		"""
 		res = super(QXmlStreamReader,self).readNextStartElement()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def skipCurrentElement(self):

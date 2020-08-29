@@ -27,7 +27,7 @@ class QPoint(QtCore.QPoint):
 		Returns true if both the x and y coordinates are set to 0, otherwise returns false.
 		"""
 		res = super(QPoint,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def manhattanLength(self):
@@ -38,7 +38,7 @@ class QPoint(QtCore.QPoint):
 		The tradition of Manhattan length arises because such distances apply to travelers who can only travel on a rectangular grid, like the streets of Manhattan.
 		"""
 		res = super(QPoint,self).manhattanLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __sub__(self):
@@ -62,7 +62,7 @@ class QPoint(QtCore.QPoint):
 		Returns the x coordinate of this point.
 		"""
 		res = super(QPoint,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -70,7 +70,7 @@ class QPoint(QtCore.QPoint):
 		Returns the y coordinate of this point.
 		"""
 		res = super(QPoint,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,p2):
@@ -81,7 +81,7 @@ class QPoint(QtCore.QPoint):
 
 		"""
 		res = super(QPoint,self).__ne__(p2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -204,7 +204,7 @@ class QPoint(QtCore.QPoint):
 
 		"""
 		res = super(QPoint,self).__eq__(p2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setX(self,x):

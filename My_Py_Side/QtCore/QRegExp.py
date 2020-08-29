@@ -27,7 +27,7 @@ class QRegExp(QtCore.QRegExp):
 		Returns the number of captures contained in the regular expression.
 		"""
 		res = super(QRegExp,self).captureCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def capturedTexts(self):
@@ -76,7 +76,7 @@ class QRegExp(QtCore.QRegExp):
 		See QString.isEmpty() .
 		"""
 		res = super(QRegExp,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isMinimal(self):
@@ -84,7 +84,7 @@ class QRegExp(QtCore.QRegExp):
 		Returns true if minimal (non-greedy) matching is enabled; otherwise returns false.
 		"""
 		res = super(QRegExp,self).isMinimal()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -95,7 +95,7 @@ class QRegExp(QtCore.QRegExp):
 		Note that the validity of a regexp may also depend on the setting of the wildcard flag, for example *.html is a valid wildcard regexp but an invalid full regexp.
 		"""
 		res = super(QRegExp,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def matchedLength(self):
@@ -103,7 +103,7 @@ class QRegExp(QtCore.QRegExp):
 		Returns the length of the last matched string, or -1 if there was no match.
 		"""
 		res = super(QRegExp,self).matchedLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def numCaptures(self):
@@ -111,7 +111,7 @@ class QRegExp(QtCore.QRegExp):
 		Returns the number of captures contained in the regular expression.
 		"""
 		res = super(QRegExp,self).numCaptures()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pattern(self):
@@ -159,7 +159,7 @@ class QRegExp(QtCore.QRegExp):
 		Although const, this function sets PySide.QtCore.QRegExp.matchedLength() , PySide.QtCore.QRegExp.capturedTexts() , and PySide.QtCore.QRegExp.pos() .
 		"""
 		res = super(QRegExp,self).exactMatch(str)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def indexIn(self,str,offset=None,caretMode=None):
@@ -180,7 +180,7 @@ class QRegExp(QtCore.QRegExp):
 		If the PySide.QtCore.QRegExp is a wildcard expression (see PySide.QtCore.QRegExp.setPatternSyntax() ) and want to test a string against the whole wildcard expression, use PySide.QtCore.QRegExp.exactMatch() instead of this function.
 		"""
 		res = super(QRegExp,self).indexIn(str,offset,caretMode)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lastIndexIn(self,str,offset=None,caretMode=None):
@@ -197,7 +197,7 @@ class QRegExp(QtCore.QRegExp):
 		Although const, this function sets PySide.QtCore.QRegExp.matchedLength() , PySide.QtCore.QRegExp.capturedTexts() and PySide.QtCore.QRegExp.pos() .
 		"""
 		res = super(QRegExp,self).lastIndexIn(str,offset,caretMode)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,rx):
@@ -208,7 +208,7 @@ class QRegExp(QtCore.QRegExp):
 		Returns true if this regular expression is not equal to rx ; otherwise returns false.
 		"""
 		res = super(QRegExp,self).__ne__(rx)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,rx):
@@ -220,7 +220,7 @@ class QRegExp(QtCore.QRegExp):
 		Two PySide.QtCore.QRegExp objects are equal if they have the same pattern strings and the same settings for case sensitivity, wildcard and minimal matching.
 		"""
 		res = super(QRegExp,self).__eq__(rx)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pos(self,nth=None):
@@ -235,7 +235,7 @@ class QRegExp(QtCore.QRegExp):
 		(For example, if cap(4) would return an empty string, pos(4) returns -1.) This is a feature of the implementation.
 		"""
 		res = super(QRegExp,self).pos(nth)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def replace(self,sourceString,after):

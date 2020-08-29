@@ -12,7 +12,7 @@ class QTableWidget(QtGui.QTableWidget):
 		By default, for a table constructed without row and column counts, this property contains a value of 0.
 		"""
 		res = super(QTableWidget,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentColumn(self):
@@ -20,7 +20,7 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the column of the current item.
 		"""
 		res = super(QTableWidget,self).currentColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentItem(self):
@@ -36,7 +36,7 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the row of the current item.
 		"""
 		res = super(QTableWidget,self).currentRow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def itemPrototype(self):
@@ -67,7 +67,7 @@ class QTableWidget(QtGui.QTableWidget):
 		By default, for a table constructed without row and column counts, this property contains a value of 0.
 		"""
 		res = super(QTableWidget,self).rowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def selectedItems(self):
@@ -124,7 +124,7 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the column for the item .
 		"""
 		res = super(QTableWidget,self).column(item)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dropMimeData(self,row,column,data,action):
@@ -138,7 +138,7 @@ class QTableWidget(QtGui.QTableWidget):
 
 		"""
 		res = super(QTableWidget,self).dropMimeData(row,column,data,action)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def editItem(self,item):
@@ -274,7 +274,7 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the row for the item .
 		"""
 		res = super(QTableWidget,self).row(item)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCellWidget(self,row,column,widget):
@@ -491,7 +491,7 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the visual column of the given logicalColumn .
 		"""
 		res = super(QTableWidget,self).visualColumn(logicalColumn)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def visualItemRect(self,item):
@@ -513,5 +513,5 @@ class QTableWidget(QtGui.QTableWidget):
 		Returns the visual row of the given logicalRow .
 		"""
 		res = super(QTableWidget,self).visualRow(logicalRow)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

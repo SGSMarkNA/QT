@@ -13,7 +13,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		If tracking is disabled, the slider emits the PySide.QtGui.QAbstractSlider.valueChanged() signal only when the user releases the slider.
 		"""
 		res = super(QAbstractSlider,self).hasTracking()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def invertedAppearance(self):
@@ -25,7 +25,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		For scroll bars, the visual effect of the scroll bar subcontrols depends on whether or not the styles understand inverted appearance; most styles ignore this property for scroll bars.
 		"""
 		res = super(QAbstractSlider,self).invertedAppearance()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def invertedControls(self):
@@ -35,7 +35,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		Otherwise pressing page up will move value towards the sliders minimum.
 		"""
 		res = super(QAbstractSlider,self).invertedControls()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSliderDown(self):
@@ -45,7 +45,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		Changing the slider down property emits the PySide.QtGui.QAbstractSlider.sliderPressed() and PySide.QtGui.QAbstractSlider.sliderReleased() signals.
 		"""
 		res = super(QAbstractSlider,self).isSliderDown()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximum(self):
@@ -55,7 +55,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		Also the sliders current value is adjusted to be within the new range.
 		"""
 		res = super(QAbstractSlider,self).maximum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimum(self):
@@ -65,7 +65,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		Also the sliders current value is adjusted to be within the new range.
 		"""
 		res = super(QAbstractSlider,self).minimum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -83,7 +83,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		The larger of two natural steps that an abstract slider provides and typically corresponds to the user pressing PageUp or PageDown.
 		"""
 		res = super(QAbstractSlider,self).pageStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def repeatAction(self):
@@ -101,7 +101,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		If the property is modified during an auto repeating key event, behavior is undefined.
 		"""
 		res = super(QAbstractSlider,self).singleStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sliderPosition(self):
@@ -110,7 +110,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		If tracking() is enabled (the default), this is identical to PySide.QtGui.QAbstractSlider.value() .
 		"""
 		res = super(QAbstractSlider,self).sliderPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sliderPressed(self):
@@ -134,7 +134,7 @@ class QAbstractSlider(QtGui.QAbstractSlider):
 		Changing the value also changes the PySide.QtGui.QAbstractSlider.sliderPosition() .
 		"""
 		res = super(QAbstractSlider,self).value()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setInvertedAppearance(self,arg__1):

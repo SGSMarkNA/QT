@@ -15,7 +15,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		If the shader program has not yet been linked, or it needs to be re-linked, this function will call PySide.QtOpenGL.QGLShaderProgram.link() .
 		"""
 		res = super(QGLShaderProgram,self).bind()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def geometryInputType(self):
@@ -40,7 +40,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		This parameter takes effect the ntext time the program is linked.
 		"""
 		res = super(QGLShaderProgram,self).geometryOutputVertexCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def init(self):
@@ -48,7 +48,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 
 		"""
 		res = super(QGLShaderProgram,self).init()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isLinked(self):
@@ -56,7 +56,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		Returns true if this shader program has been linked; false otherwise.
 		"""
 		res = super(QGLShaderProgram,self).isLinked()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def link(self):
@@ -68,7 +68,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		If the shader program was already linked, calling this function again will force it to be re-linked.
 		"""
 		res = super(QGLShaderProgram,self).link()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def log(self):
@@ -83,7 +83,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		Returns the hardware limit for how many vertices a geometry shader can output.
 		"""
 		res = super(QGLShaderProgram,self).maxGeometryOutputVertices()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def programId(self):
@@ -129,7 +129,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		This allows the caller to add the same shader to multiple shader programs.
 		"""
 		res = super(QGLShaderProgram,self).addShader(shader)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addShaderFromSourceCode(self,*args,**kwargs):
@@ -149,7 +149,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 
 		"""
 		res = super(QGLShaderProgram,self).addShaderFromSourceCode(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addShaderFromSourceFile(self,type,fileName):
@@ -161,7 +161,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 
 		"""
 		res = super(QGLShaderProgram,self).addShaderFromSourceFile(type,fileName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def attributeLocation(self,*args,**kwargs):
@@ -179,7 +179,7 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		Returns -1 if name is not a valid attribute for this shader program.
 		"""
 		res = super(QGLShaderProgram,self).attributeLocation(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def bindAttributeLocation(self,*args,**kwargs):
@@ -917,5 +917,5 @@ class QGLShaderProgram(QtOpenGL.QGLShaderProgram):
 		Returns -1 if name is not a valid uniform variable for this shader program.
 		"""
 		res = super(QGLShaderProgram,self).uniformLocation(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

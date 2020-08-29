@@ -18,7 +18,7 @@ class QHttpResponseHeader(QtNetwork.QHttpResponseHeader):
 		Returns the status code of the HTTP response header.
 		"""
 		res = super(QHttpResponseHeader,self).statusCode()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setStatusLine(self,code,text=None,majorVer=None,minorVer=None):

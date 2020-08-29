@@ -20,7 +20,7 @@ class QSyntaxHighlighter(QtGui.QSyntaxHighlighter):
 		If no value is set, the returned value is -1.
 		"""
 		res = super(QSyntaxHighlighter,self).currentBlockState()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentBlockUserData(self):
@@ -45,7 +45,7 @@ class QSyntaxHighlighter(QtGui.QSyntaxHighlighter):
 		If no value was previously set, the returned value is -1.
 		"""
 		res = super(QSyntaxHighlighter,self).previousBlockState()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def format(self,pos):

@@ -47,7 +47,7 @@ class QWebPage(QtWebKit.QWebPage):
 		By default unsupported content is not forwarded.
 		"""
 		res = super(QWebPage,self).forwardUnsupportedContent()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def history(self):
@@ -65,7 +65,7 @@ class QWebPage(QtWebKit.QWebPage):
 		If disabled (the default) only HTML elements in the web page with their contenteditable attribute set are editable.
 		"""
 		res = super(QWebPage,self).isContentEditable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isModified(self):
@@ -74,7 +74,7 @@ class QWebPage(QtWebKit.QWebPage):
 		By default, this property is false.
 		"""
 		res = super(QWebPage,self).isModified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def linkDelegationPolicy(self):
@@ -230,7 +230,7 @@ class QWebPage(QtWebKit.QWebPage):
 		The default implementation interprets the pages PySide.QtWebKit.QWebPage.linkDelegationPolicy() and emits linkClicked accordingly or returns true to let PySide.QtWebKit.QWebPage handle the navigation itself.
 		"""
 		res = super(QWebPage,self).acceptNavigationRequest(frame,request,type)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def action(self,action):
@@ -304,7 +304,7 @@ class QWebPage(QtWebKit.QWebPage):
 		Returns true if the extension was called successfully; otherwise returns false.
 		"""
 		res = super(QWebPage,self).extension(extension,option,output)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def findText(self,subString,options=None):
@@ -316,7 +316,7 @@ class QWebPage(QtWebKit.QWebPage):
 
 		"""
 		res = super(QWebPage,self).findText(subString,options)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def focusNextPrevChild(self,next):
@@ -328,7 +328,7 @@ class QWebPage(QtWebKit.QWebPage):
 		Returns true if it can find a new focusable element, or false if it cant.
 		"""
 		res = super(QWebPage,self).focusNextPrevChild(next)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def frameAt(self,pos):
@@ -375,7 +375,7 @@ class QWebPage(QtWebKit.QWebPage):
 		The default implementation executes the query using QMessageBox::information with QMessageBox.Yes and QMessageBox.No buttons.
 		"""
 		res = super(QWebPage,self).javaScriptConfirm(originatingFrame,msg)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def javaScriptConsoleMessage(self,message,lineNumber,sourceID):
@@ -519,7 +519,7 @@ class QWebPage(QtWebKit.QWebPage):
 		This virtual function returns true if the web page supports extension ; otherwise false is returned.
 		"""
 		res = super(QWebPage,self).supportsExtension(extension)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def swallowContextMenuEvent(self,event):
@@ -533,7 +533,7 @@ class QWebPage(QtWebKit.QWebPage):
 		This is used by Google Maps, for example.
 		"""
 		res = super(QWebPage,self).swallowContextMenuEvent(event)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def triggerAction(self,action,checked=None):

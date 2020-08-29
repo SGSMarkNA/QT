@@ -28,7 +28,7 @@ class QAbstractTextDocumentLayout(QtGui.QAbstractTextDocumentLayout):
 		Returns the number of pages contained in the layout.
 		"""
 		res = super(QAbstractTextDocumentLayout,self).pageCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def paintDevice(self):
@@ -127,7 +127,7 @@ class QAbstractTextDocumentLayout(QtGui.QAbstractTextDocumentLayout):
 		Returns the index of the format at position pos .
 		"""
 		res = super(QAbstractTextDocumentLayout,self).formatIndex(pos)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def frameBoundingRect(self,frame):
@@ -161,7 +161,7 @@ class QAbstractTextDocumentLayout(QtGui.QAbstractTextDocumentLayout):
 
 		"""
 		res = super(QAbstractTextDocumentLayout,self).hitTest(point,accuracy)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def positionInlineObject(self,item,posInDocument,format):

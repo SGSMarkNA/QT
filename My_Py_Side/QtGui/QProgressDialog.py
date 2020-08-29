@@ -12,7 +12,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		The default is true.
 		"""
 		res = super(QProgressDialog,self).autoClose()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def autoReset(self):
@@ -21,7 +21,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		The default is true.
 		"""
 		res = super(QProgressDialog,self).autoReset()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canceled(self):
@@ -45,7 +45,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		The default is 0.
 		"""
 		res = super(QProgressDialog,self).maximum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimum(self):
@@ -54,7 +54,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		The default is 0.
 		"""
 		res = super(QProgressDialog,self).minimum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimumDuration(self):
@@ -67,7 +67,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		The default is 4000 milliseconds.
 		"""
 		res = super(QProgressDialog,self).minimumDuration()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def value(self):
@@ -76,7 +76,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		For the progress dialog to work as expected, you should initially set this property to 0 and finally set it to QProgressDialog.maximum() ; you can call PySide.QtGui.QProgressDialog.setValue() any number of times in-between.
 		"""
 		res = super(QProgressDialog,self).value()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def wasCanceled(self):
@@ -84,7 +84,7 @@ class QProgressDialog(QtGui.QProgressDialog):
 		This property holds whether the dialog was canceled.
 		"""
 		res = super(QProgressDialog,self).wasCanceled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def open(self,receiver,member):

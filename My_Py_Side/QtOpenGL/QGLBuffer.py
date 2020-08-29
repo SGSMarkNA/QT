@@ -14,7 +14,7 @@ class QGLBuffer(QtOpenGL.QGLBuffer):
 		Otherwise, false will be returned from this function.
 		"""
 		res = super(QGLBuffer,self).bind()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def bufferId(self):
@@ -33,7 +33,7 @@ class QGLBuffer(QtOpenGL.QGLBuffer):
 		This function will return false if the GL implementation does not support buffers, or there is no current PySide.QtOpenGL.QGLContext .
 		"""
 		res = super(QGLBuffer,self).create()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def destroy(self):
@@ -49,7 +49,7 @@ class QGLBuffer(QtOpenGL.QGLBuffer):
 		Returns true if this buffer has been created; false otherwise.
 		"""
 		res = super(QGLBuffer,self).isCreated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def release(self):
@@ -67,7 +67,7 @@ class QGLBuffer(QtOpenGL.QGLBuffer):
 		It is assumed that this buffer has been bound to the current context.
 		"""
 		res = super(QGLBuffer,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):
@@ -86,7 +86,7 @@ class QGLBuffer(QtOpenGL.QGLBuffer):
 		This function is only supported under OpenGL/ES if the GL_OES_mapbuffer extension is present.
 		"""
 		res = super(QGLBuffer,self).unmap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def usagePattern(self):

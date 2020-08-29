@@ -11,7 +11,7 @@ class QFocusEvent(QtGui.QFocusEvent):
 		Returns true if PySide.QtCore.QEvent.type() is QEvent.FocusIn ; otherwise returns false.
 		"""
 		res = super(QFocusEvent,self).gotFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lostFocus(self):
@@ -19,7 +19,7 @@ class QFocusEvent(QtGui.QFocusEvent):
 		Returns true if PySide.QtCore.QEvent.type() is QEvent.FocusOut ; otherwise returns false.
 		"""
 		res = super(QFocusEvent,self).lostFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def reason(self):

@@ -12,7 +12,7 @@ class QSemaphore(QtCore.QSemaphore):
 		This number can never be negative.
 		"""
 		res = super(QSemaphore,self).available()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def acquire(self,n=None):
@@ -52,5 +52,5 @@ class QSemaphore(QtCore.QSemaphore):
 		Example:
 		"""
 		res = super(QSemaphore,self).tryAcquire(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

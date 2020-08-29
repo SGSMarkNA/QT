@@ -11,7 +11,7 @@ class QScriptable(QtScript.QScriptable):
 		Returns the number of arguments passed to the function in this invocation, or -1 if the Qt function was not invoked from script code.
 		"""
 		res = super(QScriptable,self).argumentCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def context(self):

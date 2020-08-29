@@ -43,7 +43,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if the key sequence is empty; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def assign(self,*args,**kwargs):
@@ -58,7 +58,7 @@ class QKeySequence(QtGui.QKeySequence):
 
 		"""
 		res = super(QKeySequence,self).assign(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def matches(self,seq):
@@ -82,7 +82,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if this key sequence is not equal to the other key sequence; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,ks):
@@ -95,7 +95,7 @@ class QKeySequence(QtGui.QKeySequence):
 		This function is useful in some circumstances, for example if you want to use PySide.QtGui.QKeySequence objects as keys in a QMap .
 		"""
 		res = super(QKeySequence,self).__lt__(ks)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,other):
@@ -106,7 +106,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if this key sequence is smaller or equal to the other key sequence; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).__le__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -117,7 +117,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if this key sequence is equal to the other key sequence; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,other):
@@ -128,7 +128,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if this key sequence is larger than the other key sequence; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).__gt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,other):
@@ -139,7 +139,7 @@ class QKeySequence(QtGui.QKeySequence):
 		Returns true if this key sequence is larger or equal to the other key sequence; otherwise returns false.
 		"""
 		res = super(QKeySequence,self).__ge__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setKey(self,key,index):

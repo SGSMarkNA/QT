@@ -27,7 +27,7 @@ class QVector2D(QtGui.QVector2D):
 		Returns true if the x and y coordinates are set to 0.0, otherwise returns false.
 		"""
 		res = super(QVector2D,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -138,7 +138,7 @@ class QVector2D(QtGui.QVector2D):
 
 		"""
 		res = super(QVector2D,self).__ne__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -246,7 +246,7 @@ class QVector2D(QtGui.QVector2D):
 
 		"""
 		res = super(QVector2D,self).__eq__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setX(self,x):

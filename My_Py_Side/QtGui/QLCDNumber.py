@@ -14,7 +14,7 @@ class QLCDNumber(QtGui.QLCDNumber):
 		By default, this property contains a value of 5.
 		"""
 		res = super(QLCDNumber,self).digitCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def intValue(self):
@@ -26,7 +26,7 @@ class QLCDNumber(QtGui.QLCDNumber):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QLCDNumber,self).intValue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def mode(self):
@@ -44,7 +44,7 @@ class QLCDNumber(QtGui.QLCDNumber):
 		This property holds the current number of digits displayed.
 		"""
 		res = super(QLCDNumber,self).numDigits()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def overflow(self):
@@ -73,7 +73,7 @@ class QLCDNumber(QtGui.QLCDNumber):
 		The inter-digit space is made slightly wider when the decimal point is drawn between the digits.
 		"""
 		res = super(QLCDNumber,self).smallDecimalPoint()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def value(self):
@@ -98,7 +98,7 @@ class QLCDNumber(QtGui.QLCDNumber):
 		Returns true if num is too big to be displayed in its entirety; otherwise returns false.
 		"""
 		res = super(QLCDNumber,self).checkOverflow(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDigitCount(self,nDigits):

@@ -30,7 +30,7 @@ class QNetworkConfigurationManager(QtNetwork.QNetworkConfigurationManager):
 		This is equivalent to the following code snippet:
 		"""
 		res = super(QNetworkConfigurationManager,self).isOnline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def updateCompleted(self):

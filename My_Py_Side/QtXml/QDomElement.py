@@ -110,7 +110,7 @@ class QDomElement(QtXml.QDomElement):
 		Use PySide.QtXml.QDomElement.hasAttributeNS() to explicitly test for attributes with specific namespaces and names.
 		"""
 		res = super(QDomElement,self).hasAttribute(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasAttributeNS(self,nsURI,localName):
@@ -122,7 +122,7 @@ class QDomElement(QtXml.QDomElement):
 		Returns true if this element has an attribute with the local name localName and the namespace URI nsURI ; otherwise returns false.
 		"""
 		res = super(QDomElement,self).hasAttributeNS(nsURI,localName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeAttribute(self,name):

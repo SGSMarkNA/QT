@@ -52,7 +52,7 @@ class QMdiArea(QtGui.QMdiArea):
 		Document mode is disabled by default.
 		"""
 		res = super(QMdiArea,self).documentMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tabPosition(self):
@@ -208,5 +208,5 @@ class QMdiArea(QtGui.QMdiArea):
 		Returns true if option is enabled; otherwise returns false.
 		"""
 		res = super(QMdiArea,self).testOption(opton)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

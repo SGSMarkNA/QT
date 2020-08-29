@@ -11,7 +11,7 @@ class QAnimationGroup(QtCore.QAnimationGroup):
 		Returns the number of animations managed by this group.
 		"""
 		res = super(QAnimationGroup,self).animationCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -54,7 +54,7 @@ class QAnimationGroup(QtCore.QAnimationGroup):
 		The returned index can be passed to the other functions that take an index as an argument.
 		"""
 		res = super(QAnimationGroup,self).indexOfAnimation(animation)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertAnimation(self,index,animation):

@@ -51,7 +51,7 @@ class QDeclarativeExpression(QtDeclarative.QDeclarativeExpression):
 		Returns true if the last call to PySide.QtDeclarative.QDeclarativeExpression.evaluate() resulted in an error, otherwise false.
 		"""
 		res = super(QDeclarativeExpression,self).hasError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineNumber(self):
@@ -60,7 +60,7 @@ class QDeclarativeExpression(QtDeclarative.QDeclarativeExpression):
 		The source location must have been previously set by calling PySide.QtDeclarative.QDeclarativeExpression.setSourceLocation() .
 		"""
 		res = super(QDeclarativeExpression,self).lineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def notifyOnValueChanged(self):
@@ -68,7 +68,7 @@ class QDeclarativeExpression(QtDeclarative.QDeclarativeExpression):
 		Returns true if the PySide.QtDeclarative.QDeclarativeExpression.valueChanged() signal is emitted when the expressions evaluated value changes.
 		"""
 		res = super(QDeclarativeExpression,self).notifyOnValueChanged()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def scopeObject(self):

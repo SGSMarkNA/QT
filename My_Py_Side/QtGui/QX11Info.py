@@ -11,7 +11,7 @@ class QX11Info(QtGui.QX11Info):
 		Returns the number of cells.
 		"""
 		res = super(QX11Info,self).cells()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def colormap(self):
@@ -27,7 +27,7 @@ class QX11Info(QtGui.QX11Info):
 		Returns true if there is a default color map; otherwise returns false.
 		"""
 		res = super(QX11Info,self).defaultColormap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def defaultVisual(self):
@@ -35,7 +35,7 @@ class QX11Info(QtGui.QX11Info):
 		Returns true if there is a default visual; otherwise returns false.
 		"""
 		res = super(QX11Info,self).defaultVisual()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def depth(self):
@@ -43,7 +43,7 @@ class QX11Info(QtGui.QX11Info):
 		Returns the color depth (bits per pixel) of the X display.
 		"""
 		res = super(QX11Info,self).depth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def screen(self):
@@ -54,7 +54,7 @@ class QX11Info(QtGui.QX11Info):
 		Use PySide.QtGui.QDesktopWidget to query for information about Xinerama screens.
 		"""
 		res = super(QX11Info,self).screen()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def visual(self):

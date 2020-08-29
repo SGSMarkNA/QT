@@ -11,7 +11,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		Returns the column this persistent model index refers to.
 		"""
 		res = super(QPersistentModelIndex,self).column()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def flags(self):
@@ -44,7 +44,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		A valid index belongs to a model, and has non-negative row and column numbers.
 		"""
 		res = super(QPersistentModelIndex,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -68,7 +68,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		Returns the row this persistent model index refers to.
 		"""
 		res = super(QPersistentModelIndex,self).row()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def child(self,row,column):
@@ -104,7 +104,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		Returns true if this persistent model index does not refer to the same location as the other model index; otherwise returns false.
 		"""
 		res = super(QPersistentModelIndex,self).__ne__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -116,7 +116,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		All values in the persistent model index are used when comparing with another persistent model index.
 		"""
 		res = super(QPersistentModelIndex,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,*args,**kwargs):
@@ -131,7 +131,7 @@ class QPersistentModelIndex(QtCore.QPersistentModelIndex):
 		All values in the persistent model index are used when comparing with another persistent model index.
 		"""
 		res = super(QPersistentModelIndex,self).__eq__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sibling(self,row,column):

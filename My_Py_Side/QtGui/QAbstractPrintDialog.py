@@ -19,7 +19,7 @@ class QAbstractPrintDialog(QtGui.QAbstractPrintDialog):
 		Returns the first page to be printed By default, this value is set to 0.
 		"""
 		res = super(QAbstractPrintDialog,self).fromPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maxPage(self):
@@ -29,7 +29,7 @@ class QAbstractPrintDialog(QtGui.QAbstractPrintDialog):
 		Previous versions returned 1 by default.
 		"""
 		res = super(QAbstractPrintDialog,self).maxPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minPage(self):
@@ -38,7 +38,7 @@ class QAbstractPrintDialog(QtGui.QAbstractPrintDialog):
 		By default, this value is set to 1.
 		"""
 		res = super(QAbstractPrintDialog,self).minPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def printRange(self):
@@ -63,7 +63,7 @@ class QAbstractPrintDialog(QtGui.QAbstractPrintDialog):
 		By default, this value is set to 0.
 		"""
 		res = super(QAbstractPrintDialog,self).toPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addEnabledOption(self,option):
@@ -84,7 +84,7 @@ class QAbstractPrintDialog(QtGui.QAbstractPrintDialog):
 		Use QPrintDialog::testOption(option ) instead.
 		"""
 		res = super(QAbstractPrintDialog,self).isOptionEnabled(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setEnabledOptions(self,options):

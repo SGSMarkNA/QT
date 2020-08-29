@@ -45,7 +45,7 @@ class QNetworkReply(QtNetwork.QNetworkReply):
 		Returns true when the reply has finished or was aborted.
 		"""
 		res = super(QNetworkReply,self).isFinished()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRunning(self):
@@ -53,7 +53,7 @@ class QNetworkReply(QtNetwork.QNetworkReply):
 		Returns true when the request is still processing and the reply has not finished or was aborted yet.
 		"""
 		res = super(QNetworkReply,self).isRunning()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def manager(self):
@@ -159,7 +159,7 @@ class QNetworkReply(QtNetwork.QNetworkReply):
 		Returns true if the raw header of name headerName was sent by the remote server
 		"""
 		res = super(QNetworkReply,self).hasRawHeader(headerName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def header(self,header):

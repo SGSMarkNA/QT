@@ -19,7 +19,7 @@ class QHostAddress(QtNetwork.QHostAddress):
 		The default constructor creates a null address, and that address is not valid for any host or interface.
 		"""
 		res = super(QHostAddress,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def protocol(self):
@@ -85,7 +85,7 @@ class QHostAddress(QtNetwork.QHostAddress):
 
 		"""
 		res = super(QHostAddress,self).isInSubnet(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,*args,**kwargs):
@@ -99,7 +99,7 @@ class QHostAddress(QtNetwork.QHostAddress):
 		Returns true if this host address is not the same as the other address given; otherwise returns false.
 		"""
 		res = super(QHostAddress,self).__ne__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,*args,**kwargs):
@@ -113,7 +113,7 @@ class QHostAddress(QtNetwork.QHostAddress):
 		Returns true if this host address is the same as the other address given; otherwise returns false.
 		"""
 		res = super(QHostAddress,self).__eq__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAddress(self,*args,**kwargs):

@@ -11,7 +11,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the number of columns in this grid.
 		"""
 		res = super(QGridLayout,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def horizontalSpacing(self):
@@ -19,7 +19,7 @@ class QGridLayout(QtGui.QGridLayout):
 
 		"""
 		res = super(QGridLayout,self).horizontalSpacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def originCorner(self):
@@ -36,7 +36,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the number of rows in this grid.
 		"""
 		res = super(QGridLayout,self).rowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def verticalSpacing(self):
@@ -44,7 +44,7 @@ class QGridLayout(QtGui.QGridLayout):
 
 		"""
 		res = super(QGridLayout,self).verticalSpacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addItem(self,item,row,column,rowSpan=None,columnSpan=None,alignment=None):
@@ -125,7 +125,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the column spacing for column column .
 		"""
 		res = super(QGridLayout,self).columnMinimumWidth(column)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def columnStretch(self,column):
@@ -136,7 +136,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the stretch factor for column column .
 		"""
 		res = super(QGridLayout,self).columnStretch(column)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def getItemPosition(self,idx):
@@ -170,7 +170,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the minimum width set for row row .
 		"""
 		res = super(QGridLayout,self).rowMinimumHeight(row)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rowStretch(self,row):
@@ -181,7 +181,7 @@ class QGridLayout(QtGui.QGridLayout):
 		Returns the stretch factor for row row .
 		"""
 		res = super(QGridLayout,self).rowStretch(row)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setColumnMinimumWidth(self,column,minSize):

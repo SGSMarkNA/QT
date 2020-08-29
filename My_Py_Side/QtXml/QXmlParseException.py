@@ -11,7 +11,7 @@ class QXmlParseException(QtXml.QXmlParseException):
 		Returns the column number where the error occurred.
 		"""
 		res = super(QXmlParseException,self).columnNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lineNumber(self):
@@ -19,7 +19,7 @@ class QXmlParseException(QtXml.QXmlParseException):
 		Returns the line number where the error occurred.
 		"""
 		res = super(QXmlParseException,self).lineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def message(self):

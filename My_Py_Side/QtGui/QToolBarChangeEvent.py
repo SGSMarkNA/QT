@@ -11,5 +11,5 @@ class QToolBarChangeEvent(QtGui.QToolBarChangeEvent):
 
 		"""
 		res = super(QToolBarChangeEvent,self).toggle()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

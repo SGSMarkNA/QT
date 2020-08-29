@@ -33,7 +33,7 @@ class QMovie(QtGui.QMovie):
 		The number of the first frame in the movie is 0.
 		"""
 		res = super(QMovie,self).currentFrameNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentImage(self):
@@ -91,7 +91,7 @@ class QMovie(QtGui.QMovie):
 		Certain animation formats do not support this feature, in which case 0 is returned.
 		"""
 		res = super(QMovie,self).frameCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def frameRect(self):
@@ -108,7 +108,7 @@ class QMovie(QtGui.QMovie):
 		Returns true if the movie is valid (e.g., the image data is readable and the image format is supported); otherwise returns false.
 		"""
 		res = super(QMovie,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loopCount(self):
@@ -120,7 +120,7 @@ class QMovie(QtGui.QMovie):
 		a socket), PySide.QtGui.QMovie can only loop the movie if the PySide.QtGui.QMovie.cacheMode() is set to QMovie.CacheAll .
 		"""
 		res = super(QMovie,self).loopCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def nextFrameDelay(self):
@@ -128,7 +128,7 @@ class QMovie(QtGui.QMovie):
 		Returns the number of milliseconds PySide.QtGui.QMovie will wait before updating the next frame in the animation.
 		"""
 		res = super(QMovie,self).nextFrameDelay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scaledSize(self):
@@ -147,7 +147,7 @@ class QMovie(QtGui.QMovie):
 		Example:
 		"""
 		res = super(QMovie,self).speed()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def started(self):
@@ -174,7 +174,7 @@ class QMovie(QtGui.QMovie):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QMovie,self).jumpToFrame(frameNumber)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setBackgroundColor(self,color):

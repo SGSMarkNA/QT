@@ -168,5 +168,5 @@ class QScriptEngineAgent(QtScript.QScriptEngineAgent):
 		By default, no extensions are supported.
 		"""
 		res = super(QScriptEngineAgent,self).supportsExtension(extension)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

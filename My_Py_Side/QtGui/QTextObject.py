@@ -27,7 +27,7 @@ class QTextObject(QtGui.QTextObject):
 		Returns the index of the objects format in the documents internal list of formats.
 		"""
 		res = super(QTextObject,self).formatIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def objectIndex(self):
@@ -36,7 +36,7 @@ class QTextObject(QtGui.QTextObject):
 		This can be used together with QTextFormat.setObjectIndex() .
 		"""
 		res = super(QTextObject,self).objectIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setFormat(self,format):

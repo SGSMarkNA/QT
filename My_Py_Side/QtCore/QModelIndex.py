@@ -11,7 +11,7 @@ class QModelIndex(QtCore.QModelIndex):
 		Returns the column this model index refers to.
 		"""
 		res = super(QModelIndex,self).column()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def flags(self):
@@ -44,7 +44,7 @@ class QModelIndex(QtCore.QModelIndex):
 		A valid index belongs to a model, and has non-negative row and column numbers.
 		"""
 		res = super(QModelIndex,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -69,7 +69,7 @@ class QModelIndex(QtCore.QModelIndex):
 		Returns the row this model index refers to.
 		"""
 		res = super(QModelIndex,self).row()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def child(self,row,column):
@@ -102,7 +102,7 @@ class QModelIndex(QtCore.QModelIndex):
 		Returns true if this model index does not refer to the same location as the other model index; otherwise returns false.
 		"""
 		res = super(QModelIndex,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -113,7 +113,7 @@ class QModelIndex(QtCore.QModelIndex):
 		Returns true if this model index is smaller than the other model index; otherwise returns false.
 		"""
 		res = super(QModelIndex,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -125,7 +125,7 @@ class QModelIndex(QtCore.QModelIndex):
 		All values in the model index are used when comparing with another model index.
 		"""
 		res = super(QModelIndex,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sibling(self,row,column):

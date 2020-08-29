@@ -52,7 +52,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is an object of the Array class; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isArray()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isBool(self):
@@ -60,7 +60,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is of the primitive type Boolean; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isBool()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isBoolean(self):
@@ -68,7 +68,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Use PySide.QtScript.QScriptValue.isBool() instead.
 		"""
 		res = super(QScriptValue,self).isBoolean()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDate(self):
@@ -76,7 +76,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is an object of the Date class; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isDate()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isError(self):
@@ -84,7 +84,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is an object of the Error class; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFunction(self):
@@ -92,7 +92,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is a function; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isFunction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -100,7 +100,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is of the primitive type Null; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNumber(self):
@@ -108,7 +108,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is of the primitive type Number; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isNumber()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isObject(self):
@@ -117,7 +117,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Note that function values, variant values, and PySide.QtCore.QObject values are objects, so this function returns true for such values.
 		"""
 		res = super(QScriptValue,self).isObject()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isQMetaObject(self):
@@ -125,7 +125,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is a PySide.QtCore.QMetaObject ; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isQMetaObject()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isQObject(self):
@@ -134,7 +134,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Note: This function returns true even if the PySide.QtCore.QObject that this PySide.QtScript.QScriptValue wraps has been deleted.
 		"""
 		res = super(QScriptValue,self).isQObject()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRegExp(self):
@@ -142,7 +142,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is an object of the RegExp class; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isRegExp()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isString(self):
@@ -150,7 +150,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is of the primitive type String; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isString()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndefined(self):
@@ -158,7 +158,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is of the primitive type Undefined; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isUndefined()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -166,7 +166,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is valid; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isVariant(self):
@@ -174,7 +174,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Returns true if this PySide.QtScript.QScriptValue is a variant value; otherwise returns false.
 		"""
 		res = super(QScriptValue,self).isVariant()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def objectId(self):
@@ -215,7 +215,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Note that if this PySide.QtScript.QScriptValue is an object, calling this function has side effects on the script engine, since the engine will call the objects valueOf() function (and possibly PySide.QtScript.QScriptValue.toString() ) in an attempt to convert the object to a primitive value (possibly resulting in an uncaught script exception).
 		"""
 		res = super(QScriptValue,self).toBool()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toBoolean(self):
@@ -223,7 +223,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Use PySide.QtScript.QScriptValue.toBool() instead.
 		"""
 		res = super(QScriptValue,self).toBoolean()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toDateTime(self):
@@ -380,7 +380,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Note that if this PySide.QtScript.QScriptValue or the other value are objects, calling this function has side effects on the script engine, since the engine will call the objects valueOf() function (and possibly PySide.QtScript.QScriptValue.toString() ) in an attempt to convert the object to a primitive value (possibly resulting in an uncaught script exception).
 		"""
 		res = super(QScriptValue,self).equals(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def instanceOf(self,other):
@@ -392,7 +392,7 @@ class QScriptValue(QtScript.QScriptValue):
 		This PySide.QtScript.QScriptValue is considered to be an instance of other if other is a function and the value of the prototype property of other is in the prototype chain of this PySide.QtScript.QScriptValue .
 		"""
 		res = super(QScriptValue,self).instanceOf(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lessThan(self,other):
@@ -405,7 +405,7 @@ class QScriptValue(QtScript.QScriptValue):
 		Note that if this PySide.QtScript.QScriptValue or the other value are objects, calling this function has side effects on the script engine, since the engine will call the objects valueOf() function (and possibly PySide.QtScript.QScriptValue.toString() ) in an attempt to convert the object to a primitive value (possibly resulting in an uncaught script exception).
 		"""
 		res = super(QScriptValue,self).lessThan(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def property(self,*args,**kwargs):
@@ -531,5 +531,5 @@ class QScriptValue(QtScript.QScriptValue):
 		If the types are equal, the result depends on the type, as shown in the following table:
 		"""
 		res = super(QScriptValue,self).strictlyEquals(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

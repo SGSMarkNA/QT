@@ -27,7 +27,7 @@ class QLine(QtCore.QLine):
 		Returns the horizontal component of the lines vector.
 		"""
 		res = super(QLine,self).dx()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dy(self):
@@ -35,7 +35,7 @@ class QLine(QtCore.QLine):
 		Returns the vertical component of the lines vector.
 		"""
 		res = super(QLine,self).dy()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -43,7 +43,7 @@ class QLine(QtCore.QLine):
 		Returns true if the line is not set up with valid start and end point; otherwise returns false.
 		"""
 		res = super(QLine,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def p1(self):
@@ -75,7 +75,7 @@ class QLine(QtCore.QLine):
 		Returns the x-coordinate of the lines start point.
 		"""
 		res = super(QLine,self).x1()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def x2(self):
@@ -83,7 +83,7 @@ class QLine(QtCore.QLine):
 		Returns the x-coordinate of the lines end point.
 		"""
 		res = super(QLine,self).x2()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y1(self):
@@ -91,7 +91,7 @@ class QLine(QtCore.QLine):
 		Returns the y-coordinate of the lines start point.
 		"""
 		res = super(QLine,self).y1()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y2(self):
@@ -99,7 +99,7 @@ class QLine(QtCore.QLine):
 		Returns the y-coordinate of the lines end point.
 		"""
 		res = super(QLine,self).y2()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,d):
@@ -111,7 +111,7 @@ class QLine(QtCore.QLine):
 		A line is different from another line if any of their start or end points differ, or the internal order of the points is different.
 		"""
 		res = super(QLine,self).__ne__(d)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -137,7 +137,7 @@ class QLine(QtCore.QLine):
 		A line is identical to another line if the start and end points are identical, and the internal order of the points is the same.
 		"""
 		res = super(QLine,self).__eq__(d)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setLine(self,x1,y1,x2,y2):

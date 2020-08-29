@@ -66,7 +66,7 @@ class QByteArray(QtCore.QByteArray):
 		If you want to know how many bytes are in the byte array, call PySide.QtCore.QByteArray.size() .
 		"""
 		res = super(QByteArray,self).capacity()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -82,7 +82,7 @@ class QByteArray(QtCore.QByteArray):
 		Same as PySide.QtCore.QByteArray.size() .
 		"""
 		res = super(QByteArray,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def data(self):
@@ -98,7 +98,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -109,7 +109,7 @@ class QByteArray(QtCore.QByteArray):
 		For most applications, what matters is whether or not a byte array contains any data, and this can be determined using PySide.QtCore.QByteArray.isEmpty() .
 		"""
 		res = super(QByteArray,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -117,7 +117,7 @@ class QByteArray(QtCore.QByteArray):
 		Same as PySide.QtCore.QByteArray.size() .
 		"""
 		res = super(QByteArray,self).length()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def nulTerminated(self):
@@ -147,7 +147,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def squeeze(self):
@@ -293,7 +293,7 @@ class QByteArray(QtCore.QByteArray):
 		Returns the number of (potentially overlapping) occurrences of byte array ba in this byte array.
 		"""
 		res = super(QByteArray,self).count(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def endsWith(self,*args,**kwargs):
@@ -308,7 +308,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).endsWith(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def expand(self,i):
@@ -346,7 +346,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).indexOf(a,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,i,a):
@@ -370,7 +370,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).isSharedWith(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastIndexOf(self,a,from=None):
@@ -385,7 +385,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).lastIndexOf(a,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def left(self,len):
@@ -439,7 +439,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__ne__(a2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __add__(self,*args,**kwargs):
@@ -500,7 +500,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__lt__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,a2):
@@ -511,7 +511,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__le__(a2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,a2):
@@ -522,7 +522,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__eq__(a2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,a2):
@@ -533,7 +533,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__gt__(a2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,a2):
@@ -544,7 +544,7 @@ class QByteArray(QtCore.QByteArray):
 
 		"""
 		res = super(QByteArray,self).__ge__(a2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepend(self,*args,**kwargs):
@@ -757,7 +757,7 @@ class QByteArray(QtCore.QByteArray):
 		Example:
 		"""
 		res = super(QByteArray,self).startsWith(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toInt(self,base=None):
@@ -771,7 +771,7 @@ class QByteArray(QtCore.QByteArray):
 		If ok is not 0: if a conversion error occurs, *``ok`` is set to false; otherwise *``ok`` is set to true.
 		"""
 		res = super(QByteArray,self).toInt(base)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toLong(self,base=None):

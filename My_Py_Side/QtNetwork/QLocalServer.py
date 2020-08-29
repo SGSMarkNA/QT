@@ -35,7 +35,7 @@ class QLocalServer(QtNetwork.QLocalServer):
 		Returns true if the server has a pending connection; otherwise returns false.
 		"""
 		res = super(QLocalServer,self).hasPendingConnections()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isListening(self):
@@ -43,7 +43,7 @@ class QLocalServer(QtNetwork.QLocalServer):
 		Returns true if the server is listening for incoming connections otherwise false.
 		"""
 		res = super(QLocalServer,self).isListening()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maxPendingConnections(self):
@@ -52,7 +52,7 @@ class QLocalServer(QtNetwork.QLocalServer):
 		The default is 30.
 		"""
 		res = super(QLocalServer,self).maxPendingConnections()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def newConnection(self):
@@ -104,7 +104,7 @@ class QLocalServer(QtNetwork.QLocalServer):
 		On Windows two local servers can listen to the same pipe at the same time, but any connections will go to one of the server.
 		"""
 		res = super(QLocalServer,self).listen(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setMaxPendingConnections(self,numConnections):

@@ -39,7 +39,7 @@ class QTextCodec(QtCore.QTextCodec):
 		It is important that each PySide.QtCore.QTextCodec subclass returns the correct unique value for this function.
 		"""
 		res = super(QTextCodec,self).mibEnum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -63,7 +63,7 @@ class QTextCodec(QtCore.QTextCodec):
 		Returns true if the Unicode character ch can be fully encoded with this codec; otherwise returns false.
 		"""
 		res = super(QTextCodec,self).canEncode(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def convertFromUnicode(self,in,length,state):

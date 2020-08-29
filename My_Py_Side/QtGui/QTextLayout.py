@@ -33,7 +33,7 @@ class QTextLayout(QtGui.QTextLayout):
 		Returns true if the complete layout information is cached; otherwise returns false.
 		"""
 		res = super(QTextLayout,self).cacheEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clearAdditionalFormats(self):
@@ -84,7 +84,7 @@ class QTextLayout(QtGui.QTextLayout):
 		Returns the number of lines in this text layout.
 		"""
 		res = super(QTextLayout,self).lineCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maximumWidth(self):
@@ -118,7 +118,7 @@ class QTextLayout(QtGui.QTextLayout):
 		Returns the position of the area in the text layout that will be processed before editing occurs.
 		"""
 		res = super(QTextLayout,self).preeditAreaPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def preeditAreaText(self):
@@ -189,7 +189,7 @@ class QTextLayout(QtGui.QTextLayout):
 		In indic languages every syllable forms a grapheme cluster.
 		"""
 		res = super(QTextLayout,self).isValidCursorPosition(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineAt(self,i):
@@ -223,7 +223,7 @@ class QTextLayout(QtGui.QTextLayout):
 		Returns the next valid cursor position after oldPos that respects the given cursor mode .
 		"""
 		res = super(QTextLayout,self).nextCursorPosition(oldPos,mode)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def previousCursorPosition(self,oldPos,mode=None):
@@ -235,7 +235,7 @@ class QTextLayout(QtGui.QTextLayout):
 		Returns the first valid cursor position before oldPos that respects the given cursor mode .
 		"""
 		res = super(QTextLayout,self).previousCursorPosition(oldPos,mode)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setAdditionalFormats(self,overrides):

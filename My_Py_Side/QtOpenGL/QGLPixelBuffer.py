@@ -12,7 +12,7 @@ class QGLPixelBuffer(QtOpenGL.QGLPixelBuffer):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QGLPixelBuffer,self).doneCurrent()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def format(self):
@@ -44,7 +44,7 @@ class QGLPixelBuffer(QtOpenGL.QGLPixelBuffer):
 		Returns true if this pbuffer is valid; otherwise returns false.
 		"""
 		res = super(QGLPixelBuffer,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def makeCurrent(self):
@@ -53,7 +53,7 @@ class QGLPixelBuffer(QtOpenGL.QGLPixelBuffer):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QGLPixelBuffer,self).makeCurrent()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def releaseFromDynamicTexture(self):
@@ -107,7 +107,7 @@ class QGLPixelBuffer(QtOpenGL.QGLPixelBuffer):
 
 		"""
 		res = super(QGLPixelBuffer,self).bindToDynamicTexture(texture)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def deleteTexture(self,texture_id):

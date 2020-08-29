@@ -35,7 +35,7 @@ class QSslKey(QtNetwork.QSslKey):
 		Returns true if this is a null key; otherwise false.
 		"""
 		res = super(QSslKey,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -43,7 +43,7 @@ class QSslKey(QtNetwork.QSslKey):
 		Returns the length of the key in bits, or -1 if the key is null.
 		"""
 		res = super(QSslKey,self).length()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):
@@ -62,7 +62,7 @@ class QSslKey(QtNetwork.QSslKey):
 		Returns true if this key is not equal to key other ; otherwise returns false.
 		"""
 		res = super(QSslKey,self).__ne__(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,key):
@@ -73,7 +73,7 @@ class QSslKey(QtNetwork.QSslKey):
 		Returns true if this key is equal to other ; otherwise returns false.
 		"""
 		res = super(QSslKey,self).__eq__(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toDer(self,passPhrase=None):

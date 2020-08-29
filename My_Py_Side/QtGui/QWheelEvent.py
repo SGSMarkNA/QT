@@ -24,7 +24,7 @@ class QWheelEvent(QtGui.QWheelEvent):
 		Example:
 		"""
 		res = super(QWheelEvent,self).delta()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalPos(self):
@@ -41,7 +41,7 @@ class QWheelEvent(QtGui.QWheelEvent):
 		Returns the global x position of the mouse cursor at the time of the event.
 		"""
 		res = super(QWheelEvent,self).globalX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalY(self):
@@ -49,7 +49,7 @@ class QWheelEvent(QtGui.QWheelEvent):
 		Returns the global y position of the mouse cursor at the time of the event.
 		"""
 		res = super(QWheelEvent,self).globalY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -74,7 +74,7 @@ class QWheelEvent(QtGui.QWheelEvent):
 		Returns the x position of the mouse cursor, relative to the widget that received the event.
 		"""
 		res = super(QWheelEvent,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -82,5 +82,5 @@ class QWheelEvent(QtGui.QWheelEvent):
 		Returns the y position of the mouse cursor, relative to the widget that received the event.
 		"""
 		res = super(QWheelEvent,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

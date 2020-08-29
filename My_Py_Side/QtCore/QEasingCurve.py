@@ -61,7 +61,7 @@ class QEasingCurve(QtCore.QEasingCurve):
 		It will also compare the properties of a curve.
 		"""
 		res = super(QEasingCurve,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -73,7 +73,7 @@ class QEasingCurve(QtCore.QEasingCurve):
 		It will also compare the properties of a curve.
 		"""
 		res = super(QEasingCurve,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAmplitude(self,amplitude):

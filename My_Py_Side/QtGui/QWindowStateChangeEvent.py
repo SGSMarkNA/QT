@@ -11,7 +11,7 @@ class QWindowStateChangeEvent(QtGui.QWindowStateChangeEvent):
 
 		"""
 		res = super(QWindowStateChangeEvent,self).isOverride()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def oldState(self):

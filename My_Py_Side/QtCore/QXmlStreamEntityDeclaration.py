@@ -54,7 +54,7 @@ class QXmlStreamEntityDeclaration(QtCore.QXmlStreamEntityDeclaration):
 		Compares this entity declaration with other and returns true if they are not equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamEntityDeclaration,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -65,5 +65,5 @@ class QXmlStreamEntityDeclaration(QtCore.QXmlStreamEntityDeclaration):
 		Compares this entity declaration with other and returns true if they are equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamEntityDeclaration,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

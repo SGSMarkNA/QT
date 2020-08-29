@@ -34,7 +34,7 @@ class QNetworkCookie(QtNetwork.QNetworkCookie):
 		It is not accessible from scripts running on browsers.
 		"""
 		res = super(QNetworkCookie,self).isHttpOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSecure(self):
@@ -43,7 +43,7 @@ class QNetworkCookie(QtNetwork.QNetworkCookie):
 		Secure cookies may contain private information and should not be resent over unencrypted connections.
 		"""
 		res = super(QNetworkCookie,self).isSecure()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSessionCookie(self):
@@ -52,7 +52,7 @@ class QNetworkCookie(QtNetwork.QNetworkCookie):
 		A session cookie is a cookie which has no expiration date, which means it should be discarded when the applications concept of session is over (usually, when the application exits).
 		"""
 		res = super(QNetworkCookie,self).isSessionCookie()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -90,7 +90,7 @@ class QNetworkCookie(QtNetwork.QNetworkCookie):
 		Returns true if this cookie is not equal to other .
 		"""
 		res = super(QNetworkCookie,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -103,7 +103,7 @@ class QNetworkCookie(QtNetwork.QNetworkCookie):
 		However, in some contexts, two cookies of the same name could be considered equal.
 		"""
 		res = super(QNetworkCookie,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDomain(self,domain):

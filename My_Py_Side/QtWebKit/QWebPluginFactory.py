@@ -14,7 +14,7 @@ class QWebPluginFactory(QtWebKit.QWebPluginFactory):
 		Returns true if this mimetype is different from the other mime type.
 		"""
 		res = super(QWebPluginFactory,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -25,5 +25,5 @@ class QWebPluginFactory(QtWebKit.QWebPluginFactory):
 		Returns true if this mimetype is the same as the other mime type.
 		"""
 		res = super(QWebPluginFactory,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

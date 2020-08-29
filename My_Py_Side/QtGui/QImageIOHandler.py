@@ -12,7 +12,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		When reimplementing PySide.QtGui.QImageIOHandler.canRead() , make sure that the I/O device ( PySide.QtGui.QImageIOHandler.device() ) is left in its original state (e.g., by using peek() rather than PySide.QtGui.QImageIOHandler.read() ).
 		"""
 		res = super(QImageIOHandler,self).canRead()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def currentImageNumber(self):
@@ -23,7 +23,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		If the image format does not support animation, 0 is returned.
 		"""
 		res = super(QImageIOHandler,self).currentImageNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentImageRect(self):
@@ -61,7 +61,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		The default implementation returns 1 if PySide.QtGui.QImageIOHandler.canRead() returns true; otherwise 0 is returned.
 		"""
 		res = super(QImageIOHandler,self).imageCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def jumpToNextImage(self):
@@ -70,7 +70,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		The default implementation does nothing, and returns false.
 		"""
 		res = super(QImageIOHandler,self).jumpToNextImage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loopCount(self):
@@ -79,7 +79,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		If the image format does not support animation, 0 is returned.
 		"""
 		res = super(QImageIOHandler,self).loopCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def nextImageDelay(self):
@@ -88,7 +88,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		If the image format does not support animation, 0 is returned.
 		"""
 		res = super(QImageIOHandler,self).nextImageDelay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def jumpToImage(self,imageNumber):
@@ -101,7 +101,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		The default implementation does nothing, and returns false.
 		"""
 		res = super(QImageIOHandler,self).jumpToImage(imageNumber)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def option(self,option):
@@ -126,7 +126,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		For image formats that support incremental loading, and for animation formats, the image handler can assume that image points to the previous frame.
 		"""
 		res = super(QImageIOHandler,self).read(image)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDevice(self,device):
@@ -174,7 +174,7 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		For example, if the PySide.QtGui.QImageIOHandler supports the Size option, supportsOption(Size) must return true.
 		"""
 		res = super(QImageIOHandler,self).supportsOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,image):
@@ -187,5 +187,5 @@ class QImageIOHandler(QtGui.QImageIOHandler):
 		The default implementation does nothing, and simply returns false.
 		"""
 		res = super(QImageIOHandler,self).write(image)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

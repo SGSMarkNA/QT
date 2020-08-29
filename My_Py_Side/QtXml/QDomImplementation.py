@@ -11,7 +11,7 @@ class QDomImplementation(QtXml.QDomImplementation):
 		Returns false if the object was created by QDomDocument.implementation() ; otherwise returns true.
 		"""
 		res = super(QDomImplementation,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createDocument(self,nsURI,qName,doctype):
@@ -62,7 +62,7 @@ class QDomImplementation(QtXml.QDomImplementation):
 		The currently supported features and their versions:
 		"""
 		res = super(QDomImplementation,self).hasFeature(feature,version)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,arg__1):
@@ -73,7 +73,7 @@ class QDomImplementation(QtXml.QDomImplementation):
 		Returns true if x and this DOM implementation object were created from different QDomDocuments; otherwise returns false.
 		"""
 		res = super(QDomImplementation,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -84,5 +84,5 @@ class QDomImplementation(QtXml.QDomImplementation):
 		Returns true if x and this DOM implementation object were created from the same PySide.QtXml.QDomDocument ; otherwise returns false.
 		"""
 		res = super(QDomImplementation,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

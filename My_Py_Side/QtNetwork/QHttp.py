@@ -37,7 +37,7 @@ class QHttp(QtNetwork.QHttp):
 		If you want to close the connection immediately, you have to use PySide.QtNetwork.QHttp.abort() instead.
 		"""
 		res = super(QHttp,self).close()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentDestinationDevice(self):
@@ -56,7 +56,7 @@ class QHttp(QtNetwork.QHttp):
 		theyve all finished).
 		"""
 		res = super(QHttp,self).currentId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentRequest(self):
@@ -103,7 +103,7 @@ class QHttp(QtNetwork.QHttp):
 		The request that is being executed is not considered as a scheduled request.
 		"""
 		res = super(QHttp,self).hasPendingRequests()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastResponse(self):
@@ -145,7 +145,7 @@ class QHttp(QtNetwork.QHttp):
 		Make sure that the to pointer is valid for the duration of the operation (it is safe to delete it when the PySide.QtNetwork.QHttp.requestFinished() signal is emitted).
 		"""
 		res = super(QHttp,self).get(path,to)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def head(self,path):
@@ -162,7 +162,7 @@ class QHttp(QtNetwork.QHttp):
 		When it is finished the PySide.QtNetwork.QHttp.requestFinished() signal is emitted.
 		"""
 		res = super(QHttp,self).head(path)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def post(self,*args,**kwargs):
@@ -181,7 +181,7 @@ class QHttp(QtNetwork.QHttp):
 		data is used as the content data of the HTTP request.
 		"""
 		res = super(QHttp,self).post(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,maxlen):
@@ -211,7 +211,7 @@ class QHttp(QtNetwork.QHttp):
 		data is used as the content data of the HTTP request.
 		"""
 		res = super(QHttp,self).request(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setHost(self,*args,**kwargs):
@@ -233,7 +233,7 @@ class QHttp(QtNetwork.QHttp):
 		When it is finished the PySide.QtNetwork.QHttp.requestFinished() signal is emitted.
 		"""
 		res = super(QHttp,self).setHost(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setProxy(self,*args,**kwargs):
@@ -254,7 +254,7 @@ class QHttp(QtNetwork.QHttp):
 		For transparent proxying, such as SOCKS5, use PySide.QtNetwork.QNetworkProxy instead.
 		"""
 		res = super(QHttp,self).setProxy(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setSocket(self,socket):
@@ -273,7 +273,7 @@ class QHttp(QtNetwork.QHttp):
 		Note: If PySide.QtNetwork.QHttp is used in a non-GUI thread that runs its own event loop, you must move socket to that thread before calling PySide.QtNetwork.QHttp.setSocket() .
 		"""
 		res = super(QHttp,self).setSocket(socket)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setUser(self,username,password=None):
@@ -290,5 +290,5 @@ class QHttp(QtNetwork.QHttp):
 		When it is finished the PySide.QtNetwork.QHttp.requestFinished() signal is emitted.
 		"""
 		res = super(QHttp,self).setUser(username,password)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

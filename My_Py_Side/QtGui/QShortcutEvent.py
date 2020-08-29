@@ -11,7 +11,7 @@ class QShortcutEvent(QtGui.QShortcutEvent):
 		Returns true if the key sequence that triggered the event is ambiguous.
 		"""
 		res = super(QShortcutEvent,self).isAmbiguous()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def key(self):
@@ -27,5 +27,5 @@ class QShortcutEvent(QtGui.QShortcutEvent):
 		Returns the ID of the PySide.QtGui.QShortcut object for which this event was generated.
 		"""
 		res = super(QShortcutEvent,self).shortcutId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

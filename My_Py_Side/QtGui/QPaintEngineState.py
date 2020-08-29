@@ -38,7 +38,7 @@ class QPaintEngineState(QtGui.QPaintEngineState):
 		Returns whether the coordinate of the fill have been specified as bounded by the current rendering operation and have to be resolved (about the currently rendered primitive).
 		"""
 		res = super(QPaintEngineState,self).brushNeedsResolving()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def brushOrigin(self):
@@ -101,7 +101,7 @@ class QPaintEngineState(QtGui.QPaintEngineState):
 		This variable should only be used when the PySide.QtGui.QPaintEngineState.state() returns a combination which includes the QPaintEngine.DirtyClipEnabled flag.
 		"""
 		res = super(QPaintEngineState,self).isClipEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def matrix(self):
@@ -143,7 +143,7 @@ class QPaintEngineState(QtGui.QPaintEngineState):
 		Returns whether the coordinate of the stroke have been specified as bounded by the current rendering operation and have to be resolved (about the currently rendered primitive).
 		"""
 		res = super(QPaintEngineState,self).penNeedsResolving()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def renderHints(self):

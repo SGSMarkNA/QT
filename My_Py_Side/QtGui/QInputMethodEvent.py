@@ -35,7 +35,7 @@ class QInputMethodEvent(QtGui.QInputMethodEvent):
 		Returns the number of characters to be replaced in the preedit string.
 		"""
 		res = super(QInputMethodEvent,self).replacementLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def replacementStart(self):
@@ -43,7 +43,7 @@ class QInputMethodEvent(QtGui.QInputMethodEvent):
 		Returns the position at which characters are to be replaced relative from the start of the preedit string.
 		"""
 		res = super(QInputMethodEvent,self).replacementStart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCommitString(self,commitString,replaceFrom=None,replaceLength=None):

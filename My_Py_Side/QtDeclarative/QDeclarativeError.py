@@ -11,7 +11,7 @@ class QDeclarativeError(QtDeclarative.QDeclarativeError):
 		Returns the error column number.
 		"""
 		res = super(QDeclarativeError,self).column()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def description(self):
@@ -26,7 +26,7 @@ class QDeclarativeError(QtDeclarative.QDeclarativeError):
 		Returns true if this error is valid, otherwise false.
 		"""
 		res = super(QDeclarativeError,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def line(self):
@@ -34,7 +34,7 @@ class QDeclarativeError(QtDeclarative.QDeclarativeError):
 		Returns the error line number.
 		"""
 		res = super(QDeclarativeError,self).line()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self):

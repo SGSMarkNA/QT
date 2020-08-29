@@ -13,7 +13,7 @@ class QDial(QtGui.QDial):
 		By default, this property has a value of 1.
 		"""
 		res = super(QDial,self).notchSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def notchTarget(self):
@@ -34,7 +34,7 @@ class QDial(QtGui.QDial):
 		By default, this property is disabled.
 		"""
 		res = super(QDial,self).notchesVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def wrapping(self):
@@ -46,7 +46,7 @@ class QDial(QtGui.QDial):
 		By default this property is false.
 		"""
 		res = super(QDial,self).wrapping()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def initStyleOption(self,option):

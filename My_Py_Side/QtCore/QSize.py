@@ -27,7 +27,7 @@ class QSize(QtCore.QSize):
 		Returns the height.
 		"""
 		res = super(QSize,self).height()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -35,7 +35,7 @@ class QSize(QtCore.QSize):
 		Returns true if either of the width and height is less than or equal to 0; otherwise returns false.
 		"""
 		res = super(QSize,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -43,7 +43,7 @@ class QSize(QtCore.QSize):
 		Returns true if both the width and height is 0; otherwise returns false.
 		"""
 		res = super(QSize,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -51,7 +51,7 @@ class QSize(QtCore.QSize):
 		Returns true if both the width and height is equal to or greater than 0; otherwise returns false.
 		"""
 		res = super(QSize,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toTuple(self):
@@ -74,7 +74,7 @@ class QSize(QtCore.QSize):
 		Returns the width.
 		"""
 		res = super(QSize,self).width()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boundedTo(self,arg__1):
@@ -107,7 +107,7 @@ class QSize(QtCore.QSize):
 
 		"""
 		res = super(QSize,self).__ne__(s2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -215,7 +215,7 @@ class QSize(QtCore.QSize):
 
 		"""
 		res = super(QSize,self).__eq__(s2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def scale(self,*args,**kwargs):

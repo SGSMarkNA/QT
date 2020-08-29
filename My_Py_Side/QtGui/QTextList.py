@@ -11,7 +11,7 @@ class QTextList(QtGui.QTextList):
 		Returns the number of items in the list.
 		"""
 		res = super(QTextList,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def add(self,block):
@@ -44,7 +44,7 @@ class QTextList(QtGui.QTextList):
 		Returns -1 if the block was not present in the list.
 		"""
 		res = super(QTextList,self).itemNumber(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def itemText(self,arg__1):

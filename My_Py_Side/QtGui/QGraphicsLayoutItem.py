@@ -51,7 +51,7 @@ class QGraphicsLayoutItem(QtGui.QGraphicsLayoutItem):
 		Returns true if this PySide.QtGui.QGraphicsLayoutItem is a layout (e.g., is inherited by an object that arranges other PySide.QtGui.QGraphicsLayoutItem objects); otherwise returns false.
 		"""
 		res = super(QGraphicsLayoutItem,self).isLayout()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximumHeight(self):
@@ -115,7 +115,7 @@ class QGraphicsLayoutItem(QtGui.QGraphicsLayoutItem):
 		Subclasses might override this default behaviour by calling setOwnedByLayout(true).
 		"""
 		res = super(QGraphicsLayoutItem,self).ownedByLayout()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def parentLayoutItem(self):

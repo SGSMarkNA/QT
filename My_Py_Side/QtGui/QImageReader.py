@@ -12,7 +12,7 @@ class QImageReader(QtGui.QImageReader):
 		By default, autodetection is enabled.
 		"""
 		res = super(QImageReader,self).autoDetectImageFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def backgroundColor(self):
@@ -32,7 +32,7 @@ class QImageReader(QtGui.QImageReader):
 		For images that support animation, PySide.QtGui.QImageReader.canRead() returns false when all frames have been read.
 		"""
 		res = super(QImageReader,self).canRead()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clipRect(self):
@@ -51,7 +51,7 @@ class QImageReader(QtGui.QImageReader):
 		This function returns -1 if an error occurred.
 		"""
 		res = super(QImageReader,self).currentImageNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentImageRect(self):
@@ -68,7 +68,7 @@ class QImageReader(QtGui.QImageReader):
 		Returns whether the image reader should decide which plugin to use only based on the contents of the datastream rather than on the file extension.
 		"""
 		res = super(QImageReader,self).decideFormatFromContent()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def device(self):
@@ -120,7 +120,7 @@ class QImageReader(QtGui.QImageReader):
 		This function returns -1 if an error occurred.
 		"""
 		res = super(QImageReader,self).imageCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def imageFormat(self):
@@ -139,7 +139,7 @@ class QImageReader(QtGui.QImageReader):
 		The default implementation calls PySide.QtGui.QImageReader.read() , then discards the resulting image, but the image handler may have a more efficient way of implementing this operation.
 		"""
 		res = super(QImageReader,self).jumpToNextImage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loopCount(self):
@@ -149,7 +149,7 @@ class QImageReader(QtGui.QImageReader):
 		If an error occurred, PySide.QtGui.QImageReader.canRead() will return false.
 		"""
 		res = super(QImageReader,self).loopCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def nextImageDelay(self):
@@ -159,7 +159,7 @@ class QImageReader(QtGui.QImageReader):
 		This function returns -1 if an error occurred.
 		"""
 		res = super(QImageReader,self).nextImageDelay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def quality(self):
@@ -167,7 +167,7 @@ class QImageReader(QtGui.QImageReader):
 		Returns the quality level of the image.
 		"""
 		res = super(QImageReader,self).quality()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def read(self):
@@ -213,7 +213,7 @@ class QImageReader(QtGui.QImageReader):
 		Returns true if the image format supports animation; otherwise, false is returned.
 		"""
 		res = super(QImageReader,self).supportsAnimation()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def textKeys(self):
@@ -234,7 +234,7 @@ class QImageReader(QtGui.QImageReader):
 		The next call to PySide.QtGui.QImageReader.read() will attempt to read this image.
 		"""
 		res = super(QImageReader,self).jumpToImage(imageNumber)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAutoDetectImageFormat(self,enabled):
@@ -369,7 +369,7 @@ class QImageReader(QtGui.QImageReader):
 
 		"""
 		res = super(QImageReader,self).supportsOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def text(self,key):

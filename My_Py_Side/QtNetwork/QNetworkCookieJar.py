@@ -48,5 +48,5 @@ class QNetworkCookieJar(QtNetwork.QNetworkCookieJar):
 
 		"""
 		res = super(QNetworkCookieJar,self).setCookiesFromUrl(cookieList,url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

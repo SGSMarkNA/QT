@@ -25,7 +25,7 @@ class QWebElementCollection(QtWebKit.QWebElementCollection):
 		Returns the number of elements in the collection.
 		"""
 		res = super(QWebElementCollection,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def first(self):

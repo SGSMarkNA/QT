@@ -11,7 +11,7 @@ class QPainterPath(QtGui.QPainterPath):
 		Returns true if the element is a curve, otherwise returns false.
 		"""
 		res = super(QPainterPath,self).isCurveTo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isLineTo(self):
@@ -19,7 +19,7 @@ class QPainterPath(QtGui.QPainterPath):
 		Returns true if the element is a line, otherwise returns false.
 		"""
 		res = super(QPainterPath,self).isLineTo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isMoveTo(self):
@@ -27,7 +27,7 @@ class QPainterPath(QtGui.QPainterPath):
 		Returns true if the element is moving the current position, otherwise returns false.
 		"""
 		res = super(QPainterPath,self).isMoveTo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,e):
@@ -38,7 +38,7 @@ class QPainterPath(QtGui.QPainterPath):
 		Returns true if this element is not equal to other ; otherwise returns false.
 		"""
 		res = super(QPainterPath,self).__ne__(e)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,e):
@@ -49,5 +49,5 @@ class QPainterPath(QtGui.QPainterPath):
 		Returns true if this element is equal to other ; otherwise returns false.
 		"""
 		res = super(QPainterPath,self).__eq__(e)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

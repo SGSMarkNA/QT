@@ -27,7 +27,7 @@ class QVector4D(QtGui.QVector4D):
 		Returns true if the x, y, z, and w coordinates are set to 0.0, otherwise returns false.
 		"""
 		res = super(QVector4D,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -174,7 +174,7 @@ class QVector4D(QtGui.QVector4D):
 
 		"""
 		res = super(QVector4D,self).__ne__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -288,7 +288,7 @@ class QVector4D(QtGui.QVector4D):
 
 		"""
 		res = super(QVector4D,self).__eq__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setW(self,w):

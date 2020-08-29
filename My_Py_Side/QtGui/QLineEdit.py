@@ -49,7 +49,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QLineEdit,self).cursorPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def cursorRect(self):
@@ -92,7 +92,7 @@ class QLineEdit(QtGui.QLineEdit):
 		Dragging is disabled by default.
 		"""
 		res = super(QLineEdit,self).dragEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def echoMode(self):
@@ -127,7 +127,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property is true.
 		"""
 		res = super(QLineEdit,self).hasAcceptableInput()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasFrame(self):
@@ -136,7 +136,7 @@ class QLineEdit(QtGui.QLineEdit):
 		If enabled (the default) the line edit draws itself inside a frame, otherwise the line edit draws itself without any frame.
 		"""
 		res = super(QLineEdit,self).hasFrame()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasSelectedText(self):
@@ -146,7 +146,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property is false.
 		"""
 		res = super(QLineEdit,self).hasSelectedText()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def inputMask(self):
@@ -175,7 +175,7 @@ class QLineEdit(QtGui.QLineEdit):
 		Calling PySide.QtGui.QLineEdit.setText() resets the modified flag to false.
 		"""
 		res = super(QLineEdit,self).isModified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadOnly(self):
@@ -186,7 +186,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property is false.
 		"""
 		res = super(QLineEdit,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRedoAvailable(self):
@@ -196,7 +196,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property is false.
 		"""
 		res = super(QLineEdit,self).isRedoAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndoAvailable(self):
@@ -206,7 +206,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property is false.
 		"""
 		res = super(QLineEdit,self).isUndoAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maxLength(self):
@@ -218,7 +218,7 @@ class QLineEdit(QtGui.QLineEdit):
 		By default, this property contains a value of 32767.
 		"""
 		res = super(QLineEdit,self).maxLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def placeholderText(self):
@@ -258,7 +258,7 @@ class QLineEdit(QtGui.QLineEdit):
 		PySide.QtGui.QLineEdit.selectionStart() returns the index of the first selected character in the line edit or -1 if no text is selected.
 		"""
 		res = super(QLineEdit,self).selectionStart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def text(self):
@@ -320,7 +320,7 @@ class QLineEdit(QtGui.QLineEdit):
 		Returns the cursor position under the point pos .
 		"""
 		res = super(QLineEdit,self).cursorPositionAt(pos)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def cursorWordBackward(self,mark):

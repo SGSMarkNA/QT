@@ -86,7 +86,7 @@ class QNetworkSession(QtNetwork.QNetworkSession):
 		The session can be controlled via PySide.QtNetwork.QNetworkSession.open() and PySide.QtNetwork.QNetworkSession.close() .
 		"""
 		res = super(QNetworkSession,self).isOpen()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def newConfigurationActivated(self):
@@ -165,5 +165,5 @@ class QNetworkSession(QtNetwork.QNetworkSession):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QNetworkSession,self).waitForOpened(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

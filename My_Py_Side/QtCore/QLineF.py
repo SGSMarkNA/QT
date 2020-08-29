@@ -53,7 +53,7 @@ class QLineF(QtCore.QLineF):
 		Returns true if the line is not set up with valid start and end point; otherwise returns false.
 		"""
 		res = super(QLineF,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -192,7 +192,7 @@ class QLineF(QtCore.QLineF):
 		A line is different from another line if their start or end points differ, or the internal order of the points is different.
 		"""
 		res = super(QLineF,self).__ne__(d)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -218,7 +218,7 @@ class QLineF(QtCore.QLineF):
 		A line is identical to another line if the start and end points are identical, and the internal order of the points is the same.
 		"""
 		res = super(QLineF,self).__eq__(d)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pointAt(self,t):

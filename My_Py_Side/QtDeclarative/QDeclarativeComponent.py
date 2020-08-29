@@ -40,7 +40,7 @@ class QDeclarativeComponent(QtDeclarative.QDeclarativeComponent):
 
 		"""
 		res = super(QDeclarativeComponent,self).isError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isLoading(self):
@@ -48,7 +48,7 @@ class QDeclarativeComponent(QtDeclarative.QDeclarativeComponent):
 
 		"""
 		res = super(QDeclarativeComponent,self).isLoading()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -56,7 +56,7 @@ class QDeclarativeComponent(QtDeclarative.QDeclarativeComponent):
 
 		"""
 		res = super(QDeclarativeComponent,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReady(self):
@@ -64,7 +64,7 @@ class QDeclarativeComponent(QtDeclarative.QDeclarativeComponent):
 
 		"""
 		res = super(QDeclarativeComponent,self).isReady()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def progress(self):

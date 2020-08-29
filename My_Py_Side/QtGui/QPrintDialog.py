@@ -62,5 +62,5 @@ class QPrintDialog(QtGui.QPrintDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QPrintDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

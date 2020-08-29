@@ -233,7 +233,7 @@ class QPalette(QtGui.QPalette):
 		Returns true if the QPalette.ColorGroup cg and QPalette.ColorRole cr has been set previously on this palette; otherwise returns false.
 		"""
 		res = super(QPalette,self).isBrushSet(cg,cr)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCopyOf(self,p):
@@ -246,7 +246,7 @@ class QPalette(QtGui.QPalette):
 		This is much stricter than equality.
 		"""
 		res = super(QPalette,self).isCopyOf(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEqual(self,cr1,cr2):
@@ -258,7 +258,7 @@ class QPalette(QtGui.QPalette):
 		Returns true (usually quickly) if color group cg1 is equal to cg2 ; otherwise returns false.
 		"""
 		res = super(QPalette,self).isEqual(cr1,cr2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,p):
@@ -269,7 +269,7 @@ class QPalette(QtGui.QPalette):
 		Returns true (slowly) if this palette is different from p ; otherwise returns false (usually quickly).
 		"""
 		res = super(QPalette,self).__ne__(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,p):
@@ -280,7 +280,7 @@ class QPalette(QtGui.QPalette):
 		Returns true (usually quickly) if this palette is equal to p ; otherwise returns false (slowly).
 		"""
 		res = super(QPalette,self).__eq__(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def resolve(self,*args,**kwargs):

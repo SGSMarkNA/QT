@@ -21,7 +21,7 @@ class Phonon(phonon.Phonon):
 		If tracking is disabled, the volume changes only when the user releases the slider.
 		"""
 		res = super(Phonon,self).hasTracking()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def iconSize(self):
@@ -39,7 +39,7 @@ class Phonon(phonon.Phonon):
 		By default the mute button/icon is visible.
 		"""
 		res = super(Phonon,self).isMuteVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximumVolume(self):
@@ -67,7 +67,7 @@ class Phonon(phonon.Phonon):
 		Defaults to 5 (5% of the voltage).
 		"""
 		res = super(Phonon,self).pageStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def singleStep(self):
@@ -77,7 +77,7 @@ class Phonon(phonon.Phonon):
 		Defaults to 1 (1% of the voltage).
 		"""
 		res = super(Phonon,self).singleStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setPageStep(self,milliseconds):

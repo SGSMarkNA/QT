@@ -61,7 +61,7 @@ class QWebHitTestResult(QtWebKit.QWebHitTestResult):
 		Returns true if the content is editable by the user; otherwise returns false.
 		"""
 		res = super(QWebHitTestResult,self).isContentEditable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isContentSelected(self):
@@ -69,7 +69,7 @@ class QWebHitTestResult(QtWebKit.QWebHitTestResult):
 		Returns true if the content tested is part of the selection; otherwise returns false.
 		"""
 		res = super(QWebHitTestResult,self).isContentSelected()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -77,7 +77,7 @@ class QWebHitTestResult(QtWebKit.QWebHitTestResult):
 		Returns true if the hit test result is null; otherwise returns false.
 		"""
 		res = super(QWebHitTestResult,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def linkElement(self):

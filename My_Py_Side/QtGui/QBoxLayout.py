@@ -194,7 +194,7 @@ class QBoxLayout(QtGui.QBoxLayout):
 		Sets the stretch factor for widget to stretch and returns true if widget is found in this layout (not including child layouts); otherwise returns false.
 		"""
 		res = super(QBoxLayout,self).setStretchFactor(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def stretch(self,index):
@@ -205,5 +205,5 @@ class QBoxLayout(QtGui.QBoxLayout):
 		Returns the stretch factor at position index .
 		"""
 		res = super(QBoxLayout,self).stretch(index)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

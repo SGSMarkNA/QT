@@ -22,7 +22,7 @@ class QFileDialog(QtGui.QFileDialog):
 		Use setOption( DontConfirmOverwrite , !*enabled* ) or !testOption( DontConfirmOverwrite ) instead.
 		"""
 		res = super(QFileDialog,self).confirmOverwrite()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def defaultSuffix(self):
@@ -90,7 +90,7 @@ class QFileDialog(QtGui.QFileDialog):
 
 		"""
 		res = super(QFileDialog,self).isNameFilterDetailsVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadOnly(self):
@@ -100,7 +100,7 @@ class QFileDialog(QtGui.QFileDialog):
 		Use setOption( ReadOnly , enabled ) or testOption( ReadOnly ) instead.
 		"""
 		res = super(QFileDialog,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemDelegate(self):
@@ -142,7 +142,7 @@ class QFileDialog(QtGui.QFileDialog):
 		Use setOption( DontResolveSymlinks , !``enabled`` ) or !testOption( DontResolveSymlinks ).
 		"""
 		res = super(QFileDialog,self).resolveSymlinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def saveState(self):
@@ -227,7 +227,7 @@ class QFileDialog(QtGui.QFileDialog):
 		Returns false if there are errors
 		"""
 		res = super(QFileDialog,self).restoreState(state)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectFile(self,filename):
@@ -510,5 +510,5 @@ class QFileDialog(QtGui.QFileDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QFileDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

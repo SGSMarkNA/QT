@@ -37,7 +37,7 @@ class QWizardPage(QtGui.QWizardPage):
 		Returns true if this page is a commit page; otherwise returns false.
 		"""
 		res = super(QWizardPage,self).isCommitPage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isComplete(self):
@@ -49,7 +49,7 @@ class QWizardPage(QtGui.QWizardPage):
 		An example of the reimplementation is available here.
 		"""
 		res = super(QWizardPage,self).isComplete()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFinalPage(self):
@@ -59,7 +59,7 @@ class QWizardPage(QtGui.QWizardPage):
 		By explicitly calling setFinalPage(true), you can let the user perform an early finish.
 		"""
 		res = super(QWizardPage,self).isFinalPage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nextId(self):
@@ -71,7 +71,7 @@ class QWizardPage(QtGui.QWizardPage):
 		For example:
 		"""
 		res = super(QWizardPage,self).nextId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def subTitle(self):
@@ -106,7 +106,7 @@ class QWizardPage(QtGui.QWizardPage):
 		When possible, it is usually better style to disable the Next or Finish button (by specifying mandatory fields or reimplementing PySide.QtGui.QWizardPage.isComplete() ) than to reimplement PySide.QtGui.QWizardPage.validatePage() .
 		"""
 		res = super(QWizardPage,self).validatePage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def wizard(self):

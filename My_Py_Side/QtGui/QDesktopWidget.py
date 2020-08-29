@@ -13,7 +13,7 @@ class QDesktopWidget(QtGui.QDesktopWidget):
 		The size of the virtual desktop is the size of this desktop widget.
 		"""
 		res = super(QDesktopWidget,self).isVirtualDesktop()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numScreens(self):
@@ -23,7 +23,7 @@ class QDesktopWidget(QtGui.QDesktopWidget):
 		Use PySide.QtGui.QDesktopWidget.screenCount() instead.
 		"""
 		res = super(QDesktopWidget,self).numScreens()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def primaryScreen(self):
@@ -31,7 +31,7 @@ class QDesktopWidget(QtGui.QDesktopWidget):
 		This property holds the index of the screen that is configured to be the primary screen on the system..
 		"""
 		res = super(QDesktopWidget,self).primaryScreen()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def screenCount(self):
@@ -39,7 +39,7 @@ class QDesktopWidget(QtGui.QDesktopWidget):
 		This property holds the number of screens currently available on the system..
 		"""
 		res = super(QDesktopWidget,self).screenCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def availableGeometry(self,*args,**kwargs):
@@ -102,5 +102,5 @@ class QDesktopWidget(QtGui.QDesktopWidget):
 		Returns the index of the screen that contains the point , or the screen which is the shortest distance from the point .
 		"""
 		res = super(QDesktopWidget,self).screenNumber(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

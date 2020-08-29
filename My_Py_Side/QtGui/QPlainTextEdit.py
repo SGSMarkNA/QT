@@ -15,7 +15,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		The default is false.
 		"""
 		res = super(QPlainTextEdit,self).backgroundVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def blockCount(self):
@@ -24,7 +24,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		By default, in an empty document, this property contains a value of 1.
 		"""
 		res = super(QPlainTextEdit,self).blockCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def canPaste(self):
@@ -32,7 +32,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		Returns whether text can be pasted from the clipboard into the textedit.
 		"""
 		res = super(QPlainTextEdit,self).canPaste()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def centerOnScroll(self):
@@ -45,7 +45,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		The default is false.
 		"""
 		res = super(QPlainTextEdit,self).centerOnScroll()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def contentOffset(self):
@@ -109,7 +109,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		The default value is 1.
 		"""
 		res = super(QPlainTextEdit,self).cursorWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def document(self):
@@ -165,7 +165,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		This propertys default is false.
 		"""
 		res = super(QPlainTextEdit,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndoRedoEnabled(self):
@@ -175,7 +175,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		By default, this property is true.
 		"""
 		res = super(QPlainTextEdit,self).isUndoRedoEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineWrapMode(self):
@@ -200,7 +200,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		Setting this property also disables the undo redo history.
 		"""
 		res = super(QPlainTextEdit,self).maximumBlockCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def overwriteMode(self):
@@ -211,7 +211,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		By default, this property is false (new text does not overwrite existing text).
 		"""
 		res = super(QPlainTextEdit,self).overwriteMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectionChanged(self):
@@ -228,7 +228,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		The default is false.
 		"""
 		res = super(QPlainTextEdit,self).tabChangesFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tabStopWidth(self):
@@ -237,7 +237,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		By default, this property contains a value of 80.
 		"""
 		res = super(QPlainTextEdit,self).tabStopWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def textChanged(self):
@@ -325,7 +325,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 		It is called for example when during a drag operation the mouse enters this widget and it is necessary to determine whether it is possible to accept the drag.
 		"""
 		res = super(QPlainTextEdit,self).canInsertFromMimeData(source)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def cursorForPosition(self,pos):
@@ -359,7 +359,7 @@ class QPlainTextEdit(QtGui.QPlainTextEdit):
 
 		"""
 		res = super(QPlainTextEdit,self).find(exp,options)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insertFromMimeData(self,source):

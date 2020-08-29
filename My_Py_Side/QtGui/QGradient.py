@@ -57,7 +57,7 @@ class QGradient(QtGui.QGradient):
 		Returns true if the gradient is the same as the other gradient specified; otherwise returns false.
 		"""
 		res = super(QGradient,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,gradient):
@@ -68,7 +68,7 @@ class QGradient(QtGui.QGradient):
 		Returns true if the gradient is the same as the other gradient specified; otherwise returns false.
 		"""
 		res = super(QGradient,self).__eq__(gradient)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setColorAt(self,pos,color):

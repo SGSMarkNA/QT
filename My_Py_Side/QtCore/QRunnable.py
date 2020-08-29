@@ -12,7 +12,7 @@ class QRunnable(QtCore.QRunnable):
 		If auto-deletion is enabled, PySide.QtCore.QThreadPool will automatically delete this runnable after calling PySide.QtCore.QRunnable.run() ; otherwise, ownership remains with the application programmer.
 		"""
 		res = super(QRunnable,self).autoDelete()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def run(self):

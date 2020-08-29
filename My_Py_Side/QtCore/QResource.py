@@ -41,7 +41,7 @@ class QResource(QtCore.QResource):
 		Returns true if the resource represents a file and the data backing it is in a compressed format, false otherwise.
 		"""
 		res = super(QResource,self).isCompressed()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDir(self):
@@ -49,7 +49,7 @@ class QResource(QtCore.QResource):
 		Returns true if the resource represents a directory and thus may have PySide.QtCore.QResource.children() in it, false if it represents a file.
 		"""
 		res = super(QResource,self).isDir()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFile(self):
@@ -57,7 +57,7 @@ class QResource(QtCore.QResource):
 		Returns true if the resource represents a file and thus has data backing it, false if it represents a directory.
 		"""
 		res = super(QResource,self).isFile()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -65,7 +65,7 @@ class QResource(QtCore.QResource):
 		Returns true if the resource really exists in the resource hierarchy, false otherwise.
 		"""
 		res = super(QResource,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def locale(self):

@@ -26,7 +26,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		Returns true if the server has a pending connection; otherwise returns false.
 		"""
 		res = super(QTcpServer,self).hasPendingConnections()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isListening(self):
@@ -34,7 +34,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		Returns true if the server is currently listening for incoming connections; otherwise returns false.
 		"""
 		res = super(QTcpServer,self).isListening()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maxPendingConnections(self):
@@ -43,7 +43,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		The default is 30.
 		"""
 		res = super(QTcpServer,self).maxPendingConnections()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def newConnection(self):
@@ -103,7 +103,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		If the server is using PySide.QtNetwork.QNetworkProxy , the returned descriptor may not be usable with native socket functions.
 		"""
 		res = super(QTcpServer,self).socketDescriptor()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addPendingConnection(self,socket):
@@ -143,7 +143,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QTcpServer,self).listen(address,port)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setMaxPendingConnections(self,numConnections):
@@ -181,7 +181,7 @@ class QTcpServer(QtNetwork.QTcpServer):
 		The socket is assumed to be in listening state.
 		"""
 		res = super(QTcpServer,self).setSocketDescriptor(socketDescriptor)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def waitForNewConnection(self,msec):

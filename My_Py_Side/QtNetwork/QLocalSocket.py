@@ -55,7 +55,7 @@ class QLocalSocket(QtNetwork.QLocalSocket):
 		In the absence of an event loop, call PySide.QtNetwork.QLocalSocket.waitForBytesWritten() instead.
 		"""
 		res = super(QLocalSocket,self).flush()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fullServerName(self):
@@ -70,7 +70,7 @@ class QLocalSocket(QtNetwork.QLocalSocket):
 		Returns true if the socket is valid and ready for use; otherwise returns false.
 		"""
 		res = super(QLocalSocket,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def readBufferSize(self):
@@ -145,7 +145,7 @@ class QLocalSocket(QtNetwork.QLocalSocket):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QLocalSocket,self).waitForConnected(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def waitForDisconnected(self,msecs=None):
@@ -160,5 +160,5 @@ class QLocalSocket(QtNetwork.QLocalSocket):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QLocalSocket,self).waitForDisconnected(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

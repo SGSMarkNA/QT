@@ -21,7 +21,7 @@ class QGraphicsSceneWheelEvent(QtGui.QGraphicsSceneWheelEvent):
 		Most mouse types work in steps of 15 degrees, in which case the delta value is a multiple of 120 (== 15 * 8).
 		"""
 		res = super(QGraphicsSceneWheelEvent,self).delta()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def modifiers(self):

@@ -15,7 +15,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		When the current loop changes, PySide.QtCore.QAbstractAnimation emits the PySide.QtCore.QAbstractAnimation.currentLoopChanged() signal.
 		"""
 		res = super(QAbstractAnimation,self).currentLoop()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentLoopTime(self):
@@ -24,7 +24,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		It can go from 0 to PySide.QtCore.QAbstractAnimation.duration() .
 		"""
 		res = super(QAbstractAnimation,self).currentLoopTime()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentTime(self):
@@ -35,7 +35,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		The animations current time starts at 0, and ends at PySide.QtCore.QAbstractAnimation.totalDuration() .
 		"""
 		res = super(QAbstractAnimation,self).currentTime()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def direction(self):
@@ -55,7 +55,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		In this case, PySide.QtCore.QAbstractAnimation.loopCount() is ignored.
 		"""
 		res = super(QAbstractAnimation,self).duration()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def finished(self):
@@ -84,7 +84,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		It will only run once.
 		"""
 		res = super(QAbstractAnimation,self).loopCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def state(self):
@@ -102,7 +102,7 @@ class QAbstractAnimation(QtCore.QAbstractAnimation):
 		Returns the total and effective duration of the animation, including the loop count.
 		"""
 		res = super(QAbstractAnimation,self).totalDuration()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setDirection(self,direction):

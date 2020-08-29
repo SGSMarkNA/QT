@@ -32,7 +32,7 @@ class QUiLoader(QtUiTools.QUiLoader):
 		Returns true if dynamic retranslation on language change is enabled; returns false otherwise.
 		"""
 		res = super(QUiLoader,self).isLanguageChangeEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isScriptingEnabled(self):
@@ -40,7 +40,7 @@ class QUiLoader(QtUiTools.QUiLoader):
 		Returns true if execution of scripts is enabled; returns false otherwise.
 		"""
 		res = super(QUiLoader,self).isScriptingEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTranslationEnabled(self):
@@ -48,7 +48,7 @@ class QUiLoader(QtUiTools.QUiLoader):
 		Returns true if translation is enabled; returns false otherwise.
 		"""
 		res = super(QUiLoader,self).isTranslationEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pluginPaths(self):

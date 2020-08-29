@@ -38,7 +38,7 @@ class QTreeWidgetItemIterator(QtGui.QTreeWidgetItemIterator):
 
 		"""
 		res = super(QTreeWidgetItemIterator,self).matchesFlags(item)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __iadd__(self,n):

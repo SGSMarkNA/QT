@@ -19,7 +19,7 @@ class QMdiSubWindow(QtGui.QMdiSubWindow):
 		A window is shaded if it is collapsed so that only the title bar is visible.
 		"""
 		res = super(QMdiSubWindow,self).isShaded()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keyboardPageStep(self):
@@ -31,7 +31,7 @@ class QMdiSubWindow(QtGui.QMdiSubWindow):
 		The default keyboard page step value is 20 pixels.
 		"""
 		res = super(QMdiSubWindow,self).keyboardPageStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def keyboardSingleStep(self):
@@ -43,7 +43,7 @@ class QMdiSubWindow(QtGui.QMdiSubWindow):
 		The default keyboard single step value is 5 pixels.
 		"""
 		res = super(QMdiSubWindow,self).keyboardSingleStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maximizedButtonsWidget(self):
@@ -163,5 +163,5 @@ class QMdiSubWindow(QtGui.QMdiSubWindow):
 		Returns true if option is enabled; otherwise returns false.
 		"""
 		res = super(QMdiSubWindow,self).testOption(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

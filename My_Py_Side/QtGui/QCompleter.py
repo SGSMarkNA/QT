@@ -22,7 +22,7 @@ class QCompleter(QtGui.QCompleter):
 		By default, the match column is 0.
 		"""
 		res = super(QCompleter,self).completionColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def completionCount(self):
@@ -32,7 +32,7 @@ class QCompleter(QtGui.QCompleter):
 		Use PySide.QtGui.QCompleter.setCurrentRow() and PySide.QtGui.QCompleter.currentCompletion() to iterate through all the completions.
 		"""
 		res = super(QCompleter,self).completionCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def completionMode(self):
@@ -68,7 +68,7 @@ class QCompleter(QtGui.QCompleter):
 		The default role is Qt.EditRole .
 		"""
 		res = super(QCompleter,self).completionRole()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentCompletion(self):
@@ -93,7 +93,7 @@ class QCompleter(QtGui.QCompleter):
 		Returns the current row.
 		"""
 		res = super(QCompleter,self).currentRow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maxVisibleItems(self):
@@ -102,7 +102,7 @@ class QCompleter(QtGui.QCompleter):
 		By default, this property has a value of 7.
 		"""
 		res = super(QCompleter,self).maxVisibleItems()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -147,7 +147,7 @@ class QCompleter(QtGui.QCompleter):
 		The default is true.
 		"""
 		res = super(QCompleter,self).wrapAround()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pathFromIndex(self,index):
@@ -218,7 +218,7 @@ class QCompleter(QtGui.QCompleter):
 		This function may be used along with PySide.QtGui.QCompleter.currentCompletion() to iterate through all the possible completions.
 		"""
 		res = super(QCompleter,self).setCurrentRow(row)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setMaxVisibleItems(self,maxItems):

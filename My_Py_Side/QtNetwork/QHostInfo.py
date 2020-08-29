@@ -42,7 +42,7 @@ class QHostInfo(QtNetwork.QHostInfo):
 		Returns the ID of this lookup.
 		"""
 		res = super(QHostInfo,self).lookupId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setAddresses(self,addresses):

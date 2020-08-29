@@ -27,7 +27,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Returns true if the selection model contains any selection ranges; otherwise returns false.
 		"""
 		res = super(QItemSelectionModel,self).hasSelection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -71,7 +71,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Returns true if there are any items selected in the column with the given parent .
 		"""
 		res = super(QItemSelectionModel,self).columnIntersectsSelection(column,parent)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def emitSelectionChanged(self,newSelection,oldSelection):
@@ -95,7 +95,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Note that this function is usually faster than calling PySide.QtGui.QItemSelectionModel.isSelected() on all items in the same column and that unselectable items are ignored.
 		"""
 		res = super(QItemSelectionModel,self).isColumnSelected(column,parent)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRowSelected(self,row,parent):
@@ -108,7 +108,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Note that this function is usually faster than calling PySide.QtGui.QItemSelectionModel.isSelected() on all items in the same row and that unselectable items are ignored.
 		"""
 		res = super(QItemSelectionModel,self).isRowSelected(row,parent)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSelected(self,index):
@@ -119,7 +119,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Returns true if the given model item index is selected.
 		"""
 		res = super(QItemSelectionModel,self).isSelected(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rowIntersectsSelection(self,row,parent):
@@ -131,7 +131,7 @@ class QItemSelectionModel(QtGui.QItemSelectionModel):
 		Returns true if there are any items selected in the row with the given parent .
 		"""
 		res = super(QItemSelectionModel,self).rowIntersectsSelection(row,parent)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def select(self,*args,**kwargs):

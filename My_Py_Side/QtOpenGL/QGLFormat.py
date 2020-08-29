@@ -12,7 +12,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The accumulation buffer is disabled by default.
 		"""
 		res = super(QGLFormat,self).accum()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def accumBufferSize(self):
@@ -20,7 +20,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the accumulation buffer size.
 		"""
 		res = super(QGLFormat,self).accumBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def alpha(self):
@@ -29,7 +29,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The alpha buffer is disabled by default.
 		"""
 		res = super(QGLFormat,self).alpha()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def alphaBufferSize(self):
@@ -37,7 +37,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the alpha buffer size.
 		"""
 		res = super(QGLFormat,self).alphaBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def blueBufferSize(self):
@@ -45,7 +45,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the blue buffer size.
 		"""
 		res = super(QGLFormat,self).blueBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def depth(self):
@@ -54,7 +54,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The depth buffer is enabled by default.
 		"""
 		res = super(QGLFormat,self).depth()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def depthBufferSize(self):
@@ -62,7 +62,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the depth buffer size.
 		"""
 		res = super(QGLFormat,self).depthBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def directRendering(self):
@@ -71,7 +71,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Direct rendering is enabled by default.
 		"""
 		res = super(QGLFormat,self).directRendering()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def doubleBuffer(self):
@@ -80,7 +80,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Double buffering is enabled by default.
 		"""
 		res = super(QGLFormat,self).doubleBuffer()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def greenBufferSize(self):
@@ -88,7 +88,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the green buffer size.
 		"""
 		res = super(QGLFormat,self).greenBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hasOverlay(self):
@@ -97,7 +97,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Overlay is disabled by default.
 		"""
 		res = super(QGLFormat,self).hasOverlay()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def majorVersion(self):
@@ -105,7 +105,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the OpenGL major version.
 		"""
 		res = super(QGLFormat,self).majorVersion()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minorVersion(self):
@@ -113,7 +113,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the OpenGL minor version.
 		"""
 		res = super(QGLFormat,self).minorVersion()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def plane(self):
@@ -123,7 +123,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The default for overlay formats is 1, which is the first overlay plane.
 		"""
 		res = super(QGLFormat,self).plane()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def profile(self):
@@ -139,7 +139,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the red buffer size.
 		"""
 		res = super(QGLFormat,self).redBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rgba(self):
@@ -149,7 +149,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The default color mode is RGBA.
 		"""
 		res = super(QGLFormat,self).rgba()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sampleBuffers(self):
@@ -158,7 +158,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The multisample buffer is disabled by default.
 		"""
 		res = super(QGLFormat,self).sampleBuffers()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def samples(self):
@@ -167,7 +167,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		By default, the highest number of samples that is available is used.
 		"""
 		res = super(QGLFormat,self).samples()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def stencil(self):
@@ -176,7 +176,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		The stencil buffer is enabled by default.
 		"""
 		res = super(QGLFormat,self).stencil()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def stencilBufferSize(self):
@@ -184,7 +184,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Returns the stencil buffer size.
 		"""
 		res = super(QGLFormat,self).stencilBufferSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def stereo(self):
@@ -193,7 +193,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		Stereo buffering is disabled by default.
 		"""
 		res = super(QGLFormat,self).stereo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def swapInterval(self):
@@ -202,7 +202,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 		-1 is returned if setting the swap interval isnt supported in the system GL implementation.
 		"""
 		res = super(QGLFormat,self).swapInterval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,arg__2):
@@ -213,7 +213,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 
 		"""
 		res = super(QGLFormat,self).__ne__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__2):
@@ -224,7 +224,7 @@ class QGLFormat(QtOpenGL.QGLFormat):
 
 		"""
 		res = super(QGLFormat,self).__eq__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAccum(self,enable):
@@ -507,5 +507,5 @@ class QGLFormat(QtOpenGL.QGLFormat):
 
 		"""
 		res = super(QGLFormat,self).testOption(opt)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

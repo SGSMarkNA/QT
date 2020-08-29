@@ -26,7 +26,7 @@ class QElapsedTimer(QtCore.QElapsedTimer):
 
 		"""
 		res = super(QElapsedTimer,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def msecsSinceReference(self):
@@ -60,7 +60,7 @@ class QElapsedTimer(QtCore.QElapsedTimer):
 
 		"""
 		res = super(QElapsedTimer,self).hasExpired(timeout)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def msecsTo(self,other):
@@ -82,7 +82,7 @@ class QElapsedTimer(QtCore.QElapsedTimer):
 
 		"""
 		res = super(QElapsedTimer,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -93,7 +93,7 @@ class QElapsedTimer(QtCore.QElapsedTimer):
 
 		"""
 		res = super(QElapsedTimer,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def secsTo(self,other):

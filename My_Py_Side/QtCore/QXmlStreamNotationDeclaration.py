@@ -38,7 +38,7 @@ class QXmlStreamNotationDeclaration(QtCore.QXmlStreamNotationDeclaration):
 		Compares this notation declaration with other and returns true if they are not equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamNotationDeclaration,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -49,5 +49,5 @@ class QXmlStreamNotationDeclaration(QtCore.QXmlStreamNotationDeclaration):
 		Compares this notation declaration with other and returns true if they are equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamNotationDeclaration,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

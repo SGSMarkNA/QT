@@ -35,7 +35,7 @@ class QDeclarativeContext(QtDeclarative.QDeclarativeContext):
 
 		"""
 		res = super(QDeclarativeContext,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def parentContext(self):

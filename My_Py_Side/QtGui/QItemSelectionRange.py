@@ -11,7 +11,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the row index corresponding to the lowermost selected row in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).bottom()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def bottomRight(self):
@@ -27,7 +27,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the number of selected rows in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).height()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexes(self):
@@ -42,7 +42,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if the selection range contains no selectable item
 		"""
 		res = super(QItemSelectionRange,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -50,7 +50,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if the selection range is valid; otherwise returns false.
 		"""
 		res = super(QItemSelectionRange,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def left(self):
@@ -58,7 +58,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the column index corresponding to the leftmost selected column in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).left()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def model(self):
@@ -82,7 +82,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the column index corresponding to the rightmost selected column in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).right()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def top(self):
@@ -90,7 +90,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the row index corresponding to the uppermost selected row in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).top()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def topLeft(self):
@@ -106,7 +106,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns the number of selected columns in the selection range.
 		"""
 		res = super(QItemSelectionRange,self).width()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def contains(self,*args,**kwargs):
@@ -123,7 +123,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if the model item specified by (row , column ) and with parentIndex as the parent item lies within the range of selected items; otherwise returns false.
 		"""
 		res = super(QItemSelectionRange,self).contains(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def intersected(self,other):
@@ -145,7 +145,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if this selection range intersects (overlaps with) the other range given; otherwise returns false.
 		"""
 		res = super(QItemSelectionRange,self).intersects(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -156,7 +156,7 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if the selection range differs from the other range given; otherwise returns false.
 		"""
 		res = super(QItemSelectionRange,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -167,5 +167,5 @@ class QItemSelectionRange(QtGui.QItemSelectionRange):
 		Returns true if the selection range is exactly the same as the other range given; otherwise returns false.
 		"""
 		res = super(QItemSelectionRange,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

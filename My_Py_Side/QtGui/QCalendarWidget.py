@@ -14,7 +14,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		By default, the delay is defined to be 1500 milliseconds (1.5 seconds).
 		"""
 		res = super(QCalendarWidget,self).dateEditAcceptDelay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dateTextFormat(self):
@@ -58,7 +58,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		The date edit is simpler in appearance than PySide.QtGui.QDateEdit , but allows the user to navigate between fields using the left and right cursor keys, increment and decrement individual fields using the up and down cursor keys, and enter values directly using the number keys.
 		"""
 		res = super(QCalendarWidget,self).isDateEditEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isGridVisible(self):
@@ -67,7 +67,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		The default value is false.
 		"""
 		res = super(QCalendarWidget,self).isGridVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNavigationBarVisible(self):
@@ -77,7 +77,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		When the property is set to false, these controls are hidden.
 		"""
 		res = super(QCalendarWidget,self).isNavigationBarVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximumDate(self):
@@ -110,7 +110,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		Months are numbered from 1 to 12.
 		"""
 		res = super(QCalendarWidget,self).monthShown()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def selectedDate(self):
@@ -164,7 +164,7 @@ class QCalendarWidget(QtGui.QCalendarWidget):
 		Months are numbered from 1 to 12.
 		"""
 		res = super(QCalendarWidget,self).yearShown()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dateTextFormat(self,date):

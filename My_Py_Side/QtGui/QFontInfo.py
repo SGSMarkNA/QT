@@ -11,7 +11,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns true if PySide.QtGui.QFontInfo.weight() would return a value greater than QFont.Normal ; otherwise returns false.
 		"""
 		res = super(QFontInfo,self).bold()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def exactMatch(self):
@@ -19,7 +19,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns true if the matched window system font is exactly the same as the one specified by the font; otherwise returns false.
 		"""
 		res = super(QFontInfo,self).exactMatch()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def family(self):
@@ -34,7 +34,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns the fixed pitch value of the matched window system font.
 		"""
 		res = super(QFontInfo,self).fixedPitch()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def italic(self):
@@ -42,7 +42,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns the italic value of the matched window system font.
 		"""
 		res = super(QFontInfo,self).italic()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def overline(self):
@@ -52,7 +52,7 @@ class QFontInfo(QtGui.QFontInfo):
 		This is OK for X11 and for Windows because we always get what we want.
 		"""
 		res = super(QFontInfo,self).overline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pixelSize(self):
@@ -60,7 +60,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns the pixel size of the matched window system font.
 		"""
 		res = super(QFontInfo,self).pixelSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pointSize(self):
@@ -68,7 +68,7 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns the point size of the matched window system font.
 		"""
 		res = super(QFontInfo,self).pointSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pointSizeF(self):
@@ -85,7 +85,7 @@ class QFontInfo(QtGui.QFontInfo):
 		If it is a raw mode font, all other functions in PySide.QtGui.QFontInfo will return the same values set in the PySide.QtGui.QFont , regardless of the font actually used.
 		"""
 		res = super(QFontInfo,self).rawMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def strikeOut(self):
@@ -94,7 +94,7 @@ class QFontInfo(QtGui.QFontInfo):
 		This is OK for X11 and for Windows because we always get what we want.
 		"""
 		res = super(QFontInfo,self).strikeOut()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def style(self):
@@ -121,7 +121,7 @@ class QFontInfo(QtGui.QFontInfo):
 		This is OK for X11 and for Windows because we always get what we want.
 		"""
 		res = super(QFontInfo,self).underline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def weight(self):
@@ -129,5 +129,5 @@ class QFontInfo(QtGui.QFontInfo):
 		Returns the weight of the matched window system font.
 		"""
 		res = super(QFontInfo,self).weight()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

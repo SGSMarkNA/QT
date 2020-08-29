@@ -21,7 +21,7 @@ class QScriptContext(QtScript.QScriptContext):
 		Note that the argument count can be different from the formal number of arguments (the length property of PySide.QtScript.QScriptContext.callee() ).
 		"""
 		res = super(QScriptContext,self).argumentCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def argumentsObject(self):
@@ -69,7 +69,7 @@ class QScriptContext(QtScript.QScriptContext):
 		When a function is called as constructor, the PySide.QtScript.QScriptContext.thisObject() contains the newly constructed object to be initialized.
 		"""
 		res = super(QScriptContext,self).isCalledAsConstructor()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def parentContext(self):

@@ -11,7 +11,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Returns the number of items of class information in this class.
 		"""
 		res = super(QMetaObject,self).classInfoCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def classInfoOffset(self):
@@ -21,7 +21,7 @@ class QMetaObject(QtCore.QMetaObject):
 		If the class has no superclasses with class information, the offset is 0; otherwise the offset is the sum of all the class information items in the classs superclasses.
 		"""
 		res = super(QMetaObject,self).classInfoOffset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def className(self):
@@ -36,7 +36,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Returns the number of constructors in this class.
 		"""
 		res = super(QMetaObject,self).constructorCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def enumeratorCount(self):
@@ -44,7 +44,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Returns the number of enumerators in this class.
 		"""
 		res = super(QMetaObject,self).enumeratorCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def enumeratorOffset(self):
@@ -54,7 +54,7 @@ class QMetaObject(QtCore.QMetaObject):
 		If the class has no superclasses with enumerators, the offset is 0; otherwise the offset is the sum of all the enumerators in the classs superclasses.
 		"""
 		res = super(QMetaObject,self).enumeratorOffset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def methodCount(self):
@@ -64,7 +64,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Use code like the following to obtain a PySide.QtCore.QStringList containing the methods specific to a given class:
 		"""
 		res = super(QMetaObject,self).methodCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def methodOffset(self):
@@ -74,7 +74,7 @@ class QMetaObject(QtCore.QMetaObject):
 		The offset is the sum of all the methods in the classs superclasses (which is always positive since PySide.QtCore.QObject has the deleteLater() slot and a destroyed() signal).
 		"""
 		res = super(QMetaObject,self).methodOffset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def propertyCount(self):
@@ -83,7 +83,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Use code like the following to obtain a PySide.QtCore.QStringList containing the properties specific to a given class:
 		"""
 		res = super(QMetaObject,self).propertyCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def propertyOffset(self):
@@ -93,7 +93,7 @@ class QMetaObject(QtCore.QMetaObject):
 		The offset is the sum of all the properties in the classs superclasses (which is always positive since PySide.QtCore.QObject has the name() property).
 		"""
 		res = super(QMetaObject,self).propertyOffset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def superClass(self):
@@ -165,7 +165,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Finds class information item name and returns its index; otherwise returns -1.
 		"""
 		res = super(QMetaObject,self).indexOfClassInfo(name)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfConstructor(self,constructor):
@@ -177,7 +177,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Note that the constructor has to be in normalized form, as returned by PySide.QtCore.QMetaObject.normalizedSignature() .
 		"""
 		res = super(QMetaObject,self).indexOfConstructor(constructor)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfEnumerator(self,name):
@@ -188,7 +188,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Finds enumerator name and returns its index; otherwise returns -1.
 		"""
 		res = super(QMetaObject,self).indexOfEnumerator(name)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfMethod(self,method):
@@ -200,7 +200,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Note that the method has to be in normalized form, as returned by PySide.QtCore.QMetaObject.normalizedSignature() .
 		"""
 		res = super(QMetaObject,self).indexOfMethod(method)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfProperty(self,name):
@@ -211,7 +211,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Finds property name and returns its index; otherwise returns -1.
 		"""
 		res = super(QMetaObject,self).indexOfProperty(name)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfSignal(self,signal):
@@ -224,7 +224,7 @@ class QMetaObject(QtCore.QMetaObject):
 		Note that the signal has to be in normalized form, as returned by PySide.QtCore.QMetaObject.normalizedSignature() .
 		"""
 		res = super(QMetaObject,self).indexOfSignal(signal)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOfSlot(self,slot):
@@ -236,7 +236,7 @@ class QMetaObject(QtCore.QMetaObject):
 		This is the same as PySide.QtCore.QMetaObject.indexOfMethod() , except that it will return -1 if the method exists but isnt a slot.
 		"""
 		res = super(QMetaObject,self).indexOfSlot(slot)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def method(self,index):

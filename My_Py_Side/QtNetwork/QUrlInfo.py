@@ -18,7 +18,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is a directory; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isDir()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isExecutable(self):
@@ -26,7 +26,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is executable; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isExecutable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFile(self):
@@ -34,7 +34,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is a file; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isFile()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadable(self):
@@ -42,7 +42,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is readable; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isReadable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSymLink(self):
@@ -50,7 +50,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is a symbolic link; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isSymLink()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -60,7 +60,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		You should always check if the URL info is valid before relying on the values.
 		"""
 		res = super(QUrlInfo,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWritable(self):
@@ -68,7 +68,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if the URL is writable; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastModified(self):
@@ -107,7 +107,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		You can use the PermissionSpec flags to test for certain permissions.
 		"""
 		res = super(QUrlInfo,self).permissions()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -126,7 +126,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if this PySide.QtNetwork.QUrlInfo is not equal to other ; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).__ne__(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,i):
@@ -137,7 +137,7 @@ class QUrlInfo(QtNetwork.QUrlInfo):
 		Returns true if this PySide.QtNetwork.QUrlInfo is equal to other ; otherwise returns false.
 		"""
 		res = super(QUrlInfo,self).__eq__(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDir(self,b):

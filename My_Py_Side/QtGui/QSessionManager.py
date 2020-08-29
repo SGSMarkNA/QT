@@ -14,7 +14,7 @@ class QSessionManager(QtGui.QSessionManager):
 		However, you are still not guaranteed that the session manager will allow interaction.
 		"""
 		res = super(QSessionManager,self).allowsErrorInteraction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def allowsInteraction(self):
@@ -31,7 +31,7 @@ class QSessionManager(QtGui.QSessionManager):
 		If an error occurred within the application while saving its data, you may want to try PySide.QtGui.QSessionManager.allowsErrorInteraction() instead.
 		"""
 		res = super(QSessionManager,self).allowsInteraction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def cancel(self):
@@ -55,7 +55,7 @@ class QSessionManager(QtGui.QSessionManager):
 		Returns true if the session manager is currently performing a second session management phase; otherwise returns false.
 		"""
 		res = super(QSessionManager,self).isPhase2()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def release(self):

@@ -12,7 +12,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		By default, this property has a value of 1.
 		"""
 		res = super(QTreeWidget,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentColumn(self):
@@ -20,7 +20,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Returns the current column in the tree widget.
 		"""
 		res = super(QTreeWidget,self).currentColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentItem(self):
@@ -74,7 +74,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Returns the column used to sort the contents of the widget.
 		"""
 		res = super(QTreeWidget,self).sortColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def supportedDropActions(self):
@@ -91,7 +91,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		By default, this property has a value of 0.
 		"""
 		res = super(QTreeWidget,self).topLevelItemCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addTopLevelItem(self,item):
@@ -137,7 +137,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 
 		"""
 		res = super(QTreeWidget,self).dropMimeData(parent,index,data,action)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def editItem(self,item,column=None):
@@ -183,7 +183,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Returns the index of the given top-level item , or -1 if the item cannot be found.
 		"""
 		res = super(QTreeWidget,self).indexOfTopLevelItem(item)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertTopLevelItem(self,index,item):
@@ -217,7 +217,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Returns true if the given item is set to show only one section over all columns; otherwise returns false.
 		"""
 		res = super(QTreeWidget,self).isFirstItemColumnSpanned(item)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isItemExpanded(self,item):
@@ -230,7 +230,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Use QTreeWidgetItem.isExpanded() instead.
 		"""
 		res = super(QTreeWidget,self).isItemExpanded(item)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isItemHidden(self,item):
@@ -243,7 +243,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Use QTreeWidgetItem.isHidden() instead.
 		"""
 		res = super(QTreeWidget,self).isItemHidden(item)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isItemSelected(self,item):
@@ -256,7 +256,7 @@ class QTreeWidget(QtGui.QTreeWidget):
 		Use QTreeWidgetItem.isSelected() instead.
 		"""
 		res = super(QTreeWidget,self).isItemSelected(item)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemAbove(self,item):

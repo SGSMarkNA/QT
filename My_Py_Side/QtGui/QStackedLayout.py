@@ -12,7 +12,7 @@ class QStackedLayout(QtGui.QStackedLayout):
 		The current index is -1 if there is no current widget.
 		"""
 		res = super(QStackedLayout,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentWidget(self):
@@ -45,7 +45,7 @@ class QStackedLayout(QtGui.QStackedLayout):
 		Inserting a new widget at an index less than or equal to the current index will increment the current index, but keep the current widget.
 		"""
 		res = super(QStackedLayout,self).insertWidget(index,w)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setStackingMode(self,stackingMode):

@@ -55,7 +55,7 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 		In the absence of an event loop, call PySide.QtNetwork.QAbstractSocket.waitForBytesWritten() instead.
 		"""
 		res = super(QAbstractSocket,self).flush()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hostFound(self):
@@ -70,7 +70,7 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 		Returns true if the socket is valid and ready for use; otherwise returns false.
 		"""
 		res = super(QAbstractSocket,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def localAddress(self):
@@ -139,7 +139,7 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 		The socket descriptor is not available when PySide.QtNetwork.QAbstractSocket is in UnconnectedState .
 		"""
 		res = super(QAbstractSocket,self).socketDescriptor()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def socketType(self):
@@ -285,7 +285,7 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 
 		"""
 		res = super(QAbstractSocket,self).setSocketDescriptor(socketDescriptor,state,openMode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setSocketError(self,socketError):
@@ -341,7 +341,7 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QAbstractSocket,self).waitForConnected(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def waitForDisconnected(self,msecs=None):
@@ -356,5 +356,5 @@ class QAbstractSocket(QtNetwork.QAbstractSocket):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QAbstractSocket,self).waitForDisconnected(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

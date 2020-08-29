@@ -27,7 +27,7 @@ class QTextBlockFormat(QtGui.QTextBlockFormat):
 		Returns the paragraphs indent.
 		"""
 		res = super(QTextBlockFormat,self).indent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def leftMargin(self):
@@ -43,7 +43,7 @@ class QTextBlockFormat(QtGui.QTextBlockFormat):
 		Returns true if the lines in the paragraph are non-breakable; otherwise returns false.
 		"""
 		res = super(QTextBlockFormat,self).nonBreakableLines()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pageBreakPolicy(self):

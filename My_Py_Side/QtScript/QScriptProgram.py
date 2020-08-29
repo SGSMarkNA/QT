@@ -18,7 +18,7 @@ class QScriptProgram(QtScript.QScriptProgram):
 		Returns the line number associated with this program.
 		"""
 		res = super(QScriptProgram,self).firstLineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -26,7 +26,7 @@ class QScriptProgram(QtScript.QScriptProgram):
 		Returns true if this PySide.QtScript.QScriptProgram is null; otherwise returns false.
 		"""
 		res = super(QScriptProgram,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sourceCode(self):
@@ -44,7 +44,7 @@ class QScriptProgram(QtScript.QScriptProgram):
 		Returns true if this PySide.QtScript.QScriptProgram is not equal to other ; otherwise returns false.
 		"""
 		res = super(QScriptProgram,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -55,5 +55,5 @@ class QScriptProgram(QtScript.QScriptProgram):
 		Returns true if this PySide.QtScript.QScriptProgram is equal to other ; otherwise returns false.
 		"""
 		res = super(QScriptProgram,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

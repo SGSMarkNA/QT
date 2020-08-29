@@ -35,7 +35,7 @@ class QQuaternion(QtGui.QQuaternion):
 		Returns true if the x, y, and z components of this quaternion are set to 0.0, and the scalar component is set to 1.0; otherwise returns false.
 		"""
 		res = super(QQuaternion,self).isIdentity()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -43,7 +43,7 @@ class QQuaternion(QtGui.QQuaternion):
 		Returns true if the x, y, z, and scalar components of this quaternion are set to 0.0; otherwise returns false.
 		"""
 		res = super(QQuaternion,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -146,7 +146,7 @@ class QQuaternion(QtGui.QQuaternion):
 
 		"""
 		res = super(QQuaternion,self).__ne__(q2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -254,7 +254,7 @@ class QQuaternion(QtGui.QQuaternion):
 
 		"""
 		res = super(QQuaternion,self).__eq__(q2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rotatedVector(self,vector):

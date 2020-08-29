@@ -11,7 +11,7 @@ class QTabBar(QtGui.QTabBar):
 		This property holds the number of tabs in the tab bar.
 		"""
 		res = super(QTabBar,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentIndex(self):
@@ -20,7 +20,7 @@ class QTabBar(QtGui.QTabBar):
 		The current index is -1 if there is no current tab.
 		"""
 		res = super(QTabBar,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def documentMode(self):
@@ -30,7 +30,7 @@ class QTabBar(QtGui.QTabBar):
 		On Mac OS X this will look similar to the tabs in Safari or Leopards Terminal.app.
 		"""
 		res = super(QTabBar,self).documentMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def drawBase(self):
@@ -40,7 +40,7 @@ class QTabBar(QtGui.QTabBar):
 		Otherwise only the tabs are drawn.
 		"""
 		res = super(QTabBar,self).drawBase()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def elideMode(self):
@@ -59,7 +59,7 @@ class QTabBar(QtGui.QTabBar):
 		By default the value is true.
 		"""
 		res = super(QTabBar,self).expanding()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def iconSize(self):
@@ -78,7 +78,7 @@ class QTabBar(QtGui.QTabBar):
 		By default, this property is false;
 		"""
 		res = super(QTabBar,self).isMovable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectionBehaviorOnRemove(self):
@@ -114,7 +114,7 @@ class QTabBar(QtGui.QTabBar):
 		By default the value is false.
 		"""
 		res = super(QTabBar,self).tabsClosable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def usesScrollButtons(self):
@@ -124,7 +124,7 @@ class QTabBar(QtGui.QTabBar):
 		By default the value is style dependant.
 		"""
 		res = super(QTabBar,self).usesScrollButtons()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addTab(self,*args,**kwargs):
@@ -140,7 +140,7 @@ class QTabBar(QtGui.QTabBar):
 		Returns the new tabs index.
 		"""
 		res = super(QTabBar,self).addTab(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def initStyleOption(self,option,tabIndex):
@@ -172,7 +172,7 @@ class QTabBar(QtGui.QTabBar):
 		Returns the new tabs index.
 		"""
 		res = super(QTabBar,self).insertTab(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isTabEnabled(self,index):
@@ -183,7 +183,7 @@ class QTabBar(QtGui.QTabBar):
 		Returns true if the tab at position index is enabled; otherwise returns false.
 		"""
 		res = super(QTabBar,self).isTabEnabled(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def moveTab(self,from,to):
@@ -425,7 +425,7 @@ class QTabBar(QtGui.QTabBar):
 		Returns the index of the tab that covers position or -1 if no tab covers position ;
 		"""
 		res = super(QTabBar,self).tabAt(pos)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def tabButton(self,index,position):

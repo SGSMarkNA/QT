@@ -42,7 +42,7 @@ class QGraphicsTextItem(QtGui.QGraphicsTextItem):
 
 		"""
 		res = super(QGraphicsTextItem,self).openExternalLinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tabChangesFocus(self):
@@ -51,7 +51,7 @@ class QGraphicsTextItem(QtGui.QGraphicsTextItem):
 		By default, this behavior is disabled, and this function will return false.
 		"""
 		res = super(QGraphicsTextItem,self).tabChangesFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def textCursor(self):

@@ -29,7 +29,7 @@ class QSqlError(QtSql.QSqlError):
 		Example:
 		"""
 		res = super(QSqlError,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def number(self):
@@ -37,7 +37,7 @@ class QSqlError(QtSql.QSqlError):
 		Returns the database-specific error number, or -1 if it cannot be determined.
 		"""
 		res = super(QSqlError,self).number()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def text(self):

@@ -17,7 +17,7 @@ class QPushButton(QtGui.QPushButton):
 		See the default() property for details of how default() and auto-default interact.
 		"""
 		res = super(QPushButton,self).autoDefault()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDefault(self):
@@ -34,7 +34,7 @@ class QPushButton(QtGui.QPushButton):
 		This propertys default is false.
 		"""
 		res = super(QPushButton,self).isDefault()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFlat(self):
@@ -45,7 +45,7 @@ class QPushButton(QtGui.QPushButton):
 		PySide.QtGui.QWidget.setAutoFillBackground() can be used to ensure that the background is filled using the QPalette.Button brush.
 		"""
 		res = super(QPushButton,self).isFlat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def menu(self):

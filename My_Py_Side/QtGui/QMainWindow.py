@@ -42,7 +42,7 @@ class QMainWindow(QtGui.QMainWindow):
 		The default is false.
 		"""
 		res = super(QMainWindow,self).documentMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def iconSize(self):
@@ -66,7 +66,7 @@ class QMainWindow(QtGui.QMainWindow):
 		Setting this property is identical to setting the AnimatedDocks option using PySide.QtGui.QMainWindow.setDockOptions() .
 		"""
 		res = super(QMainWindow,self).isAnimated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDockNestingEnabled(self):
@@ -80,7 +80,7 @@ class QMainWindow(QtGui.QMainWindow):
 		Setting this property is identical to setting the AllowNestedDocks option using PySide.QtGui.QMainWindow.setDockOptions() .
 		"""
 		res = super(QMainWindow,self).isDockNestingEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def menuBar(self):
@@ -142,7 +142,7 @@ class QMainWindow(QtGui.QMainWindow):
 		The Qt.WA_MacBrushedMetal attribute takes precedence over this property.
 		"""
 		res = super(QMainWindow,self).unifiedTitleAndToolBarOnMac()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addDockWidget(self,*args,**kwargs):
@@ -241,7 +241,7 @@ class QMainWindow(QtGui.QMainWindow):
 
 		"""
 		res = super(QMainWindow,self).isSeparator(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeDockWidget(self,dockwidget):
@@ -285,7 +285,7 @@ class QMainWindow(QtGui.QMainWindow):
 		Returns true if the state was restored; otherwise returns false.
 		"""
 		res = super(QMainWindow,self).restoreDockWidget(dockwidget)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def restoreState(self,state,version=None):
@@ -300,7 +300,7 @@ class QMainWindow(QtGui.QMainWindow):
 		To restore geometry saved using PySide.QtCore.QSettings , you can use code like this:
 		"""
 		res = super(QMainWindow,self).restoreState(state,version)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def saveState(self,version=None):
@@ -522,5 +522,5 @@ class QMainWindow(QtGui.QMainWindow):
 		Returns whether there is a toolbar break before the toolbar .
 		"""
 		res = super(QMainWindow,self).toolBarBreak(toolbar)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

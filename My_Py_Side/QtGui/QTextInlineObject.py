@@ -35,7 +35,7 @@ class QTextInlineObject(QtGui.QTextInlineObject):
 		Returns an integer describing the format of the inline object within the text layout.
 		"""
 		res = super(QTextInlineObject,self).formatIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def height(self):
@@ -52,7 +52,7 @@ class QTextInlineObject(QtGui.QTextInlineObject):
 		Returns true if this inline object is valid; otherwise returns false.
 		"""
 		res = super(QTextInlineObject,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rect(self):
@@ -76,7 +76,7 @@ class QTextInlineObject(QtGui.QTextInlineObject):
 		The position of the inline object within the text layout.
 		"""
 		res = super(QTextInlineObject,self).textPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def width(self):

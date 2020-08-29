@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 from QGraphicsItem import QGraphicsItem
 class QGraphicsLineItem(QtGui.QGraphicsLineItem, QGraphicsItem):
 	''''''

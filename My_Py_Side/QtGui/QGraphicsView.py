@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 from QAbstractScrollArea import QAbstractScrollArea
 class QGraphicsView(QtGui.QGraphicsView, QAbstractScrollArea):
 	''''''
@@ -76,7 +76,7 @@ class QGraphicsView(QtGui.QGraphicsView, QAbstractScrollArea):
 		By default, this property is true.
 		"""
 		res = super(QGraphicsView,self).isInteractive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTransformed(self):
@@ -84,7 +84,7 @@ class QGraphicsView(QtGui.QGraphicsView, QAbstractScrollArea):
 		Returns true if the view is transformed (i.e., a non-identity transform has been assigned, or the scrollbars are adjusted).
 		"""
 		res = super(QGraphicsView,self).isTransformed()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def items(self):

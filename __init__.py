@@ -36,3 +36,7 @@ try:
 except:
 	pass
 
+try:
+	import DataModels
+except:
+	pass

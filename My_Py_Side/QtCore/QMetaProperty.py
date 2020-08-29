@@ -19,7 +19,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if this property has a corresponding change notify signal; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).hasNotifySignal()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasStdCppSet(self):
@@ -29,7 +29,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		All properties in Qt [should] follow this pattern.
 		"""
 		res = super(QMetaProperty,self).hasStdCppSet()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isConstant(self):
@@ -38,7 +38,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		A property is constant if the Q_PROPERTY() s CONSTANT attribute is set.
 		"""
 		res = super(QMetaProperty,self).isConstant()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEnumType(self):
@@ -46,7 +46,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if the propertys type is an enumeration value; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).isEnumType()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFinal(self):
@@ -55,7 +55,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		A property is final if the Q_PROPERTY() s FINAL attribute is set.
 		"""
 		res = super(QMetaProperty,self).isFinal()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFlagType(self):
@@ -65,7 +65,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		A flag type is implicitly also an enum type.
 		"""
 		res = super(QMetaProperty,self).isFlagType()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadable(self):
@@ -73,7 +73,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if this property is readable; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).isReadable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isResettable(self):
@@ -81,7 +81,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if this property can be reset to a default value; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).isResettable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -89,7 +89,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if this property is valid (readable); otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWritable(self):
@@ -97,7 +97,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if this property is writable; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -120,7 +120,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns the index of the property change notifying signal if one was specified, otherwise returns -1.
 		"""
 		res = super(QMetaProperty,self).notifySignalIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def propertyIndex(self):
@@ -128,7 +128,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns this propertys index.
 		"""
 		res = super(QMetaProperty,self).propertyIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):
@@ -153,7 +153,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		The return value is one of the values that are registered with QMetaType , or 0 if the type is not registered.
 		"""
 		res = super(QMetaProperty,self).userType()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isDesignable(self,obj=None):
@@ -165,7 +165,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		If no object is given, the function returns false if the Q_PROPERTY() s DESIGNABLE attribute is false; otherwise returns true (if the attribute is true or is a function or expression).
 		"""
 		res = super(QMetaProperty,self).isDesignable(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEditable(self,obj=None):
@@ -177,7 +177,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		If no object is given, the function returns false if the Q_PROPERTY() s EDITABLE attribute is false; otherwise returns true (if the attribute is true or is a function or expression).
 		"""
 		res = super(QMetaProperty,self).isEditable(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isScriptable(self,obj=None):
@@ -189,7 +189,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		If no object is given, the function returns false if the Q_PROPERTY() s SCRIPTABLE attribute is false; otherwise returns true (if the attribute is true or is a function or expression).
 		"""
 		res = super(QMetaProperty,self).isScriptable(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isStored(self,obj=None):
@@ -201,7 +201,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		If no object is given, the function returns false if the Q_PROPERTY() s STORED attribute is false; otherwise returns true (if the attribute is true or is a function or expression).
 		"""
 		res = super(QMetaProperty,self).isStored(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUser(self,obj=None):
@@ -216,7 +216,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Otherwise it returns true.
 		"""
 		res = super(QMetaProperty,self).isUser(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,obj):
@@ -240,7 +240,7 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Reset methods are optional; only a few properties support them.
 		"""
 		res = super(QMetaProperty,self).reset(obj)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,obj,value):
@@ -253,5 +253,5 @@ class QMetaProperty(QtCore.QMetaProperty):
 		Returns true if the write succeeded; otherwise returns false.
 		"""
 		res = super(QMetaProperty,self).write(obj,value)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

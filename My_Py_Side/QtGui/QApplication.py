@@ -26,7 +26,7 @@ class QApplication(QtGui.QApplication):
 		Returns true if the application has been restored from an earlier session ; otherwise returns false.
 		"""
 		res = super(QApplication,self).isSessionRestored()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastWindowClosed(self):

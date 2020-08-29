@@ -21,7 +21,7 @@ class QIODevice(QtCore.QIODevice):
 		This special case only applies to devices that generate data in direct response to you calling PySide.QtCore.QIODevice.read() (e.g., /dev or /proc files on Unix and Mac OS X, or console input / stdin on all platforms).
 		"""
 		res = super(QIODevice,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def bytesAvailable(self):
@@ -53,7 +53,7 @@ class QIODevice(QtCore.QIODevice):
 		Example:
 		"""
 		res = super(QIODevice,self).canReadLine()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def close(self):
@@ -78,7 +78,7 @@ class QIODevice(QtCore.QIODevice):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QIODevice,self).getChar()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isOpen(self):
@@ -88,7 +88,7 @@ class QIODevice(QtCore.QIODevice):
 		By default, this function returns false if PySide.QtCore.QIODevice.openMode() returns NotOpen .
 		"""
 		res = super(QIODevice,self).isOpen()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadable(self):
@@ -98,7 +98,7 @@ class QIODevice(QtCore.QIODevice):
 		This is a convenience function which checks if the OpenMode of the device contains the ReadOnly flag.
 		"""
 		res = super(QIODevice,self).isReadable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSequential(self):
@@ -113,7 +113,7 @@ class QIODevice(QtCore.QIODevice):
 		Regular files are non-sequential.
 		"""
 		res = super(QIODevice,self).isSequential()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTextModeEnabled(self):
@@ -121,7 +121,7 @@ class QIODevice(QtCore.QIODevice):
 		Returns true if the Text flag is enabled; otherwise returns false.
 		"""
 		res = super(QIODevice,self).isTextModeEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWritable(self):
@@ -130,7 +130,7 @@ class QIODevice(QtCore.QIODevice):
 		This is a convenience function which checks if the OpenMode of the device contains the WriteOnly flag.
 		"""
 		res = super(QIODevice,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def openMode(self):
@@ -185,7 +185,7 @@ class QIODevice(QtCore.QIODevice):
 		Use the QTextStream.seek() function instead.
 		"""
 		res = super(QIODevice,self).reset()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -206,7 +206,7 @@ class QIODevice(QtCore.QIODevice):
 
 		"""
 		res = super(QIODevice,self).open(mode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def peek(self,maxlen):
@@ -232,7 +232,7 @@ class QIODevice(QtCore.QIODevice):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QIODevice,self).putChar(c)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,maxlen):
@@ -301,7 +301,7 @@ class QIODevice(QtCore.QIODevice):
 		The base implementation always returns true.
 		"""
 		res = super(QIODevice,self).seek(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setErrorString(self,errorString):
@@ -364,7 +364,7 @@ class QIODevice(QtCore.QIODevice):
 		The default implementation does nothing, and returns false.
 		"""
 		res = super(QIODevice,self).waitForBytesWritten(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def waitForReadyRead(self,msecs):
@@ -382,7 +382,7 @@ class QIODevice(QtCore.QIODevice):
 		The default implementation does nothing, and returns false.
 		"""
 		res = super(QIODevice,self).waitForReadyRead(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,*args,**kwargs):

@@ -12,7 +12,7 @@ class QDomNodeList(QtXml.QDomNodeList):
 		It is equivalent to PySide.QtXml.QDomNodeList.length() .
 		"""
 		res = super(QDomNodeList,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -21,7 +21,7 @@ class QDomNodeList(QtXml.QDomNodeList):
 		This function is provided for Qt API consistency.
 		"""
 		res = super(QDomNodeList,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -38,7 +38,7 @@ class QDomNodeList(QtXml.QDomNodeList):
 		It is equivalent to PySide.QtXml.QDomNodeList.length() .
 		"""
 		res = super(QDomNodeList,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def at(self,index):
@@ -76,7 +76,7 @@ class QDomNodeList(QtXml.QDomNodeList):
 		Returns true the node list n and this node list are not equal; otherwise returns false.
 		"""
 		res = super(QDomNodeList,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -87,5 +87,5 @@ class QDomNodeList(QtXml.QDomNodeList):
 		Returns true if the node list n and this node list are equal; otherwise returns false.
 		"""
 		res = super(QDomNodeList,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

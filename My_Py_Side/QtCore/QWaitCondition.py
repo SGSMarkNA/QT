@@ -42,5 +42,5 @@ class QWaitCondition(QtCore.QWaitCondition):
 		This function is provided to allow the atomic transition from the locked state to the wait state.
 		"""
 		res = super(QWaitCondition,self).wait(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

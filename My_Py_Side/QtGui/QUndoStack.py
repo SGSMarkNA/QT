@@ -13,7 +13,7 @@ class QUndoStack(QtGui.QUndoStack):
 		Synonymous with PySide.QtGui.QUndoStack.index() == PySide.QtGui.QUndoStack.count() .
 		"""
 		res = super(QUndoStack,self).canRedo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canUndo(self):
@@ -23,7 +23,7 @@ class QUndoStack(QtGui.QUndoStack):
 		Synonymous with PySide.QtGui.QUndoStack.index() == 0.
 		"""
 		res = super(QUndoStack,self).canUndo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def cleanIndex(self):
@@ -36,7 +36,7 @@ class QUndoStack(QtGui.QUndoStack):
 		In this case, this function returns -1.
 		"""
 		res = super(QUndoStack,self).cleanIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -54,7 +54,7 @@ class QUndoStack(QtGui.QUndoStack):
 		Macro commands are counted as one command.
 		"""
 		res = super(QUndoStack,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def endMacro(self):
@@ -72,7 +72,7 @@ class QUndoStack(QtGui.QUndoStack):
 		It is not always the top-most command on the stack, since a number of commands may have been undone.
 		"""
 		res = super(QUndoStack,self).index()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -86,7 +86,7 @@ class QUndoStack(QtGui.QUndoStack):
 		It is the programmers responsibility to specify which stack is active by calling PySide.QtGui.QUndoStack.setActive() , usually when the associated document window receives focus.
 		"""
 		res = super(QUndoStack,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isClean(self):
@@ -94,7 +94,7 @@ class QUndoStack(QtGui.QUndoStack):
 		If the stack is in the clean state, returns true; otherwise returns false.
 		"""
 		res = super(QUndoStack,self).isClean()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def redoText(self):
@@ -114,7 +114,7 @@ class QUndoStack(QtGui.QUndoStack):
 		Calling PySide.QtGui.QUndoStack.setUndoLimit() on a non-empty stack prints a warning and does nothing.
 		"""
 		res = super(QUndoStack,self).undoLimit()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def undoText(self):

@@ -41,7 +41,7 @@ class QWebSecurityOrigin(QtWebKit.QWebSecurityOrigin):
 		Returns the port number defining the security origin.
 		"""
 		res = super(QWebSecurityOrigin,self).port()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scheme(self):

@@ -11,7 +11,7 @@ class QListWidget(QtGui.QListWidget):
 		This property holds the number of items in the list including any hidden items..
 		"""
 		res = super(QListWidget,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentItem(self):
@@ -28,7 +28,7 @@ class QListWidget(QtGui.QListWidget):
 		Depending on the current selection mode, the row may also be selected.
 		"""
 		res = super(QListWidget,self).currentRow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isSortingEnabled(self):
@@ -38,7 +38,7 @@ class QListWidget(QtGui.QListWidget):
 		The default value is false.
 		"""
 		res = super(QListWidget,self).isSortingEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemSelectionChanged(self):
@@ -121,7 +121,7 @@ class QListWidget(QtGui.QListWidget):
 
 		"""
 		res = super(QListWidget,self).dropMimeData(index,data,action)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def editItem(self,item):
@@ -282,7 +282,7 @@ class QListWidget(QtGui.QListWidget):
 		Returns the row containing the given item .
 		"""
 		res = super(QListWidget,self).row(item)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCurrentItem(self,*args,**kwargs):

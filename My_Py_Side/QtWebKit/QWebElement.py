@@ -51,7 +51,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if the element has any attributes defined; otherwise returns false;
 		"""
 		res = super(QWebElement,self).hasAttributes()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasFocus(self):
@@ -59,7 +59,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if the element has keyboard input focus; otherwise, returns false
 		"""
 		res = super(QWebElement,self).hasFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -67,7 +67,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if the element is a null element; otherwise returns false.
 		"""
 		res = super(QWebElement,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastChild(self):
@@ -341,7 +341,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if this element has an attribute with the given name ; otherwise returns false.
 		"""
 		res = super(QWebElement,self).hasAttribute(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasAttributeNS(self,namespaceUri,name):
@@ -353,7 +353,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if this element has an attribute with the given name , in namespaceUri ; otherwise returns false.
 		"""
 		res = super(QWebElement,self).hasAttributeNS(namespaceUri,name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasClass(self,name):
@@ -364,7 +364,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if this element has a class with the given name ; otherwise returns false.
 		"""
 		res = super(QWebElement,self).hasClass(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,o):
@@ -375,7 +375,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if this element points to a different underlying DOM object than o ; otherwise returns false.
 		"""
 		res = super(QWebElement,self).__ne__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,o):
@@ -386,7 +386,7 @@ class QWebElement(QtWebKit.QWebElement):
 		Returns true if this element points to the same underlying DOM object as o ; otherwise returns false.
 		"""
 		res = super(QWebElement,self).__eq__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prependInside(self,*args,**kwargs):

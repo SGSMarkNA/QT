@@ -11,5 +11,5 @@ class QTimerEvent(QtCore.QTimerEvent):
 		Returns the unique timer identifier, which is the same identifier as returned from QObject.startTimer() .
 		"""
 		res = super(QTimerEvent,self).timerId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

@@ -12,7 +12,7 @@ class QGraphicsGridLayout(QtGui.QGraphicsGridLayout):
 		This is always one more than the index of the last column that is occupied by a layout item (empty columns are counted except for those at the end).
 		"""
 		res = super(QGraphicsGridLayout,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def horizontalSpacing(self):
@@ -29,7 +29,7 @@ class QGraphicsGridLayout(QtGui.QGraphicsGridLayout):
 		This is always one more than the index of the last row that is occupied by a layout item (empty rows are counted except for those at the end).
 		"""
 		res = super(QGraphicsGridLayout,self).rowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def verticalSpacing(self):
@@ -135,7 +135,7 @@ class QGraphicsGridLayout(QtGui.QGraphicsGridLayout):
 		Returns the stretch factor for column .
 		"""
 		res = super(QGraphicsGridLayout,self).columnStretchFactor(column)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def itemAt(self,row,column):
@@ -213,7 +213,7 @@ class QGraphicsGridLayout(QtGui.QGraphicsGridLayout):
 		Returns the stretch factor for row .
 		"""
 		res = super(QGraphicsGridLayout,self).rowStretchFactor(row)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setAlignment(self,item,alignment):

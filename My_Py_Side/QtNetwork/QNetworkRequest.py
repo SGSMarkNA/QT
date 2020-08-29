@@ -68,7 +68,7 @@ class QNetworkRequest(QtNetwork.QNetworkRequest):
 		Returns true if the raw header headerName is present in this network request.
 		"""
 		res = super(QNetworkRequest,self).hasRawHeader(headerName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def header(self,header):
@@ -90,7 +90,7 @@ class QNetworkRequest(QtNetwork.QNetworkRequest):
 		Returns false if this object is not the same as other .
 		"""
 		res = super(QNetworkRequest,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -101,7 +101,7 @@ class QNetworkRequest(QtNetwork.QNetworkRequest):
 		Returns true if this object is the same as other (i.e., if they have the same URL, same headers and same meta-data settings).
 		"""
 		res = super(QNetworkRequest,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rawHeader(self,headerName):

@@ -79,7 +79,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if caching is enabled; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).caching()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canonicalFilePath(self):
@@ -149,7 +149,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the file exists; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).exists()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fileName(self):
@@ -191,7 +191,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the file path name is absolute, otherwise returns false if the path is relative.
 		"""
 		res = super(QFileInfo,self).isAbsolute()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isBundle(self):
@@ -199,7 +199,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if this object points to a bundle or to a symbolic link to a bundle on Mac OS X; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isBundle()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDir(self):
@@ -207,7 +207,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if this object points to a directory or to a symbolic link to a directory; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isDir()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isExecutable(self):
@@ -215,7 +215,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the file is executable; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isExecutable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFile(self):
@@ -224,7 +224,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns false if the object points to something which isnt a file, such as a directory.
 		"""
 		res = super(QFileInfo,self).isFile()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isHidden(self):
@@ -232,7 +232,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if this is a `hidden file; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isHidden()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadable(self):
@@ -240,7 +240,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the user can read the file; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isReadable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRelative(self):
@@ -249,7 +249,7 @@ class QFileInfo(QtCore.QFileInfo):
 		under Unix a path is absolute if it begins with a /).
 		"""
 		res = super(QFileInfo,self).isRelative()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRoot(self):
@@ -257,7 +257,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the object points to a directory or to a symbolic link to a directory, and that directory is the root directory; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isRoot()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSymLink(self):
@@ -268,7 +268,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Example:
 		"""
 		res = super(QFileInfo,self).isSymLink()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWritable(self):
@@ -276,7 +276,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true if the user can write to the file; otherwise returns false.
 		"""
 		res = super(QFileInfo,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastModified(self):
@@ -302,7 +302,7 @@ class QFileInfo(QtCore.QFileInfo):
 		Returns true to indicate that the path was converted; otherwise returns false to indicate that the path was already absolute.
 		"""
 		res = super(QFileInfo,self).makeAbsolute()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def owner(self):
@@ -391,7 +391,7 @@ class QFileInfo(QtCore.QFileInfo):
 		This is an overloaded function.
 		"""
 		res = super(QFileInfo,self).__ne__(fileinfo)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,fileinfo):
@@ -402,7 +402,7 @@ class QFileInfo(QtCore.QFileInfo):
 		This is an overloaded function.
 		"""
 		res = super(QFileInfo,self).__eq__(fileinfo)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def permission(self,permissions):
@@ -413,7 +413,7 @@ class QFileInfo(QtCore.QFileInfo):
 
 		"""
 		res = super(QFileInfo,self).permission(permissions)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setCaching(self,on):

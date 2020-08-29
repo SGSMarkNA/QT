@@ -11,7 +11,7 @@ class QPrinterInfo(QtGui.QPrinterInfo):
 		Returns whether this printer is the default printer.
 		"""
 		res = super(QPrinterInfo,self).isDefault()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -20,7 +20,7 @@ class QPrinterInfo(QtGui.QPrinterInfo):
 		An empty PySide.QtGui.QPrinterInfo object could result for example from calling PySide.QtGui.QPrinterInfo.defaultPrinter() when there are no printers on the system.
 		"""
 		res = super(QPrinterInfo,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def printerName(self):

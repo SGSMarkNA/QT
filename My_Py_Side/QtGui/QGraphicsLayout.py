@@ -25,7 +25,7 @@ class QGraphicsLayout(QtGui.QGraphicsLayout):
 		The subclass is free to decide how to store the items.
 		"""
 		res = super(QGraphicsLayout,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def invalidate(self):
@@ -41,7 +41,7 @@ class QGraphicsLayout(QtGui.QGraphicsLayout):
 		If the layout is being activated, this means that it is currently in the process of rearranging its items (i.e., the PySide.QtGui.QGraphicsLayout.activate() function has been called, and has not yet returned).
 		"""
 		res = super(QGraphicsLayout,self).isActivated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addChildLayoutItem(self,layoutItem):

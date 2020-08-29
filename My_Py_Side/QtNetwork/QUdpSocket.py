@@ -11,7 +11,7 @@ class QUdpSocket(QtNetwork.QUdpSocket):
 		Returns true if at least one datagram is waiting to be read; otherwise returns false.
 		"""
 		res = super(QUdpSocket,self).hasPendingDatagrams()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pendingDatagramSize(self):
@@ -44,7 +44,7 @@ class QUdpSocket(QtNetwork.QUdpSocket):
 
 		"""
 		res = super(QUdpSocket,self).bind(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def readDatagram(self,maxlen):

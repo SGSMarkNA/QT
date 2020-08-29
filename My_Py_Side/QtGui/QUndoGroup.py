@@ -21,7 +21,7 @@ class QUndoGroup(QtGui.QUndoGroup):
 		If none of the stacks are active, or if the group is empty, this function returns false.
 		"""
 		res = super(QUndoGroup,self).canRedo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canUndo(self):
@@ -30,7 +30,7 @@ class QUndoGroup(QtGui.QUndoGroup):
 		If none of the stacks are active, or if the group is empty, this function returns false.
 		"""
 		res = super(QUndoGroup,self).canUndo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isClean(self):
@@ -39,7 +39,7 @@ class QUndoGroup(QtGui.QUndoGroup):
 		If none of the stacks are active, or if the group is empty, this function returns true.
 		"""
 		res = super(QUndoGroup,self).isClean()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def redoText(self):

@@ -25,5 +25,5 @@ class QWebHistoryInterface(QtWebKit.QWebHistoryInterface):
 		Returns true if the url is part of the history of visited links; otherwise returns false.
 		"""
 		res = super(QWebHistoryInterface,self).historyContains(url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

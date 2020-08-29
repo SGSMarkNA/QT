@@ -14,7 +14,7 @@ class QWizard(QtGui.QWizard):
 		By default, this property has a value of -1, indicating that no page is currently shown.
 		"""
 		res = super(QWizard,self).currentId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentPage(self):
@@ -41,7 +41,7 @@ class QWizard(QtGui.QWizard):
 		By reimplementing this function, you can specify a dynamic page order.
 		"""
 		res = super(QWizard,self).nextId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def options(self):
@@ -75,7 +75,7 @@ class QWizard(QtGui.QWizard):
 		If this property isnt explicitly set, this property defaults to the lowest page ID in this wizard, or -1 if no page has been inserted yet.
 		"""
 		res = super(QWizard,self).startId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def subTitleFormat(self):
@@ -104,7 +104,7 @@ class QWizard(QtGui.QWizard):
 		When possible, it is usually better style to disable the Next or Finish button (by specifying mandatory fields or by reimplementing QWizardPage.isComplete() ) than to reimplement PySide.QtGui.QWizard.validateCurrentPage() .
 		"""
 		res = super(QWizard,self).validateCurrentPage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def visitedPages(self):
@@ -134,7 +134,7 @@ class QWizard(QtGui.QWizard):
 		The ID is guaranteed to be larger than any other ID in the PySide.QtGui.QWizard so far.
 		"""
 		res = super(QWizard,self).addPage(page)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def button(self,which):
@@ -192,7 +192,7 @@ class QWizard(QtGui.QWizard):
 		Pressing Back marks the current page as unvisited again.
 		"""
 		res = super(QWizard,self).hasVisitedPage(id)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def initializePage(self,id):
@@ -424,5 +424,5 @@ class QWizard(QtGui.QWizard):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QWizard,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

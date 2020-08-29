@@ -20,7 +20,7 @@ class QTabWidget(QtGui.QTabWidget):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QTabWidget,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentIndex(self):
@@ -30,7 +30,7 @@ class QTabWidget(QtGui.QTabWidget):
 		By default, this property contains a value of -1 because there are initially no tabs in the widget.
 		"""
 		res = super(QTabWidget,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentWidget(self):
@@ -50,7 +50,7 @@ class QTabWidget(QtGui.QTabWidget):
 		This mode is useful for showing document-type pages where the page covers most of the tab widget area.
 		"""
 		res = super(QTabWidget,self).documentMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def elideMode(self):
@@ -80,7 +80,7 @@ class QTabWidget(QtGui.QTabWidget):
 		By default, this property is false;
 		"""
 		res = super(QTabWidget,self).isMovable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tabBar(self):
@@ -115,7 +115,7 @@ class QTabWidget(QtGui.QTabWidget):
 		This property holds whether close buttons are automatically added to each tab..
 		"""
 		res = super(QTabWidget,self).tabsClosable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def usesScrollButtons(self):
@@ -125,7 +125,7 @@ class QTabWidget(QtGui.QTabWidget):
 		By default the value is style dependant.
 		"""
 		res = super(QTabWidget,self).usesScrollButtons()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addTab(self,*args,**kwargs):
@@ -144,7 +144,7 @@ class QTabWidget(QtGui.QTabWidget):
 		if the label is Bro&wse then Alt+W becomes a shortcut which will move the focus to this tab.
 		"""
 		res = super(QTabWidget,self).addTab(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def cornerWidget(self,corner=None):
@@ -166,7 +166,7 @@ class QTabWidget(QtGui.QTabWidget):
 		Returns the index position of the page occupied by the widget w , or -1 if the widget cannot be found.
 		"""
 		res = super(QTabWidget,self).indexOf(widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def initStyleOption(self,option):
@@ -203,7 +203,7 @@ class QTabWidget(QtGui.QTabWidget):
 		Inserting a new tab at an index less than or equal to the current index will increment the current index, but keep the current page.
 		"""
 		res = super(QTabWidget,self).insertTab(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isTabEnabled(self,index):
@@ -214,7 +214,7 @@ class QTabWidget(QtGui.QTabWidget):
 		Returns true if the page at position index is enabled; otherwise returns false.
 		"""
 		res = super(QTabWidget,self).isTabEnabled(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeTab(self,index):

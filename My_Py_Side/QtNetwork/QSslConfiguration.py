@@ -36,7 +36,7 @@ class QSslConfiguration(QtNetwork.QSslConfiguration):
 		A PySide.QtNetwork.QSslConfiguration object is null if it has been default-constructed and no setter methods have been called.
 		"""
 		res = super(QSslConfiguration,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def localCertificate(self):
@@ -79,7 +79,7 @@ class QSslConfiguration(QtNetwork.QSslConfiguration):
 		The certificates are checked in issuing order, starting with the peers own certificate, then its issuers certificate, and so on.
 		"""
 		res = super(QSslConfiguration,self).peerVerifyDepth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def peerVerifyMode(self):
@@ -129,7 +129,7 @@ class QSslConfiguration(QtNetwork.QSslConfiguration):
 		Two PySide.QtNetwork.QSslConfiguration objects are considered different if any state or setting is different.
 		"""
 		res = super(QSslConfiguration,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -141,7 +141,7 @@ class QSslConfiguration(QtNetwork.QSslConfiguration):
 		Two PySide.QtNetwork.QSslConfiguration objects are considered equal if they have the exact same settings and state.
 		"""
 		res = super(QSslConfiguration,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setCaCertificates(self,certificates):

@@ -42,7 +42,7 @@ class QMouseEvent(QtGui.QMouseEvent):
 		Returns the global x position of the mouse cursor at the time of the event.
 		"""
 		res = super(QMouseEvent,self).globalX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalY(self):
@@ -50,7 +50,7 @@ class QMouseEvent(QtGui.QMouseEvent):
 		Returns the global y position of the mouse cursor at the time of the event.
 		"""
 		res = super(QMouseEvent,self).globalY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hasExtendedInfo(self):
@@ -58,7 +58,7 @@ class QMouseEvent(QtGui.QMouseEvent):
 
 		"""
 		res = super(QMouseEvent,self).hasExtendedInfo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pos(self):
@@ -84,7 +84,7 @@ class QMouseEvent(QtGui.QMouseEvent):
 		Returns the x position of the mouse cursor, relative to the widget that received the event.
 		"""
 		res = super(QMouseEvent,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -92,5 +92,5 @@ class QMouseEvent(QtGui.QMouseEvent):
 		Returns the y position of the mouse cursor, relative to the widget that received the event.
 		"""
 		res = super(QMouseEvent,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

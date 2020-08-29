@@ -23,7 +23,7 @@ class QGraphicsEffect(QtGui.QGraphicsEffect):
 		Using this property, you can disable certain effects on slow platforms, in order to ensure that the user interface is responsive.
 		"""
 		res = super(QGraphicsEffect,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sourceIsPixmap(self):
@@ -33,7 +33,7 @@ class QGraphicsEffect(QtGui.QGraphicsEffect):
 		For instance, theres no point in drawing the source in device coordinates to avoid pixmap scaling if this function returns true - the source pixmap will be scaled anyways.
 		"""
 		res = super(QGraphicsEffect,self).sourceIsPixmap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def updateBoundingRect(self):

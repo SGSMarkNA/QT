@@ -43,7 +43,7 @@ class QPageSetupDialog(QtGui.QPageSetupDialog):
 		Use testOption(option ) instead.
 		"""
 		res = super(QPageSetupDialog,self).isOptionEnabled(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def open(self,receiver,member):
@@ -101,5 +101,5 @@ class QPageSetupDialog(QtGui.QPageSetupDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QPageSetupDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

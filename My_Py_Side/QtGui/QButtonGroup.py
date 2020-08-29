@@ -27,7 +27,7 @@ class QButtonGroup(QtGui.QButtonGroup):
 		Returns the id of the PySide.QtGui.QButtonGroup.checkedButton() , or -1 if no button is checked.
 		"""
 		res = super(QButtonGroup,self).checkedId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def exclusive(self):
@@ -39,7 +39,7 @@ class QButtonGroup(QtGui.QButtonGroup):
 		By default, this property is true.
 		"""
 		res = super(QButtonGroup,self).exclusive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addButton(self,*args,**kwargs):
@@ -76,7 +76,7 @@ class QButtonGroup(QtGui.QButtonGroup):
 		Returns the id for the specified button , or -1 if no such button exists.
 		"""
 		res = super(QButtonGroup,self).id(button)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def removeButton(self,arg__1):

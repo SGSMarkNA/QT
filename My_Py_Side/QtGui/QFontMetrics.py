@@ -14,7 +14,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		when they put more than one accent on top of a character, or to accommodate an unusual character in an exotic language, so it is possible (though rare) that this value will be too small.
 		"""
 		res = super(QFontMetrics,self).ascent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def averageCharWidth(self):
@@ -22,7 +22,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the average width of glyphs in the font.
 		"""
 		res = super(QFontMetrics,self).averageCharWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def descent(self):
@@ -33,7 +33,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		to accommodate an unusual character in an exotic language, so it is possible (though rare) that this value will be too small.
 		"""
 		res = super(QFontMetrics,self).descent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def height(self):
@@ -42,7 +42,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		This is always equal to PySide.QtGui.QFontMetrics.ascent() + PySide.QtGui.QFontMetrics.descent() +1 (the 1 is for the base line).
 		"""
 		res = super(QFontMetrics,self).height()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def leading(self):
@@ -51,7 +51,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		This is the natural inter-line spacing.
 		"""
 		res = super(QFontMetrics,self).leading()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lineSpacing(self):
@@ -60,7 +60,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		This value is always equal to PySide.QtGui.QFontMetrics.leading() + PySide.QtGui.QFontMetrics.height() .
 		"""
 		res = super(QFontMetrics,self).lineSpacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lineWidth(self):
@@ -68,7 +68,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the width of the underline and strikeout lines, adjusted for the point size of the font.
 		"""
 		res = super(QFontMetrics,self).lineWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maxWidth(self):
@@ -76,7 +76,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the width of the widest character in the font.
 		"""
 		res = super(QFontMetrics,self).maxWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minLeftBearing(self):
@@ -86,7 +86,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Note that this function can be very slow if the font is large.
 		"""
 		res = super(QFontMetrics,self).minLeftBearing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minRightBearing(self):
@@ -96,7 +96,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Note that this function can be very slow if the font is large.
 		"""
 		res = super(QFontMetrics,self).minRightBearing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def overlinePos(self):
@@ -104,7 +104,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the distance from the base line to where an overline should be drawn.
 		"""
 		res = super(QFontMetrics,self).overlinePos()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def strikeOutPos(self):
@@ -112,7 +112,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the distance from the base line to where the strikeout line should be drawn.
 		"""
 		res = super(QFontMetrics,self).strikeOutPos()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def underlinePos(self):
@@ -120,7 +120,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns the distance from the base line to where an underscore should be drawn.
 		"""
 		res = super(QFontMetrics,self).underlinePos()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def xHeight(self):
@@ -129,7 +129,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		This is often but not always the same as the height of the character x.
 		"""
 		res = super(QFontMetrics,self).xHeight()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boundingRect(self,*args,**kwargs):
@@ -199,7 +199,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		This function also takes non spacing marks and ligatures into account.
 		"""
 		res = super(QFontMetrics,self).charWidth(str,pos)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def elidedText(self,text,mode,width,flags=None):
@@ -223,7 +223,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Returns true if character ch is a valid character in the font; otherwise returns false.
 		"""
 		res = super(QFontMetrics,self).inFont(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def leftBearing(self,arg__1):
@@ -237,7 +237,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		See width( PySide.QtCore.QChar ) for a graphical description of this metric.
 		"""
 		res = super(QFontMetrics,self).leftBearing(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -249,7 +249,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Two font metrics are considered equal if they were constructed from the same PySide.QtGui.QFont and the paint devices they were constructed for are considered compatible.
 		"""
 		res = super(QFontMetrics,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -262,7 +262,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Two font metrics are considered equal if they were constructed from the same PySide.QtGui.QFont and the paint devices they were constructed for are considered compatible.
 		"""
 		res = super(QFontMetrics,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rightBearing(self,arg__1):
@@ -276,7 +276,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 		See PySide.QtGui.QFontMetrics.width() for a graphical description of this metric.
 		"""
 		res = super(QFontMetrics,self).rightBearing(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def size(self,flags,str,tabstops=None,tabarray=None):
@@ -327,7 +327,7 @@ class QFontMetrics(QtGui.QFontMetrics):
 
 		"""
 		res = super(QFontMetrics,self).width(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def widthChar(self,arg__1):
@@ -344,5 +344,5 @@ class QFontMetrics(QtGui.QFontMetrics):
 		Notice that the bearings of f in this particular font are both negative, while the bearings of o are both positive.
 		"""
 		res = super(QFontMetrics,self).widthChar(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

@@ -22,7 +22,7 @@ class QFile(QtCore.QFile):
 		Returns true if the file specified by PySide.QtCore.QFile.fileName() exists; otherwise returns false.
 		"""
 		res = super(QFile,self).exists()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fileEngine(self):
@@ -46,7 +46,7 @@ class QFile(QtCore.QFile):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QFile,self).flush()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def handle(self):
@@ -59,7 +59,7 @@ class QFile(QtCore.QFile):
 		This function is not supported on Windows CE.
 		"""
 		res = super(QFile,self).handle()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def permissions(self):
@@ -84,7 +84,7 @@ class QFile(QtCore.QFile):
 		The file is closed before it is removed.
 		"""
 		res = super(QFile,self).remove()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def symLinkTarget(self):
@@ -116,7 +116,7 @@ class QFile(QtCore.QFile):
 		The source file is closed before it is copied.
 		"""
 		res = super(QFile,self).copy(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def link(self,newName):
@@ -130,7 +130,7 @@ class QFile(QtCore.QFile):
 		This function will not overwrite an already existing entity in the file system; in this case, link() will return false and set PySide.QtCore.QFile.error() to return RenameError .
 		"""
 		res = super(QFile,self).link(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def map(self,offset,size,flags=None):
@@ -159,7 +159,7 @@ class QFile(QtCore.QFile):
 
 		"""
 		res = super(QFile,self).open(fd,flags)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rename(self,newName):
@@ -173,7 +173,7 @@ class QFile(QtCore.QFile):
 		The file is closed before it is renamed.
 		"""
 		res = super(QFile,self).rename(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def resize(self,sz):
@@ -186,7 +186,7 @@ class QFile(QtCore.QFile):
 		If sz is larger than the file currently is the new bytes will be set to 0, if sz is smaller the file is simply truncated.
 		"""
 		res = super(QFile,self).resize(sz)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFileName(self,name):
@@ -212,7 +212,7 @@ class QFile(QtCore.QFile):
 
 		"""
 		res = super(QFile,self).setPermissions(permissionSpec)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unmap(self,address):
@@ -224,5 +224,5 @@ class QFile(QtCore.QFile):
 		Returns true if the unmap succeeds; false otherwise.
 		"""
 		res = super(QFile,self).unmap(address)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

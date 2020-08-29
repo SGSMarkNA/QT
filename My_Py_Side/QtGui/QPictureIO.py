@@ -70,7 +70,7 @@ class QPictureIO(QtGui.QPictureIO):
 		Returns the quality of the written picture, related to the compression ratio.
 		"""
 		res = super(QPictureIO,self).quality()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def read(self):
@@ -84,7 +84,7 @@ class QPictureIO(QtGui.QPictureIO):
 		Example:
 		"""
 		res = super(QPictureIO,self).read()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def status(self):
@@ -93,7 +93,7 @@ class QPictureIO(QtGui.QPictureIO):
 		A non-zero value indicates an error, whereas 0 means that the IO operation was successful.
 		"""
 		res = super(QPictureIO,self).status()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def write(self):
@@ -105,7 +105,7 @@ class QPictureIO(QtGui.QPictureIO):
 		Example:
 		"""
 		res = super(QPictureIO,self).write()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDescription(self,arg__1):

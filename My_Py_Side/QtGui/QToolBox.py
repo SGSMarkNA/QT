@@ -12,7 +12,7 @@ class QToolBox(QtGui.QToolBox):
 		By default, this property has a value of 0.
 		"""
 		res = super(QToolBox,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentIndex(self):
@@ -21,7 +21,7 @@ class QToolBox(QtGui.QToolBox):
 		By default, for an empty toolbox, this property has a value of -1.
 		"""
 		res = super(QToolBox,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentWidget(self):
@@ -49,7 +49,7 @@ class QToolBox(QtGui.QToolBox):
 		Returns the new tabs index.
 		"""
 		res = super(QToolBox,self).addItem(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOf(self,widget):
@@ -60,7 +60,7 @@ class QToolBox(QtGui.QToolBox):
 		Returns the index of widget , or -1 if the item does not exist.
 		"""
 		res = super(QToolBox,self).indexOf(widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertItem(self,*args,**kwargs):
@@ -81,7 +81,7 @@ class QToolBox(QtGui.QToolBox):
 		Returns the new items index.
 		"""
 		res = super(QToolBox,self).insertItem(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isItemEnabled(self,index):
@@ -92,7 +92,7 @@ class QToolBox(QtGui.QToolBox):
 		Returns true if the item at position index is enabled; otherwise returns false.
 		"""
 		res = super(QToolBox,self).isItemEnabled(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemIcon(self,index):

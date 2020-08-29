@@ -175,5 +175,5 @@ class QGraphicsLinearLayout(QtGui.QGraphicsLinearLayout):
 		The default stretch factor is 0, meaning that the item has no assigned stretch factor.
 		"""
 		res = super(QGraphicsLinearLayout,self).stretchFactor(item)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

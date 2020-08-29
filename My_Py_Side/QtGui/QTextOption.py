@@ -14,7 +14,7 @@ class QTextOption(QtGui.QTextOption):
 		Returns true if tab other is not equal to this tab; otherwise returns false.
 		"""
 		res = super(QTextOption,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -25,5 +25,5 @@ class QTextOption(QtGui.QTextOption):
 		Returns true if tab other is equal to this tab; otherwise returns false.
 		"""
 		res = super(QTextOption,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

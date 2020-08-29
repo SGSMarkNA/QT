@@ -128,5 +128,5 @@ class QScriptClass(QtScript.QScriptClass):
 		Reimplement this function to indicate which extensions your custom class supports.
 		"""
 		res = super(QScriptClass,self).supportsExtension(extension)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

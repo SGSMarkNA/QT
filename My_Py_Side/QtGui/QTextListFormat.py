@@ -12,7 +12,7 @@ class QTextListFormat(QtGui.QTextListFormat):
 		The indentation is multiplied by the QTextDocument.indentWidth property to get the effective indent in pixels.
 		"""
 		res = super(QTextListFormat,self).indent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def style(self):

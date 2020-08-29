@@ -38,7 +38,7 @@ class QSystemTrayIcon(QtGui.QSystemTrayIcon):
 		Setting this property to true or calling PySide.QtGui.QSystemTrayIcon.show() makes the system tray icon visible; setting this property to false or calling PySide.QtGui.QSystemTrayIcon.hide() hides it.
 		"""
 		res = super(QSystemTrayIcon,self).isVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def messageClicked(self):

@@ -53,7 +53,7 @@ class QSqlIndex(QtSql.QSqlIndex):
 		Returns true if field i in the index is sorted in descending order; otherwise returns false.
 		"""
 		res = super(QSqlIndex,self).isDescending(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setCursorName(self,cursorName):

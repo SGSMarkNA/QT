@@ -12,7 +12,7 @@ class QScriptEngineDebugger(QtScriptTools.QScriptEngineDebugger):
 		The default is true.
 		"""
 		res = super(QScriptEngineDebugger,self).autoShowStandardWindow()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def evaluationResumed(self):

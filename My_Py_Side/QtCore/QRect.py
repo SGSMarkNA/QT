@@ -28,7 +28,7 @@ class QRect(QtCore.QRect):
 		Note that for historical reasons this function returns PySide.QtCore.QRect.top() + PySide.QtCore.QRect.height() - 1; use PySide.QtCore.QRect.y() + PySide.QtCore.QRect.height() to retrieve the true y-coordinate.
 		"""
 		res = super(QRect,self).bottom()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def bottomLeft(self):
@@ -76,7 +76,7 @@ class QRect(QtCore.QRect):
 		Returns the height of the rectangle.
 		"""
 		res = super(QRect,self).height()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -87,7 +87,7 @@ class QRect(QtCore.QRect):
 		Use the PySide.QtCore.QRect.normalized() function to retrieve a rectangle where the corners are swapped.
 		"""
 		res = super(QRect,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -97,7 +97,7 @@ class QRect(QtCore.QRect):
 		A null rectangle is also empty, and hence is not valid.
 		"""
 		res = super(QRect,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -108,7 +108,7 @@ class QRect(QtCore.QRect):
 		A valid rectangle is not empty (i.e., PySide.QtCore.QRect.isValid() == ! PySide.QtCore.QRect.isEmpty() ).
 		"""
 		res = super(QRect,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def left(self):
@@ -117,7 +117,7 @@ class QRect(QtCore.QRect):
 		Equivalent to PySide.QtCore.QRect.x() .
 		"""
 		res = super(QRect,self).left()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def normalized(self):
@@ -135,7 +135,7 @@ class QRect(QtCore.QRect):
 		Note that for historical reasons this function returns PySide.QtCore.QRect.left() + PySide.QtCore.QRect.width() - 1; use PySide.QtCore.QRect.x() + PySide.QtCore.QRect.width() to retrieve the true x-coordinate.
 		"""
 		res = super(QRect,self).right()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -152,7 +152,7 @@ class QRect(QtCore.QRect):
 		Equivalent to PySide.QtCore.QRect.y() .
 		"""
 		res = super(QRect,self).top()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def topLeft(self):
@@ -177,7 +177,7 @@ class QRect(QtCore.QRect):
 		Returns the width of the rectangle.
 		"""
 		res = super(QRect,self).width()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def x(self):
@@ -186,7 +186,7 @@ class QRect(QtCore.QRect):
 		Equivalent to PySide.QtCore.QRect.left() .
 		"""
 		res = super(QRect,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -195,7 +195,7 @@ class QRect(QtCore.QRect):
 		Equivalent to PySide.QtCore.QRect.top() .
 		"""
 		res = super(QRect,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def adjust(self,x1,y1,x2,y2):
@@ -249,7 +249,7 @@ class QRect(QtCore.QRect):
 		If proper is true, this function only returns true if the point is entirely inside the rectangle(not on the edge).
 		"""
 		res = super(QRect,self).contains(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def intersect(self,r):
@@ -284,7 +284,7 @@ class QRect(QtCore.QRect):
 		The intersection rectangle can be retrieved using the PySide.QtCore.QRect.intersected() function.
 		"""
 		res = super(QRect,self).intersects(r)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def moveBottom(self,pos):
@@ -409,7 +409,7 @@ class QRect(QtCore.QRect):
 
 		"""
 		res = super(QRect,self).__ne__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __and__(self,r):
@@ -443,7 +443,7 @@ class QRect(QtCore.QRect):
 
 		"""
 		res = super(QRect,self).__eq__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __or__(self,r):

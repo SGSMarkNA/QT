@@ -15,7 +15,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		PySide.QtGui.QAbstractButton.autoExclusive() is off by default, except for radio buttons.
 		"""
 		res = super(QAbstractButton,self).autoExclusive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def autoRepeat(self):
@@ -28,7 +28,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		The PySide.QtGui.QAbstractButton.pressed() , PySide.QtGui.QAbstractButton.released() , and PySide.QtGui.QAbstractButton.clicked() signals will be emitted like in the normal case.
 		"""
 		res = super(QAbstractButton,self).autoRepeat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def autoRepeatDelay(self):
@@ -37,7 +37,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		If PySide.QtGui.QAbstractButton.autoRepeat() is enabled, then PySide.QtGui.QAbstractButton.autoRepeatDelay() defines the initial delay in milliseconds before auto-repetition kicks in.
 		"""
 		res = super(QAbstractButton,self).autoRepeatDelay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def autoRepeatInterval(self):
@@ -46,7 +46,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		If PySide.QtGui.QAbstractButton.autoRepeat() is enabled, then PySide.QtGui.QAbstractButton.autoRepeatInterval() defines the length of the auto-repetition interval in millisecons.
 		"""
 		res = super(QAbstractButton,self).autoRepeatInterval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def checkStateSet(self):
@@ -92,7 +92,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		By default, the button is not checkable.
 		"""
 		res = super(QAbstractButton,self).isCheckable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isChecked(self):
@@ -102,7 +102,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		By default, the button is unchecked.
 		"""
 		res = super(QAbstractButton,self).isChecked()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDown(self):
@@ -113,7 +113,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		The default is false.
 		"""
 		res = super(QAbstractButton,self).isDown()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nextCheckState(self):
@@ -170,7 +170,7 @@ class QAbstractButton(QtGui.QAbstractButton):
 		Subclasses may reimplement this function to provide support for clickable areas of different shapes and sizes.
 		"""
 		res = super(QAbstractButton,self).hitButton(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAutoExclusive(self,arg__1):

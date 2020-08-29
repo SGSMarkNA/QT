@@ -118,7 +118,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if this URL contains a fragment (i.e., if # was seen on it).
 		"""
 		res = super(QUrl,self).hasFragment()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasQuery(self):
@@ -126,7 +126,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if this URL contains a Query (i.e., if ? was seen on it).
 		"""
 		res = super(QUrl,self).hasQuery()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def host(self):
@@ -141,7 +141,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if the URL has no data; otherwise returns false.
 		"""
 		res = super(QUrl,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRelative(self):
@@ -151,7 +151,7 @@ class QUrl(QtCore.QUrl):
 		PySide.QtCore.QUrl.isEmpty() .
 		"""
 		res = super(QUrl,self).isRelative()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -161,7 +161,7 @@ class QUrl(QtCore.QUrl):
 		Every part of the URL must conform to the standard encoding rules of the URI standard for the URL to be reported as valid.
 		"""
 		res = super(QUrl,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def password(self):
@@ -183,7 +183,7 @@ class QUrl(QtCore.QUrl):
 		Returns the port of the URL, or -1 if the port is unspecified.
 		"""
 		res = super(QUrl,self).port()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def queryItems(self):
@@ -311,7 +311,7 @@ class QUrl(QtCore.QUrl):
 		That is, if the encoded query of this URL is search=Qt%20Rules, calling this function with key = %73earch will return false.
 		"""
 		res = super(QUrl,self).hasEncodedQueryItem(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasQueryItem(self,key):
@@ -322,7 +322,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if there is a query string pair whose key is equal to key from the URL.
 		"""
 		res = super(QUrl,self).hasQueryItem(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isParentOf(self,url):
@@ -334,7 +334,7 @@ class QUrl(QtCore.QUrl):
 		childUrl is a child of this URL if the two URLs share the same scheme and authority, and this URLs path is a parent of the path of childUrl .
 		"""
 		res = super(QUrl,self).isParentOf(url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,url):
@@ -345,7 +345,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if this URL and the given url are not equal; otherwise returns false.
 		"""
 		res = super(QUrl,self).__ne__(url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,url):
@@ -357,7 +357,7 @@ class QUrl(QtCore.QUrl):
 		This provides a means of ordering URLs.
 		"""
 		res = super(QUrl,self).__lt__(url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,url):
@@ -368,7 +368,7 @@ class QUrl(QtCore.QUrl):
 		Returns true if this URL and the given url are equal; otherwise returns false.
 		"""
 		res = super(QUrl,self).__eq__(url)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def port(self,defaultPort):
@@ -381,7 +381,7 @@ class QUrl(QtCore.QUrl):
 		Example:
 		"""
 		res = super(QUrl,self).port(defaultPort)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def queryItemValue(self,key):

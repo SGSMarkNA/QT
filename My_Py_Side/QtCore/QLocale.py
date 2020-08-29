@@ -178,7 +178,7 @@ class QLocale(QtCore.QLocale):
 		Returns true if the PySide.QtCore.QLocale object is not the same as the other locale specified; otherwise returns false.
 		"""
 		res = super(QLocale,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -189,7 +189,7 @@ class QLocale(QtCore.QLocale):
 		Returns true if the PySide.QtCore.QLocale object is the same as the other locale specified; otherwise returns false.
 		"""
 		res = super(QLocale,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setNumberOptions(self,options):

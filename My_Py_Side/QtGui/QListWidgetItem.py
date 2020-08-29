@@ -68,7 +68,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns true if the item is hidden; otherwise returns false.
 		"""
 		res = super(QListWidgetItem,self).isHidden()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSelected(self):
@@ -76,7 +76,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns true if the item is selected; otherwise returns false.
 		"""
 		res = super(QListWidgetItem,self).isSelected()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def listWidget(self):
@@ -114,7 +114,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the text alignment for the list item.
 		"""
 		res = super(QListWidgetItem,self).textAlignment()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toolTip(self):
@@ -129,7 +129,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns the type passed to the PySide.QtGui.QListWidgetItem constructor.
 		"""
 		res = super(QListWidgetItem,self).type()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def whatsThis(self):
@@ -158,7 +158,7 @@ class QListWidgetItem(QtGui.QListWidgetItem):
 		Returns true if this items text is less then other items text; otherwise returns false.
 		"""
 		res = super(QListWidgetItem,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,in):

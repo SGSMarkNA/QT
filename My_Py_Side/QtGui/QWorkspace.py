@@ -30,7 +30,7 @@ class QWorkspace(QtGui.QWorkspace):
 		If this property is false (the default), resizing child windows out of the visible area of the workspace is not permitted, although it is still possible to position them partially outside the visible area.
 		"""
 		res = super(QWorkspace,self).scrollBarsEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addWindow(self,w,flags=None):

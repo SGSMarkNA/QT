@@ -28,7 +28,7 @@ class QStylePainter(QtGui.QStylePainter):
 		This is automatically called by the constructor that takes a PySide.QtGui.QPaintDevice and a PySide.QtGui.QWidget .
 		"""
 		res = super(QStylePainter,self).begin(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def drawComplexControl(self,cc,opt):

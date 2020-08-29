@@ -21,7 +21,7 @@ class QDoubleValidator(QtGui.QDoubleValidator):
 		By default, this property contains a value of 1000.
 		"""
 		res = super(QDoubleValidator,self).decimals()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def notation(self):

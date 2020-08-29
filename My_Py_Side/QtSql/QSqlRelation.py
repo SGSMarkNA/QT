@@ -25,7 +25,7 @@ class QSqlRelation(QtSql.QSqlRelation):
 		Returns true if the PySide.QtSql.QSqlRelation object is valid; otherwise returns false.
 		"""
 		res = super(QSqlRelation,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tableName(self):

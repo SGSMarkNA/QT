@@ -25,7 +25,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).doubleDecimals()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def doubleMaximum(self):
@@ -65,7 +65,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).intMaximum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def intMinimum(self):
@@ -73,7 +73,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).intMinimum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def intStep(self):
@@ -81,7 +81,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).intStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def intValue(self):
@@ -89,7 +89,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).intValue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isComboBoxEditable(self):
@@ -97,7 +97,7 @@ class QInputDialog(QtGui.QInputDialog):
 
 		"""
 		res = super(QInputDialog,self).isComboBoxEditable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def labelText(self):
@@ -345,5 +345,5 @@ class QInputDialog(QtGui.QInputDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QInputDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

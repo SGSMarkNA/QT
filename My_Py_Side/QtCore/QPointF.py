@@ -27,7 +27,7 @@ class QPointF(QtCore.QPointF):
 		Returns true if both the x and y coordinates are set to +0.0; otherwise returns false.
 		"""
 		res = super(QPointF,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def manhattanLength(self):
@@ -86,7 +86,7 @@ class QPointF(QtCore.QPointF):
 
 		"""
 		res = super(QPointF,self).__ne__(p2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -204,7 +204,7 @@ class QPointF(QtCore.QPointF):
 
 		"""
 		res = super(QPointF,self).__eq__(p2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setX(self,x):

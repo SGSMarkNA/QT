@@ -30,7 +30,7 @@ class QDockWidget(QtGui.QDockWidget):
 		By default, this property is true.
 		"""
 		res = super(QDockWidget,self).isFloating()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def titleBarWidget(self):
@@ -78,7 +78,7 @@ class QDockWidget(QtGui.QDockWidget):
 
 		"""
 		res = super(QDockWidget,self).isAreaAllowed(area)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAllowedAreas(self,areas):

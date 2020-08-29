@@ -19,7 +19,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns the number of the column in the table that contains this cell.
 		"""
 		res = super(QTextTableCell,self).column()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def columnSpan(self):
@@ -28,7 +28,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		The default is 1.
 		"""
 		res = super(QTextTableCell,self).columnSpan()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def end(self):
@@ -52,7 +52,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns the first valid position in the document occupied by this cell.
 		"""
 		res = super(QTextTableCell,self).firstPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def format(self):
@@ -68,7 +68,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns true if this is a valid table cell; otherwise returns false.
 		"""
 		res = super(QTextTableCell,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastCursorPosition(self):
@@ -84,7 +84,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns the last valid position in the document occupied by this cell.
 		"""
 		res = super(QTextTableCell,self).lastPosition()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def row(self):
@@ -92,7 +92,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns the number of the row in the table that contains this cell.
 		"""
 		res = super(QTextTableCell,self).row()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rowSpan(self):
@@ -101,7 +101,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		The default is 1.
 		"""
 		res = super(QTextTableCell,self).rowSpan()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def tableCellFormatIndex(self):
@@ -109,7 +109,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns the index of the tableCells format in the documents internal list of formats.
 		"""
 		res = super(QTextTableCell,self).tableCellFormatIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -120,7 +120,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns true if this cell object and the other cell object describe different cells; otherwise returns false.
 		"""
 		res = super(QTextTableCell,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -131,7 +131,7 @@ class QTextTableCell(QtGui.QTextTableCell):
 		Returns true if this cell object and the other cell object describe the same cell; otherwise returns false.
 		"""
 		res = super(QTextTableCell,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFormat(self,format):

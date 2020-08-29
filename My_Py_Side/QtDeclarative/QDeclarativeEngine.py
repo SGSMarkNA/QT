@@ -69,7 +69,7 @@ class QDeclarativeEngine(QtDeclarative.QDeclarativeEngine):
 		The default value is true.
 		"""
 		res = super(QDeclarativeEngine,self).outputWarningsToStandardError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pluginPathList(self):
@@ -166,7 +166,7 @@ class QDeclarativeEngine(QtDeclarative.QDeclarativeEngine):
 		The plugin has to be a Qt plugin which implements the PySide.QtDeclarative.QDeclarativeExtensionPlugin interface.
 		"""
 		res = super(QDeclarativeEngine,self).importPlugin(filePath,uri,errorString)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeImageProvider(self,id):

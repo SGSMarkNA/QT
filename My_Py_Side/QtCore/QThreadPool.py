@@ -11,7 +11,7 @@ class QThreadPool(QtCore.QThreadPool):
 		This property represents the number of active threads in the thread pool.
 		"""
 		res = super(QThreadPool,self).activeThreadCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def expiryTimeout(self):
@@ -25,7 +25,7 @@ class QThreadPool(QtCore.QThreadPool):
 		We recommend setting the expiryTimeout immediately after creating the thread pool, but before calling PySide.QtCore.QThreadPool.start() .
 		"""
 		res = super(QThreadPool,self).expiryTimeout()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maxThreadCount(self):
@@ -34,7 +34,7 @@ class QThreadPool(QtCore.QThreadPool):
 		The default maxThreadCount is QThread.idealThreadCount() .
 		"""
 		res = super(QThreadPool,self).maxThreadCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def releaseThread(self):
@@ -115,5 +115,5 @@ class QThreadPool(QtCore.QThreadPool):
 		Note that changing the auto-deletion on runnable after calling this function results in undefined behavior.
 		"""
 		res = super(QThreadPool,self).tryStart(runnable)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

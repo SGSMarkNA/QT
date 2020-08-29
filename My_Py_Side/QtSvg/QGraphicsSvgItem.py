@@ -18,7 +18,7 @@ class QGraphicsSvgItem(QtSvg.QGraphicsSvgItem):
 		Use QGraphicsItem.cacheMode() instead.
 		"""
 		res = super(QGraphicsSvgItem,self).isCachingEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximumCacheSize(self):

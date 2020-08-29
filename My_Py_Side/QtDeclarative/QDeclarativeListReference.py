@@ -12,7 +12,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns false if the reference is invalid.
 		"""
 		res = super(QDeclarativeListReference,self).canAppend()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canAt(self):
@@ -21,7 +21,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns false if the reference is invalid.
 		"""
 		res = super(QDeclarativeListReference,self).canAt()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canClear(self):
@@ -30,7 +30,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns false if the reference is invalid.
 		"""
 		res = super(QDeclarativeListReference,self).canClear()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canCount(self):
@@ -39,7 +39,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns false if the reference is invalid.
 		"""
 		res = super(QDeclarativeListReference,self).canCount()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -48,7 +48,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns true if the operation succeeded, otherwise false.
 		"""
 		res = super(QDeclarativeListReference,self).clear()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self):
@@ -56,7 +56,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns the number of objects in the list, or 0 if the operation failed.
 		"""
 		res = super(QDeclarativeListReference,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -64,7 +64,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns true if the instance refers to a valid list property, otherwise false.
 		"""
 		res = super(QDeclarativeListReference,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def listElementType(self):
@@ -95,7 +95,7 @@ class QDeclarativeListReference(QtDeclarative.QDeclarativeListReference):
 		Returns true if the operation succeeded, otherwise false.
 		"""
 		res = super(QDeclarativeListReference,self).append(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def at(self,arg__1):

@@ -35,7 +35,7 @@ class QCoreApplication(QtCore.QCoreApplication):
 		All five approaches are listed below:
 		"""
 		res = super(QCoreApplication,self).notify(arg__1,arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def notifyInternal(self,receiver,event):
@@ -47,5 +47,5 @@ class QCoreApplication(QtCore.QCoreApplication):
 
 		"""
 		res = super(QCoreApplication,self).notifyInternal(receiver,event)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -35,7 +35,7 @@ class QColor(QtGui.QColor):
 		Returns the alpha color component of this color.
 		"""
 		res = super(QColor,self).alpha()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def alphaF(self):
@@ -51,7 +51,7 @@ class QColor(QtGui.QColor):
 		Returns the black color component of this color.
 		"""
 		res = super(QColor,self).black()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def blackF(self):
@@ -67,7 +67,7 @@ class QColor(QtGui.QColor):
 		Returns the blue color component of this color.
 		"""
 		res = super(QColor,self).blue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def blueF(self):
@@ -83,7 +83,7 @@ class QColor(QtGui.QColor):
 		Returns the cyan color component of this color.
 		"""
 		res = super(QColor,self).cyan()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def cyanF(self):
@@ -163,7 +163,7 @@ class QColor(QtGui.QColor):
 		Returns the green color component of this color.
 		"""
 		res = super(QColor,self).green()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def greenF(self):
@@ -179,7 +179,7 @@ class QColor(QtGui.QColor):
 		Returns the hue color component of this color.
 		"""
 		res = super(QColor,self).hslHue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hslHueF(self):
@@ -195,7 +195,7 @@ class QColor(QtGui.QColor):
 		Returns the saturation color component of this color.
 		"""
 		res = super(QColor,self).hslSaturation()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hslSaturationF(self):
@@ -211,7 +211,7 @@ class QColor(QtGui.QColor):
 		Returns the hue color component of this color.
 		"""
 		res = super(QColor,self).hsvHue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hsvHueF(self):
@@ -227,7 +227,7 @@ class QColor(QtGui.QColor):
 		Returns the saturation color component of this color.
 		"""
 		res = super(QColor,self).hsvSaturation()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hsvSaturationF(self):
@@ -244,7 +244,7 @@ class QColor(QtGui.QColor):
 		The color is implicitly converted to HSV.
 		"""
 		res = super(QColor,self).hue()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hueF(self):
@@ -268,7 +268,7 @@ class QColor(QtGui.QColor):
 		Returns true if the color is valid; otherwise returns false.
 		"""
 		res = super(QColor,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lightness(self):
@@ -276,7 +276,7 @@ class QColor(QtGui.QColor):
 		Returns the lightness color component of this color.
 		"""
 		res = super(QColor,self).lightness()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lightnessF(self):
@@ -292,7 +292,7 @@ class QColor(QtGui.QColor):
 		Returns the magenta color component of this color.
 		"""
 		res = super(QColor,self).magenta()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def magentaF(self):
@@ -316,7 +316,7 @@ class QColor(QtGui.QColor):
 		Returns the red color component of this color.
 		"""
 		res = super(QColor,self).red()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def redF(self):
@@ -349,7 +349,7 @@ class QColor(QtGui.QColor):
 		The color is implicitly converted to HSV.
 		"""
 		res = super(QColor,self).saturation()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def saturationF(self):
@@ -414,7 +414,7 @@ class QColor(QtGui.QColor):
 		Returns the value color component of this color.
 		"""
 		res = super(QColor,self).value()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def valueF(self):
@@ -430,7 +430,7 @@ class QColor(QtGui.QColor):
 		Returns the yellow color component of this color.
 		"""
 		res = super(QColor,self).yellow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def yellowF(self):
@@ -503,7 +503,7 @@ class QColor(QtGui.QColor):
 		Returns true if this color has a different RGB and alpha values from color ; otherwise returns false.
 		"""
 		res = super(QColor,self).__ne__(c)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,c):
@@ -514,7 +514,7 @@ class QColor(QtGui.QColor):
 		Returns true if this color has the same RGB and alpha values as color ; otherwise returns false.
 		"""
 		res = super(QColor,self).__eq__(c)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAlpha(self,alpha):
@@ -602,7 +602,7 @@ class QColor(QtGui.QColor):
 
 		"""
 		res = super(QColor,self).setColorFromString(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setGreen(self,green):

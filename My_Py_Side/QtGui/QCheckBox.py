@@ -22,7 +22,7 @@ class QCheckBox(QtGui.QCheckBox):
 		the checkbox has only two states.
 		"""
 		res = super(QCheckBox,self).isTristate()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def initStyleOption(self,option):

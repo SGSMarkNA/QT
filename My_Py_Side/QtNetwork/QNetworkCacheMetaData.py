@@ -26,7 +26,7 @@ class QNetworkCacheMetaData(QtNetwork.QNetworkCacheMetaData):
 		Returns true if this network cache meta data has attributes that have been set otherwise false.
 		"""
 		res = super(QNetworkCacheMetaData,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastModified(self):
@@ -52,7 +52,7 @@ class QNetworkCacheMetaData(QtNetwork.QNetworkCacheMetaData):
 		Specifically with http, documents marked with Pragma: no-cache, or have a Cache-control set to no-store or no-cache or any https document that doesnt have Cache-control: public set will set the saveToDisk to false.
 		"""
 		res = super(QNetworkCacheMetaData,self).saveToDisk()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def url(self):
@@ -71,7 +71,7 @@ class QNetworkCacheMetaData(QtNetwork.QNetworkCacheMetaData):
 		Returns true if this meta data is not equal to the other meta data; otherwise returns false.
 		"""
 		res = super(QNetworkCacheMetaData,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -82,7 +82,7 @@ class QNetworkCacheMetaData(QtNetwork.QNetworkCacheMetaData):
 		Returns true if this meta data is equal to the other meta data; otherwise returns false.
 		"""
 		res = super(QNetworkCacheMetaData,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAttributes(self,attributes):

@@ -11,7 +11,7 @@ class QXmlStreamAttribute(QtCore.QXmlStreamAttribute):
 		Returns true if the parser added this attribute with a default value following an ATTLIST declaration in the DTD; otherwise returns false.
 		"""
 		res = super(QXmlStreamAttribute,self).isDefault()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -65,7 +65,7 @@ class QXmlStreamAttribute(QtCore.QXmlStreamAttribute):
 		Compares this attribute with other and returns true if they are not equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamAttribute,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -76,5 +76,5 @@ class QXmlStreamAttribute(QtCore.QXmlStreamAttribute):
 		Compares this attribute with other and returns true if they are equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamAttribute,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

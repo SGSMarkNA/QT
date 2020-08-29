@@ -40,7 +40,7 @@ class QMenuBar(QtGui.QMenuBar):
 		If the menu would not fit on the screen, the other direction is used automatically.
 		"""
 		res = super(QMenuBar,self).isDefaultUp()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNativeMenuBar(self):
@@ -54,7 +54,7 @@ class QMenuBar(QtGui.QMenuBar):
 		Explicitly settings this property overrides the presence (or abscence) of the attribute.
 		"""
 		res = super(QMenuBar,self).isNativeMenuBar()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def actionAt(self,arg__1):

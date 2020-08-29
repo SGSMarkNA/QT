@@ -46,7 +46,7 @@ class QNetworkAddressEntry(QtNetwork.QNetworkAddressEntry):
 		This function returns -1 if the prefix length could not be determined (i.e., PySide.QtNetwork.QNetworkAddressEntry.netmask() returns a null QHostAddress()).
 		"""
 		res = super(QNetworkAddressEntry,self).prefixLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -57,7 +57,7 @@ class QNetworkAddressEntry(QtNetwork.QNetworkAddressEntry):
 		Returns true if this network address entry is different from other .
 		"""
 		res = super(QNetworkAddressEntry,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -68,7 +68,7 @@ class QNetworkAddressEntry(QtNetwork.QNetworkAddressEntry):
 		Returns true if this network address entry is the same as other .
 		"""
 		res = super(QNetworkAddressEntry,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setBroadcast(self,newBroadcast):

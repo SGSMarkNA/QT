@@ -44,7 +44,7 @@ class QAbstractFileEngineIterator(QtCore.QAbstractFileEngineIterator):
 		This pure virtual function returns true if there is at least one more entry in the current directory (i.e., the iterator path is valid and accessible, and the iterator has not reached the end of the entry list).
 		"""
 		res = super(QAbstractFileEngineIterator,self).hasNext()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nameFilters(self):

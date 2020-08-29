@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 
 class QPaintDevice(QtGui.QPaintDevice):
 	''''''
@@ -85,7 +85,7 @@ class QPaintDevice(QtGui.QPaintDevice):
 		#someone has called QPainter.begin() but not yet called QPainter.end() for this device; otherwise returns false.
 		#"""
 		#res = super(QPaintDevice,self).paintingActive()
-		#isinstance(res,QtCore.bool)
+		#isinstance(res,bool)
 		#return res
 	##----------------------------------------------------------------------
 	#def physicalDpiX(self):

@@ -25,7 +25,7 @@ class QSslCipher(QtNetwork.QSslCipher):
 		Returns true if this is a null cipher; otherwise returns false.
 		"""
 		res = super(QSslCipher,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keyExchangeMethod(self):
@@ -62,7 +62,7 @@ class QSslCipher(QtNetwork.QSslCipher):
 		Returns the number of bits supported by the cipher.
 		"""
 		res = super(QSslCipher,self).supportedBits()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def usedBits(self):
@@ -70,7 +70,7 @@ class QSslCipher(QtNetwork.QSslCipher):
 		Returns the number of bits used by the cipher.
 		"""
 		res = super(QSslCipher,self).usedBits()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -81,7 +81,7 @@ class QSslCipher(QtNetwork.QSslCipher):
 		Returns true if this cipher is not the same as other ; otherwise, false is returned.
 		"""
 		res = super(QSslCipher,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -92,5 +92,5 @@ class QSslCipher(QtNetwork.QSslCipher):
 		Returns true if this cipher is the same as other ; otherwise, false is returned.
 		"""
 		res = super(QSslCipher,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

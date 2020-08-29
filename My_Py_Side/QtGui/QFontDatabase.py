@@ -23,7 +23,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		Returns true if the font that has family family and style style is bold; otherwise returns false.
 		"""
 		res = super(QFontDatabase,self).bold(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def families(self,writingSystem=None):
@@ -63,7 +63,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		If you need to scale a bitmap font it is better to scale it to one of the fixed sizes returned by PySide.QtGui.QFontDatabase.smoothSizes() .
 		"""
 		res = super(QFontDatabase,self).isBitmapScalable(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFixedPitch(self,family,style=None):
@@ -75,7 +75,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		Returns true if the font that has family family and style style is fixed pitch; otherwise returns false.
 		"""
 		res = super(QFontDatabase,self).isFixedPitch(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isScalable(self,family,style=None):
@@ -87,7 +87,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		Returns true if the font that has family family and style style is scalable; otherwise returns false.
 		"""
 		res = super(QFontDatabase,self).isScalable(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSmoothlyScalable(self,family,style=None):
@@ -100,7 +100,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		If this function returns true, its safe to scale this font to any size, and the result will always look attractive.
 		"""
 		res = super(QFontDatabase,self).isSmoothlyScalable(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def italic(self,family,style):
@@ -112,7 +112,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		Returns true if the font that has family family and style style is italic; otherwise returns false.
 		"""
 		res = super(QFontDatabase,self).italic(family,style)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pointSizes(self,family,style=None):
@@ -177,7 +177,7 @@ class QFontDatabase(QtGui.QFontDatabase):
 		If there is no such family and style combination, returns -1.
 		"""
 		res = super(QFontDatabase,self).weight(family,style)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def writingSystems(self,family):

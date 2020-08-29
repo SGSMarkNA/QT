@@ -91,7 +91,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 		Use the PySide.QtCore.QRectF.normalized() function to retrieve a rectangle where the corners are swapped.
 		"""
 		res = super(QRectF,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -101,7 +101,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 		A null rectangle is also empty, and hence not valid.
 		"""
 		res = super(QRectF,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -112,7 +112,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 		A valid rectangle is not empty (i.e., PySide.QtCore.QRectF.isValid() == ! PySide.QtCore.QRectF.isEmpty() ).
 		"""
 		res = super(QRectF,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def left(self):
@@ -260,7 +260,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 		Returns true if the point (x , y ) is inside or on the edge of the rectangle; otherwise returns false.
 		"""
 		res = super(QRectF,self).contains(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def intersect(self,r):
@@ -296,7 +296,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 		The intersection rectangle can be retrieved using the PySide.QtCore.QRectF.intersected() function.
 		"""
 		res = super(QRectF,self).intersects(r)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def moveBottom(self,pos):
@@ -421,7 +421,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 
 		"""
 		res = super(QRectF,self).__ne__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __and__(self,r):
@@ -455,7 +455,7 @@ class PySide.QtCore.QRectF(left, top, width, height)
 
 		"""
 		res = super(QRectF,self).__eq__(arg__2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __or__(self,r):

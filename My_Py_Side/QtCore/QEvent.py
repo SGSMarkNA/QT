@@ -29,7 +29,7 @@ class QEvent(QtCore.QEvent):
 
 		"""
 		res = super(QEvent,self).isAccepted()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def spontaneous(self):
@@ -38,7 +38,7 @@ class QEvent(QtCore.QEvent):
 		The return value of this function is not defined for paint events.
 		"""
 		res = super(QEvent,self).spontaneous()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):

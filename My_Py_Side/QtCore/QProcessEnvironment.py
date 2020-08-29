@@ -18,7 +18,7 @@ class QProcessEnvironment(QtCore.QProcessEnvironment):
 		Returns true if this PySide.QtCore.QProcessEnvironment object is empty: that is there are no key=value pairs set.
 		"""
 		res = super(QProcessEnvironment,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toStringList(self):
@@ -41,7 +41,7 @@ class QProcessEnvironment(QtCore.QProcessEnvironment):
 		On other systems, names are case-sensitive so no trasformation is applied.
 		"""
 		res = super(QProcessEnvironment,self).contains(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,name,value):
@@ -68,7 +68,7 @@ class QProcessEnvironment(QtCore.QProcessEnvironment):
 		Returns true if this and the otherPySide.QtCore.QProcessEnvironment objects are different.
 		"""
 		res = super(QProcessEnvironment,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -81,7 +81,7 @@ class QProcessEnvironment(QtCore.QProcessEnvironment):
 		The comparison of keys is done case-sensitive on platforms where the environment is case-sensitive.
 		"""
 		res = super(QProcessEnvironment,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def remove(self,name):

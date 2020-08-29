@@ -47,7 +47,7 @@ class QLayoutItem(QtGui.QLayoutItem):
 		Reimplement this function in layout managers that support height for width.
 		"""
 		res = super(QLayoutItem,self).hasHeightForWidth()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def invalidate(self):
@@ -63,7 +63,7 @@ class QLayoutItem(QtGui.QLayoutItem):
 		whether it contains any widgets.
 		"""
 		res = super(QLayoutItem,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def layout(self):
@@ -130,7 +130,7 @@ class QLayoutItem(QtGui.QLayoutItem):
 		Caching is strongly recommended; without it layout will take exponential time.
 		"""
 		res = super(QLayoutItem,self).heightForWidth(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimumHeightForWidth(self,arg__1):
@@ -142,7 +142,7 @@ class QLayoutItem(QtGui.QLayoutItem):
 		The default implementation simply returns heightForWidth(w ).
 		"""
 		res = super(QLayoutItem,self).minimumHeightForWidth(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setAlignment(self,a):

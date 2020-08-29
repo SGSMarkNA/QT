@@ -12,7 +12,7 @@ class QSqlResult(QtSql.QSqlResult):
 		May return the special values QSql.BeforeFirstRow or QSql.AfterLastRow .
 		"""
 		res = super(QSqlResult,self).at()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def bindingSyntax(self):
@@ -28,7 +28,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns the number of bound values in the result.
 		"""
 		res = super(QSqlResult,self).boundValueCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boundValues(self):
@@ -66,7 +66,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Executes the query, returning true if successful; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).exec_()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def executedQuery(self):
@@ -85,7 +85,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Return true to indicate success, or false to signify failure.
 		"""
 		res = super(QSqlResult,self).fetchFirst()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fetchLast(self):
@@ -96,7 +96,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Return true to indicate success, or false to signify failure.
 		"""
 		res = super(QSqlResult,self).fetchLast()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fetchNext(self):
@@ -108,7 +108,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Return true to indicate success, or false to signify failure.
 		"""
 		res = super(QSqlResult,self).fetchNext()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fetchPrevious(self):
@@ -120,7 +120,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Return true to indicate success, or false to signify failure.
 		"""
 		res = super(QSqlResult,self).fetchPrevious()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def handle(self):
@@ -138,7 +138,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if at least one of the querys bound values is a QSql::Out or a QSql.InOut ; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).hasOutValues()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -146,7 +146,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the result has records to be retrieved; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isForwardOnly(self):
@@ -154,7 +154,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if you can only scroll forward through the result set; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).isForwardOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSelect(self):
@@ -162,7 +162,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the current result is from a SELECT statement; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).isSelect()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -170,7 +170,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the result is positioned on a valid record (that is, the result is not positioned before the first or after the last record); otherwise returns false.
 		"""
 		res = super(QSqlResult,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastError(self):
@@ -203,7 +203,7 @@ class QSqlResult(QtSql.QSqlResult):
 
 		"""
 		res = super(QSqlResult,self).nextResult()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numRowsAffected(self):
@@ -211,7 +211,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns the number of rows affected by the last query executed, or -1 if it cannot be determined or if the query is a SELECT statement.
 		"""
 		res = super(QSqlResult,self).numRowsAffected()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def numericalPrecisionPolicy(self):
@@ -243,7 +243,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns the size of the SELECT result, or -1 if it cannot be determined or if the query is not a SELECT statement.
 		"""
 		res = super(QSqlResult,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addBindValue(self,val,type):
@@ -339,7 +339,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Here, we insert two rows into a SQL table, with each row containing three values.
 		"""
 		res = super(QSqlResult,self).execBatch(arrayBind)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fetch(self,i):
@@ -353,7 +353,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Return true to indicate success, or false to signify failure.
 		"""
 		res = super(QSqlResult,self).fetch(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self,i):
@@ -364,7 +364,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the field at position index in the current row is null; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).isNull(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepare(self,query):
@@ -376,7 +376,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the query is prepared successfully; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).prepare(query)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def reset(self,sqlquery):
@@ -390,7 +390,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Derived classes should return true if the query was successful and ready to be used, or false otherwise.
 		"""
 		res = super(QSqlResult,self).reset(sqlquery)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def savePrepare(self,sqlquery):
@@ -402,7 +402,7 @@ class QSqlResult(QtSql.QSqlResult):
 		Returns true if the query is prepared successfully; otherwise returns false.
 		"""
 		res = super(QSqlResult,self).savePrepare(sqlquery)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setActive(self,a):

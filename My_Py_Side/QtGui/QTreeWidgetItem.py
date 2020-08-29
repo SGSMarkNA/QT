@@ -11,7 +11,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns the number of child items.
 		"""
 		res = super(QTreeWidgetItem,self).childCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def childIndicatorPolicy(self):
@@ -36,7 +36,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns the number of columns in the item.
 		"""
 		res = super(QTreeWidgetItem,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def emitDataChanged(self):
@@ -70,7 +70,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the item is disabled; otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).isDisabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isExpanded(self):
@@ -78,7 +78,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the item is expanded, otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).isExpanded()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFirstColumnSpanned(self):
@@ -86,7 +86,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the item is spanning all the columns in a row; otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).isFirstColumnSpanned()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isHidden(self):
@@ -94,7 +94,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the item is hidden, otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).isHidden()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSelected(self):
@@ -102,7 +102,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the item is selected, otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).isSelected()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemChanged(self):
@@ -140,7 +140,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns the type passed to the PySide.QtGui.QTreeWidgetItem constructor.
 		"""
 		res = super(QTreeWidgetItem,self).type()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addChild(self,child):
@@ -259,7 +259,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns the index of the given child in the items list of children.
 		"""
 		res = super(QTreeWidgetItem,self).indexOfChild(child)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertChild(self,index,child):
@@ -293,7 +293,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns true if the text in the item is less than the text in the other item, otherwise returns false.
 		"""
 		res = super(QTreeWidgetItem,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,in):
@@ -590,7 +590,7 @@ class QTreeWidgetItem(QtGui.QTreeWidgetItem):
 		Returns the text alignment for the label in the given column (see Qt.AlignmentFlag ).
 		"""
 		res = super(QTreeWidgetItem,self).textAlignment(column)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toolTip(self,column):

@@ -12,7 +12,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		When used as flags, enumerators can be combined using the OR operator.
 		"""
 		res = super(QMetaEnum,self).isFlag()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -20,7 +20,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		Returns true if this enum is valid (has a name); otherwise returns false.
 		"""
 		res = super(QMetaEnum,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keyCount(self):
@@ -28,7 +28,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		Returns the number of keys.
 		"""
 		res = super(QMetaEnum,self).keyCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -66,7 +66,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		For flag types, use PySide.QtCore.QMetaEnum.keysToValue() .
 		"""
 		res = super(QMetaEnum,self).keyToValue(key)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def keysToValue(self,keys):
@@ -78,7 +78,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		Note that the strings in keys must be |-separated.
 		"""
 		res = super(QMetaEnum,self).keysToValue(keys)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def value(self,index):
@@ -89,7 +89,7 @@ class QMetaEnum(QtCore.QMetaEnum):
 		Returns the value with the given index ; or returns -1 if there is no such value.
 		"""
 		res = super(QMetaEnum,self).value(index)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def valueToKey(self,value):

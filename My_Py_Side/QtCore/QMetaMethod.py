@@ -28,7 +28,7 @@ class QMetaMethod(QtCore.QMetaMethod):
 		Returns this methods index.
 		"""
 		res = super(QMetaMethod,self).methodIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def methodType(self):
@@ -137,5 +137,5 @@ class QMetaMethod(QtCore.QMetaMethod):
 
 		"""
 		res = super(QMetaMethod,self).invoke(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

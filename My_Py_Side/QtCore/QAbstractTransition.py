@@ -74,7 +74,7 @@ class QAbstractTransition(QtCore.QAbstractTransition):
 		Reimplement this function and return true if the event should trigger the transition, otherwise return false.
 		"""
 		res = super(QAbstractTransition,self).eventTest(event)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def onTransition(self,event):

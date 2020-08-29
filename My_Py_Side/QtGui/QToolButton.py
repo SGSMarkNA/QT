@@ -24,7 +24,7 @@ class QToolButton(QtGui.QToolButton):
 		This property is currently ignored on Mac OS X when using QMacStyle .
 		"""
 		res = super(QToolButton,self).autoRaise()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def defaultAction(self):

@@ -13,7 +13,7 @@ class QHeaderView(QtGui.QHeaderView):
 		The default value is false.
 		"""
 		res = super(QHeaderView,self).cascadingSectionResizes()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self):
@@ -21,7 +21,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the number of sections in the header.
 		"""
 		res = super(QHeaderView,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def defaultAlignment(self):
@@ -38,7 +38,7 @@ class QHeaderView(QtGui.QHeaderView):
 		This property only affects sections that have Interactive or Fixed as their resize mode.
 		"""
 		res = super(QHeaderView,self).defaultSectionSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def geometriesChanged(self):
@@ -53,7 +53,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the number of sections in the header that has been hidden.
 		"""
 		res = super(QHeaderView,self).hiddenSectionCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def highlightSections(self):
@@ -62,7 +62,7 @@ class QHeaderView(QtGui.QHeaderView):
 		By default, this property is false.
 		"""
 		res = super(QHeaderView,self).highlightSections()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def initialize(self):
@@ -85,7 +85,7 @@ class QHeaderView(QtGui.QHeaderView):
 		A clickable header could be set up to allow the user to change the representation of the data in the view related to the header.
 		"""
 		res = super(QHeaderView,self).isClickable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isMovable(self):
@@ -93,7 +93,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns true if the header can be moved by the user; otherwise returns false.
 		"""
 		res = super(QHeaderView,self).isMovable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSortIndicatorShown(self):
@@ -102,7 +102,7 @@ class QHeaderView(QtGui.QHeaderView):
 		By default, this property is false.
 		"""
 		res = super(QHeaderView,self).isSortIndicatorShown()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -110,7 +110,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the length along the orientation of the header.
 		"""
 		res = super(QHeaderView,self).length()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimumSectionSize(self):
@@ -121,7 +121,7 @@ class QHeaderView(QtGui.QHeaderView):
 		This property is honored by all resize modes .
 		"""
 		res = super(QHeaderView,self).minimumSectionSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def offset(self):
@@ -129,7 +129,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the offset of the header: this is the headers left-most (or top-most for vertical headers) visible pixel.
 		"""
 		res = super(QHeaderView,self).offset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -154,7 +154,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns true if sections in the header has been hidden; otherwise returns false;
 		"""
 		res = super(QHeaderView,self).sectionsHidden()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sectionsMoved(self):
@@ -162,7 +162,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns true if sections in the header has been moved; otherwise returns false;
 		"""
 		res = super(QHeaderView,self).sectionsMoved()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sortIndicatorOrder(self):
@@ -180,7 +180,7 @@ class QHeaderView(QtGui.QHeaderView):
 		By default this is section 0.
 		"""
 		res = super(QHeaderView,self).sortIndicatorSection()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def stretchLastSection(self):
@@ -189,7 +189,7 @@ class QHeaderView(QtGui.QHeaderView):
 		The default value is false.
 		"""
 		res = super(QHeaderView,self).stretchLastSection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def stretchSectionCount(self):
@@ -198,7 +198,7 @@ class QHeaderView(QtGui.QHeaderView):
 		In views, this can be used to see if the headerview needs to resize the sections when the views geometry changes.
 		"""
 		res = super(QHeaderView,self).stretchSectionCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hideSection(self,logicalIndex):
@@ -241,7 +241,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns true if the section specified by logicalIndex is explicitly hidden from the user; otherwise returns false.
 		"""
 		res = super(QHeaderView,self).isSectionHidden(logicalIndex)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def logicalIndex(self,visualIndex):
@@ -253,7 +253,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Note that the visualIndex is not affected by hidden sections.
 		"""
 		res = super(QHeaderView,self).logicalIndex(visualIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def logicalIndexAt(self,*args,**kwargs):
@@ -272,7 +272,7 @@ class QHeaderView(QtGui.QHeaderView):
 		If the header is horizontal x will be used, otherwise y will be used to find the logical index.
 		"""
 		res = super(QHeaderView,self).logicalIndexAt(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def moveSection(self,from,to):
@@ -340,7 +340,7 @@ class QHeaderView(QtGui.QHeaderView):
 		This function returns true if the state was restored; otherwise returns false.
 		"""
 		res = super(QHeaderView,self).restoreState(state)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def sectionPosition(self,logicalIndex):
@@ -351,7 +351,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the section position of the given logicalIndex , or -1 if the section is hidden.
 		"""
 		res = super(QHeaderView,self).sectionPosition(logicalIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sectionSize(self,logicalIndex):
@@ -362,7 +362,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the width (or height for vertical headers) of the given logicalIndex .
 		"""
 		res = super(QHeaderView,self).sectionSize(logicalIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sectionSizeFromContents(self,logicalIndex):
@@ -384,7 +384,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns a suitable size hint for the section specified by logicalIndex .
 		"""
 		res = super(QHeaderView,self).sectionSizeHint(logicalIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sectionViewportPosition(self,logicalIndex):
@@ -396,7 +396,7 @@ class QHeaderView(QtGui.QHeaderView):
 		If the section is hidden, the return value is undefined.
 		"""
 		res = super(QHeaderView,self).sectionViewportPosition(logicalIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCascadingSectionResizes(self,enable):
@@ -566,7 +566,7 @@ class QHeaderView(QtGui.QHeaderView):
 		Hidden sections still have valid visual indexes.
 		"""
 		res = super(QHeaderView,self).visualIndex(logicalIndex)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def visualIndexAt(self,position):
@@ -577,5 +577,5 @@ class QHeaderView(QtGui.QHeaderView):
 		Returns the visual index of the section that covers the given position in the viewport.
 		"""
 		res = super(QHeaderView,self).visualIndexAt(position)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

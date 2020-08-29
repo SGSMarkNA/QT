@@ -41,7 +41,7 @@ class QDomNode(QtXml.QDomNode):
 		Otherwise, -1 is returned.
 		"""
 		res = super(QDomNode,self).columnNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def firstChild(self):
@@ -59,7 +59,7 @@ class QDomNode(QtXml.QDomNode):
 		Returns true if the node has attributes; otherwise returns false.
 		"""
 		res = super(QDomNode,self).hasAttributes()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasChildNodes(self):
@@ -67,7 +67,7 @@ class QDomNode(QtXml.QDomNode):
 		Returns true if the node has one or more children; otherwise returns false.
 		"""
 		res = super(QDomNode,self).hasChildNodes()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isAttr(self):
@@ -76,7 +76,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a QDomAttribute; you can get the QDomAttribute with toAttribute().
 		"""
 		res = super(QDomNode,self).isAttr()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCDATASection(self):
@@ -85,7 +85,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomCDATASection ; you can get the PySide.QtXml.QDomCDATASection with PySide.QtXml.QDomNode.toCDATASection() .
 		"""
 		res = super(QDomNode,self).isCDATASection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCharacterData(self):
@@ -94,7 +94,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomCharacterData ; you can get the PySide.QtXml.QDomCharacterData with PySide.QtXml.QDomNode.toCharacterData() .
 		"""
 		res = super(QDomNode,self).isCharacterData()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isComment(self):
@@ -103,7 +103,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomComment ; you can get the PySide.QtXml.QDomComment with PySide.QtXml.QDomNode.toComment() .
 		"""
 		res = super(QDomNode,self).isComment()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDocument(self):
@@ -112,7 +112,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomDocument ; you can get the PySide.QtXml.QDomDocument with PySide.QtXml.QDomNode.toDocument() .
 		"""
 		res = super(QDomNode,self).isDocument()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDocumentFragment(self):
@@ -121,7 +121,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomDocumentFragment ; you can get the PySide.QtXml.QDomDocumentFragment with PySide.QtXml.QDomNode.toDocumentFragment() .
 		"""
 		res = super(QDomNode,self).isDocumentFragment()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isDocumentType(self):
@@ -130,7 +130,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomDocumentType ; you can get the PySide.QtXml.QDomDocumentType with PySide.QtXml.QDomNode.toDocumentType() .
 		"""
 		res = super(QDomNode,self).isDocumentType()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isElement(self):
@@ -139,7 +139,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomElement ; you can get the PySide.QtXml.QDomElement with PySide.QtXml.QDomNode.toElement() .
 		"""
 		res = super(QDomNode,self).isElement()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEntity(self):
@@ -148,7 +148,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomEntity ; you can get the PySide.QtXml.QDomEntity with PySide.QtXml.QDomNode.toEntity() .
 		"""
 		res = super(QDomNode,self).isEntity()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEntityReference(self):
@@ -157,7 +157,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomEntityReference ; you can get the PySide.QtXml.QDomEntityReference with PySide.QtXml.QDomNode.toEntityReference() .
 		"""
 		res = super(QDomNode,self).isEntityReference()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNotation(self):
@@ -166,7 +166,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomNotation ; you can get the PySide.QtXml.QDomNotation with PySide.QtXml.QDomNode.toNotation() .
 		"""
 		res = super(QDomNode,self).isNotation()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -175,7 +175,7 @@ class QDomNode(QtXml.QDomNode):
 		if it has no type or contents); otherwise returns false.
 		"""
 		res = super(QDomNode,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isProcessingInstruction(self):
@@ -184,7 +184,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomProcessingInstruction ; you can get the QProcessingInstruction with PySide.QtXml.QDomNode.toProcessingInstruction() .
 		"""
 		res = super(QDomNode,self).isProcessingInstruction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isText(self):
@@ -193,7 +193,7 @@ class QDomNode(QtXml.QDomNode):
 		If this function returns true, it does not imply that this object is a PySide.QtXml.QDomText ; you can get the PySide.QtXml.QDomText with PySide.QtXml.QDomNode.toText() .
 		"""
 		res = super(QDomNode,self).isText()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastChild(self):
@@ -212,7 +212,7 @@ class QDomNode(QtXml.QDomNode):
 		Otherwise, -1 is returned.
 		"""
 		res = super(QDomNode,self).lineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def localName(self):
@@ -528,7 +528,7 @@ class QDomNode(QtXml.QDomNode):
 		Returns true if the DOM implementation implements the feature feature and this feature is supported by this node in the version version ; otherwise returns false.
 		"""
 		res = super(QDomNode,self).isSupported(feature,version)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastChildElement(self,tagName=None):
@@ -575,7 +575,7 @@ class QDomNode(QtXml.QDomNode):
 		Returns true if n and this DOM node are not equal; otherwise returns false.
 		"""
 		res = super(QDomNode,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -592,7 +592,7 @@ class QDomNode(QtXml.QDomNode):
 		Even though both nodes are empty elements carrying the same name, element3 == element4 will return false because they refer to two different nodes in the underlying data structure.
 		"""
 		res = super(QDomNode,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def previousSiblingElement(self,tagName=None):

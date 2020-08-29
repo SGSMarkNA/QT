@@ -36,7 +36,7 @@ class QDateTime(QtCore.QDateTime):
 		A null datetime is invalid.
 		"""
 		res = super(QDateTime,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -44,7 +44,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if both the date and the time are valid; otherwise returns false.
 		"""
 		res = super(QDateTime,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def time(self):
@@ -118,7 +118,7 @@ class QDateTime(QtCore.QDateTime):
 		The UTC offset only applies if the PySide.QtCore.QDateTime.timeSpec() is Qt.OffsetFromUTC .
 		"""
 		res = super(QDateTime,self).utcOffset()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addDays(self,days):
@@ -185,7 +185,7 @@ class QDateTime(QtCore.QDateTime):
 		If the other datetime is earlier than this datetime, the value returned is negative.
 		"""
 		res = super(QDateTime,self).daysTo(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def msecsTo(self,arg__1):
@@ -210,7 +210,7 @@ class QDateTime(QtCore.QDateTime):
 		Two datetimes are different if either the date, the time, or the time zone components are different.
 		"""
 		res = super(QDateTime,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -221,7 +221,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if this datetime is earlier than the other datetime; otherwise returns false.
 		"""
 		res = super(QDateTime,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,other):
@@ -232,7 +232,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if this datetime is earlier than or equal to the other datetime; otherwise returns false.
 		"""
 		res = super(QDateTime,self).__le__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -243,7 +243,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if this datetime is equal to the other datetime; otherwise returns false.
 		"""
 		res = super(QDateTime,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,other):
@@ -254,7 +254,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if this datetime is later than the other datetime; otherwise returns false.
 		"""
 		res = super(QDateTime,self).__gt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,other):
@@ -265,7 +265,7 @@ class QDateTime(QtCore.QDateTime):
 		Returns true if this datetime is later than or equal to the other datetime; otherwise returns false.
 		"""
 		res = super(QDateTime,self).__ge__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def secsTo(self,arg__1):
@@ -279,7 +279,7 @@ class QDateTime(QtCore.QDateTime):
 		Example:
 		"""
 		res = super(QDateTime,self).secsTo(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setDate(self,date):

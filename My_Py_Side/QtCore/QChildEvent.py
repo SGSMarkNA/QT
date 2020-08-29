@@ -11,7 +11,7 @@ class QChildEvent(QtCore.QChildEvent):
 		Returns true if PySide.QtCore.QEvent.type() is QEvent.ChildAdded ; otherwise returns false.
 		"""
 		res = super(QChildEvent,self).added()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def child(self):
@@ -27,7 +27,7 @@ class QChildEvent(QtCore.QChildEvent):
 		Returns true if PySide.QtCore.QEvent.type() is QEvent.ChildPolished ; otherwise returns false.
 		"""
 		res = super(QChildEvent,self).polished()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removed(self):
@@ -35,5 +35,5 @@ class QChildEvent(QtCore.QChildEvent):
 		Returns true if PySide.QtCore.QEvent.type() is QEvent.ChildRemoved ; otherwise returns false.
 		"""
 		res = super(QChildEvent,self).removed()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -19,7 +19,7 @@ class QWebHistoryItem(QtWebKit.QWebHistoryItem):
 		Returns whether this is a valid history item.
 		"""
 		res = super(QWebHistoryItem,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastVisited(self):

@@ -43,7 +43,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a BlockFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isBlockFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCharFormat(self):
@@ -51,7 +51,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a CharFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isCharFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFrameFormat(self):
@@ -59,7 +59,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a FrameFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isFrameFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isImageFormat(self):
@@ -67,7 +67,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is an image format; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isImageFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isListFormat(self):
@@ -75,7 +75,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a ListFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isListFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTableCellFormat(self):
@@ -83,7 +83,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a TableCellFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isTableCellFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTableFormat(self):
@@ -91,7 +91,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is a TableFormat ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isTableFormat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -100,7 +100,7 @@ class QTextFormat(QtGui.QTextFormat):
 		is not InvalidFormat ); otherwise returns false.
 		"""
 		res = super(QTextFormat,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def layoutDirection(self):
@@ -116,7 +116,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns the index of the format object, or -1 if the format object is invalid.
 		"""
 		res = super(QTextFormat,self).objectIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def objectType(self):
@@ -124,7 +124,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns the text formats object type.
 		"""
 		res = super(QTextFormat,self).objectType()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def properties(self):
@@ -139,7 +139,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns the number of properties stored in the format.
 		"""
 		res = super(QTextFormat,self).propertyCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toBlockFormat(self):
@@ -203,7 +203,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns the type of this format.
 		"""
 		res = super(QTextFormat,self).type()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def boolProperty(self,propertyId):
@@ -215,7 +215,7 @@ class QTextFormat(QtGui.QTextFormat):
 		If the property isnt of QTextFormat::Bool type, false is returned instead.
 		"""
 		res = super(QTextFormat,self).boolProperty(propertyId)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def brushProperty(self,propertyId):
@@ -270,7 +270,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if the text format has a property with the given propertyId ; otherwise returns false.
 		"""
 		res = super(QTextFormat,self).hasProperty(propertyId)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def intProperty(self,propertyId):
@@ -282,7 +282,7 @@ class QTextFormat(QtGui.QTextFormat):
 		If the property is not of QTextFormat::Integer type, 0 is returned instead.
 		"""
 		res = super(QTextFormat,self).intProperty(propertyId)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lengthProperty(self,propertyId):
@@ -325,7 +325,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is different from the other text format.
 		"""
 		res = super(QTextFormat,self).__ne__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,rhs):
@@ -336,7 +336,7 @@ class QTextFormat(QtGui.QTextFormat):
 		Returns true if this text format is the same as the other text format.
 		"""
 		res = super(QTextFormat,self).__eq__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def penProperty(self,propertyId):

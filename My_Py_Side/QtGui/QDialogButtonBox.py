@@ -29,7 +29,7 @@ class QDialogButtonBox(QtGui.QDialogButtonBox):
 		Windows), where the button box is centered horizontally.
 		"""
 		res = super(QDialogButtonBox,self).centerButtons()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):

@@ -58,7 +58,7 @@ class QMatrix4x4(QtGui.QMatrix4x4):
 		Returns true if this matrix is the identity; false otherwise.
 		"""
 		res = super(QMatrix4x4,self).isIdentity()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def normalMatrix(self):
@@ -253,7 +253,7 @@ class QMatrix4x4(QtGui.QMatrix4x4):
 		This operator uses an exact floating-point comparison.
 		"""
 		res = super(QMatrix4x4,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -364,7 +364,7 @@ class QMatrix4x4(QtGui.QMatrix4x4):
 		This operator uses an exact floating-point comparison.
 		"""
 		res = super(QMatrix4x4,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def ortho(self,*args,**kwargs):

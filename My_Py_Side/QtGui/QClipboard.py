@@ -25,7 +25,7 @@ class QClipboard(QtGui.QClipboard):
 		Returns true if this clipboard object owns the clipboard data; otherwise returns false.
 		"""
 		res = super(QClipboard,self).ownsClipboard()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def ownsFindBuffer(self):
@@ -33,7 +33,7 @@ class QClipboard(QtGui.QClipboard):
 		Returns true if this clipboard object owns the find buffer data; otherwise returns false.
 		"""
 		res = super(QClipboard,self).ownsFindBuffer()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def ownsSelection(self):
@@ -41,7 +41,7 @@ class QClipboard(QtGui.QClipboard):
 		Returns true if this clipboard object owns the mouse selection data; otherwise returns false.
 		"""
 		res = super(QClipboard,self).ownsSelection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectionChanged(self):
@@ -56,7 +56,7 @@ class QClipboard(QtGui.QClipboard):
 		Returns true if the clipboard supports a separate search buffer; otherwise returns false.
 		"""
 		res = super(QClipboard,self).supportsFindBuffer()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def supportsSelection(self):
@@ -64,7 +64,7 @@ class QClipboard(QtGui.QClipboard):
 		Returns true if the clipboard supports mouse selection; otherwise returns false.
 		"""
 		res = super(QClipboard,self).supportsSelection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self,mode=None):
@@ -129,7 +129,7 @@ class QClipboard(QtGui.QClipboard):
 
 		"""
 		res = super(QClipboard,self).ownsMode(mode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pixmap(self,mode=None):
@@ -219,7 +219,7 @@ class QClipboard(QtGui.QClipboard):
 
 		"""
 		res = super(QClipboard,self).supportsMode(mode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def text(self,*args,**kwargs):

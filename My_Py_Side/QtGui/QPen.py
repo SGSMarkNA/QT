@@ -53,7 +53,7 @@ class QPen(QtGui.QPen):
 		A zero width pen is cosmetic by default; pens with a non-zero width are non-cosmetic.
 		"""
 		res = super(QPen,self).isCosmetic()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSolid(self):
@@ -61,7 +61,7 @@ class QPen(QtGui.QPen):
 		Returns true if the pen has a solid fill, otherwise false.
 		"""
 		res = super(QPen,self).isSolid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def joinStyle(self):
@@ -94,7 +94,7 @@ class QPen(QtGui.QPen):
 		Returns the pen width with integer precision.
 		"""
 		res = super(QPen,self).width()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def widthF(self):
@@ -114,7 +114,7 @@ class QPen(QtGui.QPen):
 		Two pens are different if they have different styles, widths or colors.
 		"""
 		res = super(QPen,self).__ne__(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,p):
@@ -126,7 +126,7 @@ class QPen(QtGui.QPen):
 		Two pens are equal if they have equal styles, widths and colors.
 		"""
 		res = super(QPen,self).__eq__(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setBrush(self,brush):

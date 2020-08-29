@@ -64,7 +64,7 @@ class QSslSocket(QtNetwork.QSslSocket):
 		You can call PySide.QtNetwork.QSslSocket.sessionCipher() to find which cryptographic cipher is used to encrypt and decrypt your data.
 		"""
 		res = super(QSslSocket,self).isEncrypted()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def localCertificate(self):
@@ -116,7 +116,7 @@ class QSslSocket(QtNetwork.QSslSocket):
 		The certificates are checked in issuing order, starting with the peers own certificate, then its issuers certificate, and so on.
 		"""
 		res = super(QSslSocket,self).peerVerifyDepth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def peerVerifyMode(self):
@@ -202,7 +202,7 @@ class QSslSocket(QtNetwork.QSslSocket):
 
 		"""
 		res = super(QSslSocket,self).addCaCertificates(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def connectToHostEncrypted(self,*args,**kwargs):
@@ -351,5 +351,5 @@ class QSslSocket(QtNetwork.QSslSocket):
 		If msecs is -1, this function will not time out.
 		"""
 		res = super(QSslSocket,self).waitForEncrypted(msecs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

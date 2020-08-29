@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 _property = property
 class QObject(QtCore.QObject):
 	''''''

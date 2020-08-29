@@ -30,7 +30,7 @@ class QXmlStreamNamespaceDeclaration(QtCore.QXmlStreamNamespaceDeclaration):
 		Compares this namespace declaration with other and returns true if they are not equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamNamespaceDeclaration,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -41,5 +41,5 @@ class QXmlStreamNamespaceDeclaration(QtCore.QXmlStreamNamespaceDeclaration):
 		Compares this namespace declaration with other and returns true if they are equal; otherwise returns false.
 		"""
 		res = super(QXmlStreamNamespaceDeclaration,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

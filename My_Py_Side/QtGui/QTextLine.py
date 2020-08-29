@@ -47,7 +47,7 @@ class QTextLine(QtGui.QTextLine):
 		Returns true if this text line is valid; otherwise returns false.
 		"""
 		res = super(QTextLine,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def leading(self):
@@ -64,7 +64,7 @@ class QTextLine(QtGui.QTextLine):
 		By default, leading is not included.
 		"""
 		res = super(QTextLine,self).leadingIncluded()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineNumber(self):
@@ -72,7 +72,7 @@ class QTextLine(QtGui.QTextLine):
 		Returns the position of the line in the text engine.
 		"""
 		res = super(QTextLine,self).lineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def naturalTextRect(self):
@@ -113,7 +113,7 @@ class QTextLine(QtGui.QTextLine):
 		Returns the length of the text in the line.
 		"""
 		res = super(QTextLine,self).textLength()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def textStart(self):
@@ -121,7 +121,7 @@ class QTextLine(QtGui.QTextLine):
 		Returns the start of the line from the beginning of the string passed to the PySide.QtGui.QTextLayout .
 		"""
 		res = super(QTextLine,self).textStart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def width(self):
@@ -240,5 +240,5 @@ class QTextLine(QtGui.QTextLine):
 		Converts the x-coordinate x , to the nearest matching cursor position, depending on the cursor position type, cpos .
 		"""
 		res = super(QTextLine,self).xToCursor(x,edge)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

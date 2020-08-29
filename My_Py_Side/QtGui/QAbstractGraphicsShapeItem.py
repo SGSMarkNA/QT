@@ -1,5 +1,5 @@
 
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 from QGraphicsItem import QGraphicsItem
 class QAbstractGraphicsShapeItem(QtGui.QAbstractGraphicsShapeItem, QGraphicsItem):
 	''''''

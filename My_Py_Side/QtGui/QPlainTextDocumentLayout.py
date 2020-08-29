@@ -12,7 +12,7 @@ class QPlainTextDocumentLayout(QtGui.QPlainTextDocumentLayout):
 		The default value is 1.
 		"""
 		res = super(QPlainTextDocumentLayout,self).cursorWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def requestUpdate(self):

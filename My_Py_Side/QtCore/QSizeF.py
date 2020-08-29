@@ -35,7 +35,7 @@ class QSizeF(QtCore.QSizeF):
 		Returns true if either of the width and height is less than or equal to 0; otherwise returns false.
 		"""
 		res = super(QSizeF,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -43,7 +43,7 @@ class QSizeF(QtCore.QSizeF):
 		Returns true if both the width and height are +0.0; otherwise returns false.
 		"""
 		res = super(QSizeF,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -51,7 +51,7 @@ class QSizeF(QtCore.QSizeF):
 		Returns true if both the width and height is equal to or greater than 0; otherwise returns false.
 		"""
 		res = super(QSizeF,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toSize(self):
@@ -116,7 +116,7 @@ class QSizeF(QtCore.QSizeF):
 
 		"""
 		res = super(QSizeF,self).__ne__(s2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -222,7 +222,7 @@ class QSizeF(QtCore.QSizeF):
 
 		"""
 		res = super(QSizeF,self).__eq__(s2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def scale(self,*args,**kwargs):

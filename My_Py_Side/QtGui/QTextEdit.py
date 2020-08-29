@@ -14,7 +14,7 @@ class QTextEdit(QtGui.QTextEdit):
 		This propertys default is true.
 		"""
 		res = super(QTextEdit,self).acceptRichText()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def alignment(self):
@@ -42,7 +42,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Returns whether text can be pasted from the clipboard into the textedit.
 		"""
 		res = super(QTextEdit,self).canPaste()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createMimeDataFromSelection(self):
@@ -104,7 +104,7 @@ class QTextEdit(QtGui.QTextEdit):
 		The default value is 1.
 		"""
 		res = super(QTextEdit,self).cursorWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def document(self):
@@ -149,7 +149,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Returns true if the font of the current format is italic; otherwise returns false.
 		"""
 		res = super(QTextEdit,self).fontItalic()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontPointSize(self):
@@ -165,7 +165,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Returns true if the font of the current format is underlined; otherwise returns false.
 		"""
 		res = super(QTextEdit,self).fontUnderline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fontWeight(self):
@@ -173,7 +173,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Returns the font weight of the current format.
 		"""
 		res = super(QTextEdit,self).fontWeight()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isReadOnly(self):
@@ -183,7 +183,7 @@ class QTextEdit(QtGui.QTextEdit):
 		This propertys default is false.
 		"""
 		res = super(QTextEdit,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isUndoRedoEnabled(self):
@@ -192,7 +192,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Users are only able to undo or redo actions if this property is true, and if there is an action that can be undone (or redone).
 		"""
 		res = super(QTextEdit,self).isUndoRedoEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineWrapColumnOrWidth(self):
@@ -203,7 +203,7 @@ class QTextEdit(QtGui.QTextEdit):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QTextEdit,self).lineWrapColumnOrWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def lineWrapMode(self):
@@ -226,7 +226,7 @@ class QTextEdit(QtGui.QTextEdit):
 		By default, this property is false (new text does not overwrite existing text).
 		"""
 		res = super(QTextEdit,self).overwriteMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def selectionChanged(self):
@@ -243,7 +243,7 @@ class QTextEdit(QtGui.QTextEdit):
 		The default is false.
 		"""
 		res = super(QTextEdit,self).tabChangesFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tabStopWidth(self):
@@ -252,7 +252,7 @@ class QTextEdit(QtGui.QTextEdit):
 		By default, this property contains a value of 80 pixels.
 		"""
 		res = super(QTextEdit,self).tabStopWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def textBackgroundColor(self):
@@ -347,7 +347,7 @@ class QTextEdit(QtGui.QTextEdit):
 		Reimplement this function to enable drag and drop support for additional MIME types.
 		"""
 		res = super(QTextEdit,self).canInsertFromMimeData(source)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createStandardContextMenu(self,position):
@@ -395,7 +395,7 @@ class QTextEdit(QtGui.QTextEdit):
 
 		"""
 		res = super(QTextEdit,self).find(exp,options)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insertFromMimeData(self,source):

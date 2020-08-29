@@ -30,7 +30,7 @@ class QGLFramebufferObjectFormat(QtOpenGL.QGLFramebufferObjectFormat):
 		The default value is 0.
 		"""
 		res = super(QGLFramebufferObjectFormat,self).samples()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def textureTarget(self):
@@ -50,7 +50,7 @@ class QGLFramebufferObjectFormat(QtOpenGL.QGLFramebufferObjectFormat):
 		Returns false if all the options of this framebuffer object format are the same as other ; otherwise returns true.
 		"""
 		res = super(QGLFramebufferObjectFormat,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -61,7 +61,7 @@ class QGLFramebufferObjectFormat(QtOpenGL.QGLFramebufferObjectFormat):
 		Returns true if all the options of this framebuffer object format are the same as other ; otherwise returns false.
 		"""
 		res = super(QGLFramebufferObjectFormat,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAttachment(self,attachment):

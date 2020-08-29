@@ -50,7 +50,7 @@ class QInputContext(QtGui.QInputContext):
 		The state is automatically being tracked through PySide.QtGui.QInputContext.sendEvent() .
 		"""
 		res = super(QInputContext,self).isComposing()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def language(self):
@@ -106,7 +106,7 @@ class QInputContext(QtGui.QInputContext):
 		Ordinary input methods require discrete key events to work properly, so Qts key compression is always disabled for any input contexts.
 		"""
 		res = super(QInputContext,self).filterEvent(event)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mouseHandler(self,x,event):

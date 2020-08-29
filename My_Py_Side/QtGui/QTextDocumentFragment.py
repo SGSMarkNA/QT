@@ -11,7 +11,7 @@ class QTextDocumentFragment(QtGui.QTextDocumentFragment):
 		Returns true if the fragment is empty; otherwise returns false.
 		"""
 		res = super(QTextDocumentFragment,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toHtml(self):

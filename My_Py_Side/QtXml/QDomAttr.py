@@ -27,7 +27,7 @@ class QDomAttr(QtXml.QDomAttr):
 		Returns false if the value hasnt been specified or set.
 		"""
 		res = super(QDomAttr,self).specified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def value(self):

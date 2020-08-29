@@ -11,7 +11,7 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		Returns the bottom row of the range.
 		"""
 		res = super(QTableWidgetSelectionRange,self).bottomRow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def columnCount(self):
@@ -20,7 +20,7 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		This is equivalent to PySide.QtGui.QTableWidgetSelectionRange.rightColumn() - PySide.QtGui.QTableWidgetSelectionRange.leftColumn() + 1.
 		"""
 		res = super(QTableWidgetSelectionRange,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def leftColumn(self):
@@ -28,7 +28,7 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		Returns the left column of the range.
 		"""
 		res = super(QTableWidgetSelectionRange,self).leftColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rightColumn(self):
@@ -36,7 +36,7 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		Returns the right column of the range.
 		"""
 		res = super(QTableWidgetSelectionRange,self).rightColumn()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rowCount(self):
@@ -45,7 +45,7 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		This is equivalent to PySide.QtGui.QTableWidgetSelectionRange.bottomRow() - PySide.QtGui.QTableWidgetSelectionRange.topRow() + 1.
 		"""
 		res = super(QTableWidgetSelectionRange,self).rowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def topRow(self):
@@ -53,5 +53,5 @@ class QTableWidgetSelectionRange(QtGui.QTableWidgetSelectionRange):
 		Returns the top row of the range.
 		"""
 		res = super(QTableWidgetSelectionRange,self).topRow()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

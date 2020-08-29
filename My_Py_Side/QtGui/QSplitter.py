@@ -13,7 +13,7 @@ class QSplitter(QtGui.QSplitter):
 		It is possible to enable and disable the collapsing of individual children using PySide.QtGui.QSplitter.setCollapsible() .
 		"""
 		res = super(QSplitter,self).childrenCollapsible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self):
@@ -21,7 +21,7 @@ class QSplitter(QtGui.QSplitter):
 		Returns the number of widgets contained in the splitters layout.
 		"""
 		res = super(QSplitter,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def createHandle(self):
@@ -40,7 +40,7 @@ class QSplitter(QtGui.QSplitter):
 		If you set PySide.QtGui.QSplitter.handleWidth() to 1, the actual grab area will grow to overlap a few pixels of its respective widgets.
 		"""
 		res = super(QSplitter,self).handleWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def opaqueResize(self):
@@ -49,7 +49,7 @@ class QSplitter(QtGui.QSplitter):
 		Opaque resizing is on by default.
 		"""
 		res = super(QSplitter,self).opaqueResize()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -113,7 +113,7 @@ class QSplitter(QtGui.QSplitter):
 		Positions are then measured from the right edge of the widget.
 		"""
 		res = super(QSplitter,self).closestLegalPosition(arg__1,arg__2)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def getRange(self,index):
@@ -151,7 +151,7 @@ class QSplitter(QtGui.QSplitter):
 		There are as many handles as there are child widgets, but the handle at position 0 is always hidden.
 		"""
 		res = super(QSplitter,self).indexOf(w)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertWidget(self,index,widget):
@@ -175,7 +175,7 @@ class QSplitter(QtGui.QSplitter):
 		Returns true if the widget at index is collapsible, otherwise returns false
 		"""
 		res = super(QSplitter,self).isCollapsible(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def moveSplitter(self,pos,index):
@@ -204,7 +204,7 @@ class QSplitter(QtGui.QSplitter):
 		A failure to restore the splitters layout may result from either invalid or out-of-date data in the supplied byte array.
 		"""
 		res = super(QSplitter,self).restoreState(state)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setChildrenCollapsible(self,arg__1):

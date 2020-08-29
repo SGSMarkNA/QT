@@ -130,7 +130,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if the painter is no longer active; otherwise returns false.
 		"""
 		res = super(QPainter,self).end()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def endNativePainting(self):
@@ -172,7 +172,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if clipping has been set; otherwise returns false.
 		"""
 		res = super(QPainter,self).hasClipping()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -180,7 +180,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if PySide.QtGui.QPainter.begin() has been called and PySide.QtGui.QPainter.end() has not yet been called; otherwise returns false.
 		"""
 		res = super(QPainter,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def layoutDirection(self):
@@ -267,7 +267,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if view transformation is enabled; otherwise returns false.
 		"""
 		res = super(QPainter,self).viewTransformEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def viewport(self):
@@ -300,7 +300,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if world transformation is enabled; otherwise returns false.
 		"""
 		res = super(QPainter,self).worldMatrixEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def worldTransform(self):
@@ -322,7 +322,7 @@ class QPainter(QtGui.QPainter):
 		Note that most of the time, you can use one of the constructors instead of PySide.QtGui.QPainter.begin() , and that PySide.QtGui.QPainter.end() is automatically done at destruction.
 		"""
 		res = super(QPainter,self).begin(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def boundingRect(self,*args,**kwargs):
@@ -1424,7 +1424,7 @@ class QPainter(QtGui.QPainter):
 		Returns true if hint is set; otherwise returns false.
 		"""
 		res = super(QPainter,self).testRenderHint(hint)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def translate(self,*args,**kwargs):

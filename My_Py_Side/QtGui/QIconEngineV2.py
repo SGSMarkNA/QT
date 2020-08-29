@@ -49,7 +49,7 @@ class QIconEngineV2(QtGui.QIconEngineV2):
 		PySide.QtGui.QIconEngineV2 s default implementation always return false.
 		"""
 		res = super(QIconEngineV2,self).read(in)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,out):
@@ -62,5 +62,5 @@ class QIconEngineV2(QtGui.QIconEngineV2):
 		PySide.QtGui.QIconEngineV2 s default implementation always return false.
 		"""
 		res = super(QIconEngineV2,self).write(out)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

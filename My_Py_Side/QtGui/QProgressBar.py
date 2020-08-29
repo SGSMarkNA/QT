@@ -33,7 +33,7 @@ class QProgressBar(QtGui.QProgressBar):
 		By default, the progress bar is not inverted.
 		"""
 		res = super(QProgressBar,self).invertedAppearance()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTextVisible(self):
@@ -42,7 +42,7 @@ class QProgressBar(QtGui.QProgressBar):
 		This property may be ignored by the style (e.g., QMacStyle never draws the text).
 		"""
 		res = super(QProgressBar,self).isTextVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def maximum(self):
@@ -52,7 +52,7 @@ class QProgressBar(QtGui.QProgressBar):
 		If the current value falls outside the new range, the progress bar is reset with PySide.QtGui.QProgressBar.reset() .
 		"""
 		res = super(QProgressBar,self).maximum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimum(self):
@@ -62,7 +62,7 @@ class QProgressBar(QtGui.QProgressBar):
 		If the current value falls outside the new range, the progress bar is reset with PySide.QtGui.QProgressBar.reset() .
 		"""
 		res = super(QProgressBar,self).minimum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -100,7 +100,7 @@ class QProgressBar(QtGui.QProgressBar):
 		Attempting to change the current value to one outside the minimum-maximum range has no effect on the current value.
 		"""
 		res = super(QProgressBar,self).value()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def initStyleOption(self,option):

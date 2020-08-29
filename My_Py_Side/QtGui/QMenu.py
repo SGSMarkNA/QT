@@ -53,7 +53,7 @@ class QMenu(QtGui.QMenu):
 		This functions returns the number of columns necessary.
 		"""
 		res = super(QMenu,self).columnCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def defaultAction(self):
@@ -99,7 +99,7 @@ class QMenu(QtGui.QMenu):
 		Returns true if there are no visible actions inserted into the menu, false otherwise.
 		"""
 		res = super(QMenu,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTearOffEnabled(self):
@@ -111,7 +111,7 @@ class QMenu(QtGui.QMenu):
 		By default, this property is false.
 		"""
 		res = super(QMenu,self).isTearOffEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTearOffMenuVisible(self):
@@ -120,7 +120,7 @@ class QMenu(QtGui.QMenu):
 		When the menu is in this mode and the menu is visible returns true; otherwise false.
 		"""
 		res = super(QMenu,self).isTearOffMenuVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def menuAction(self):
@@ -139,7 +139,7 @@ class QMenu(QtGui.QMenu):
 		By default, this property is true.
 		"""
 		res = super(QMenu,self).separatorsCollapsible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def title(self):

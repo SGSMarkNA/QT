@@ -11,7 +11,7 @@ class QMargins(QtCore.QMargins):
 		Returns the bottom margin.
 		"""
 		res = super(QMargins,self).bottom()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -19,7 +19,7 @@ class QMargins(QtCore.QMargins):
 		Returns true if all margins are is 0; otherwise returns false.
 		"""
 		res = super(QMargins,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def left(self):
@@ -27,7 +27,7 @@ class QMargins(QtCore.QMargins):
 		Returns the left margin.
 		"""
 		res = super(QMargins,self).left()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def right(self):
@@ -35,7 +35,7 @@ class QMargins(QtCore.QMargins):
 		Returns the right margin.
 		"""
 		res = super(QMargins,self).right()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def top(self):
@@ -43,7 +43,7 @@ class QMargins(QtCore.QMargins):
 		Returns the top margin.
 		"""
 		res = super(QMargins,self).top()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,m2):
@@ -54,7 +54,7 @@ class QMargins(QtCore.QMargins):
 
 		"""
 		res = super(QMargins,self).__ne__(m2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,m2):
@@ -65,7 +65,7 @@ class QMargins(QtCore.QMargins):
 
 		"""
 		res = super(QMargins,self).__eq__(m2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setBottom(self,bottom):

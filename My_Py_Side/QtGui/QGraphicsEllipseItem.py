@@ -21,7 +21,7 @@ class QGraphicsEllipseItem(QtGui.QGraphicsEllipseItem):
 		By default, this function returns 5760 (360 * 16, a full ellipse).
 		"""
 		res = super(QGraphicsEllipseItem,self).spanAngle()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def startAngle(self):
@@ -31,7 +31,7 @@ class QGraphicsEllipseItem(QtGui.QGraphicsEllipseItem):
 		By default, the start angle is 0.
 		"""
 		res = super(QGraphicsEllipseItem,self).startAngle()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setRect(self,*args,**kwargs):

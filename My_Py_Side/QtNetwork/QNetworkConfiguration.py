@@ -57,7 +57,7 @@ class QNetworkConfiguration(QtNetwork.QNetworkConfiguration):
 		Returns true if this configuration supports roaming; otherwise false.
 		"""
 		res = super(QNetworkConfiguration,self).isRoamingAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -67,7 +67,7 @@ class QNetworkConfiguration(QtNetwork.QNetworkConfiguration):
 		The addition and removal of configurations can be monitored via the PySide.QtNetwork.QNetworkConfigurationManager .
 		"""
 		res = super(QNetworkConfiguration,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):
@@ -115,7 +115,7 @@ class QNetworkConfiguration(QtNetwork.QNetworkConfiguration):
 		Returns true if this configuration is not the same as the other configuration given; otherwise returns false.
 		"""
 		res = super(QNetworkConfiguration,self).__ne__(cp)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,cp):
@@ -126,5 +126,5 @@ class QNetworkConfiguration(QtNetwork.QNetworkConfiguration):
 		Returns true, if this configuration is the same as the other configuration given; otherwise returns false.
 		"""
 		res = super(QNetworkConfiguration,self).__eq__(cp)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

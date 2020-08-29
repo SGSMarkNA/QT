@@ -20,7 +20,7 @@ class QGLFramebufferObject(QtOpenGL.QGLFramebufferObject):
 		Returns true upon success, false otherwise.
 		"""
 		res = super(QGLFramebufferObject,self).bind()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def format(self):
@@ -45,7 +45,7 @@ class QGLFramebufferObject(QtOpenGL.QGLFramebufferObject):
 		Returns true if the framebuffer object is currently bound to a context, otherwise false is returned.
 		"""
 		res = super(QGLFramebufferObject,self).isBound()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -56,7 +56,7 @@ class QGLFramebufferObject(QtOpenGL.QGLFramebufferObject):
 		The framebuffer can also become invalid if the PySide.QtOpenGL.QGLContext that the framebuffer was created within is destroyed and there are no other shared contexts that can take over ownership of the framebuffer.
 		"""
 		res = super(QGLFramebufferObject,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def release(self):
@@ -65,7 +65,7 @@ class QGLFramebufferObject(QtOpenGL.QGLFramebufferObject):
 		Returns true upon success, false otherwise.
 		"""
 		res = super(QGLFramebufferObject,self).release()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):

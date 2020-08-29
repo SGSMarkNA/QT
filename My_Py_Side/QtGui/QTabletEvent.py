@@ -28,7 +28,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		Returns the global x position of the mouse pointer at the time of the event.
 		"""
 		res = super(QTabletEvent,self).globalX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalY(self):
@@ -36,7 +36,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		Returns the global y position of the tablet device at the time of the event.
 		"""
 		res = super(QTabletEvent,self).globalY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hiResGlobalPos(self):
@@ -132,7 +132,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		Returns the x position of the device, relative to the widget that received the event.
 		"""
 		res = super(QTabletEvent,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def xTilt(self):
@@ -142,7 +142,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		The angle is in the range -60 to +60 degrees.
 		"""
 		res = super(QTabletEvent,self).xTilt()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -150,7 +150,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		Returns the y position of the device, relative to the widget that received the event.
 		"""
 		res = super(QTabletEvent,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def yTilt(self):
@@ -160,7 +160,7 @@ class QTabletEvent(QtGui.QTabletEvent):
 		The angle is within the range -60 to +60 degrees.
 		"""
 		res = super(QTabletEvent,self).yTilt()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def z(self):
@@ -171,5 +171,5 @@ class QTabletEvent(QtGui.QTabletEvent):
 		This is not the same as pressure.
 		"""
 		res = super(QTabletEvent,self).z()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

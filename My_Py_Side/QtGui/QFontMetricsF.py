@@ -199,7 +199,7 @@ class QFontMetricsF(QtGui.QFontMetricsF):
 		Returns true if character ch is a valid character in the font; otherwise returns false.
 		"""
 		res = super(QFontMetricsF,self).inFont(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def leftBearing(self,arg__1):
@@ -225,7 +225,7 @@ class QFontMetricsF(QtGui.QFontMetricsF):
 		Returns true if the font metrics are not equal to the other font metrics; otherwise returns false.
 		"""
 		res = super(QFontMetricsF,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -238,7 +238,7 @@ class QFontMetricsF(QtGui.QFontMetricsF):
 		Two font metrics are considered equal if they were constructed from the same PySide.QtGui.QFont and the paint devices they were constructed for are considered to be compatible.
 		"""
 		res = super(QFontMetricsF,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rightBearing(self,arg__1):

@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 from QObject import QObject
 
 class QAbstractItemModel(QtCore.QAbstractItemModel,QObject):

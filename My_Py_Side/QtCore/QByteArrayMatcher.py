@@ -30,7 +30,7 @@ class QByteArrayMatcher(QtCore.QByteArrayMatcher):
 		Returns the position where the PySide.QtCore.QByteArrayMatcher.pattern() matched in str , or -1 if no match was found.
 		"""
 		res = super(QByteArrayMatcher,self).indexIn(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setPattern(self,pattern):

@@ -12,7 +12,7 @@ class QKeyEvent(QtGui.QKeyEvent):
 		If PySide.QtGui.QKeyEvent.text() is not empty, this is simply the length of the string.
 		"""
 		res = super(QKeyEvent,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hasExtendedInfo(self):
@@ -20,7 +20,7 @@ class QKeyEvent(QtGui.QKeyEvent):
 
 		"""
 		res = super(QKeyEvent,self).hasExtendedInfo()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isAutoRepeat(self):
@@ -29,7 +29,7 @@ class QKeyEvent(QtGui.QKeyEvent):
 		Note that if the event is a multiple-key compressed event that is partly due to auto-repeat, this function could return either true or false indeterminately.
 		"""
 		res = super(QKeyEvent,self).isAutoRepeat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def key(self):
@@ -41,7 +41,7 @@ class QKeyEvent(QtGui.QKeyEvent):
 		A value of either 0 or Qt.Key_unknown means that the event is not the result of a known key; for example, it may be the result of a compose sequence, a keyboard macro, or due to key event compression.
 		"""
 		res = super(QKeyEvent,self).key()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def nativeModifiers(self):
@@ -93,7 +93,7 @@ class QKeyEvent(QtGui.QKeyEvent):
 
 		"""
 		res = super(QKeyEvent,self).matches(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,arg__1):
@@ -117,5 +117,5 @@ class QKeyEvent(QtGui.QKeyEvent):
 
 		"""
 		res = super(QKeyEvent,self).__eq__(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

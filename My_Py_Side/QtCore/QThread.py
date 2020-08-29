@@ -13,7 +13,7 @@ class QThread(QtCore.QThread):
 		It is necessary to call this function to start event handling.
 		"""
 		res = super(QThread,self).exec_()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def finished(self):
@@ -28,7 +28,7 @@ class QThread(QtCore.QThread):
 		Returns true if the thread is finished; otherwise returns false.
 		"""
 		res = super(QThread,self).isFinished()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRunning(self):
@@ -36,7 +36,7 @@ class QThread(QtCore.QThread):
 		Returns true if the thread is running; otherwise returns false.
 		"""
 		res = super(QThread,self).isRunning()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def priority(self):
@@ -131,5 +131,5 @@ class QThread(QtCore.QThread):
 		This provides similar functionality to the POSIX pthread_join() function.
 		"""
 		res = super(QThread,self).wait(time)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

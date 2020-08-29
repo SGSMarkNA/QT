@@ -28,7 +28,7 @@ class QActionGroup(QtGui.QActionGroup):
 		Each action in the group will be enabled or disabled unless it has been explicitly disabled.
 		"""
 		res = super(QActionGroup,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isExclusive(self):
@@ -38,7 +38,7 @@ class QActionGroup(QtGui.QActionGroup):
 		If the user chooses another checkable action in the group, the one they chose becomes active and the one that was active becomes inactive.
 		"""
 		res = super(QActionGroup,self).isExclusive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isVisible(self):
@@ -47,7 +47,7 @@ class QActionGroup(QtGui.QActionGroup):
 		Each action in the action group will match the visible state of this group unless it has been explicitly hidden.
 		"""
 		res = super(QActionGroup,self).isVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def addAction(self,*args,**kwargs):

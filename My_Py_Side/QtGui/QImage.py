@@ -13,7 +13,7 @@ class QImage(QtGui.QImage):
 		Note that this function is slow for images without color table.
 		"""
 		res = super(QImage,self).allGray()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def alphaChannel(self):
@@ -35,7 +35,7 @@ class QImage(QtGui.QImage):
 		smaller than) the depth when the image format contains unused bits.
 		"""
 		res = super(QImage,self).bitPlaneCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def byteCount(self):
@@ -43,7 +43,7 @@ class QImage(QtGui.QImage):
 		Returns the number of bytes occupied by the image data.
 		"""
 		res = super(QImage,self).byteCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def bytesPerLine(self):
@@ -52,7 +52,7 @@ class QImage(QtGui.QImage):
 		This is equivalent to PySide.QtGui.QImage.byteCount() / PySide.QtGui.QImage.height() .
 		"""
 		res = super(QImage,self).bytesPerLine()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def cacheKey(self):
@@ -87,7 +87,7 @@ class QImage(QtGui.QImage):
 		Together with PySide.QtGui.QImage.dotsPerMeterY() , this number defines the intended scale and aspect ratio of the image.
 		"""
 		res = super(QImage,self).dotsPerMeterX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dotsPerMeterY(self):
@@ -96,7 +96,7 @@ class QImage(QtGui.QImage):
 		Together with PySide.QtGui.QImage.dotsPerMeterX() , this number defines the intended scale and aspect ratio of the image.
 		"""
 		res = super(QImage,self).dotsPerMeterY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def format(self):
@@ -112,7 +112,7 @@ class QImage(QtGui.QImage):
 		Returns true if the image has a format that respects the alpha channel, otherwise returns false.
 		"""
 		res = super(QImage,self).hasAlphaChannel()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isGrayscale(self):
@@ -121,7 +121,7 @@ class QImage(QtGui.QImage):
 		For 8-bpp images, this function returns true if color(i) is QRgb (i, i, i) for all indexes of the color table; otherwise returns false.
 		"""
 		res = super(QImage,self).isGrayscale()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -130,7 +130,7 @@ class QImage(QtGui.QImage):
 		A null image has all parameters set to zero and no allocated data.
 		"""
 		res = super(QImage,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numBytes(self):
@@ -138,7 +138,7 @@ class QImage(QtGui.QImage):
 		Returns the number of bytes occupied by the image data.
 		"""
 		res = super(QImage,self).numBytes()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def offset(self):
@@ -337,7 +337,7 @@ class QImage(QtGui.QImage):
 		This can, for example, be used to load an image directly into a PySide.QtCore.QByteArray .
 		"""
 		res = super(QImage,self).load(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loadFromData(self,data,aformat=None):
@@ -350,7 +350,7 @@ class QImage(QtGui.QImage):
 		Loads an image from the given PySide.QtCore.QByteArray data .
 		"""
 		res = super(QImage,self).loadFromData(data,aformat)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mirrored(self,horizontally=None,vertically=None):
@@ -375,7 +375,7 @@ class QImage(QtGui.QImage):
 		The comparison can be slow, unless there is some obvious difference, such as different widths, in which case the function will return quickly.
 		"""
 		res = super(QImage,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -388,7 +388,7 @@ class QImage(QtGui.QImage):
 		different size or format), in which case the function will return quickly.
 		"""
 		res = super(QImage,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pixel(self,*args,**kwargs):
@@ -419,7 +419,7 @@ class QImage(QtGui.QImage):
 		Returns the pixel index at (x , y ).
 		"""
 		res = super(QImage,self).pixelIndex(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def save(self,*args,**kwargs):
@@ -441,7 +441,7 @@ class QImage(QtGui.QImage):
 		Returns true if the image was successfully saved; otherwise returns false.
 		"""
 		res = super(QImage,self).save(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def scaled(self,*args,**kwargs):
@@ -651,5 +651,5 @@ class QImage(QtGui.QImage):
 		Returns true if pos is a valid coordinate pair within the image; otherwise returns false.
 		"""
 		res = super(QImage,self).valid(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

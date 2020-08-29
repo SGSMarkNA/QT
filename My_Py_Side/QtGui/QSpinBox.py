@@ -20,7 +20,7 @@ class QSpinBox(QtGui.QSpinBox):
 		The default maximum value is 99.
 		"""
 		res = super(QSpinBox,self).maximum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minimum(self):
@@ -30,7 +30,7 @@ class QSpinBox(QtGui.QSpinBox):
 		The default minimum value is 0.
 		"""
 		res = super(QSpinBox,self).minimum()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def prefix(self):
@@ -55,7 +55,7 @@ class QSpinBox(QtGui.QSpinBox):
 		Setting a PySide.QtGui.QSpinBox.singleStep() value of less than 0 does nothing.
 		"""
 		res = super(QSpinBox,self).singleStep()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def suffix(self):
@@ -78,7 +78,7 @@ class QSpinBox(QtGui.QSpinBox):
 		PySide.QtGui.QSpinBox.setValue() will emit PySide.QtGui.QSpinBox.valueChanged() if the new value is different from the old one.
 		"""
 		res = super(QSpinBox,self).value()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setMaximum(self,max):
@@ -190,5 +190,5 @@ class QSpinBox(QtGui.QSpinBox):
 		Note: PySide.QtGui.QSpinBox handles PySide.QtGui.QAbstractSpinBox.specialValueText() separately; this function is only concerned with the other values.
 		"""
 		res = super(QSpinBox,self).valueFromText(text)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

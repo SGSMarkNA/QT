@@ -11,7 +11,7 @@ class QTimeLine(QtCore.QTimeLine):
 		Returns the frame corresponding to the current time.
 		"""
 		res = super(QTimeLine,self).currentFrame()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentTime(self):
@@ -22,7 +22,7 @@ class QTimeLine(QtCore.QTimeLine):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QTimeLine,self).currentTime()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentValue(self):
@@ -61,7 +61,7 @@ class QTimeLine(QtCore.QTimeLine):
 		The duration must be larger than 0.
 		"""
 		res = super(QTimeLine,self).duration()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def easingCurve(self):
@@ -79,7 +79,7 @@ class QTimeLine(QtCore.QTimeLine):
 		Returns the end frame, which is the frame corresponding to the end of the timeline (i.e., the frame for which the current value is 1).
 		"""
 		res = super(QTimeLine,self).endFrame()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def finished(self):
@@ -96,7 +96,7 @@ class QTimeLine(QtCore.QTimeLine):
 		By default, this property contains a value of 1.
 		"""
 		res = super(QTimeLine,self).loopCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def startFrame(self):
@@ -104,7 +104,7 @@ class QTimeLine(QtCore.QTimeLine):
 		Returns the start frame, which is the frame corresponding to the start of the timeline (i.e., the frame for which the current value is 0).
 		"""
 		res = super(QTimeLine,self).startFrame()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def state(self):
@@ -122,7 +122,7 @@ class QTimeLine(QtCore.QTimeLine):
 		By default, the interval is 40 ms, which corresponds to a rate of 25 updates per second.
 		"""
 		res = super(QTimeLine,self).updateInterval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def frameForTime(self,msec):
@@ -134,7 +134,7 @@ class QTimeLine(QtCore.QTimeLine):
 		This value is calculated using a linear interpolation of the start and end frame, based on the value returned by PySide.QtCore.QTimeLine.valueForTime() .
 		"""
 		res = super(QTimeLine,self).frameForTime(msec)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCurveShape(self,shape):

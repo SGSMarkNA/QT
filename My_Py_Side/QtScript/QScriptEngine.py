@@ -66,7 +66,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 		The exception state is cleared when PySide.QtScript.QScriptEngine.evaluate() is called.
 		"""
 		res = super(QScriptEngine,self).hasUncaughtException()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def importedExtensions(self):
@@ -81,7 +81,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 		Returns true if this engine is currently evaluating a script, otherwise returns false.
 		"""
 		res = super(QScriptEngine,self).isEvaluating()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def newActivationObject(self):
@@ -122,7 +122,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 		Returns the interval in milliseconds between calls to QCoreApplication.processEvents() while the interpreter is running.
 		"""
 		res = super(QScriptEngine,self).processEventsInterval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pushContext(self):
@@ -164,7 +164,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 		Line numbers are 1-based, unless a different base was specified as the second argument to PySide.QtScript.QScriptEngine.evaluate() .
 		"""
 		res = super(QScriptEngine,self).uncaughtExceptionLineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def undefinedValue(self):
@@ -219,7 +219,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 		PySide.QtScript.QScriptEngine.canEvaluate() will return true, but PySide.QtScript.QScriptEngine.evaluate() will throw a ReferenceError if foo is not defined in the script environment.
 		"""
 		res = super(QScriptEngine,self).canEvaluate(program)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def convert(self,value,type,ptr):
@@ -232,7 +232,7 @@ class QScriptEngine(QtScript.QScriptEngine):
 
 		"""
 		res = super(QScriptEngine,self).convert(value,type,ptr)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def create(self,type,ptr):

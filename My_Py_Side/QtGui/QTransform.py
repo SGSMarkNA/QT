@@ -86,7 +86,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix represent an affine transformation, otherwise returns false.
 		"""
 		res = super(QTransform,self).isAffine()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isIdentity(self):
@@ -94,7 +94,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix is the identity matrix, otherwise returns false.
 		"""
 		res = super(QTransform,self).isIdentity()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isInvertible(self):
@@ -102,7 +102,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix is invertible, otherwise returns false.
 		"""
 		res = super(QTransform,self).isInvertible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isRotating(self):
@@ -110,7 +110,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix represents some kind of a rotating transformation, otherwise returns false.
 		"""
 		res = super(QTransform,self).isRotating()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isScaling(self):
@@ -118,7 +118,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix represents a scaling transformation, otherwise returns false.
 		"""
 		res = super(QTransform,self).isScaling()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTranslating(self):
@@ -126,7 +126,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if the matrix represents a translating transformation, otherwise returns false.
 		"""
 		res = super(QTransform,self).isTranslating()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def m11(self):
@@ -312,7 +312,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if this matrix is not equal to the given matrix , otherwise returns false.
 		"""
 		res = super(QTransform,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -421,7 +421,7 @@ class QTransform(QtGui.QTransform):
 		Returns true if this matrix is equal to the given matrix , otherwise returns false.
 		"""
 		res = super(QTransform,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def quadToQuad(self,arg__1,arg__2):

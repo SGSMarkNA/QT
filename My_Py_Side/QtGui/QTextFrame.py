@@ -27,7 +27,7 @@ class QTextFrame(QtGui.QTextFrame):
 		Returns true if the current item is the last item in the text frame.
 		"""
 		res = super(QTextFrame,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def currentBlock(self):
@@ -79,7 +79,7 @@ class QTextFrame(QtGui.QTextFrame):
 		Retuns true if the iterator is different from the other iterator; otherwise returns false.
 		"""
 		res = super(QTextFrame,self).__ne__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,o):
@@ -90,5 +90,5 @@ class QTextFrame(QtGui.QTextFrame):
 		Retuns true if the iterator is the same as the other iterator; otherwise returns false.
 		"""
 		res = super(QTextFrame,self).__eq__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

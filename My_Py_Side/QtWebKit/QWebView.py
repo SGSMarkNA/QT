@@ -38,7 +38,7 @@ class QWebView(QtWebKit.QWebView):
 		By default, this property is false.
 		"""
 		res = super(QWebView,self).isModified()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loadStarted(self):
@@ -146,7 +146,7 @@ class QWebView(QtWebKit.QWebView):
 
 		"""
 		res = super(QWebView,self).findText(subString,options)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def load(self,*args,**kwargs):

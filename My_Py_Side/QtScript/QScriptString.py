@@ -11,7 +11,7 @@ class QScriptString(QtScript.QScriptString):
 		Returns true if this PySide.QtScript.QScriptString is valid; otherwise returns false.
 		"""
 		res = super(QScriptString,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self):
@@ -29,7 +29,7 @@ class QScriptString(QtScript.QScriptString):
 		Returns true if this PySide.QtScript.QScriptString is not equal to other ; otherwise returns false.
 		"""
 		res = super(QScriptString,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -40,7 +40,7 @@ class QScriptString(QtScript.QScriptString):
 		Returns true if this PySide.QtScript.QScriptString is equal to other ; otherwise returns false.
 		"""
 		res = super(QScriptString,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toArrayIndex(self,ok=None):

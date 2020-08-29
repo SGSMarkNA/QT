@@ -33,7 +33,7 @@ class QTextLength(QtGui.QTextLength):
 		Returns true if this text length is different from the other text length.
 		"""
 		res = super(QTextLength,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -44,7 +44,7 @@ class QTextLength(QtGui.QTextLength):
 		Returns true if this text length is the same as the other text length.
 		"""
 		res = super(QTextLength,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def value(self,maximumLength):

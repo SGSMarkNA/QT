@@ -30,7 +30,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		This property is true by default
 		"""
 		res = super(QFileSystemModel,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nameFilterDisables(self):
@@ -39,7 +39,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		This property is true by default
 		"""
 		res = super(QFileSystemModel,self).nameFilterDisables()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def nameFilters(self):
@@ -56,7 +56,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		By default, this property is false.
 		"""
 		res = super(QFileSystemModel,self).resolveSymlinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rootDirectory(self):
@@ -124,7 +124,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		Returns true if the model item index represents a directory; otherwise returns false.
 		"""
 		res = super(QFileSystemModel,self).isDir(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastModified(self,index):
@@ -180,7 +180,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		If the item cannot be removed, false is returned.
 		"""
 		res = super(QFileSystemModel,self).remove(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rmdir(self,index):
@@ -192,7 +192,7 @@ class QFileSystemModel(QtGui.QFileSystemModel):
 		If the directory cannot be removed, false is returned.
 		"""
 		res = super(QFileSystemModel,self).rmdir(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFilter(self,filters):

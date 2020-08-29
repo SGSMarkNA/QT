@@ -19,7 +19,7 @@ class QContextMenuEvent(QtGui.QContextMenuEvent):
 		Returns the global x position of the mouse pointer at the time of the event.
 		"""
 		res = super(QContextMenuEvent,self).globalX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalY(self):
@@ -27,7 +27,7 @@ class QContextMenuEvent(QtGui.QContextMenuEvent):
 		Returns the global y position of the mouse pointer at the time of the event.
 		"""
 		res = super(QContextMenuEvent,self).globalY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pos(self):
@@ -51,7 +51,7 @@ class QContextMenuEvent(QtGui.QContextMenuEvent):
 		Returns the x position of the mouse pointer, relative to the widget that received the event.
 		"""
 		res = super(QContextMenuEvent,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -59,5 +59,5 @@ class QContextMenuEvent(QtGui.QContextMenuEvent):
 		Returns the y position of the mouse pointer, relative to the widget that received the event.
 		"""
 		res = super(QContextMenuEvent,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

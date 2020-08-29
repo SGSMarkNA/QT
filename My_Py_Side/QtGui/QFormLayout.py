@@ -33,7 +33,7 @@ class QFormLayout(QtGui.QFormLayout):
 		By default, if no value is explicitly set, the layouts horizontal spacing is inherited from the parent layout, or from the style settings for the parent widget.
 		"""
 		res = super(QFormLayout,self).horizontalSpacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def labelAlignment(self):
@@ -79,7 +79,7 @@ class QFormLayout(QtGui.QFormLayout):
 		Returns the number of rows in the form.
 		"""
 		res = super(QFormLayout,self).rowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rowWrapPolicy(self):
@@ -99,7 +99,7 @@ class QFormLayout(QtGui.QFormLayout):
 		By default, if no value is explicitly set, the layouts vertical spacing is inherited from the parent layout, or from the style settings for the parent widget.
 		"""
 		res = super(QFormLayout,self).verticalSpacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addRow(self,*args,**kwargs):

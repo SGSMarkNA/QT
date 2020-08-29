@@ -50,7 +50,7 @@ class QPixmap(QtGui.QPixmap):
 		Returns true if this pixmap has an alpha channel, or has a mask, otherwise returns false.
 		"""
 		res = super(QPixmap,self).hasAlpha()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasAlphaChannel(self):
@@ -58,7 +58,7 @@ class QPixmap(QtGui.QPixmap):
 		Returns true if the pixmap has a format that respects the alpha channel, otherwise returns false.
 		"""
 		res = super(QPixmap,self).hasAlphaChannel()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -68,7 +68,7 @@ class QPixmap(QtGui.QPixmap):
 		You cannot draw in a null pixmap.
 		"""
 		res = super(QPixmap,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isQBitmap(self):
@@ -76,7 +76,7 @@ class QPixmap(QtGui.QPixmap):
 		Returns true if this is a PySide.QtGui.QBitmap ; otherwise returns false.
 		"""
 		res = super(QPixmap,self).isQBitmap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mask(self):
@@ -143,7 +143,7 @@ class QPixmap(QtGui.QPixmap):
 
 		"""
 		res = super(QPixmap,self).convertFromImage(img,flags)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def copy(self,*args,**kwargs):
@@ -203,7 +203,7 @@ class QPixmap(QtGui.QPixmap):
 
 		"""
 		res = super(QPixmap,self).doImageIO(io,quality)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fill(self,*args,**kwargs):
@@ -254,7 +254,7 @@ class QPixmap(QtGui.QPixmap):
 
 		"""
 		res = super(QPixmap,self).load(fileName,format,flags)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loadFromData(self,*args,**kwargs):
@@ -272,7 +272,7 @@ class QPixmap(QtGui.QPixmap):
 
 		"""
 		res = super(QPixmap,self).loadFromData(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def save(self,*args,**kwargs):
@@ -292,7 +292,7 @@ class QPixmap(QtGui.QPixmap):
 		This can be used, for example, to save a pixmap directly into a PySide.QtCore.QByteArray :
 		"""
 		res = super(QPixmap,self).save(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def scaled(self,*args,**kwargs):

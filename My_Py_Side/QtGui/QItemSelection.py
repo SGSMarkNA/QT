@@ -26,7 +26,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def detachShared(self):
@@ -48,7 +48,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).empty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def first(self):
@@ -79,7 +79,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def last(self):
@@ -95,7 +95,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).length()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def PySide.QtGui.QItemSelection.operator[](i)(self):
@@ -139,7 +139,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def takeFirst(self):
@@ -204,7 +204,7 @@ class QItemSelection(QtGui.QItemSelection):
 		Returns true if the selection contains the given index ; otherwise returns false.
 		"""
 		res = super(QItemSelection,self).contains(index)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self,t):
@@ -215,7 +215,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).count(t)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def detach_helper(self,alloc):
@@ -236,7 +236,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).endsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def indexOf(self,t,from=None):
@@ -248,7 +248,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).indexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,i,t):
@@ -270,7 +270,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).isSharedWith(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastIndexOf(self,t,from=None):
@@ -282,7 +282,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).lastIndexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def merge(self,other,command):
@@ -326,7 +326,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).__ne__(l)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __add__(self,l):
@@ -373,7 +373,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).__eq__(l)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepend(self,t):
@@ -414,7 +414,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).removeAll(t)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def removeAt(self,i):
@@ -435,7 +435,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).removeOne(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def replace(self,i,t):
@@ -488,7 +488,7 @@ class QItemSelection(QtGui.QItemSelection):
 
 		"""
 		res = super(QItemSelection,self).startsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def swap(self,i,j):

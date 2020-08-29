@@ -12,7 +12,7 @@ class QEventLoop(QtCore.QEventLoop):
 		The event loop is considered running from the time when exec() is called until PySide.QtCore.QEventLoop.exit() is called.
 		"""
 		res = super(QEventLoop,self).isRunning()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def wakeUp(self):
@@ -30,7 +30,7 @@ class QEventLoop(QtCore.QEventLoop):
 
 		"""
 		res = super(QEventLoop,self).exec_(flags)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def exit(self,returnCode=None):

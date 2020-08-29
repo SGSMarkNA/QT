@@ -30,7 +30,7 @@ class QGesture(QtGui.QGesture):
 		This property holds whether the gesture has a hot-spot.
 		"""
 		res = super(QGesture,self).hasHotSpot()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hotSpot(self):

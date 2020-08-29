@@ -13,7 +13,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		If the engine does not support this extension, false is returned.
 		"""
 		res = super(QAbstractFileEngine,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def caseSensitive(self):
@@ -22,7 +22,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).caseSensitive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def close(self):
@@ -31,7 +31,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		The default implementation always returns false.
 		"""
 		res = super(QAbstractFileEngine,self).close()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def error(self):
@@ -57,7 +57,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		The default implementation always returns false.
 		"""
 		res = super(QAbstractFileEngine,self).flush()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def handle(self):
@@ -66,7 +66,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This handle must be used with care; its value and type are platform specific, and using it will most likely lead to non-portable code.
 		"""
 		res = super(QAbstractFileEngine,self).handle()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isRelativePath(self):
@@ -75,7 +75,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).isRelativePath()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSequential(self):
@@ -84,7 +84,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		Operations involving PySide.QtCore.QAbstractFileEngine.size() and seek(int) are not valid on sequential devices.
 		"""
 		res = super(QAbstractFileEngine,self).isSequential()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pos(self):
@@ -103,7 +103,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).remove()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -135,7 +135,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		Returns true on success; otherwise, false is returned.
 		"""
 		res = super(QAbstractFileEngine,self).copy(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def entryList(self,filters,filterNames):
@@ -198,7 +198,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QAbstractFileEngine,self).link(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def map(self,offset,size,flags):
@@ -227,7 +227,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).mkdir(dirName,createParentDirectories)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def open(self,openMode):
@@ -238,7 +238,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 
 		"""
 		res = super(QAbstractFileEngine,self).open(openMode)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def owner(self,arg__1):
@@ -302,7 +302,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).rename(newName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rmdir(self,dirName,recurseParentDirectories):
@@ -319,7 +319,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).rmdir(dirName,recurseParentDirectories)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def seek(self,pos):
@@ -332,7 +332,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		The offset is from the beginning of the file, unless the file is sequential.
 		"""
 		res = super(QAbstractFileEngine,self).seek(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setError(self,error,str):
@@ -369,7 +369,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).setPermissions(perms)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setSize(self,size):
@@ -383,7 +383,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		This virtual function must be reimplemented by all subclasses.
 		"""
 		res = super(QAbstractFileEngine,self).setSize(size)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def supportsExtension(self,extension):
@@ -395,7 +395,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		By default, no extensions are supported.
 		"""
 		res = super(QAbstractFileEngine,self).supportsExtension(extension)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unmap(self,ptr):
@@ -409,7 +409,7 @@ class QAbstractFileEngine(QtCore.QAbstractFileEngine):
 		If the engine does not support this extension, false is returned.
 		"""
 		res = super(QAbstractFileEngine,self).unmap(ptr)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,data,len):

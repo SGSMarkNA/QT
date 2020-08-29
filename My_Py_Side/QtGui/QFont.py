@@ -11,7 +11,7 @@ class QFont(QtGui.QFont):
 		Returns true if PySide.QtGui.QFont.weight() is a value greater than QFont.Normal ; otherwise returns false.
 		"""
 		res = super(QFont,self).bold()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def capitalization(self):
@@ -34,7 +34,7 @@ class QFont(QtGui.QFont):
 		Returns true if a window system font exactly matching the settings of this font is available.
 		"""
 		res = super(QFont,self).exactMatch()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def family(self):
@@ -50,7 +50,7 @@ class QFont(QtGui.QFont):
 		Returns true if fixed pitch has been set; otherwise returns false.
 		"""
 		res = super(QFont,self).fixedPitch()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def handle(self):
@@ -67,7 +67,7 @@ class QFont(QtGui.QFont):
 		Returns true if the PySide.QtGui.QFont.style() of the font is not QFont.StyleNormal
 		"""
 		res = super(QFont,self).italic()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def kerning(self):
@@ -75,7 +75,7 @@ class QFont(QtGui.QFont):
 		Returns true if kerning should be used when drawing text with this font.
 		"""
 		res = super(QFont,self).kerning()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def key(self):
@@ -130,7 +130,7 @@ class QFont(QtGui.QFont):
 		Returns true if overline has been set; otherwise returns false.
 		"""
 		res = super(QFont,self).overline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def pixelSize(self):
@@ -139,7 +139,7 @@ class QFont(QtGui.QFont):
 		Returns -1 if the size was set with PySide.QtGui.QFont.setPointSize() or PySide.QtGui.QFont.setPointSizeF() .
 		"""
 		res = super(QFont,self).pixelSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pointSize(self):
@@ -148,7 +148,7 @@ class QFont(QtGui.QFont):
 		Returns -1 if the font size was specified in pixels.
 		"""
 		res = super(QFont,self).pointSize()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pointSizeF(self):
@@ -165,7 +165,7 @@ class QFont(QtGui.QFont):
 		Returns true if raw mode is used for font name matching; otherwise returns false.
 		"""
 		res = super(QFont,self).rawMode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rawName(self):
@@ -190,7 +190,7 @@ class QFont(QtGui.QFont):
 		Returns the stretch factor for the font.
 		"""
 		res = super(QFont,self).stretch()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def strikeOut(self):
@@ -198,7 +198,7 @@ class QFont(QtGui.QFont):
 		Returns true if strikeout has been set; otherwise returns false.
 		"""
 		res = super(QFont,self).strikeOut()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def style(self):
@@ -242,7 +242,7 @@ class QFont(QtGui.QFont):
 		Returns true if underline has been set; otherwise returns false.
 		"""
 		res = super(QFont,self).underline()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def weight(self):
@@ -250,7 +250,7 @@ class QFont(QtGui.QFont):
 		Returns the weight of the font which is one of the enumerated values from QFont.Weight .
 		"""
 		res = super(QFont,self).weight()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def wordSpacing(self):
@@ -266,7 +266,7 @@ class QFont(QtGui.QFont):
 
 		"""
 		res = super(QFont,self).x11Screen()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def fromString(self,arg__1):
@@ -278,7 +278,7 @@ class QFont(QtGui.QFont):
 		The description is a comma-separated list of the font attributes, as returned by PySide.QtGui.QFont.toString() .
 		"""
 		res = super(QFont,self).fromString(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isCopyOf(self,arg__1):
@@ -291,7 +291,7 @@ class QFont(QtGui.QFont):
 		This is much stricter than equality.
 		"""
 		res = super(QFont,self).isCopyOf(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,arg__1):
@@ -304,7 +304,7 @@ class QFont(QtGui.QFont):
 		If PySide.QtGui.QFont.rawMode() is enabled for both fonts, only the family fields are compared.
 		"""
 		res = super(QFont,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,arg__1):
@@ -317,7 +317,7 @@ class QFont(QtGui.QFont):
 		This function is useful in some circumstances, for example if you want to use PySide.QtGui.QFont objects as keys in a QMap .
 		"""
 		res = super(QFont,self).__lt__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -330,7 +330,7 @@ class QFont(QtGui.QFont):
 		If PySide.QtGui.QFont.rawMode() is enabled for both fonts, only the family fields are compared.
 		"""
 		res = super(QFont,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def resolve(self,*args,**kwargs):

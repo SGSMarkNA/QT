@@ -11,7 +11,7 @@ class QTextTable(QtGui.QTextTable):
 		Returns the number of columns in the table.
 		"""
 		res = super(QTextTable,self).columns()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rows(self):
@@ -19,7 +19,7 @@ class QTextTable(QtGui.QTextTable):
 		Returns the number of rows in the table.
 		"""
 		res = super(QTextTable,self).rows()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def appendColumns(self,count):

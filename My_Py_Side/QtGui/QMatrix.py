@@ -69,7 +69,7 @@ class QMatrix(QtGui.QMatrix):
 		Returns true if the matrix is the identity matrix, otherwise returns false.
 		"""
 		res = super(QMatrix,self).isIdentity()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isInvertible(self):
@@ -77,7 +77,7 @@ class QMatrix(QtGui.QMatrix):
 		Returns true if the matrix is invertible, otherwise returns false.
 		"""
 		res = super(QMatrix,self).isInvertible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def m11(self):
@@ -199,7 +199,7 @@ class QMatrix(QtGui.QMatrix):
 		Returns true if this matrix is not equal to the given matrix , otherwise returns false.
 		"""
 		res = super(QMatrix,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,o):
@@ -235,7 +235,7 @@ class QMatrix(QtGui.QMatrix):
 		Returns true if this matrix is equal to the given matrix , otherwise returns false.
 		"""
 		res = super(QMatrix,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def rotate(self,a):

@@ -41,7 +41,7 @@ class QAbstractEventDispatcher(QtCore.QAbstractEventDispatcher):
 		Returns true if there is an event waiting; otherwise returns false.
 		"""
 		res = super(QAbstractEventDispatcher,self).hasPendingEvents()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def interrupt(self):
@@ -74,7 +74,7 @@ class QAbstractEventDispatcher(QtCore.QAbstractEventDispatcher):
 
 		"""
 		res = super(QAbstractEventDispatcher,self).processEvents(flags)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def registerSocketNotifier(self,notifier):
@@ -136,7 +136,7 @@ class QAbstractEventDispatcher(QtCore.QAbstractEventDispatcher):
 		Returns true if successful; otherwise returns false.
 		"""
 		res = super(QAbstractEventDispatcher,self).unregisterTimer(timerId)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unregisterTimers(self,object):
@@ -148,5 +148,5 @@ class QAbstractEventDispatcher(QtCore.QAbstractEventDispatcher):
 		Returns true if all timers were successful removed; otherwise returns false.
 		"""
 		res = super(QAbstractEventDispatcher,self).unregisterTimers(object)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

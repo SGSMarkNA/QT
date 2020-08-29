@@ -11,7 +11,7 @@ class QImageWriter(QtGui.QImageWriter):
 		Returns true if PySide.QtGui.QImageWriter can write the image; i.e., the image format is supported and the assigned device is open for reading.
 		"""
 		res = super(QImageWriter,self).canWrite()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def compression(self):
@@ -19,7 +19,7 @@ class QImageWriter(QtGui.QImageWriter):
 		Returns the compression of the image.
 		"""
 		res = super(QImageWriter,self).compression()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def device(self):
@@ -74,7 +74,7 @@ class QImageWriter(QtGui.QImageWriter):
 		Returns the quality level of the image.
 		"""
 		res = super(QImageWriter,self).quality()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setCompression(self,compression):
@@ -177,7 +177,7 @@ class QImageWriter(QtGui.QImageWriter):
 
 		"""
 		res = super(QImageWriter,self).supportsOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,image):
@@ -190,5 +190,5 @@ class QImageWriter(QtGui.QImageWriter):
 		If the operation fails, you can call PySide.QtGui.QImageWriter.error() to find the type of error that occurred, or PySide.QtGui.QImageWriter.errorString() to get a human readable description of the error.
 		"""
 		res = super(QImageWriter,self).write(image)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -27,7 +27,7 @@ class QVector3D(QtGui.QVector3D):
 		Returns true if the x, y, and z coordinates are set to 0.0, otherwise returns false.
 		"""
 		res = super(QVector3D,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -182,7 +182,7 @@ class QVector3D(QtGui.QVector3D):
 
 		"""
 		res = super(QVector3D,self).__ne__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __mul__(self,*args,**kwargs):
@@ -296,7 +296,7 @@ class QVector3D(QtGui.QVector3D):
 
 		"""
 		res = super(QVector3D,self).__eq__(v2)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setX(self,x):

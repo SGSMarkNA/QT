@@ -29,7 +29,7 @@ class QGLColormap(QtOpenGL.QGLColormap):
 		Compare PySide.QtOpenGL.QGLColormap.size() with zero to determine if the colormap is empty regardless of whether it is in use by a PySide.QtOpenGL.QGLWidget or not.
 		"""
 		res = super(QGLColormap,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -37,7 +37,7 @@ class QGLColormap(QtOpenGL.QGLColormap):
 		Returns the number of colorcells in the colormap.
 		"""
 		res = super(QGLColormap,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def entryColor(self,idx):
@@ -69,7 +69,7 @@ class QGLColormap(QtOpenGL.QGLColormap):
 
 		"""
 		res = super(QGLColormap,self).find(color)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def findNearest(self,color):
@@ -80,7 +80,7 @@ class QGLColormap(QtOpenGL.QGLColormap):
 
 		"""
 		res = super(QGLColormap,self).findNearest(color)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setEntries(self,count,colors,base=None):

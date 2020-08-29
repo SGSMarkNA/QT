@@ -11,7 +11,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if the property has a change notifier signal, otherwise false.
 		"""
 		res = super(QDeclarativeProperty,self).hasNotifySignal()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def index(self):
@@ -19,7 +19,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Return the Qt metaobject index of the property.
 		"""
 		res = super(QDeclarativeProperty,self).index()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isDesignable(self):
@@ -27,7 +27,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if the property is designable, otherwise false.
 		"""
 		res = super(QDeclarativeProperty,self).isDesignable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isProperty(self):
@@ -35,7 +35,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if this PySide.QtDeclarative.QDeclarativeProperty represents a regular Qt property.
 		"""
 		res = super(QDeclarativeProperty,self).isProperty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isResettable(self):
@@ -43,7 +43,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if the property is resettable, otherwise false.
 		"""
 		res = super(QDeclarativeProperty,self).isResettable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSignalProperty(self):
@@ -51,7 +51,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if this PySide.QtDeclarative.QDeclarativeProperty represents a QML signal property.
 		"""
 		res = super(QDeclarativeProperty,self).isSignalProperty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -59,7 +59,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if the PySide.QtDeclarative.QDeclarativeProperty refers to a valid property, otherwise false.
 		"""
 		res = super(QDeclarativeProperty,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isWritable(self):
@@ -67,7 +67,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if the property is writable, otherwise false.
 		"""
 		res = super(QDeclarativeProperty,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def method(self):
@@ -91,7 +91,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Some properties, such as attached properties or those whose value never changes, do not require a change notifier.
 		"""
 		res = super(QDeclarativeProperty,self).needsNotifySignal()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def object(self):
@@ -115,7 +115,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns the PySide.QtCore.QVariant type of the property, or QVariant.Invalid if the property has no PySide.QtCore.QVariant type.
 		"""
 		res = super(QDeclarativeProperty,self).propertyType()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def propertyTypeCategory(self):
@@ -146,7 +146,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		If the property is not resettable, nothing happens and false is returned.
 		"""
 		res = super(QDeclarativeProperty,self).reset()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):
@@ -171,7 +171,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns false if this metaproperty does not represent a regular Qt property or if it has no change notifier signal, or if the dest object does not have the specified method .
 		"""
 		res = super(QDeclarativeProperty,self).connectNotifySignal(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -182,7 +182,7 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns true if other and this PySide.QtDeclarative.QDeclarativeProperty represent the same property.
 		"""
 		res = super(QDeclarativeProperty,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def write(self,arg__1):
@@ -194,5 +194,5 @@ class QDeclarativeProperty(QtDeclarative.QDeclarativeProperty):
 		Returns false if the property cant be set because the value is the wrong type, for example.
 		"""
 		res = super(QDeclarativeProperty,self).write(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

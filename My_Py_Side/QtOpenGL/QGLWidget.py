@@ -11,7 +11,7 @@ class QGLWidget(QtOpenGL.QGLWidget):
 		Returns true if the widget is doing automatic GL buffer swapping; otherwise returns false.
 		"""
 		res = super(QGLWidget,self).autoBufferSwap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def colormap(self):
@@ -48,7 +48,7 @@ class QGLWidget(QtOpenGL.QGLWidget):
 		Returns true if the contained GL rendering context has double buffering; otherwise returns false.
 		"""
 		res = super(QGLWidget,self).doubleBuffer()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def format(self):
@@ -103,7 +103,7 @@ class QGLWidget(QtOpenGL.QGLWidget):
 		Context sharing might not be possible if the widgets use different formats.
 		"""
 		res = super(QGLWidget,self).isSharing()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -112,7 +112,7 @@ class QGLWidget(QtOpenGL.QGLWidget):
 		A widget will be invalid if the system has no OpenGL support .
 		"""
 		res = super(QGLWidget,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def makeCurrent(self):

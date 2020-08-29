@@ -11,7 +11,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 
 		"""
 		res = super(QScriptContextInfo,self).columnNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def fileName(self):
@@ -28,7 +28,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		The ending line number is only available if the PySide.QtScript.QScriptContextInfo.functionType() is ScriptFunction .
 		"""
 		res = super(QScriptContextInfo,self).functionEndLineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def functionMetaIndex(self):
@@ -38,7 +38,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		For QtFunction , the meta index can be passed to QMetaObject.method() to obtain the corresponding method definition; for QtPropertyFunction , the meta index can be passed to QMetaObject.property() to obtain the corresponding property definition.
 		"""
 		res = super(QScriptContextInfo,self).functionMetaIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def functionName(self):
@@ -62,7 +62,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		The starting line number is only available if the PySide.QtScript.QScriptContextInfo.functionType() is ScriptFunction .
 		"""
 		res = super(QScriptContextInfo,self).functionStartLineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def functionType(self):
@@ -79,7 +79,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		does not contain any information.
 		"""
 		res = super(QScriptContextInfo,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineNumber(self):
@@ -88,7 +88,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		The line number is only available if Qt Script code is being executed.
 		"""
 		res = super(QScriptContextInfo,self).lineNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scriptId(self):
@@ -108,7 +108,7 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		Returns true if this PySide.QtScript.QScriptContextInfo is not equal to the other info, otherwise returns false.
 		"""
 		res = super(QScriptContextInfo,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -119,5 +119,5 @@ class QScriptContextInfo(QtScript.QScriptContextInfo):
 		Returns true if this PySide.QtScript.QScriptContextInfo is equal to the other info, otherwise returns false.
 		"""
 		res = super(QScriptContextInfo,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -11,7 +11,7 @@ class QUndoCommand(QtGui.QUndoCommand):
 		Returns the number of child commands in this command.
 		"""
 		res = super(QUndoCommand,self).childCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def id(self):
@@ -24,7 +24,7 @@ class QUndoCommand(QtGui.QUndoCommand):
 		QUndoStack.push() will only try to merge two commands if they have the same ID, and the ID is not -1.
 		"""
 		res = super(QUndoCommand,self).id()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def redo(self):
@@ -80,7 +80,7 @@ class QUndoCommand(QtGui.QUndoCommand):
 		The default implementation returns false.
 		"""
 		res = super(QUndoCommand,self).mergeWith(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setText(self,text):

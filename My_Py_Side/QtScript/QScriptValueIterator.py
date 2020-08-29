@@ -36,7 +36,7 @@ class QScriptValueIterator(QtScript.QScriptValueIterator):
 		the iterator is not at the back of the property sequence); otherwise returns false.
 		"""
 		res = super(QScriptValueIterator,self).hasNext()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasPrevious(self):
@@ -45,7 +45,7 @@ class QScriptValueIterator(QtScript.QScriptValueIterator):
 		the iterator is not at the front of the property sequence); otherwise returns false.
 		"""
 		res = super(QScriptValueIterator,self).hasPrevious()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):

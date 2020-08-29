@@ -42,7 +42,7 @@ class QToolBar(QtGui.QToolBar):
 
 		"""
 		res = super(QToolBar,self).isFloatable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFloating(self):
@@ -50,7 +50,7 @@ class QToolBar(QtGui.QToolBar):
 
 		"""
 		res = super(QToolBar,self).isFloating()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isMovable(self):
@@ -60,7 +60,7 @@ class QToolBar(QtGui.QToolBar):
 		This property only makes sense if the toolbar is in a PySide.QtGui.QMainWindow .
 		"""
 		res = super(QToolBar,self).isMovable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -198,7 +198,7 @@ class QToolBar(QtGui.QToolBar):
 
 		"""
 		res = super(QToolBar,self).isAreaAllowed(area)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAllowedAreas(self,areas):

@@ -19,7 +19,7 @@ class QXmlAttributes(QtXml.QXmlAttributes):
 		This function is equivalent to PySide.QtXml.QXmlAttributes.length() .
 		"""
 		res = super(QXmlAttributes,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -27,7 +27,7 @@ class QXmlAttributes(QtXml.QXmlAttributes):
 		Returns the number of attributes in the list.
 		"""
 		res = super(QXmlAttributes,self).length()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def append(self,qName,uri,localPart,value):
@@ -58,7 +58,7 @@ class QXmlAttributes(QtXml.QXmlAttributes):
 		Returns the index of the attribute or -1 if it wasnt found.
 		"""
 		res = super(QXmlAttributes,self).index(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def localName(self,index):

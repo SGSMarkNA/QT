@@ -35,7 +35,7 @@ class QSvgGenerator(QtSvg.QSvgGenerator):
 		The resolution is specified in dots per inch, and is used to calculate the physical size of an SVG drawing.
 		"""
 		res = super(QSvgGenerator,self).resolution()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):

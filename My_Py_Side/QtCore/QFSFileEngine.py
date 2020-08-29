@@ -23,5 +23,5 @@ class QFSFileEngine(QtCore.QFSFileEngine):
 
 		"""
 		res = super(QFSFileEngine,self).open(flags,fd)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

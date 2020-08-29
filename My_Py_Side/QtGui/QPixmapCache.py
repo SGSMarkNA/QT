@@ -14,7 +14,7 @@ class QPixmapCache(QtGui.QPixmapCache):
 
 		"""
 		res = super(QPixmapCache,self).__ne__(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,key):
@@ -25,5 +25,5 @@ class QPixmapCache(QtGui.QPixmapCache):
 		Returns true if this key is the same as the given key ; otherwise returns false.
 		"""
 		res = super(QPixmapCache,self).__eq__(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

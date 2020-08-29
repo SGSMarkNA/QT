@@ -12,7 +12,7 @@ class QIntValidator(QtGui.QIntValidator):
 		By default, this propertys value is derived from the lowest signed integer available (typically -2147483647).
 		"""
 		res = super(QIntValidator,self).bottom()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def top(self):
@@ -21,7 +21,7 @@ class QIntValidator(QtGui.QIntValidator):
 		By default, this propertys value is derived from the highest signed integer available (typically 2147483647).
 		"""
 		res = super(QIntValidator,self).top()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setBottom(self,arg__1):

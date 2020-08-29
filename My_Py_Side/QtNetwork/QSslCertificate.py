@@ -53,7 +53,7 @@ class QSslCertificate(QtNetwork.QSslCertificate):
 		By default, PySide.QtNetwork.QSslCertificate constructs a null certificate.
 		"""
 		res = super(QSslCertificate,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -62,7 +62,7 @@ class QSslCertificate(QtNetwork.QSslCertificate):
 		Note: Currently, this function checks that the current data-time is within the date-time range during which the certificate is considered valid, and checks that the certificate is not in a blacklist of fraudulent certificates.
 		"""
 		res = super(QSslCertificate,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def publicKey(self):
@@ -139,7 +139,7 @@ class QSslCertificate(QtNetwork.QSslCertificate):
 		Returns true if this certificate is not the same as other ; otherwise returns false.
 		"""
 		res = super(QSslCertificate,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -150,7 +150,7 @@ class QSslCertificate(QtNetwork.QSslCertificate):
 		Returns true if this certificate is the same as other ; otherwise returns false.
 		"""
 		res = super(QSslCertificate,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def subjectInfo(self,*args,**kwargs):

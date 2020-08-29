@@ -85,7 +85,7 @@ class QGestureEvent(QtGui.QGestureEvent):
 
 		"""
 		res = super(QGestureEvent,self).isAccepted(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mapToGraphicsScene(self,gesturePoint):

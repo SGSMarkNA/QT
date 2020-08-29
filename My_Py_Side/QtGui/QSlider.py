@@ -14,7 +14,7 @@ class QSlider(QtGui.QSlider):
 		The default value is 0.
 		"""
 		res = super(QSlider,self).tickInterval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def tickPosition(self):

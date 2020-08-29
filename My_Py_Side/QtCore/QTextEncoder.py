@@ -12,7 +12,7 @@ class QTextEncoder(QtCore.QTextEncoder):
 		If an error was encountered, the produced result is undefined, and gets converted as according to the conversion flags.
 		"""
 		res = super(QTextEncoder,self).hasFailure()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fromUnicode(self,str):

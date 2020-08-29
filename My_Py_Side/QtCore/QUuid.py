@@ -27,7 +27,7 @@ class QUuid(QtCore.QUuid):
 		Returns true if this is the null UUID {00000000-0000-0000-0000-000000000000}; otherwise returns false.
 		"""
 		res = super(QUuid,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self):
@@ -66,7 +66,7 @@ class QUuid(QtCore.QUuid):
 		Returns true if this PySide.QtCore.QUuid and the otherPySide.QtCore.QUuid are different; otherwise returns false.
 		"""
 		res = super(QUuid,self).__ne__(orig)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -78,7 +78,7 @@ class QUuid(QtCore.QUuid):
 		If the otherPySide.QtCore.QUuid has a different variant field, the return value is determined by comparing the two variants .
 		"""
 		res = super(QUuid,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,orig):
@@ -89,7 +89,7 @@ class QUuid(QtCore.QUuid):
 		Returns true if this PySide.QtCore.QUuid and the otherPySide.QtCore.QUuid are identical; otherwise returns false.
 		"""
 		res = super(QUuid,self).__eq__(orig)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,other):
@@ -101,5 +101,5 @@ class QUuid(QtCore.QUuid):
 		If the otherPySide.QtCore.QUuid has a different variant field, the return value is determined by comparing the two variants .
 		"""
 		res = super(QUuid,self).__gt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -11,7 +11,7 @@ class QNetworkProxyQuery(QtNetwork.QNetworkProxyQuery):
 		Returns the port number of the socket that will accept incoming packets from remote servers or -1 if the port is not known.
 		"""
 		res = super(QNetworkProxyQuery,self).localPort()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def peerHostName(self):
@@ -29,7 +29,7 @@ class QNetworkProxyQuery(QtNetwork.QNetworkProxyQuery):
 		In general, frameworks will fill in the port number from their default values.
 		"""
 		res = super(QNetworkProxyQuery,self).peerPort()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def protocolTag(self):
@@ -64,7 +64,7 @@ class QNetworkProxyQuery(QtNetwork.QNetworkProxyQuery):
 		Returns true if this PySide.QtNetwork.QNetworkProxyQuery object does not contain the same data as other .
 		"""
 		res = super(QNetworkProxyQuery,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -75,7 +75,7 @@ class QNetworkProxyQuery(QtNetwork.QNetworkProxyQuery):
 		Returns true if this PySide.QtNetwork.QNetworkProxyQuery object contains the same data as other .
 		"""
 		res = super(QNetworkProxyQuery,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setLocalPort(self,port):

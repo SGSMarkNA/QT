@@ -11,7 +11,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).alignOfTypedData()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def capacity(self):
@@ -19,7 +19,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).capacity()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -42,7 +42,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def data(self):
@@ -65,7 +65,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).empty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def first(self):
@@ -89,7 +89,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def last(self):
@@ -113,7 +113,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sizeOfTypedData(self):
@@ -121,7 +121,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).sizeOfTypedData()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def squeeze(self):
@@ -169,7 +169,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).contains(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def count(self,t):
@@ -180,7 +180,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).count(t)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def endsWith(self,t):
@@ -191,7 +191,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).endsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def erase(self,abegin,aend):
@@ -232,7 +232,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 		Use the overload that takes a namespace URI and a local name as parameter, for namespace aware code.
 		"""
 		res = super(QXmlStreamAttributes,self).hasAttribute(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def indexOf(self,t,from=None):
@@ -244,7 +244,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).indexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,*args,**kwargs):
@@ -276,7 +276,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).isSharedWith(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastIndexOf(self,t,from=None):
@@ -288,7 +288,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).lastIndexOf(t,from)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def mid(self,pos,length=None):
@@ -310,7 +310,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).__ne__(v)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __add__(self,l):
@@ -360,7 +360,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).__eq__(v)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def prepend(self,t):
@@ -447,7 +447,7 @@ class QXmlStreamAttributes(QtCore.QXmlStreamAttributes):
 
 		"""
 		res = super(QXmlStreamAttributes,self).startsWith(t)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def value(self,*args,**kwargs):

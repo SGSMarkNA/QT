@@ -39,7 +39,7 @@ class QBitArray(QtCore.QBitArray):
 		Same as PySide.QtCore.QBitArray.size() .
 		"""
 		res = super(QBitArray,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -47,7 +47,7 @@ class QBitArray(QtCore.QBitArray):
 		Returns true if this bit array has size 0; otherwise returns false.
 		"""
 		res = super(QBitArray,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self):
@@ -58,32 +58,7 @@ class QBitArray(QtCore.QBitArray):
 		For most applications, what matters is whether or not a bit array contains any data, and this can be determined using PySide.QtCore.QBitArray.isEmpty() .
 		"""
 		res = super(QBitArray,self).isNull()
-		isinstance(res,QtCore.bool)
-		return res
-	#----------------------------------------------------------------------
-	def PySide.QtCore.QBitArray.operator[](i)(self):
-		"""
-		This is an overloaded function.
-		"""
-		res = super(QBitArray,self).PySide.QtCore.QBitArray.operator[](i)()
-		isinstance(res,QtCore.bool)
-		return res
-	#----------------------------------------------------------------------
-	def PySide.QtCore.QBitArray.operator[](i)(self):
-		"""
-		This is an overloaded function.
-		"""
-		res = super(QBitArray,self).PySide.QtCore.QBitArray.operator[](i)()
-		isinstance(res,QtCore.bool)
-		return res
-	#----------------------------------------------------------------------
-	def PySide.QtCore.QBitArray.operator~()(self):
-		"""
-		Returns a bit array that contains the inverted bits of this bit array.
-		Example:
-		"""
-		res = super(QBitArray,self).PySide.QtCore.QBitArray.operator~()()
-		isinstance(res,QtCore.QBitArray)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -91,7 +66,7 @@ class QBitArray(QtCore.QBitArray):
 		Returns the number of bits stored in the bit array.
 		"""
 		res = super(QBitArray,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def at(self,i):
@@ -103,7 +78,7 @@ class QBitArray(QtCore.QBitArray):
 		i must be a valid index position in the bit array (i.e., 0 <= i < PySide.QtCore.QBitArray.size() ).
 		"""
 		res = super(QBitArray,self).at(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clearBit(self,i):
@@ -125,7 +100,7 @@ class QBitArray(QtCore.QBitArray):
 		If on is true, this function returns the number of 1-bits stored in the bit array; otherwise the number of 0-bits is returned.
 		"""
 		res = super(QBitArray,self).count(on)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def fill(self,*args,**kwargs):
@@ -154,7 +129,7 @@ class QBitArray(QtCore.QBitArray):
 		Returns true if other is not equal to this bit array; otherwise returns false.
 		"""
 		res = super(QBitArray,self).__ne__(a)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __and__(self,arg__2):
@@ -190,7 +165,7 @@ class QBitArray(QtCore.QBitArray):
 		Returns true if other is equal to this bit array; otherwise returns false.
 		"""
 		res = super(QBitArray,self).__eq__(a)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __xor__(self,arg__2):
@@ -280,7 +255,7 @@ class QBitArray(QtCore.QBitArray):
 		i must be a valid index position in the bit array (i.e., 0 <= i < PySide.QtCore.QBitArray.size() ).
 		"""
 		res = super(QBitArray,self).testBit(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toggleBit(self,i):
@@ -294,7 +269,7 @@ class QBitArray(QtCore.QBitArray):
 		i must be a valid index position in the bit array (i.e., 0 <= i < PySide.QtCore.QBitArray.size() ).
 		"""
 		res = super(QBitArray,self).toggleBit(i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def truncate(self,pos):

@@ -14,7 +14,7 @@ class QItemDelegate(QtGui.QItemDelegate):
 		It is useful for cases such as when images are larger than the size of the item.
 		"""
 		res = super(QItemDelegate,self).hasClipping()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def itemEditorFactory(self):

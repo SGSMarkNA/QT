@@ -56,7 +56,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		This property holds whether the input satisfies the current validation.
 		"""
 		res = super(QAbstractSpinBox,self).hasAcceptableInput()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasFrame(self):
@@ -65,7 +65,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		If enabled (the default) the spin box draws itself inside a frame, otherwise the spin box draws itself without any frame.
 		"""
 		res = super(QAbstractSpinBox,self).hasFrame()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def interpretText(self):
@@ -82,7 +82,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		If enabled the spin box will increase/decrease the value faster the longer you hold the button down.
 		"""
 		res = super(QAbstractSpinBox,self).isAccelerated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isReadOnly(self):
@@ -92,7 +92,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		The PySide.QtGui.QLineEdit in the PySide.QtGui.QAbstractSpinBox does not show a cursor in read-only mode.
 		"""
 		res = super(QAbstractSpinBox,self).isReadOnly()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keyboardTracking(self):
@@ -106,7 +106,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		pressing an arrow key.
 		"""
 		res = super(QAbstractSpinBox,self).keyboardTracking()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lineEdit(self):
@@ -162,7 +162,7 @@ class QAbstractSpinBox(QtGui.QAbstractSpinBox):
 		Wrapping only make sense if you have minimum() and maximum() values set.
 		"""
 		res = super(QAbstractSpinBox,self).wrapping()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fixup(self,input):

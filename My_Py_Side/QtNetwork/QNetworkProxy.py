@@ -27,7 +27,7 @@ class QNetworkProxy(QtNetwork.QNetworkProxy):
 		In Qt 4.4, the capability was tied to the proxy type, but since Qt 4.5 it is possible to remove the capability of caching from a proxy by calling PySide.QtNetwork.QNetworkProxy.setCapabilities() .
 		"""
 		res = super(QNetworkProxy,self).isCachingProxy()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isTransparentProxy(self):
@@ -37,7 +37,7 @@ class QNetworkProxy(QtNetwork.QNetworkProxy):
 		In Qt 4.4, the capability was tied to the proxy type, but since Qt 4.5 it is possible to remove the capability of caching from a proxy by calling PySide.QtNetwork.QNetworkProxy.setCapabilities() .
 		"""
 		res = super(QNetworkProxy,self).isTransparentProxy()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def password(self):
@@ -78,7 +78,7 @@ class QNetworkProxy(QtNetwork.QNetworkProxy):
 		Compares the value of this network proxy to other and returns true if they differ.
 		"""
 		res = super(QNetworkProxy,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -89,7 +89,7 @@ class QNetworkProxy(QtNetwork.QNetworkProxy):
 		Compares the value of this network proxy to other and returns true if they are equal (same proxy type, server as well as username and password)
 		"""
 		res = super(QNetworkProxy,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setCapabilities(self,capab):

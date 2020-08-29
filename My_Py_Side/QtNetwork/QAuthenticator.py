@@ -11,7 +11,7 @@ class QAuthenticator(QtNetwork.QAuthenticator):
 		Returns true if the authenticator is null.
 		"""
 		res = super(QAuthenticator,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def options(self):
@@ -51,7 +51,7 @@ class QAuthenticator(QtNetwork.QAuthenticator):
 		Returns true if this authenticator is different from other ; otherwise returns false.
 		"""
 		res = super(QAuthenticator,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -62,7 +62,7 @@ class QAuthenticator(QtNetwork.QAuthenticator):
 		Returns true if this authenticator is identical to other ; otherwise returns false.
 		"""
 		res = super(QAuthenticator,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def option(self,opt):

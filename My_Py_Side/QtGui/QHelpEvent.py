@@ -20,7 +20,7 @@ class QHelpEvent(QtGui.QHelpEvent):
 		PySide.QtGui.QHelpEvent.x() .
 		"""
 		res = super(QHelpEvent,self).globalX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def globalY(self):
@@ -29,7 +29,7 @@ class QHelpEvent(QtGui.QHelpEvent):
 		PySide.QtGui.QHelpEvent.y() .
 		"""
 		res = super(QHelpEvent,self).globalY()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pos(self):
@@ -46,7 +46,7 @@ class QHelpEvent(QtGui.QHelpEvent):
 		PySide.QtGui.QHelpEvent.x() .
 		"""
 		res = super(QHelpEvent,self).x()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def y(self):
@@ -55,5 +55,5 @@ class QHelpEvent(QtGui.QHelpEvent):
 		PySide.QtGui.QHelpEvent.y() .
 		"""
 		res = super(QHelpEvent,self).y()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

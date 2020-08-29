@@ -37,7 +37,7 @@ class QSslError(QtNetwork.QSslError):
 		Returns true if this error is not equal to other ; otherwise returns false.
 		"""
 		res = super(QSslError,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -48,5 +48,5 @@ class QSslError(QtNetwork.QSslError):
 		Returns true if this error is equal to other ; otherwise returns false.
 		"""
 		res = super(QSslError,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

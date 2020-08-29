@@ -26,7 +26,7 @@ class QWebHistory(QtWebKit.QWebHistory):
 		Returns true if there is an item preceding the current item in the history; otherwise returns false.
 		"""
 		res = super(QWebHistory,self).canGoBack()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def canGoForward(self):
@@ -34,7 +34,7 @@ class QWebHistory(QtWebKit.QWebHistory):
 		Returns true if we have an item to go forward to; otherwise returns false.
 		"""
 		res = super(QWebHistory,self).canGoForward()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self):
@@ -49,7 +49,7 @@ class QWebHistory(QtWebKit.QWebHistory):
 		Returns the total number of items in the history.
 		"""
 		res = super(QWebHistory,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentItem(self):
@@ -65,7 +65,7 @@ class QWebHistory(QtWebKit.QWebHistory):
 		Returns the index of the current item in history.
 		"""
 		res = super(QWebHistory,self).currentItemIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def forward(self):
@@ -95,7 +95,7 @@ class QWebHistory(QtWebKit.QWebHistory):
 		Returns the maximum number of items in the history.
 		"""
 		res = super(QWebHistory,self).maximumItemCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def backItems(self,maxItems):

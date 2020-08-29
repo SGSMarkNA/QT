@@ -11,7 +11,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 
 		"""
 		res = super(QPaintEngine,self).autoDestruct()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def coordinateOffset(self):
@@ -30,7 +30,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 		Return true if painting was finished successfully; otherwise return false.
 		"""
 		res = super(QPaintEngine,self).end()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -38,7 +38,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 		Returns true if the paint engine is actively drawing; otherwise returns false.
 		"""
 		res = super(QPaintEngine,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isExtended(self):
@@ -46,7 +46,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 		Returns true if the paint engine is a QPaintEngineEx derivative.
 		"""
 		res = super(QPaintEngine,self).isExtended()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def paintDevice(self):
@@ -109,7 +109,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 		Return true if the initialization was successful; otherwise return false.
 		"""
 		res = super(QPaintEngine,self).begin(pdev)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def clearDirty(self,df):
@@ -267,7 +267,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 
 		"""
 		res = super(QPaintEngine,self).hasFeature(feature)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setActive(self,newState):
@@ -332,7 +332,7 @@ class QPaintEngine(QtGui.QPaintEngine):
 
 		"""
 		res = super(QPaintEngine,self).testDirty(df)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def updateState(self,state):

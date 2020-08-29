@@ -13,7 +13,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		The default implementation does nothing and returns false.
 		"""
 		res = super(QSqlDriver,self).beginTransaction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def close(self):
@@ -31,7 +31,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		The default implementation does nothing and returns false.
 		"""
 		res = super(QSqlDriver,self).commitTransaction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createResult(self):
@@ -48,7 +48,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		Returns true if the database connection is open; otherwise returns false.
 		"""
 		res = super(QSqlDriver,self).isOpen()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isOpenError(self):
@@ -56,7 +56,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		Returns true if the there was an error opening the database connection; otherwise returns false.
 		"""
 		res = super(QSqlDriver,self).isOpenError()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastError(self):
@@ -82,7 +82,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		The default implementation does nothing and returns false.
 		"""
 		res = super(QSqlDriver,self).rollbackTransaction()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def subscribedToNotifications(self):
@@ -127,7 +127,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		Note that some databases need to be PySide.QtSql.QSqlDriver.open() before this can be determined.
 		"""
 		res = super(QSqlDriver,self).hasFeature(f)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isIdentifierEscaped(self,identifier,type):
@@ -140,7 +140,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		identifier can either be a table name or field name, dependent on type .
 		"""
 		res = super(QSqlDriver,self).isIdentifierEscaped(identifier,type)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def open(self,db,user=None,password=None,host=None,port=None,connOpts=None):
@@ -157,7 +157,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		The function must return true on success and false on failure.
 		"""
 		res = super(QSqlDriver,self).open(db,user,password,host,port,connOpts)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def primaryIndex(self,tableName):
@@ -271,7 +271,7 @@ class QSqlDriver(QtSql.QSqlDriver):
 		When an event notification identified by name is posted by the database the PySide.QtSql.QSqlDriver.notification() signal is emitted.
 		"""
 		res = super(QSqlDriver,self).subscribeToNotification(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tables(self,tableType):
@@ -297,5 +297,5 @@ class QSqlDriver(QtSql.QSqlDriver):
 		After calling this function the PySide.QtSql.QSqlDriver.notification() signal will no longer be emitted when an event notification identified by name is posted by the database.
 		"""
 		res = super(QSqlDriver,self).unsubscribeFromNotification(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

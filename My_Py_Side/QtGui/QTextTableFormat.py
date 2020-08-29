@@ -51,7 +51,7 @@ class QTextTableFormat(QtGui.QTextTableFormat):
 		Returns the number of columns specified by the table format.
 		"""
 		res = super(QTextTableFormat,self).columns()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def headerRowCount(self):
@@ -59,7 +59,7 @@ class QTextTableFormat(QtGui.QTextTableFormat):
 		Returns the number of rows in the table that define the header.
 		"""
 		res = super(QTextTableFormat,self).headerRowCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setAlignment(self,alignment):

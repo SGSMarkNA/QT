@@ -11,7 +11,7 @@ class QGLShader(QtOpenGL.QGLShader):
 		Returns true if this shader has been compiled; false otherwise.
 		"""
 		res = super(QGLShader,self).isCompiled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def log(self):
@@ -59,7 +59,7 @@ class QGLShader(QtOpenGL.QGLShader):
 		Returns true if the source was successfully compiled, false otherwise.
 		"""
 		res = super(QGLShader,self).compileSourceCode(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def compileSourceFile(self,fileName):
@@ -71,5 +71,5 @@ class QGLShader(QtOpenGL.QGLShader):
 		Returns true if the file could be opened and the source compiled, false otherwise.
 		"""
 		res = super(QGLShader,self).compileSourceFile(fileName)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

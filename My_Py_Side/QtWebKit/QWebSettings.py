@@ -46,7 +46,7 @@ class QWebSettings(QtWebKit.QWebSettings):
 		Returns the default font size for type .
 		"""
 		res = super(QWebSettings,self).fontSize(type)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def resetAttribute(self,attr):
@@ -160,5 +160,5 @@ class QWebSettings(QtWebKit.QWebSettings):
 		Returns true if attribute is enabled; otherwise returns false.
 		"""
 		res = super(QWebSettings,self).testAttribute(attr)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

@@ -12,7 +12,7 @@ class QAccessibleEvent(QtGui.QAccessibleEvent):
 		If the child is 0, the request is for the widget itself.
 		"""
 		res = super(QAccessibleEvent,self).child()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def value(self):

@@ -27,7 +27,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 
 		"""
 		res = super(QDeclarativeItem,self).clip()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def forceActiveFocus(self):
@@ -42,7 +42,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 
 		"""
 		res = super(QDeclarativeItem,self).hasActiveFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def height(self):
@@ -58,7 +58,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 		Returns whether the height property has been set explicitly.
 		"""
 		res = super(QDeclarativeItem,self).heightValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def implicitHeight(self):
@@ -83,7 +83,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 		It is often desirable to delay some processing until the component is completed.
 		"""
 		res = super(QDeclarativeItem,self).isComponentComplete()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keepMouseGrab(self):
@@ -91,7 +91,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 		Returns a value indicating whether mouse input should remain with this item exclusively.
 		"""
 		res = super(QDeclarativeItem,self).keepMouseGrab()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def resetHeight(self):
@@ -114,7 +114,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 		The default is false.
 		"""
 		res = super(QDeclarativeItem,self).smooth()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def transformOrigin(self):
@@ -138,7 +138,7 @@ class QDeclarativeItem(QtDeclarative.QDeclarativeItem):
 		Returns whether the width property has been set explicitly.
 		"""
 		res = super(QDeclarativeItem,self).widthValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def childAt(self,x,y):

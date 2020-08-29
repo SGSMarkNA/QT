@@ -26,7 +26,7 @@ class QGroupBox(QtGui.QGroupBox):
 		If this property is enabled for a group box, it will also be initially checked to ensure that its contents are enabled.
 		"""
 		res = super(QGroupBox,self).isCheckable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isChecked(self):
@@ -37,7 +37,7 @@ class QGroupBox(QtGui.QGroupBox):
 		By default, checkable group boxes are also checked.
 		"""
 		res = super(QGroupBox,self).isChecked()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isFlat(self):
@@ -49,7 +49,7 @@ class QGroupBox(QtGui.QGroupBox):
 		group boxes are not flat unless explicitly specified.
 		"""
 		res = super(QGroupBox,self).isFlat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def title(self):

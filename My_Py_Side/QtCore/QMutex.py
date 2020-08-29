@@ -26,7 +26,7 @@ class QMutex(QtCore.QMutex):
 		If this mutex is a non-recursive mutex , this function will always return false when attempting to lock the mutex recursively.
 		"""
 		res = super(QMutex,self).tryLock()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unlock(self):
@@ -54,5 +54,5 @@ class QMutex(QtCore.QMutex):
 		If this mutex is a non-recursive mutex , this function will always return false when attempting to lock the mutex recursively.
 		"""
 		res = super(QMutex,self).tryLock(timeout)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

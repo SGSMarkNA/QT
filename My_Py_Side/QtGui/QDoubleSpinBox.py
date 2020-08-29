@@ -20,7 +20,7 @@ class QDoubleSpinBox(QtGui.QDoubleSpinBox):
 		Note: The maximum, minimum and value might change as a result of changing this property.
 		"""
 		res = super(QDoubleSpinBox,self).decimals()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def maximum(self):

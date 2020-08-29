@@ -11,7 +11,7 @@ class QXmlStreamWriter(QtCore.QXmlStreamWriter):
 		Returns true if auto formattting is enabled, otherwise false .
 		"""
 		res = super(QXmlStreamWriter,self).autoFormatting()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def autoFormattingIndent(self):
@@ -19,7 +19,7 @@ class QXmlStreamWriter(QtCore.QXmlStreamWriter):
 
 		"""
 		res = super(QXmlStreamWriter,self).autoFormattingIndent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def codec(self):

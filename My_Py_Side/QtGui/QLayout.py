@@ -13,7 +13,7 @@ class QLayout(QtGui.QLayout):
 		It returns true if the layout was redone.
 		"""
 		res = super(QLayout,self).activate()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def contentsMargins(self):
@@ -39,7 +39,7 @@ class QLayout(QtGui.QLayout):
 		Must be implemented in subclasses to return the number of items in the layout.
 		"""
 		res = super(QLayout,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def getContentsMargins(self):
@@ -56,7 +56,7 @@ class QLayout(QtGui.QLayout):
 		Returns true if the layout is enabled; otherwise returns false.
 		"""
 		res = super(QLayout,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def menuBar(self):
@@ -93,7 +93,7 @@ class QLayout(QtGui.QLayout):
 		In that case, PySide.QtGui.QLayout.spacing() returns -1.
 		"""
 		res = super(QLayout,self).spacing()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def totalMaximumSize(self):
@@ -198,7 +198,7 @@ class QLayout(QtGui.QLayout):
 		The default implementation iterates over all items using PySide.QtGui.QLayout.itemAt()
 		"""
 		res = super(QLayout,self).indexOf(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def itemAt(self,index):
@@ -253,7 +253,7 @@ class QLayout(QtGui.QLayout):
 
 		"""
 		res = super(QLayout,self).setAlignment(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setContentsMargins(self,*args,**kwargs):
@@ -344,7 +344,7 @@ class QLayout(QtGui.QLayout):
 		Also takes contentsMargins and menu bar into account.
 		"""
 		res = super(QLayout,self).totalHeightForWidth(w)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def widgetEvent(self,arg__1):

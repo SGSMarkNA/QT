@@ -12,7 +12,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		It is equivalent to PySide.QtXml.QDomNamedNodeMap.length() .
 		"""
 		res = super(QDomNamedNodeMap,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -21,7 +21,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		This function is provided for Qt API consistency.
 		"""
 		res = super(QDomNamedNodeMap,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def length(self):
@@ -38,7 +38,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		It is equivalent to PySide.QtXml.QDomNamedNodeMap.length() .
 		"""
 		res = super(QDomNamedNodeMap,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def contains(self,name):
@@ -49,7 +49,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		Returns true if the map contains a node called name ; otherwise returns false.
 		"""
 		res = super(QDomNamedNodeMap,self).contains(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def item(self,index):
@@ -99,7 +99,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		Returns true if n and this named node map are not equal; otherwise returns false.
 		"""
 		res = super(QDomNamedNodeMap,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,arg__1):
@@ -110,7 +110,7 @@ class QDomNamedNodeMap(QtXml.QDomNamedNodeMap):
 		Returns true if n and this named node map are equal; otherwise returns false.
 		"""
 		res = super(QDomNamedNodeMap,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeNamedItem(self,name):

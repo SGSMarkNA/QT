@@ -25,7 +25,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns the number of fields in the record.
 		"""
 		res = super(QSqlRecord,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -33,7 +33,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if there are no fields in the record; otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def append(self,field):
@@ -54,7 +54,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if there is a field in the record called name ; otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).contains(name)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def field(self,*args,**kwargs):
@@ -93,7 +93,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		If more than one field matches, the first one is returned.
 		"""
 		res = super(QSqlRecord,self).indexOf(name)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,pos,field):
@@ -118,7 +118,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if the record has a field called name and this field is to be generated (the default); otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).isGenerated(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isNull(self,*args,**kwargs):
@@ -133,7 +133,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if the field index is null or if there is no field at position index ; otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).isNull(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -144,7 +144,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if this object is not identical to other ; otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -155,7 +155,7 @@ class QSqlRecord(QtSql.QSqlRecord):
 		Returns true if this object is identical to other (i.e., has the same fields in the same order); otherwise returns false.
 		"""
 		res = super(QSqlRecord,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def remove(self,pos):

@@ -31,7 +31,7 @@ class QReadWriteLock(QtCore.QReadWriteLock):
 		If the lock was obtained, the lock must be unlocked with PySide.QtCore.QReadWriteLock.unlock() before another thread can successfully lock it.
 		"""
 		res = super(QReadWriteLock,self).tryLockForRead()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tryLockForWrite(self):
@@ -42,7 +42,7 @@ class QReadWriteLock(QtCore.QReadWriteLock):
 		If the lock was obtained, the lock must be unlocked with PySide.QtCore.QReadWriteLock.unlock() before another thread can successfully lock it.
 		"""
 		res = super(QReadWriteLock,self).tryLockForWrite()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unlock(self):
@@ -67,7 +67,7 @@ class QReadWriteLock(QtCore.QReadWriteLock):
 		If the lock was obtained, the lock must be unlocked with PySide.QtCore.QReadWriteLock.unlock() before another thread can successfully lock it.
 		"""
 		res = super(QReadWriteLock,self).tryLockForRead(timeout)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def tryLockForWrite(self,timeout):
@@ -84,5 +84,5 @@ class QReadWriteLock(QtCore.QReadWriteLock):
 		If the lock was obtained, the lock must be unlocked with PySide.QtCore.QReadWriteLock.unlock() before another thread can successfully lock it.
 		"""
 		res = super(QReadWriteLock,self).tryLockForWrite(timeout)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

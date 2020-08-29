@@ -30,7 +30,7 @@ class QLabel(QtGui.QLabel):
 		This propertys default is false.
 		"""
 		res = super(QLabel,self).hasScaledContents()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasSelectedText(self):
@@ -40,7 +40,7 @@ class QLabel(QtGui.QLabel):
 		By default, this property is false.
 		"""
 		res = super(QLabel,self).hasSelectedText()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def indent(self):
@@ -52,7 +52,7 @@ class QLabel(QtGui.QLabel):
 		By default, the indent is -1, meaning that an effective indent is calculating in the manner described above.
 		"""
 		res = super(QLabel,self).indent()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def margin(self):
@@ -62,7 +62,7 @@ class QLabel(QtGui.QLabel):
 		The default margin is 0.
 		"""
 		res = super(QLabel,self).margin()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def movie(self):
@@ -79,7 +79,7 @@ class QLabel(QtGui.QLabel):
 		The default value is false.
 		"""
 		res = super(QLabel,self).openExternalLinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def picture(self):
@@ -115,7 +115,7 @@ class QLabel(QtGui.QLabel):
 		PySide.QtGui.QLabel.selectionStart() returns the index of the first selected character in the label or -1 if no text is selected.
 		"""
 		res = super(QLabel,self).selectionStart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def text(self):
@@ -162,7 +162,7 @@ class QLabel(QtGui.QLabel):
 		By default, word wrap is disabled.
 		"""
 		res = super(QLabel,self).wordWrap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAlignment(self,arg__1):

@@ -27,7 +27,7 @@ class QShortcut(QtGui.QShortcut):
 		The default value is true.
 		"""
 		res = super(QShortcut,self).autoRepeat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def context(self):
@@ -46,7 +46,7 @@ class QShortcut(QtGui.QShortcut):
 		Returns the shortcuts ID.
 		"""
 		res = super(QShortcut,self).id()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEnabled(self):
@@ -57,7 +57,7 @@ class QShortcut(QtGui.QShortcut):
 		By default, this property is true.
 		"""
 		res = super(QShortcut,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def key(self):

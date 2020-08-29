@@ -12,7 +12,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Just like the cursor position, the anchor position is between characters.
 		"""
 		res = super(QTextCursor,self).anchor()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def atBlockEnd(self):
@@ -20,7 +20,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the cursor is at the end of a block; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).atBlockEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def atBlockStart(self):
@@ -28,7 +28,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the cursor is at the start of a block; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).atBlockStart()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def atEnd(self):
@@ -36,7 +36,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the cursor is at the end of the document; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def atStart(self):
@@ -44,7 +44,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the cursor is at the start of the document; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).atStart()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def beginEditBlock(self):
@@ -89,7 +89,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Note that this function only makes sense in documents without complex objects such as tables or frames.
 		"""
 		res = super(QTextCursor,self).blockNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def charFormat(self):
@@ -117,7 +117,7 @@ class QTextCursor(QtGui.QTextCursor):
 		You probably want to call PySide.QtGui.QTextCursor.positionInBlock() instead.
 		"""
 		res = super(QTextCursor,self).columnNumber()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentFrame(self):
@@ -180,7 +180,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Complex selections are ones that span at least two cells in a table; their extent is specified by PySide.QtGui.QTextCursor.selectedTableCells() .
 		"""
 		res = super(QTextCursor,self).hasComplexSelection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasSelection(self):
@@ -188,7 +188,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the cursor contains a selection; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).hasSelection()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insertBlock(self):
@@ -204,7 +204,7 @@ class QTextCursor(QtGui.QTextCursor):
 		A null cursor is created by the default constructor.
 		"""
 		res = super(QTextCursor,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def joinPreviousEditBlock(self):
@@ -223,7 +223,7 @@ class QTextCursor(QtGui.QTextCursor):
 		The default is false;
 		"""
 		res = super(QTextCursor,self).keepPositionOnInsert()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def position(self):
@@ -232,7 +232,7 @@ class QTextCursor(QtGui.QTextCursor):
 		The cursor is positioned between characters.
 		"""
 		res = super(QTextCursor,self).position()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def positionInBlock(self):
@@ -242,7 +242,7 @@ class QTextCursor(QtGui.QTextCursor):
 		This is equivalent to position() - block().position() .
 		"""
 		res = super(QTextCursor,self).positionInBlock()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def removeSelectedText(self):
@@ -285,7 +285,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns the end of the selection or PySide.QtGui.QTextCursor.position() if the cursor doesnt have a selection.
 		"""
 		res = super(QTextCursor,self).selectionEnd()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def selectionStart(self):
@@ -293,7 +293,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns the start of the selection or PySide.QtGui.QTextCursor.position() if the cursor doesnt have a selection.
 		"""
 		res = super(QTextCursor,self).selectionStart()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def verticalMovementX(self):
@@ -303,7 +303,7 @@ class QTextCursor(QtGui.QTextCursor):
 		It will then be set automatically the next time the cursor moves up or down.
 		"""
 		res = super(QTextCursor,self).verticalMovementX()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def visualNavigation(self):
@@ -313,7 +313,7 @@ class QTextCursor(QtGui.QTextCursor):
 		The default is false.
 		"""
 		res = super(QTextCursor,self).visualNavigation()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createList(self,*args,**kwargs):
@@ -462,7 +462,7 @@ class QTextCursor(QtGui.QTextCursor):
 		This is much stricter than equality.
 		"""
 		res = super(QTextCursor,self).isCopyOf(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def mergeBlockCharFormat(self,modifier):
@@ -510,7 +510,7 @@ class QTextCursor(QtGui.QTextCursor):
 		This is the same effect that the user achieves when they hold down the Shift key and move the cursor with the cursor keys.
 		"""
 		res = super(QTextCursor,self).movePosition(op,arg__2,n)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,rhs):
@@ -521,7 +521,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is at a different position in the document as this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__ne__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,rhs):
@@ -532,7 +532,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is positioned later in the document than this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__lt__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,rhs):
@@ -543,7 +543,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is positioned later or at the same position in the document as this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__le__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,rhs):
@@ -554,7 +554,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is at the same position in the document as this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__eq__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,rhs):
@@ -565,7 +565,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is positioned earlier in the document than this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__gt__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,rhs):
@@ -576,7 +576,7 @@ class QTextCursor(QtGui.QTextCursor):
 		Returns true if the other cursor is positioned earlier or at the same position in the document as this cursor; otherwise returns false.
 		"""
 		res = super(QTextCursor,self).__ge__(rhs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def select(self,selection):

@@ -26,7 +26,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns true if the header has an entry for the special HTTP header field content-length ; otherwise returns false.
 		"""
 		res = super(QHttpHeader,self).hasContentLength()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def hasContentType(self):
@@ -34,7 +34,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns true if the header has an entry for the special HTTP header field content-type ; otherwise returns false.
 		"""
 		res = super(QHttpHeader,self).hasContentType()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -43,7 +43,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		A PySide.QtNetwork.QHttpHeader is invalid if it was created by parsing a malformed string.
 		"""
 		res = super(QHttpHeader,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keys(self):
@@ -58,7 +58,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns the major protocol-version of the HTTP header.
 		"""
 		res = super(QHttpHeader,self).majorVersion()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def minorVersion(self):
@@ -66,7 +66,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns the minor protocol-version of the HTTP header.
 		"""
 		res = super(QHttpHeader,self).minorVersion()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self):
@@ -115,7 +115,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns true if the HTTP header has an entry with the given key ; otherwise returns false.
 		"""
 		res = super(QHttpHeader,self).hasKey(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def parse(self,str):
@@ -128,7 +128,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns true if str was successfully parsed; otherwise returns false.
 		"""
 		res = super(QHttpHeader,self).parse(str)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def parseLine(self,line,number):
@@ -142,7 +142,7 @@ class QHttpHeader(QtNetwork.QHttpHeader):
 		Returns true if the line was successfully parsed and the key/value added; otherwise returns false.
 		"""
 		res = super(QHttpHeader,self).parseLine(line,number)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def removeAllValues(self,key):

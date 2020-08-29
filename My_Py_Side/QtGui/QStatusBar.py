@@ -27,7 +27,7 @@ class QStatusBar(QtGui.QStatusBar):
 		The size grip is enabled by default.
 		"""
 		res = super(QStatusBar,self).isSizeGripEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def reformat(self):
@@ -82,7 +82,7 @@ class QStatusBar(QtGui.QStatusBar):
 		It is is located at the far right of the status bar.
 		"""
 		res = super(QStatusBar,self).insertPermanentWidget(index,widget,stretch)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertWidget(self,index,widget,stretch=None):
@@ -99,7 +99,7 @@ class QStatusBar(QtGui.QStatusBar):
 		The widget is located to the far left of the first permanent widget (see PySide.QtGui.QStatusBar.addPermanentWidget() ) and may be obscured by temporary messages.
 		"""
 		res = super(QStatusBar,self).insertWidget(index,widget,stretch)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def removeWidget(self,widget):

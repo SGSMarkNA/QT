@@ -28,7 +28,7 @@ class QBrush(QtGui.QBrush):
 		A brush is considered opaque if:
 		"""
 		res = super(QBrush,self).isOpaque()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def matrix(self):
@@ -92,7 +92,7 @@ class QBrush(QtGui.QBrush):
 		Two brushes are different if they have different styles, colors or transforms or different pixmaps or gradients depending on the style.
 		"""
 		res = super(QBrush,self).__ne__(b)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,b):
@@ -104,7 +104,7 @@ class QBrush(QtGui.QBrush):
 		Two brushes are equal if they have equal styles, colors and transforms and equal pixmaps or gradients depending on the style.
 		"""
 		res = super(QBrush,self).__eq__(b)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setColor(self,*args,**kwargs):

@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 
 class QGraphicsItem(QtGui.QGraphicsItem):
 	''''''
@@ -683,7 +683,7 @@ class QGraphicsItem(QtGui.QGraphicsItem):
 		For example:
 		"""
 		res = super(QGraphicsItem,self).type()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def ungrabKeyboard(self):

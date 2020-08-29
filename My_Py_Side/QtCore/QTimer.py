@@ -14,7 +14,7 @@ class QTimer(QtCore.QTimer):
 		Setting the interval of an active timer changes its PySide.QtCore.QTimer.timerId() .
 		"""
 		res = super(QTimer,self).interval()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isActive(self):
@@ -22,7 +22,7 @@ class QTimer(QtCore.QTimer):
 		This boolean property is true if the timer is running; otherwise false.
 		"""
 		res = super(QTimer,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSingleShot(self):
@@ -31,7 +31,7 @@ class QTimer(QtCore.QTimer):
 		A single-shot timer fires only once, non-single-shot timers fire every PySide.QtCore.QTimer.interval() milliseconds.
 		"""
 		res = super(QTimer,self).isSingleShot()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def timeout(self):
@@ -46,7 +46,7 @@ class QTimer(QtCore.QTimer):
 		Returns the ID of the timer if the timer is running; otherwise returns -1.
 		"""
 		res = super(QTimer,self).timerId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setInterval(self,msec):

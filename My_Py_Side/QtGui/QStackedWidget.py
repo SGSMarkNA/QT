@@ -12,7 +12,7 @@ class QStackedWidget(QtGui.QStackedWidget):
 		By default, this property contains a value of 0.
 		"""
 		res = super(QStackedWidget,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentIndex(self):
@@ -22,7 +22,7 @@ class QStackedWidget(QtGui.QStackedWidget):
 		By default, this property contains a value of -1 because the stack is initially empty.
 		"""
 		res = super(QStackedWidget,self).currentIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentWidget(self):
@@ -43,7 +43,7 @@ class QStackedWidget(QtGui.QStackedWidget):
 		If the PySide.QtGui.QStackedWidget is empty before this function is called, widget becomes the current widget.
 		"""
 		res = super(QStackedWidget,self).addWidget(w)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def indexOf(self,arg__1):
@@ -54,7 +54,7 @@ class QStackedWidget(QtGui.QStackedWidget):
 		Returns the index of the given widget , or -1 if the given widget is not a child of the PySide.QtGui.QStackedWidget .
 		"""
 		res = super(QStackedWidget,self).indexOf(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def insertWidget(self,index,w):
@@ -70,7 +70,7 @@ class QStackedWidget(QtGui.QStackedWidget):
 		Inserting a new widget at an index less than or equal to the current index will increment the current index, but keep the current widget.
 		"""
 		res = super(QStackedWidget,self).insertWidget(index,w)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def removeWidget(self,w):

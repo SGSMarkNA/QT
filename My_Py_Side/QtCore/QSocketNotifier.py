@@ -11,7 +11,7 @@ class QSocketNotifier(QtCore.QSocketNotifier):
 		Returns true if the notifier is enabled; otherwise returns false.
 		"""
 		res = super(QSocketNotifier,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def socket(self):
@@ -19,7 +19,7 @@ class QSocketNotifier(QtCore.QSocketNotifier):
 		Returns the socket identifier specified to the constructor.
 		"""
 		res = super(QSocketNotifier,self).socket()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def type(self):

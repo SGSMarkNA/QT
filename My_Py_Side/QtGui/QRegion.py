@@ -30,7 +30,7 @@ class QRegion(QtGui.QRegion):
 		Example:
 		"""
 		res = super(QRegion,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numRects(self):
@@ -38,7 +38,7 @@ class QRegion(QtGui.QRegion):
 		Returns the number of rectangles that will be returned in PySide.QtGui.QRegion.rects() .
 		"""
 		res = super(QRegion,self).numRects()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rectCount(self):
@@ -46,7 +46,7 @@ class QRegion(QtGui.QRegion):
 		Returns the number of rectangles that will be returned in PySide.QtGui.QRegion.rects() .
 		"""
 		res = super(QRegion,self).rectCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rects(self):
@@ -86,7 +86,7 @@ class QRegion(QtGui.QRegion):
 		Returns true if the region contains the point p ; otherwise returns false.
 		"""
 		res = super(QRegion,self).contains(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def exec(self,ba,ver=None,byteOrder=None):
@@ -126,7 +126,7 @@ class QRegion(QtGui.QRegion):
 		Returns true if this region intersects with region , otherwise returns false.
 		"""
 		res = super(QRegion,self).intersects(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,r):
@@ -137,7 +137,7 @@ class QRegion(QtGui.QRegion):
 		Returns true if this region is different from the other region; otherwise returns false.
 		"""
 		res = super(QRegion,self).__ne__(r)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __and__(self,*args,**kwargs):
@@ -231,7 +231,7 @@ class QRegion(QtGui.QRegion):
 		Returns true if the region is equal to r ; otherwise returns false.
 		"""
 		res = super(QRegion,self).__eq__(r)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __xor__(self,r):

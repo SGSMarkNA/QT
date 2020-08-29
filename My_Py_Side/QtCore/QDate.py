@@ -27,7 +27,7 @@ class QDate(QtCore.QDate):
 		Returns the day of the month (1 to 31) of this date.
 		"""
 		res = super(QDate,self).day()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dayOfWeek(self):
@@ -35,7 +35,7 @@ class QDate(QtCore.QDate):
 		Returns the weekday (1 to 7) for this date.
 		"""
 		res = super(QDate,self).dayOfWeek()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def dayOfYear(self):
@@ -43,7 +43,7 @@ class QDate(QtCore.QDate):
 		Returns the day of the year (1 to 365 or 366 on leap years) for this date.
 		"""
 		res = super(QDate,self).dayOfYear()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def daysInMonth(self):
@@ -51,7 +51,7 @@ class QDate(QtCore.QDate):
 		Returns the number of days in the month (28 to 31) for this date.
 		"""
 		res = super(QDate,self).daysInMonth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def daysInYear(self):
@@ -59,7 +59,7 @@ class QDate(QtCore.QDate):
 		Returns the number of days in the year (365 or 366) for this date.
 		"""
 		res = super(QDate,self).daysInYear()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def getDate(self):
@@ -76,7 +76,7 @@ class QDate(QtCore.QDate):
 		A null date is invalid.
 		"""
 		res = super(QDate,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -84,7 +84,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is valid; otherwise returns false.
 		"""
 		res = super(QDate,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def month(self):
@@ -92,7 +92,7 @@ class QDate(QtCore.QDate):
 		Returns the number corresponding to the month of this date, using the following convention:
 		"""
 		res = super(QDate,self).month()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toJulianDay(self):
@@ -100,7 +100,7 @@ class QDate(QtCore.QDate):
 		Converts the date to a Julian day.
 		"""
 		res = super(QDate,self).toJulianDay()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toPython(self):
@@ -130,7 +130,7 @@ class QDate(QtCore.QDate):
 		= 1 C.E., such that year -44 is 44 B.C.
 		"""
 		res = super(QDate,self).year()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def addDays(self,days):
@@ -175,7 +175,7 @@ class QDate(QtCore.QDate):
 		Example:
 		"""
 		res = super(QDate,self).daysTo(arg__1)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,other):
@@ -186,7 +186,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is different from d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__ne__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __lt__(self,other):
@@ -197,7 +197,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is earlier than d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __le__(self,other):
@@ -208,7 +208,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is earlier than or equal to d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__le__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,other):
@@ -219,7 +219,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is equal to d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__eq__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __gt__(self,other):
@@ -230,7 +230,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is later than d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__gt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __ge__(self,other):
@@ -241,7 +241,7 @@ class QDate(QtCore.QDate):
 		Returns true if this date is later than or equal to d ; otherwise returns false.
 		"""
 		res = super(QDate,self).__ge__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setDate(self,year,month,day):
@@ -258,7 +258,7 @@ class QDate(QtCore.QDate):
 		is considered invalid.
 		"""
 		res = super(QDate,self).setDate(year,month,day)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setYMD(self,y,m,d):
@@ -273,7 +273,7 @@ class QDate(QtCore.QDate):
 		Use PySide.QtCore.QDate.setDate() instead.
 		"""
 		res = super(QDate,self).setYMD(y,m,d)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toString(self,*args,**kwargs):

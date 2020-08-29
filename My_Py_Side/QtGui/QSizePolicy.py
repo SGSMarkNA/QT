@@ -28,7 +28,7 @@ class QSizePolicy(QtGui.QSizePolicy):
 		Returns true if the widgets preferred height depends on its width; otherwise returns false.
 		"""
 		res = super(QSizePolicy,self).hasHeightForWidth()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def horizontalPolicy(self):
@@ -44,7 +44,7 @@ class QSizePolicy(QtGui.QSizePolicy):
 		Returns the horizontal stretch factor of the size policy.
 		"""
 		res = super(QSizePolicy,self).horizontalStretch()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def transpose(self):
@@ -67,7 +67,7 @@ class QSizePolicy(QtGui.QSizePolicy):
 		Returns the vertical stretch factor of the size policy.
 		"""
 		res = super(QSizePolicy,self).verticalStretch()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def __ne__(self,s):
@@ -78,7 +78,7 @@ class QSizePolicy(QtGui.QSizePolicy):
 		Returns true if this policy is different from other ; otherwise returns false.
 		"""
 		res = super(QSizePolicy,self).__ne__(s)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,s):
@@ -89,7 +89,7 @@ class QSizePolicy(QtGui.QSizePolicy):
 		Returns true if this policy is equal to other ; otherwise returns false.
 		"""
 		res = super(QSizePolicy,self).__eq__(s)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setControlType(self,type):

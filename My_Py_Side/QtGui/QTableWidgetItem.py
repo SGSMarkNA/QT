@@ -36,7 +36,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		If the item is not in a table, this function will return -1.
 		"""
 		res = super(QTableWidgetItem,self).column()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def flags(self):
@@ -78,7 +78,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		Returns true if the item is selected, otherwise returns false.
 		"""
 		res = super(QTableWidgetItem,self).isSelected()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def row(self):
@@ -87,7 +87,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		If the item is not in a table, this function will return -1.
 		"""
 		res = super(QTableWidgetItem,self).row()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def sizeHint(self):
@@ -125,7 +125,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		Returns the text alignment for the items text.
 		"""
 		res = super(QTableWidgetItem,self).textAlignment()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def toolTip(self):
@@ -140,7 +140,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		Returns the type passed to the PySide.QtGui.QTableWidgetItem constructor.
 		"""
 		res = super(QTableWidgetItem,self).type()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def whatsThis(self):
@@ -168,7 +168,7 @@ class QTableWidgetItem(QtGui.QTableWidgetItem):
 		Returns true if the item is less than the other item; otherwise returns false.
 		"""
 		res = super(QTableWidgetItem,self).__lt__(other)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,in):

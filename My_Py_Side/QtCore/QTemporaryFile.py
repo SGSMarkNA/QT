@@ -14,7 +14,7 @@ class QTemporaryFile(QtCore.QTemporaryFile):
 		Auto-remove is on by default.
 		"""
 		res = super(QTemporaryFile,self).autoRemove()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fileTemplate(self):
@@ -31,7 +31,7 @@ class QTemporaryFile(QtCore.QTemporaryFile):
 		This function will return true upon success and will set the PySide.QtCore.QTemporaryFile.fileName() to the unique filename used.
 		"""
 		res = super(QTemporaryFile,self).open()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAutoRemove(self,b):

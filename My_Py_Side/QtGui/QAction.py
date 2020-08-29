@@ -36,7 +36,7 @@ class QAction(QtGui.QAction):
 		The default value is true.
 		"""
 		res = super(QAction,self).autoRepeat()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def changed(self):
@@ -108,7 +108,7 @@ class QAction(QtGui.QAction):
 		To achieve exclusive toggling, add the relevant toggle actions to a PySide.QtGui.QActionGroup with the QActionGroup.exclusive property set to true.
 		"""
 		res = super(QAction,self).isCheckable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isChecked(self):
@@ -118,7 +118,7 @@ class QAction(QtGui.QAction):
 		By default, this is false (the action is unchecked).
 		"""
 		res = super(QAction,self).isChecked()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isEnabled(self):
@@ -133,7 +133,7 @@ class QAction(QtGui.QAction):
 		By default, this property is true (actions are enabled).
 		"""
 		res = super(QAction,self).isEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isIconVisibleInMenu(self):
@@ -146,7 +146,7 @@ class QAction(QtGui.QAction):
 		For example:
 		"""
 		res = super(QAction,self).isIconVisibleInMenu()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSeparator(self):
@@ -154,7 +154,7 @@ class QAction(QtGui.QAction):
 		Returns true if this action is a separator action; otherwise it returns false.
 		"""
 		res = super(QAction,self).isSeparator()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isVisible(self):
@@ -167,7 +167,7 @@ class QAction(QtGui.QAction):
 		By default, this property is true (actions are visible).
 		"""
 		res = super(QAction,self).isVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def menu(self):
@@ -563,5 +563,5 @@ class QAction(QtGui.QAction):
 		If a null widget is specified, the event is sent to the actions parent.
 		"""
 		res = super(QAction,self).showStatusText(widget)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

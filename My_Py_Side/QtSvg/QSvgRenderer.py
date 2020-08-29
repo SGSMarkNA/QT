@@ -11,7 +11,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		Returns true if the current document contains animated elements; otherwise returns false.
 		"""
 		res = super(QSvgRenderer,self).animated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def animationDuration(self):
@@ -19,7 +19,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		Returns the number of frames in the animation, or 0 if the current document is not animated.
 		"""
 		res = super(QSvgRenderer,self).animationDuration()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentFrame(self):
@@ -27,7 +27,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		This property holds the current frame of the documents animation, or 0 if the document is not animated.
 		"""
 		res = super(QSvgRenderer,self).currentFrame()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def defaultSize(self):
@@ -44,7 +44,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		The number of frames per second is 0 if the current document is not animated.
 		"""
 		res = super(QSvgRenderer,self).framesPerSecond()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -52,7 +52,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		Returns true if there is a valid current document; otherwise returns false.
 		"""
 		res = super(QSvgRenderer,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def repaintNeeded(self):
@@ -102,7 +102,7 @@ class QSvgRenderer(QtSvg.QSvgRenderer):
 		radialGradients even tough marked with id attributes will not be found by this method.
 		"""
 		res = super(QSvgRenderer,self).elementExists(id)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def matrixForElement(self,id):

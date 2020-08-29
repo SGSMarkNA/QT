@@ -35,7 +35,7 @@ class QPicture(QtGui.QPicture):
 		Returns true if the picture contains no data; otherwise returns false.
 		"""
 		res = super(QPicture,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def size(self):
@@ -56,7 +56,7 @@ class QPicture(QtGui.QPicture):
 
 		"""
 		res = super(QPicture,self).exec(p,ds,i)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def load(self,*args,**kwargs):
@@ -73,7 +73,7 @@ class QPicture(QtGui.QPicture):
 		Please note that the format parameter has been deprecated and will have no effect.
 		"""
 		res = super(QPicture,self).load(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def play(self,p):
@@ -85,7 +85,7 @@ class QPicture(QtGui.QPicture):
 		This function does exactly the same as QPainter.drawPicture() with (x, y) = (0, 0).
 		"""
 		res = super(QPicture,self).play(p)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def save(self,*args,**kwargs):
@@ -102,7 +102,7 @@ class QPicture(QtGui.QPicture):
 		Please note that the format parameter has been deprecated and will have no effect.
 		"""
 		res = super(QPicture,self).save(*args,**kwargs)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setBoundingRect(self,r):

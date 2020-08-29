@@ -27,7 +27,7 @@ class QTextBlock(QtGui.QTextBlock):
 		Returns true if the current item is the last item in the text block.
 		"""
 		res = super(QTextBlock,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fragment(self):
@@ -62,7 +62,7 @@ class QTextBlock(QtGui.QTextBlock):
 		Retuns true if this iterator is different from the other iterator; otherwise returns false.
 		"""
 		res = super(QTextBlock,self).__ne__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __eq__(self,o):
@@ -73,5 +73,5 @@ class QTextBlock(QtGui.QTextBlock):
 		Retuns true if this iterator is the same as the other iterator; otherwise returns false.
 		"""
 		res = super(QTextBlock,self).__eq__(o)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

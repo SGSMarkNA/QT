@@ -11,7 +11,7 @@ class QBasicTimer(QtCore.QBasicTimer):
 		Returns true if the timer is running and has not been stopped; otherwise returns false.
 		"""
 		res = super(QBasicTimer,self).isActive()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def stop(self):
@@ -26,7 +26,7 @@ class QBasicTimer(QtCore.QBasicTimer):
 		Returns the timers ID.
 		"""
 		res = super(QBasicTimer,self).timerId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def start(self,msec,obj):

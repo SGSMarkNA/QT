@@ -39,7 +39,7 @@ class QScrollArea(QtGui.QScrollArea):
 		If this property is set to true, the scroll area will automatically resize the widget in order to avoid scroll bars where they can be avoided, or to take advantage of extra space.
 		"""
 		res = super(QScrollArea,self).widgetResizable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def ensureVisible(self,x,y,xmargin=None,ymargin=None):

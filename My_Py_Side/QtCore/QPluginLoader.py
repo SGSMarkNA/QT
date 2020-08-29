@@ -48,7 +48,7 @@ class QPluginLoader(QtCore.QPluginLoader):
 		Returns true if the plugin is loaded; otherwise returns false.
 		"""
 		res = super(QPluginLoader,self).isLoaded()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def load(self):
@@ -58,7 +58,7 @@ class QPluginLoader(QtCore.QPluginLoader):
 		In some situations you might want the plugin loaded in advance, in which case you would use this function.
 		"""
 		res = super(QPluginLoader,self).load()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def unload(self):
@@ -70,7 +70,7 @@ class QPluginLoader(QtCore.QPluginLoader):
 		Instead rely on that PySide.QtCore.QPluginLoader.unload() will automatically delete it when needed.
 		"""
 		res = super(QPluginLoader,self).unload()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setFileName(self,fileName):

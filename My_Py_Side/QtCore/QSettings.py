@@ -72,7 +72,7 @@ class QSettings(QtCore.QSettings):
 		By default, fallbacks are enabled.
 		"""
 		res = super(QSettings,self).fallbacksEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fileName(self):
@@ -113,7 +113,7 @@ class QSettings(QtCore.QSettings):
 		One reason why PySide.QtCore.QSettings.isWritable() might return false is if PySide.QtCore.QSettings operates on a read-only file.
 		"""
 		res = super(QSettings,self).isWritable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def organizationName(self):
@@ -178,7 +178,7 @@ class QSettings(QtCore.QSettings):
 		Use PySide.QtCore.QSettings.beginWriteArray() to write the array in the first place.
 		"""
 		res = super(QSettings,self).beginReadArray(prefix)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def beginWriteArray(self,prefix,size=None):
@@ -209,7 +209,7 @@ class QSettings(QtCore.QSettings):
 		To avoid portability problems, see the Section and Key Syntax rules.
 		"""
 		res = super(QSettings,self).contains(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def remove(self,key):

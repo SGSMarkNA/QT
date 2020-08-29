@@ -11,7 +11,7 @@ class QKeyEventTransition(QtGui.QKeyEventTransition):
 		This property holds the key that this key event transition is associated with.
 		"""
 		res = super(QKeyEventTransition,self).key()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def modifierMask(self):

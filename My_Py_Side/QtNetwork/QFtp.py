@@ -35,7 +35,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).close()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def currentCommand(self):
@@ -61,7 +61,7 @@ class QFtp(QtNetwork.QFtp):
 		Returns the identifier of the FTP command that is being executed or 0 if there is no command being executed.
 		"""
 		res = super(QFtp,self).currentId()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def error(self):
@@ -90,7 +90,7 @@ class QFtp(QtNetwork.QFtp):
 		The command that is being executed is not considered as a scheduled command.
 		"""
 		res = super(QFtp,self).hasPendingCommands()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def readAll(self):
@@ -130,7 +130,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).cd(dir)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def connectToHost(self,host,port=None):
@@ -149,7 +149,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).connectToHost(host,port)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def get(self,file,dev=None,type=None):
@@ -178,7 +178,7 @@ class QFtp(QtNetwork.QFtp):
 		PySide.QtNetwork.QFtp.commandFinished()
 		"""
 		res = super(QFtp,self).get(file,dev,type)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def list(self,dir=None):
@@ -196,7 +196,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).list(dir)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def login(self,user=None,password=None):
@@ -215,7 +215,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).login(user,password)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def mkdir(self,dir):
@@ -231,7 +231,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).mkdir(dir)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def put(self,*args,**kwargs):
@@ -252,7 +252,7 @@ class QFtp(QtNetwork.QFtp):
 		Make sure that the dev pointer is valid for the duration of the operation (it is safe to delete it when the PySide.QtNetwork.QFtp.commandFinished() is emitted).
 		"""
 		res = super(QFtp,self).put(*args,**kwargs)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rawCommand(self,command):
@@ -270,7 +270,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).rawCommand(command)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def read(self,maxlen):
@@ -297,7 +297,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).remove(file)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rename(self,oldname,newname):
@@ -314,7 +314,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).rename(oldname,newname)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def rmdir(self,dir):
@@ -330,7 +330,7 @@ class QFtp(QtNetwork.QFtp):
 		When it is finished the PySide.QtNetwork.QFtp.commandFinished() signal is emitted.
 		"""
 		res = super(QFtp,self).rmdir(dir)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setProxy(self,host,port):
@@ -345,7 +345,7 @@ class QFtp(QtNetwork.QFtp):
 		Use PySide.QtNetwork.QNetworkAccessManager for this.
 		"""
 		res = super(QFtp,self).setProxy(host,port)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setTransferMode(self,mode):
@@ -357,5 +357,5 @@ class QFtp(QtNetwork.QFtp):
 		The default is QFtp.Passive .
 		"""
 		res = super(QFtp,self).setTransferMode(mode)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res

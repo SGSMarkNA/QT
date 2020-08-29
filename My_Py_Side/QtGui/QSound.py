@@ -18,7 +18,7 @@ class QSound(QtGui.QSound):
 		Returns true if the sound has finished playing; otherwise returns false.
 		"""
 		res = super(QSound,self).isFinished()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def loops(self):
@@ -26,7 +26,7 @@ class QSound(QtGui.QSound):
 		Returns the number of times the sound will play.
 		"""
 		res = super(QSound,self).loops()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def loopsRemaining(self):
@@ -34,7 +34,7 @@ class QSound(QtGui.QSound):
 		Returns the remaining number of times the sound will loop (this value decreases each time the sound is played).
 		"""
 		res = super(QSound,self).loopsRemaining()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def setLoops(self,arg__1):

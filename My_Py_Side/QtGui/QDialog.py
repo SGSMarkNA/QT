@@ -27,7 +27,7 @@ class QDialog(QtGui.QDialog):
 		By default, the size grip is disabled.
 		"""
 		res = super(QDialog,self).isSizeGripEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def reject(self):
@@ -50,7 +50,7 @@ class QDialog(QtGui.QDialog):
 		Do not call this function if the dialog was constructed with the Qt.WA_DeleteOnClose attribute.
 		"""
 		res = super(QDialog,self).result()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def adjustPosition(self,arg__1):

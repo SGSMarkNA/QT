@@ -58,7 +58,7 @@ class QWebFrame(QtWebKit.QWebFrame):
 		Returns true if this frame has keyboard input focus; otherwise, returns false.
 		"""
 		res = super(QWebFrame,self).hasFocus()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def icon(self):
@@ -358,7 +358,7 @@ class QWebFrame(QtWebKit.QWebFrame):
 
 		"""
 		res = super(QWebFrame,self).scrollBarMaximum(orientation)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scrollBarMinimum(self,orientation):
@@ -369,7 +369,7 @@ class QWebFrame(QtWebKit.QWebFrame):
 
 		"""
 		res = super(QWebFrame,self).scrollBarMinimum(orientation)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scrollBarPolicy(self,orientation):
@@ -391,7 +391,7 @@ class QWebFrame(QtWebKit.QWebFrame):
 
 		"""
 		res = super(QWebFrame,self).scrollBarValue(orientation)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def scrollToAnchor(self,anchor):

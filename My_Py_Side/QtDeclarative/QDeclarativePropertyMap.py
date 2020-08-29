@@ -12,7 +12,7 @@ class QDeclarativePropertyMap(QtDeclarative.QDeclarativePropertyMap):
 		Same as PySide.QtDeclarative.QDeclarativePropertyMap.size() .
 		"""
 		res = super(QDeclarativePropertyMap,self).count()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isEmpty(self):
@@ -20,7 +20,7 @@ class QDeclarativePropertyMap(QtDeclarative.QDeclarativePropertyMap):
 		Returns true if the map contains no keys; otherwise returns false.
 		"""
 		res = super(QDeclarativePropertyMap,self).isEmpty()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def keys(self):
@@ -43,7 +43,7 @@ class QDeclarativePropertyMap(QtDeclarative.QDeclarativePropertyMap):
 		Returns the number of keys in the map.
 		"""
 		res = super(QDeclarativePropertyMap,self).size()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clear(self,key):
@@ -64,7 +64,7 @@ class QDeclarativePropertyMap(QtDeclarative.QDeclarativePropertyMap):
 		Returns true if the map contains key .
 		"""
 		res = super(QDeclarativePropertyMap,self).contains(key)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def insert(self,key,value):

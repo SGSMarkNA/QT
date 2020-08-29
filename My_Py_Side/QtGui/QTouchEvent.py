@@ -12,7 +12,7 @@ class QTouchEvent(QtGui.QTouchEvent):
 		Id numbers are globally sequential, starting at zero, meaning the first touch point in the application has id 0, the second has id 1, and so on.
 		"""
 		res = super(QTouchEvent,self).id()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def isPrimary(self):
@@ -21,7 +21,7 @@ class QTouchEvent(QtGui.QTouchEvent):
 		The primary touch point is the point for which the windowing system generates mouse events.
 		"""
 		res = super(QTouchEvent,self).isPrimary()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def lastNormalizedPos(self):

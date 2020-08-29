@@ -30,7 +30,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 		By default, this property is false.
 		"""
 		res = super(QGraphicsWidget,self).autoFillBackground()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def focusPolicy(self):
@@ -95,7 +95,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 		The active window is the window that either contains a child widget that currently has input focus, or that itself has input focus.
 		"""
 		res = super(QGraphicsWidget,self).isActiveWindow()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def layout(self):
@@ -327,7 +327,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 		By reimplementing this function for an object, you gain control of focus traversal for all child widgets.
 		"""
 		res = super(QGraphicsWidget,self).focusNextPrevChild(next)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def grabKeyboardEvent(self,event):
@@ -359,7 +359,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 
 		"""
 		res = super(QGraphicsWidget,self).grabShortcut(sequence,context)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def hideEvent(self,event):
@@ -750,7 +750,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 
 		"""
 		res = super(QGraphicsWidget,self).testAttribute(attribute)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def ungrabKeyboardEvent(self,event):
@@ -784,7 +784,7 @@ class QGraphicsWidget(QtGui.QGraphicsWidget):
 		Returns true if event has been recognized and processed; otherwise, returns false.
 		"""
 		res = super(QGraphicsWidget,self).windowFrameEvent(e)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def windowFrameSectionAt(self,pos):

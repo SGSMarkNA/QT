@@ -19,7 +19,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		Returns the number of locations backward in the history.
 		"""
 		res = super(QTextBrowser,self).backwardHistoryCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def clearHistory(self):
@@ -42,7 +42,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		Returns the number of locations forward in the history.
 		"""
 		res = super(QTextBrowser,self).forwardHistoryCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def historyChanged(self):
@@ -64,7 +64,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		Returns true if the text browser can go backward in the document history using PySide.QtGui.QTextBrowser.backward() .
 		"""
 		res = super(QTextBrowser,self).isBackwardAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isForwardAvailable(self):
@@ -72,7 +72,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		Returns true if the text browser can go forward in the document history using PySide.QtGui.QTextBrowser.forward() .
 		"""
 		res = super(QTextBrowser,self).isForwardAvailable()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def openExternalLinks(self):
@@ -82,7 +82,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		The default value is false.
 		"""
 		res = super(QTextBrowser,self).openExternalLinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def openLinks(self):
@@ -92,7 +92,7 @@ class QTextBrowser(QtGui.QTextBrowser):
 		The default value is true.
 		"""
 		res = super(QTextBrowser,self).openLinks()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def reload(self):

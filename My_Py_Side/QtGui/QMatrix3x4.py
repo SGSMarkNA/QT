@@ -56,7 +56,7 @@ class QMatrix3x4(QtGui.QMatrix3x4):
 
 		"""
 		res = super(QMatrix3x4,self).__ne__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def __imul__(self,arg__1):
@@ -111,5 +111,5 @@ class QMatrix3x4(QtGui.QMatrix3x4):
 
 		"""
 		res = super(QMatrix3x4,self).__eq__(arg__1)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

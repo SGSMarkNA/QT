@@ -1,4 +1,4 @@
-from Qt_Tools import QtGui, QtCore
+from PySide import QtGui, QtCore
 from QWidget import QWidget
 class QFrame(QtGui.QFrame, QWidget):
 	''''''

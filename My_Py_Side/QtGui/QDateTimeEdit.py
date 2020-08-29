@@ -13,7 +13,7 @@ class QDateTimeEdit(QtGui.QDateTimeEdit):
 		This property is valid only if there is a valid date display format.
 		"""
 		res = super(QDateTimeEdit,self).calendarPopup()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def calendarWidget(self):
@@ -104,7 +104,7 @@ class QDateTimeEdit(QtGui.QDateTimeEdit):
 		setCurrentSection()
 		"""
 		res = super(QDateTimeEdit,self).currentSectionIndex()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def date(self):
@@ -223,7 +223,7 @@ class QDateTimeEdit(QtGui.QDateTimeEdit):
 		If the format is yyyy/yy/yyyy, PySide.QtGui.QDateTimeEdit.sectionCount() returns 3.
 		"""
 		res = super(QDateTimeEdit,self).sectionCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def time(self):

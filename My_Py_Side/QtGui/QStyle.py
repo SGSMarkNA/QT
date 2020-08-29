@@ -39,7 +39,7 @@ class QStyle(QtGui.QStyle):
 
 		"""
 		res = super(QStyle,self).combinedLayoutSpacing(controls1,controls2,orientation,option,widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def drawComplexControl(self,cc,opt,p,widget=None):
@@ -204,7 +204,7 @@ class QStyle(QtGui.QStyle):
 
 		"""
 		res = super(QStyle,self).layoutSpacing(control1,control2,orientation,option,widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def pixelMetric(self,metric,option=None,widget=None):
@@ -225,7 +225,7 @@ class QStyle(QtGui.QStyle):
 		For some styles, this may not be appropriate.
 		"""
 		res = super(QStyle,self).pixelMetric(metric,option,widget)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def polish(self,*args,**kwargs):
@@ -319,7 +319,7 @@ class QStyle(QtGui.QStyle):
 		See the PySide.QtGui.QStyleHintReturn class description for details.
 		"""
 		res = super(QStyle,self).styleHint(stylehint,opt,widget,returnData)
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def subControlRect(self,cc,opt,sc,widget=None):

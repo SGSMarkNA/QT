@@ -27,7 +27,7 @@ class QColumnView(QtGui.QColumnView):
 		By default, visible is set to true
 		"""
 		res = super(QColumnView,self).resizeGripsVisible()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def createColumn(self,rootIndex):

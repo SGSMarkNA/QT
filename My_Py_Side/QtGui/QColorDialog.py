@@ -88,5 +88,5 @@ class QColorDialog(QtGui.QColorDialog):
 		Returns true if the given option is enabled; otherwise, returns false.
 		"""
 		res = super(QColorDialog,self).testOption(option)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res

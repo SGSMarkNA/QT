@@ -12,7 +12,7 @@ class QTextStream(QtCore.QTextStream):
 		This is similar to, but not the same as calling QIODevice.atEnd() , as PySide.QtCore.QTextStream also takes into account its internal Unicode buffer.
 		"""
 		res = super(QTextStream,self).atEnd()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def autoDetectUnicode(self):
@@ -21,7 +21,7 @@ class QTextStream(QtCore.QTextStream):
 		Automatic Unicode detection is enabled by default.
 		"""
 		res = super(QTextStream,self).autoDetectUnicode()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def codec(self):
@@ -53,7 +53,7 @@ class QTextStream(QtCore.QTextStream):
 		Returns the current field width.
 		"""
 		res = super(QTextStream,self).fieldWidth()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def flush(self):
@@ -70,7 +70,7 @@ class QTextStream(QtCore.QTextStream):
 		UTF BOM generation is set to false by default.
 		"""
 		res = super(QTextStream,self).generateByteOrderMark()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def integerBase(self):
@@ -79,7 +79,7 @@ class QTextStream(QtCore.QTextStream):
 		0 means that the base is detected when reading, or 10 (decimal) when generating numbers.
 		"""
 		res = super(QTextStream,self).integerBase()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def locale(self):
@@ -139,7 +139,7 @@ class QTextStream(QtCore.QTextStream):
 		Returns the current real number precision, or the number of fraction digits PySide.QtCore.QTextStream will write when generating real numbers.
 		"""
 		res = super(QTextStream,self).realNumberPrecision()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def reset(self):
@@ -274,7 +274,7 @@ class QTextStream(QtCore.QTextStream):
 		Returns true on success; otherwise returns false.
 		"""
 		res = super(QTextStream,self).seek(pos)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setAutoDetectUnicode(self,enabled):

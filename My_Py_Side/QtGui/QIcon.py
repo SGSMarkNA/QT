@@ -25,7 +25,7 @@ class QIcon(QtGui.QIcon):
 		if the file does not exist or cannot be read.
 		"""
 		res = super(QIcon,self).isNull()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def name(self):

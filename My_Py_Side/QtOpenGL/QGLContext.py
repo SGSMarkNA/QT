@@ -28,7 +28,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		Returns true if the paint device of this context is a pixmap; otherwise returns false.
 		"""
 		res = super(QGLContext,self).deviceIsPixmap()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def doneCurrent(self):
@@ -53,7 +53,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		if QGLWidget.initializeGL() has been performed on it; otherwise returns false.
 		"""
 		res = super(QGLContext,self).initialized()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isSharing(self):
@@ -62,7 +62,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		Note that context sharing might not be supported between contexts with different formats.
 		"""
 		res = super(QGLContext,self).isSharing()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -70,7 +70,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		Returns true if a GL rendering context has been successfully created; otherwise returns false.
 		"""
 		res = super(QGLContext,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def makeCurrent(self):
@@ -125,7 +125,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		Returns true if a window has been created for this context; otherwise returns false.
 		"""
 		res = super(QGLContext,self).windowCreated()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def bindTexture(self,*args,**kwargs):
@@ -176,7 +176,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		On other platforms it may work differently.
 		"""
 		res = super(QGLContext,self).chooseContext(shareContext)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def colorIndex(self,c):
@@ -205,7 +205,7 @@ class QGLContext(QtOpenGL.QGLContext):
 		Use PySide.QtOpenGL.QGLContext.isSharing() to see if sharing is in effect.
 		"""
 		res = super(QGLContext,self).create(shareContext)
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def deleteTexture(self,tx_id):

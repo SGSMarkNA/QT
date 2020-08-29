@@ -14,7 +14,7 @@ class QPrinter(QtGui.QPrinter):
 		For example, all the data has gone to the printer but the printer cannot or will not cancel the job when asked to.
 		"""
 		res = super(QPrinter,self).abort()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def actualNumCopies(self):
@@ -25,7 +25,7 @@ class QPrinter(QtGui.QPrinter):
 		Use PySide.QtGui.QPrinter.copyCount() instead.
 		"""
 		res = super(QPrinter,self).actualNumCopies()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def collateCopies(self):
@@ -36,7 +36,7 @@ class QPrinter(QtGui.QPrinter):
 		With collating turned on all pages are printed before the next copy of those pages is started.
 		"""
 		res = super(QPrinter,self).collateCopies()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def colorMode(self):
@@ -53,7 +53,7 @@ class QPrinter(QtGui.QPrinter):
 		The default value is 1.
 		"""
 		res = super(QPrinter,self).copyCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def creator(self):
@@ -76,7 +76,7 @@ class QPrinter(QtGui.QPrinter):
 		Currently this option is only supported on X11.
 		"""
 		res = super(QPrinter,self).doubleSidedPrinting()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def duplex(self):
@@ -94,7 +94,7 @@ class QPrinter(QtGui.QPrinter):
 		Currently this option is only supported on X11.
 		"""
 		res = super(QPrinter,self).fontEmbeddingEnabled()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def fromPage(self):
@@ -104,7 +104,7 @@ class QPrinter(QtGui.QPrinter):
 		By default, this function returns a special value of 0, meaning that the from page setting is unset.
 		"""
 		res = super(QPrinter,self).fromPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def fullPage(self):
@@ -113,7 +113,7 @@ class QPrinter(QtGui.QPrinter):
 		See PySide.QtGui.QPrinter.setFullPage() for details and caveats.
 		"""
 		res = super(QPrinter,self).fullPage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def isValid(self):
@@ -122,7 +122,7 @@ class QPrinter(QtGui.QPrinter):
 		To detect other failures check the output of QPainter.begin() or QPrinter.newPage() .
 		"""
 		res = super(QPrinter,self).isValid()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def newPage(self):
@@ -132,7 +132,7 @@ class QPrinter(QtGui.QPrinter):
 		Calling PySide.QtGui.QPrinter.newPage() on an inactive PySide.QtGui.QPrinter object will always fail.
 		"""
 		res = super(QPrinter,self).newPage()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def numCopies(self):
@@ -145,7 +145,7 @@ class QPrinter(QtGui.QPrinter):
 		Use PySide.QtGui.QPrinter.copyCount() in conjunction with PySide.QtGui.QPrinter.supportsMultipleCopies() instead.
 		"""
 		res = super(QPrinter,self).numCopies()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -277,7 +277,7 @@ class QPrinter(QtGui.QPrinter):
 		Returns the current assumed resolution of the printer, as set by PySide.QtGui.QPrinter.setResolution() or by the printer driver.
 		"""
 		res = super(QPrinter,self).resolution()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def supportedResolutions(self):
@@ -296,7 +296,7 @@ class QPrinter(QtGui.QPrinter):
 		That means the application has to handle the number of copies by printing the same document the required number of times.
 		"""
 		res = super(QPrinter,self).supportsMultipleCopies()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def toPage(self):
@@ -307,7 +307,7 @@ class QPrinter(QtGui.QPrinter):
 		The programmer is responsible for reading this setting and printing accordingly.
 		"""
 		res = super(QPrinter,self).toPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def getPageMargins(self,unit):

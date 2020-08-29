@@ -11,7 +11,7 @@ class QPrintPreviewWidget(QtGui.QPrintPreviewWidget):
 		Returns the currently viewed page in the preview.
 		"""
 		res = super(QPrintPreviewWidget,self).currentPage()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def numPages(self):
@@ -19,7 +19,7 @@ class QPrintPreviewWidget(QtGui.QPrintPreviewWidget):
 		Returns the number of pages in the preview.
 		"""
 		res = super(QPrintPreviewWidget,self).numPages()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def orientation(self):
@@ -36,7 +36,7 @@ class QPrintPreviewWidget(QtGui.QPrintPreviewWidget):
 		Returns the number of pages in the preview.
 		"""
 		res = super(QPrintPreviewWidget,self).pageCount()
-		isinstance(res,QtCore.int)
+		isinstance(res,int)
 		return res
 	#----------------------------------------------------------------------
 	def previewChanged(self):

@@ -12,7 +12,7 @@ class QMotifStyle(QtGui.QMotifStyle):
 		The default is false.
 		"""
 		res = super(QMotifStyle,self).useHighlightColors()
-		isinstance(res,QtCore.bool)
+		isinstance(res,bool)
 		return res
 	#----------------------------------------------------------------------
 	def setUseHighlightColors(self,arg__1):
