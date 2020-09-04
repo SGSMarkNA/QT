@@ -121,14 +121,14 @@ class QStandardItem(QtGui.QStandardItem):
 		res = super(QStandardItem,self).columnCount()
 
 		return res
-	# #----------------------------------------------------------------------
-	# def emitDataChanged(self):
-		# """
-		# Causes the model associated with this item to emit a PySide.QtCore.QAbstractItemModel.dataChanged() () signal for this item.
-		# You normally only need to call this function if you have subclassed PySide.QtGui.QStandardItem and reimplemented PySide.QtGui.QStandardItem.data() and/or PySide.QtGui.QStandardItem.setData() .
-		# """
-		# res = super(QStandardItem,self).emitDataChanged()
-		# return res
+	#----------------------------------------------------------------------
+	def emitDataChanged(self):
+		"""
+		Causes the model associated with this item to emit a PySide.QtCore.QAbstractItemModel.dataChanged() () signal for this item.
+		You normally only need to call this function if you have subclassed PySide.QtGui.QStandardItem and reimplemented PySide.QtGui.QStandardItem.data() and/or PySide.QtGui.QStandardItem.setData() .
+		"""
+		res = super(QStandardItem,self).emitDataChanged()
+		return res
 	#----------------------------------------------------------------------
 	def flags(self):
 		"""
@@ -384,6 +384,8 @@ class QStandardItem(QtGui.QStandardItem):
 
 		Returns the items data for the given role , or an invalid PySide.QtCore.QVariant if there is no data for the role.
 		"""
+		# if role > Qt.UserRole:
+			# print self.__class__.__name__
 		res = super(QStandardItem,self).data(role)
 		return res
 	#----------------------------------------------------------------------
@@ -875,7 +877,7 @@ class QStandardItem(QtGui.QStandardItem):
 	ColumnCount           = property(columnCount)
 	Row                   = property(row)
 	RowCount              = property(rowCount, setRowCount)
-	# EmitDataChanged       = property(emitDataChanged)
+	EmitDataChanged       = property(emitDataChanged)
 	Flags                 = property(flags,setFlags)
 	Font                  = property(font,setFont)
 	Icon                  = property(icon,setIcon)

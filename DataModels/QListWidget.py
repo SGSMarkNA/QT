@@ -30,7 +30,7 @@ class QListWidget(QT.QListWidget):
 		Returns the current item.
 		"""
 		res = super(QListWidget,self).currentItem()
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def currentRow(self):
@@ -95,7 +95,7 @@ class QListWidget(QT.QListWidget):
 			label=unicode
 
 		addItem(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Inserts an item with the text label at the end of the list widget.
 		"""
@@ -115,7 +115,7 @@ class QListWidget(QT.QListWidget):
 	def closePersistentEditor(self,item):
 		"""
 		closePersistentEditor(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Closes the persistent editor for the given item .
 		"""
@@ -138,7 +138,7 @@ class QListWidget(QT.QListWidget):
 	def editItem(self,item):
 		"""
 		editItem(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Starts editing the item if it is editable.
 		"""
@@ -159,7 +159,7 @@ class QListWidget(QT.QListWidget):
 	def indexFromItem(self,item):
 		"""
 		indexFromItem(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Returns the PySide.QtCore.QModelIndex assocated with the given item .
 		"""
@@ -175,7 +175,7 @@ class QListWidget(QT.QListWidget):
 
 		insertItem(row,item)
 			row=QtCore.int
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Inserts an item with the text label in the list widget at the position given by row .
 		"""
@@ -201,7 +201,7 @@ class QListWidget(QT.QListWidget):
 		Returns the item that occupies the given row in the list if one has been set; otherwise returns 0.
 		"""
 		res = super(QListWidget,self).item(row)
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemAt(self,*args,**kwargs):
@@ -217,7 +217,7 @@ class QListWidget(QT.QListWidget):
 		Returns a pointer to the item at the coordinates (x , y ).
 		"""
 		res = super(QListWidget,self).itemAt(*args,**kwargs)
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemFromIndex(self,index):
@@ -225,21 +225,21 @@ class QListWidget(QT.QListWidget):
 		itemFromIndex(index)
 			index=QtCore.QModelIndex
 
-		Returns a pointer to the PySide.QtGui.QListWidgetItem assocated with the given index .
+		Returns a pointer to the PySide.QT.QListWidgetItem assocated with the given index .
 		"""
 		res = super(QListWidget,self).itemFromIndex(index)
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def itemWidget(self,item):
 		"""
 		itemWidget(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Returns the widget displayed in the given item .
 		"""
 		res = super(QListWidget,self).itemWidget(item)
-		isinstance(res,QtGui.QWidget)
+		isinstance(res,QT.QWidget)
 		return res
 	#----------------------------------------------------------------------
 	def items(self,data):
@@ -248,7 +248,7 @@ class QListWidget(QT.QListWidget):
 			data=QtCore.QMimeData
 
 		Returns a list of pointers to the items contained in the data object
-		If the object was not created by a PySide.QtGui.QListWidget in the same process, the list is empty.
+		If the object was not created by a PySide.QT.QListWidget in the same process, the list is empty.
 		"""
 		res = super(QListWidget,self).items(data)
 		return res
@@ -267,7 +267,7 @@ class QListWidget(QT.QListWidget):
 	def openPersistentEditor(self,item):
 		"""
 		openPersistentEditor(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Opens an editor for the given item
 		The editor remains open after editing.
@@ -278,7 +278,7 @@ class QListWidget(QT.QListWidget):
 	def removeItemWidget(self,item):
 		"""
 		removeItemWidget(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Removes the widget set on the given item .
 		"""
@@ -288,7 +288,7 @@ class QListWidget(QT.QListWidget):
 	def row(self,item):
 		"""
 		row(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Returns the row containing the given item .
 		"""
@@ -299,11 +299,11 @@ class QListWidget(QT.QListWidget):
 	def setCurrentItem(self,*args,**kwargs):
 		"""
 		setCurrentItem(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		setCurrentItem(item,command)
-			item=QtGui.QListWidgetItem
-			command=QtGui.QItemSelectionModel.SelectionFlags
+			item=QT.QListWidgetItem
+			command=QT.QItemSelectionModel.SelectionFlags
 
 		Sets the current item to item .
 		Unless the selection mode is NoSelection , the item is also be selected.
@@ -315,7 +315,7 @@ class QListWidget(QT.QListWidget):
 		"""
 		setCurrentRow(row,command)
 			row=QtCore.int
-			command=QtGui.QItemSelectionModel.SelectionFlags
+			command=QT.QItemSelectionModel.SelectionFlags
 
 		setCurrentRow(row)
 			row=QtCore.int
@@ -328,12 +328,12 @@ class QListWidget(QT.QListWidget):
 	def setItemWidget(self,item,widget):
 		"""
 		setItemWidget(item,widget)
-			item=QtGui.QListWidgetItem
-			widget=QtGui.QWidget
+			item=QT.QListWidgetItem
+			widget=QT.QWidget
 
 		Sets the widget to be displayed in the give item .
 		This function should only be used to display static content in the place of a list widget item
-		If you want to display custom dynamic content or implement a custom editor widget, use PySide.QtGui.QListView and subclass PySide.QtGui.QItemDelegate instead.
+		If you want to display custom dynamic content or implement a custom editor widget, use PySide.QT.QListView and subclass PySide.QT.QItemDelegate instead.
 		"""
 		res = super(QListWidget,self).setItemWidget(item,widget)
 		return res
@@ -369,13 +369,13 @@ class QListWidget(QT.QListWidget):
 		Items removed from a list widget will not be managed by Qt, and will need to be deleted manually.
 		"""
 		res = super(QListWidget,self).takeItem(row)
-		isinstance(res,QtGui.QListWidgetItem)
+		isinstance(res,QT.QListWidgetItem)
 		return res
 	#----------------------------------------------------------------------
 	def visualItemRect(self,item):
 		"""
 		visualItemRect(item)
-			item=QtGui.QListWidgetItem
+			item=QT.QListWidgetItem
 
 		Returns the rectangle on the viewport occupied by the item at item .
 		"""
