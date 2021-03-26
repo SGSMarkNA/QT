@@ -1,3 +1,4 @@
 *.DS_Store
 *.pyc
+/My_Py_Side
 /My_Py_Side/*
