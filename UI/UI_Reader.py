@@ -20,7 +20,11 @@ if os.environ["QT_PACKAGE"] == "PySide2":
 	from PySide2.QtCore import *
 	from PySide2.QtGui import *
 	from PySide2.QtWidgets import *
-	import pyside2uic as pysideuic
+	try:
+		import pyside2uic as pysideuic
+	except ImportError:
+		os.sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__),"../")))
+		import pyside2uic as pysideuic
 	from cStringIO import StringIO
 
 elif os.environ["QT_PACKAGE"] == "PySide":
