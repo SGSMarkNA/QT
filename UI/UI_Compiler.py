@@ -39,8 +39,8 @@ def PyQt4_Generator(ui_folder, py_folder,ui_files=[]):
 		code_path = os.path.join(py_folder,code_file)
 		ui_path   = os.path.join(ui_folder,ui_file)
 		cmd = python_exe + uic_file + command_args + " -o " + '"' + code_path + '"' + " " + '"' + ui_path + '"'
-		print cmd
-		print os.system(cmd)
+		print(cmd)
+		print((os.system(cmd)))
 		
 def build_ui_files(ui_folder, py_folder, ui_files=[], from_imports=True, make_PySide=True, preview=False):
 	if not os.path.exists(ui_folder):

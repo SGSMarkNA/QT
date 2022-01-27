@@ -1,6 +1,6 @@
 import QT
-import Qt_Roles_And_Enums
-import MimeData
+from . import Qt_Roles_And_Enums
+from . import MimeData
 QtCore            = QT.QtCore
 QtGui             = QT.QtGui
 Qt                = QT.Qt

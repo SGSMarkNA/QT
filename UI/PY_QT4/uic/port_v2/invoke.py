@@ -38,16 +38,16 @@ def invoke(driver):
     try:
         exit_status = driver.invoke()
 
-    except IOError, e:
+    except IOError as e:
         driver.on_IOError(e)
 
-    except SyntaxError, e:
+    except SyntaxError as e:
         driver.on_SyntaxError(e)
 
-    except NoSuchWidgetError, e:
+    except NoSuchWidgetError as e:
         driver.on_NoSuchWidgetError(e)
 
-    except Exception, e:
+    except Exception as e:
         driver.on_Exception(e)
 
     return exit_status

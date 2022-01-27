@@ -41,7 +41,7 @@ DEBUG = logger.debug
 
 if sys.version_info < (2,4,0):
     def reversed(seq):
-        for i in xrange(len(seq)-1, -1, -1):
+        for i in range(len(seq)-1, -1, -1):
             yield seq[i]
 
 QtCore = None

@@ -1,11 +1,11 @@
 #speak = QtCore.Signal((int,), (str,))
 import os
 import QT
-import Qt_Roles_And_Enums
-import QStandardItemModel
-import QSortFilterProxyModel
-import QStandardItem
-import MimeData
+from . import Qt_Roles_And_Enums
+from . import QStandardItemModel
+from . import QSortFilterProxyModel
+from . import QStandardItem
+from . import MimeData
 
 Qt       = QT.Qt
 QtSlot   = QT.QtSlot
@@ -138,7 +138,7 @@ class _Named_Data_Item(_Data_Item):
 
 	def setData(self, value, role=Data_Roles.EDIT):
 		if role in self.Item_Data_Roles.DP_ED:
-			if isinstance(value, (unicode, str)):
+			if isinstance(value, str):
 				self._data.name = value
 			else:
 				self._data = value

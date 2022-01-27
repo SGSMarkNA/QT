@@ -1,6 +1,6 @@
 from QT import QtGui, QtCore
 import QT
-import QStandardItemModel
+from . import QStandardItemModel
 class QSortFilterProxyModel(QT.QSortFilterProxyModel):
 	''''''
 	def __init__(self,*args,**kwargs):

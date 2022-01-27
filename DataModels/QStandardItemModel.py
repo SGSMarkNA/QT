@@ -1,5 +1,5 @@
 import QT
-import Qt_Roles_And_Enums
+from . import Qt_Roles_And_Enums
 QtCore            = QT.QtCore
 QtGui             = QT.QtGui
 Qt                = QT.Qt

@@ -130,7 +130,7 @@ class _CustomWidgetLoader(object):
             _, module = self._widgets[widget]
             imports.setdefault(module, []).append(widget)
 
-        for module, classes in imports.items():
+        for module, classes in list(imports.items()):
             parts = module.split(".")
             if (len(parts) == 2 and not parts[0].startswith("PySide2")
                     and parts[0] in pyside2_modules):

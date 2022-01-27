@@ -113,7 +113,7 @@ class _IconSet(object):
         if self._use_fallback:
             icon.addFile(self._fallback)
         else:
-            for role, pixmap in self._roles.items():
+            for role, pixmap in list(self._roles.items()):
                 if role.endswith("off"):
                     mode = role[:-3]
                     state = qtgui_module.QIcon.Off

@@ -1,4 +1,4 @@
-import loader
+from . import loader
 import os
 
 QT_PACKAGE = os.environ.get("QT_PACKAGE")
@@ -37,6 +37,6 @@ except:
 	pass
 
 try:
-	import DataModels
+	from . import DataModels
 except:
 	pass

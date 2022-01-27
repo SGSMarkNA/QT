@@ -116,7 +116,7 @@ class _CustomWidgetLoader(object):
             _, module = self._widgets[widget]
             imports.setdefault(module, []).append(widget)
 
-        for module, classes in imports.items():
+        for module, classes in list(imports.items()):
             write_code("from %s import %s" % (module, ", ".join(classes)))
 
 

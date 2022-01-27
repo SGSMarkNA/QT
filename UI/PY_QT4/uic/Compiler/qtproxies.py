@@ -116,7 +116,7 @@ class ProxyClassMember(object):
         if self.function_name == 'setProperty':
             str_args = (as_string(args[0], encode=False), as_string(args[1]))
         else:
-            str_args = map(as_string, args)
+            str_args = list(map(as_string, args))
 
         func_call = "%s.%s(%s)" % (self.proxy,
                                    self.function_name,

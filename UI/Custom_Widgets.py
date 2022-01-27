@@ -654,7 +654,7 @@ class _Named_Data_Item(_Data_Item):
 
 	def setData(self, value, role=Data_Roles.EDIT):
 		if role in self.Item_Data_Roles.DP_ED:
-			if isinstance(value, (unicode, str)):
+			if isinstance(value, str):
 				self._data.name = value
 			else:
 				self._data = value
@@ -1328,7 +1328,7 @@ class Vray_Object_Properties_Item(Maya_Selection_Set_Item):
 class Assets_Item(_Named_Data_Item):
 	ITEM_TYPE  = QT.user_type_counter()
 	def __init__(self,**kwargs):
-		if kwargs.has_key("yaml"):
+		if "yaml" in kwargs:
 			assets = kwargs.pop("yaml")
 			from_yaml = True
 		else:
@@ -1368,7 +1368,7 @@ class Referenced_Assets_Item(_Named_Data_Item):
 class Part_Sets_Item(_Named_Data_Item):
 	ITEM_TYPE  = QT.user_type_counter()
 	def __init__(self,**kwargs):
-		if kwargs.has_key("yaml"):
+		if "yaml" in kwargs:
 			assets = kwargs.pop("yaml")
 			from_yaml = True
 		else:
@@ -1402,7 +1402,7 @@ class Part_Sets_Item(_Named_Data_Item):
 class Render_States_Item(_Named_Data_Item):
 	ITEM_TYPE  = QT.user_type_counter()
 	def __init__(self,**kwargs):
-		if kwargs.has_key("yaml") and  kwargs.has_key("part_sets"):
+		if "yaml" in kwargs and  "part_sets" in kwargs:
 			render_states = kwargs.pop("yaml")
 			part_sets     = kwargs.pop("part_sets")
 			from_yaml = True
@@ -1437,7 +1437,7 @@ class Render_State_Item(_Named_Data_Item):
 	ITEM_TYPE  = QT.user_type_counter()
 	#----------------------------------------------------------------------
 	def __init__(self,name,**kwargs):
-		if kwargs.has_key("yaml") and kwargs.has_key("part_sets"):
+		if "yaml" in kwargs and "part_sets" in kwargs:
 			render_state = kwargs.pop("yaml")
 			part_sets    = kwargs.pop("part_sets")
 			super(Render_State_Item,self).__init__(render_state.name,**kwargs)
@@ -1493,7 +1493,7 @@ class Reference_Container_Item(_Named_Data_Item):
 	""""""
 	#----------------------------------------------------------------------
 	def __init__(self, name, **kwargs):
-		if kwargs.has_key("yaml") and kwargs.has_key("part_sets"):
+		if "yaml" in kwargs and "part_sets" in kwargs:
 			from_yaml = True
 			container = kwargs.pop("yaml")
 			part_sets = kwargs.pop("part_sets")

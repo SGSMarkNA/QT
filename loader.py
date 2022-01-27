@@ -4,7 +4,7 @@ from itertools import count
 import os	
 QT_PACKAGE = os.environ.get("QT_PACKAGE")
 try:
-        import maya.cmds as cmds
+	import maya.cmds as cmds
 	MAYA_VERSION    = int(cmds.about(version=True))
 except:
 	MAYA_VERSION = 2015
@@ -24,7 +24,7 @@ class Counter(object):
 		self.num = count(start)
 	#----------------------------------------------------------------------
 	def __call__(self):
-		return self.num.next()
+		return next(self.num)
 
 
 def set_PyQt4_API():
@@ -87,12 +87,13 @@ elif QT_PACKAGE == "PySide":
 	QtSignal       = QtCore.Signal
 	QtProperty     = QtCore.Property
 
-import UI.UI_Reader
-import UI.UI_Loader
-import UI.UI_Compiler
-uic            = UI.UI_Reader
-ui_Loader      = UI.UI_Loader.UI_Loader()
-build_ui_files = UI.UI_Compiler.build_ui_files
+
+from .UI import UI_Reader
+from .UI import UI_Loader
+from .UI import UI_Compiler
+uic            = UI_Reader
+ui_Loader      = UI_Loader.UI_Loader()
+build_ui_files = UI_Compiler.build_ui_files
 
 
 if not hasattr(Qt, 'MiddleButton'):

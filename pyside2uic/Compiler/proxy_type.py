@@ -26,7 +26,7 @@ from pyside2uic.Compiler.misc import Literal, moduleMember
 class ProxyType(type):
     def __init__(*args):
         type.__init__(*args)
-        for cls in args[0].__dict__.values():
+        for cls in list(args[0].__dict__.values()):
             if type(cls) is ProxyType:
                 cls.module = args[0].__name__
 

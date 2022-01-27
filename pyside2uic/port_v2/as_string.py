@@ -23,7 +23,7 @@ import re
 
 
 def as_string(obj, encode=True):
-    if isinstance(obj, basestring):
+    if isinstance(obj, str):
         s = '"' + _escape(obj.encode('UTF-8')) + '"'
         return s
 
