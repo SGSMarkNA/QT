@@ -12,6 +12,7 @@ if QT_PACKAGE == "PySide2":
 	from PySide2.QtCore import *
 	from PySide2.QtWidgets import *
 	from PySide2.QtNetwork import *
+	from PySide2.QtUiTools import *
 else:
 	import PySide.QtGui
 	import PySide.QtCore
